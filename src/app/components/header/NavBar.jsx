@@ -6,7 +6,7 @@ const navItemBoxes = "w-[83px] h-9 underline";
 export default function NavBar() {
   return (
     <nav className="p-4">
-      <ul className="flex gap-9 text-2xl list-none m-0 p-0">
+      <ul className="flex justify-around text-2xl list-none">
         <li className={navItemBoxes}>
           <a href="#" className="text-[#00D8FF]">
             Start

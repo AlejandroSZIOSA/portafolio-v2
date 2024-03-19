@@ -1,8 +1,8 @@
-import testImg from "/public/projects-img/testImg.png";
+import testImg from "/public/static/images/projects-img/testImg.png";
 
 const WEB1 = "https://next-todolist-redux.vercel.app/";
 const WEB2 = "https://radio-player-app-chi.vercel.app/";
-const WEB3 = "https://next-todolist-redux.vercel.app/";
+const WEB3 = "https://clock-app-peach.vercel.app/";
 const WEB4 = "https://next-todolist-redux.vercel.app/";
 const WEB5 = "https://next-todolist-redux.vercel.app/";
 const WEB6 = "https://next-todolist-redux.vercel.app/";
@@ -29,7 +29,7 @@ export const PROJECTS = [
     imgUrl: testImg,
     title: "t3",
     description: "d3",
-    linkToApp: WEB1,
+    linkToApp: WEB3,
     gitHubLink: "g3",
   },
   {
