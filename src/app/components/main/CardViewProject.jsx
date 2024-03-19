@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export default function CardViewProject({ project }) {
-  const { title, description, imgUrl, gitHubLink } = project;
+  const { title, description, imgUrl, linkToApp, gitHubLink } = project;
 
   return (
     <div className="flex flex-col w-[340px] h-[300px] border-4 border-indigo-500 rounded-lg bg-[yellow] text-left">
@@ -13,7 +13,7 @@ export default function CardViewProject({ project }) {
       </div>
       <div>
         <h3 className="text-center">{gitHubLink}</h3>
-        <a href="https://next-todolist-redux.vercel.app/">To App</a>
+        <a href={linkToApp}>To App</a>
       </div>
     </div>
   );
