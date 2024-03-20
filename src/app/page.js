@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <div id="mainContainer" className="flex flex-col items-center">
-        <header className="flex flex-col w-full bg-[#343434]">
+        <header className="flex flex-col w-full h-44 bg-[#343434]">
           <h1 className="text-[#F24E1E] text-center my-2 text-5xl">
             Portafolio V2
           </h1>

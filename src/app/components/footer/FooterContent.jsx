@@ -1,7 +1,9 @@
+import MyLogo from "../logo/MyLogo";
+
 export default function FooterContent() {
   return (
     <>
-      <h2 className="hidden">::GATO::</h2>
+      <MyLogo />
       <h3>+009900998</h3>
       <button>
         <svg

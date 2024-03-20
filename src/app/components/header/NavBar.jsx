@@ -1,7 +1,9 @@
 import React from "react";
 
 //Reusable Tailwind styles
-const navItemBoxes = "w-[83px] h-9 underline";
+/* w-[83px] h-9 */
+
+const navItemBoxes = "underline";
 
 export default function NavBar() {
   return (
@@ -12,19 +14,27 @@ export default function NavBar() {
             Start
           </a>
         </li>
-        {/* <li className={navItemBoxes}>
-              <a href="#" className="text-[#00D8FF] ml-3">
-                Skills
-              </a>
-            </li> */}
+
         <li className={navItemBoxes}>
           <a href="#" className="text-[#00D8FF]">
-            Projects
+            Tech Stack
           </a>
         </li>
         <li className={navItemBoxes}>
           <a href="#" className="text-[#00D8FF]">
             Contact
+          </a>
+        </li>
+      </ul>
+      <ul className="flex justify-around text-2xl mt-2 list-none">
+        <li className={navItemBoxes}>
+          <a href="#" className="text-[#00D8FF] ml-3">
+            Latest
+          </a>
+        </li>
+        <li className={navItemBoxes}>
+          <a href="#" className="text-[#00D8FF] ml-3">
+            Projects
           </a>
         </li>
       </ul>
