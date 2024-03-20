@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="text-[#F24E1E] text-center my-2">Portafolio V2</h1>
         <NavBar />
       </header>
-      <main className="flex flex-col pb-9 items-center">
+      <main className="flex flex-col w-full pb-9 items-center">
         <HeroSection />
         <h2 className="w-full py-2 text-center font-semibold border-black border-t-4 border-b-4 border-dashed">
           Projects
