@@ -3,7 +3,7 @@ import React from "react";
 //Reusable Tailwind styles
 /* w-[83px] h-9 */
 
-const navItemBoxes = "underline";
+const navItemBoxes = "py-1 underline";
 
 export default function NavBar() {
   return (

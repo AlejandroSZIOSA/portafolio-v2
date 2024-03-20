@@ -7,12 +7,14 @@ const WEB4 = "https://next-todolist-redux.vercel.app/";
 const WEB5 = "https://next-todolist-redux.vercel.app/";
 const WEB6 = "https://next-todolist-redux.vercel.app/";
 
+//WEB PROJECTS HERE
 export const WEB_PROJECTS = [
   {
     id: 1,
     imgUrl: testImg,
     title: "Todo-App-Redux",
     description: "d1",
+    category: "web",
     tech: "Javascript",
     ramverk: "React",
     linkToApp: WEB_APP1,
@@ -24,6 +26,7 @@ export const WEB_PROJECTS = [
     imgUrl: testImg,
     title: "Radio-Player",
     description: "d2",
+    category: "web",
     tech: "Javascript",
     ramverk: "React",
     linkToApp: WEB_APP2,
@@ -35,6 +38,7 @@ export const WEB_PROJECTS = [
     imgUrl: testImg,
     title: "Clock-App",
     description: "d3",
+    category: "web",
     tech: "Javascript",
     ramverk: "React",
     linkToApp: WEB_APP3,
@@ -46,6 +50,7 @@ export const WEB_PROJECTS = [
     imgUrl: testImg,
     title: "t4",
     description: "d4",
+    category: "web",
     tech: "Javascript",
     ramverk: "React",
     linkToApp: WEB_APP3,
@@ -54,12 +59,16 @@ export const WEB_PROJECTS = [
   },
 ];
 
+//MOBILE PROJECTS HERE
 export const MOBILE_PROJECTS = [
   {
     id: 1,
     imgUrl: "",
     title: "m1",
     description: "d1",
+    category: "mobile",
+    tech: "Javascript",
+    ramverk: "React-Native",
     gitHubLink: "g1",
     isOld: true,
   },
@@ -68,19 +77,24 @@ export const MOBILE_PROJECTS = [
     imgUrl: "",
     title: "Radio Player",
     description: "d2",
+    category: "mobile",
+    tech: "Javascript",
+    ramverk: "React-Native",
     gitHubLink: "g2",
     isOld: true,
   },
 ];
 
+//BACKEND PROJECTS HERE
 export const BACKEND_PROJECTS = [
   {
     id: 1,
     imgUrl: "",
     title: "m1",
     description: "d1",
+    category: "backend-server",
     tech: "JavaScript",
-    ramverk: "",
+    ramverk: "node.js",
     gitHubLink: "g1",
     isOld: true,
   },
@@ -89,6 +103,7 @@ export const BACKEND_PROJECTS = [
     imgUrl: "",
     title: "Radio Player",
     description: "d2",
+    category: "backend-server",
     tech: "",
     ramverk: "",
     gitHubLink: "g2",
