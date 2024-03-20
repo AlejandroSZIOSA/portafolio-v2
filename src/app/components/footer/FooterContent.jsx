@@ -4,7 +4,7 @@ export default function FooterContent() {
   return (
     <>
       <MyLogo />
-      <h3>+009900998</h3>
+      <h3>+08 990099898</h3>
       <button>
         <svg
           className="w-6 h-6 text-gray-800 dark:text-white"

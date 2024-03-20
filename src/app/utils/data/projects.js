@@ -11,6 +11,7 @@ const WEB6 = "https://next-todolist-redux.vercel.app/";
 export const WEB_PROJECTS = [
   {
     id: 1,
+    date: "",
     imgUrl: testImg,
     title: "Todo-App-Redux",
     description: "d1",
@@ -23,6 +24,7 @@ export const WEB_PROJECTS = [
   },
   {
     id: 2,
+    date: "",
     imgUrl: testImg,
     title: "Radio-Player",
     description: "d2",
@@ -35,6 +37,7 @@ export const WEB_PROJECTS = [
   },
   {
     id: 3,
+    date: "",
     imgUrl: testImg,
     title: "Clock-App",
     description: "d3",
@@ -47,6 +50,7 @@ export const WEB_PROJECTS = [
   },
   {
     id: 4,
+    date: "",
     imgUrl: testImg,
     title: "t4",
     description: "d4",
@@ -63,6 +67,7 @@ export const WEB_PROJECTS = [
 export const MOBILE_PROJECTS = [
   {
     id: 1,
+    date: "",
     imgUrl: "",
     title: "m1",
     description: "d1",
@@ -74,6 +79,7 @@ export const MOBILE_PROJECTS = [
   },
   {
     id: 2,
+    date: "",
     imgUrl: "",
     title: "Radio Player",
     description: "d2",
@@ -89,6 +95,7 @@ export const MOBILE_PROJECTS = [
 export const BACKEND_PROJECTS = [
   {
     id: 1,
+    date: "",
     imgUrl: "",
     title: "m1",
     description: "d1",
@@ -100,6 +107,7 @@ export const BACKEND_PROJECTS = [
   },
   {
     id: 2,
+    date: "",
     imgUrl: "",
     title: "Radio Player",
     description: "d2",

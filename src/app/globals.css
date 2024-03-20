@@ -7,7 +7,7 @@
     @apply bg-[#d8d8d8];
   }
   h1 {
-    @apply text-4xl;
+    @apply text-5xl;
   }
   h2 {
     @apply text-2xl;
