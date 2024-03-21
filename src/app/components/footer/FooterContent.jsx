@@ -1,9 +1,9 @@
-import MyLogo from "../logo/MyLogo";
+import Logo from "../logo/Logo";
 
 export default function FooterContent() {
   return (
     <>
-      <MyLogo />
+      <Logo />
       <h3>+08 990099898</h3>
       <button>
         <svg
