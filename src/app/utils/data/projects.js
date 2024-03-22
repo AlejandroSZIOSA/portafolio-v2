@@ -21,7 +21,7 @@ export const WEB_PROJECTS = [
     framework: "React + Next.js",
     linkToApp: WEB_APP1,
     gitHubLink: "g1",
-    isOld: true,
+    isOld: false,
   },
   {
     id: 2,

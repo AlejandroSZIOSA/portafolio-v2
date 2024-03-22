@@ -7,7 +7,7 @@ const navItemBoxes = "py-1 underline";
 
 export default function NavBar() {
   return (
-    <nav className="p-4">
+    <nav className="p-2">
       <ul className="flex justify-around text-2xl list-none">
         <li className={navItemBoxes}>
           <a href="#" className="text-[#00D8FF]">
