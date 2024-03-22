@@ -15,7 +15,7 @@ export const WEB_PROJECTS = [
     date: "",
     imgUrl: testImg2,
     title: "Todo-App-Redux",
-    description: "d1",
+    description: "This Application is for manage activities.",
     category: "web",
     language: "Javascript",
     framework: "React + Next.js",
