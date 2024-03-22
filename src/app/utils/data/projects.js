@@ -1,5 +1,6 @@
 import testImg from "/public/static/images/projects/testImg.png";
 
+//LINK TO THE PROJECTS IN VERSEL SERVER
 const WEB_APP1 = "https://next-todolist-redux.vercel.app/";
 const WEB_APP2 = "https://radio-player-app-chi.vercel.app/";
 const WEB_APP3 = "https://clock-app-peach.vercel.app/";
