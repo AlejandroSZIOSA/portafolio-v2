@@ -1,4 +1,4 @@
-import testImg from "/public/static/images/projects/testImg.png";
+import testImg2 from "/public/static/images/projects/cardImg.png";
 
 //LINK TO THE PROJECTS IN VERSEL SERVER
 const WEB_APP1 = "https://next-todolist-redux.vercel.app/";
@@ -13,12 +13,12 @@ export const WEB_PROJECTS = [
   {
     id: 1,
     date: "",
-    imgUrl: testImg,
+    imgUrl: testImg2,
     title: "Todo-App-Redux",
     description: "d1",
     category: "web",
     language: "Javascript",
-    framework: "Next.js",
+    framework: "React + Next.js",
     linkToApp: WEB_APP1,
     gitHubLink: "g1",
     isOld: true,
@@ -26,7 +26,7 @@ export const WEB_PROJECTS = [
   {
     id: 2,
     date: "",
-    imgUrl: testImg,
+    imgUrl: testImg2,
     title: "Radio-Player",
     description: "d2",
     category: "web",
@@ -39,12 +39,12 @@ export const WEB_PROJECTS = [
   {
     id: 3,
     date: "",
-    imgUrl: testImg,
+    imgUrl: testImg2,
     title: "Clock-App",
     description: "d3",
     category: "web",
-    language: "",
-    framework: "React",
+    language: "Javascript, Html, Css",
+    framework: "Vanilla",
     linkToApp: WEB_APP3,
     gitHubLink: "g3",
     isOld: true,
