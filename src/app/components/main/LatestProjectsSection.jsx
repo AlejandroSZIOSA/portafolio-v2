@@ -1,9 +1,9 @@
 import React from "react";
-import { WEB_PROJECTS } from "@/app/utils/data/projects";
-import CardViewProject from "./CardViewProject";
+import { WEB_DATA_PROJECTS } from "@/app/utils/data/projects/web";
+import CardViewProject from "../card-views/CardViewProject";
 
 export default function LatestProjectsSection() {
-  const filteredItems = WEB_PROJECTS.filter((p) => p.isOld === false);
+  const filteredItems = WEB_DATA_PROJECTS.filter((p) => p.isOld === false);
 
   return (
     <div className="py-9">

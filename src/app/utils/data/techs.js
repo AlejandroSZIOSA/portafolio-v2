@@ -1,9 +1,9 @@
-import htmlImg from "/public/static/images/techs/html.png";
-import cssImg from "/public/static/images/techs/css3.png";
-import javascriptImg from "/public/static/images/techs/javascript.png";
-import reactImg from "/public/static/images/techs/react.png";
-import figmaImg from "/public/static/images/techs/figma.png";
-import gimpImg from "/public/static/images/techs/gimp.png";
+import htmlImg from "/public/images/techs/html.png";
+import cssImg from "/public/images/techs/css3.png";
+import javascriptImg from "/public/images/techs/javascript.png";
+import reactImg from "/public/images/techs/react.png";
+import figmaImg from "/public/images/techs/figma.png";
+import gimpImg from "/public/images/techs/gimp.png";
 
 export const TECHS = [
   {
