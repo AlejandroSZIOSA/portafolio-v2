@@ -1,6 +1,6 @@
 import React from "react";
 import { WEB_DATA_PROJECTS } from "@/app/utils/data/projects/web";
-import CardViewProject from "../card-views/CardViewProject";
+import CardViewProject from "../card-views/CVWebProject";
 
 export default function LatestProjectsSection() {
   const filteredItems = WEB_DATA_PROJECTS.filter((p) => p.isOld === false);

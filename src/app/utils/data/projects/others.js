@@ -1,5 +1,4 @@
-//BACKEND PROJECTS HERE
-export const BACKEND_PROJECTS = [
+export const OTHERS_PROJECTS = [
   {
     id: 1,
     date: "",

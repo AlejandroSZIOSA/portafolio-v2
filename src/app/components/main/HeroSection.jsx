@@ -4,8 +4,8 @@ export default function HeroSection() {
       <div className="w-[340px] h-[340px] bg-white"></div>
       <div className="ml-4 py-6 text-center">
         <h2>
-          Hi!😎 My name is <strong>Gabriel Sazo, </strong> <br />I am Frontend
-          Developer aspirant.
+          Hi!😎 My name is <strong>Gabriel Sazo, </strong> <br />I am an
+          enthusiastic <strong>Frontend Developer</strong> aspirant.
         </h2>
       </div>
     </div>

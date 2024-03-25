@@ -1,4 +1,3 @@
-//MOBILE PROJECTS HERE
 export const MOBILE_PROJECTS = [
   {
     id: 1,

@@ -8,14 +8,13 @@ const WEB4 = "https://next-todolist-redux.vercel.app/";
 const WEB5 = "https://next-todolist-redux.vercel.app/";
 const WEB6 = "https://next-todolist-redux.vercel.app/";
 
-//WEB PROJECTS HERE
 export const WEB_DATA_PROJECTS = [
   {
     id: 1,
     date: "",
     imgUrl: testImg2,
     title: "Todo-App-Redux",
-    description: "This Application is for manage activities.",
+    description: "This Application manages activities.",
     category: "web",
     language: "Javascript",
     framework: "React + Next.js",

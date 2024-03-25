@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function CardViewProject({ project }) {
+export default function CVWebProject({ project }) {
   const {
     title,
     description,
@@ -13,7 +13,7 @@ export default function CardViewProject({ project }) {
   } = project;
 
   return (
-    <div className="flex flex-col w-[360px] h-[420px] border-4 border-indigo-500 rounded-lg bg-[yellow] text-left">
+    <div className="flex flex-col w-[350px] h-[410px] border-4 border-indigo-500 rounded-lg bg-[yellow] text-left">
       <div className="flex justify-center bg-black">
         <Image src={imgUrl} width={200} height="auto" alt="no image" />
       </div>
