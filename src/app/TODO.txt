@@ -1,0 +1,9 @@
+1/
+-Create mobile project cardviews
+
+2/
+-Dynamic routing pages for mobile projects
+-static navigation bar 
+
+3/
+-Scroll View for cardviews
