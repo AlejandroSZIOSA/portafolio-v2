@@ -1,12 +1,14 @@
+import demoImg from "/public/images/mobile-projects/mobileDemo.png";
+
 export const MOBILE_PROJECTS = [
   {
     id: 1,
     date: "",
-    imgUrl: "",
-    title: "m1",
+    imgUrl: demoImg,
+    title: "test 1",
     description: "d1",
-    category: "mobile",
-    language: "",
+    category: "Mobile",
+    language: "Javascript",
     framework: "React-Native",
     gitHubLink: "g1",
     isOld: true,
@@ -14,12 +16,12 @@ export const MOBILE_PROJECTS = [
   {
     id: 2,
     date: "",
-    imgUrl: "",
-    title: "Radio Player",
+    imgUrl: demoImg,
+    title: "Test 2",
     description: "d2",
-    category: "mobile",
-    language: "",
-    framework: "React",
+    category: "Mobile",
+    language: "Javascript",
+    framework: "React-Native",
     gitHubLink: "g2",
     isOld: true,
   },
