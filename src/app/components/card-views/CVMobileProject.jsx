@@ -34,7 +34,7 @@ export default function CVMobileProject({ project }) {
         </div>
       </div>
       <p>
-        <Link href={`/${id}`}>details page</Link>
+        <Link href={`/mobileDetails/${id}`}>details page</Link>
       </p>
     </div>
   );
