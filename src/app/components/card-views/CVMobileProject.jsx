@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CVMobileProject({ project }) {
-  const { title, description, language, framework, imgUrl, gitHubLink } =
+  const { id, title, description, language, framework, imgUrl, gitHubLink } =
     project;
 
   return (
@@ -26,12 +27,15 @@ export default function CVMobileProject({ project }) {
       </div>
       <div className="flex justify-center my-3 gap-20">
         <div className="flex w-[90px] h-8 items-center justify-center bg-orange-400 border-2 border-black border-solid rounded-md">
-          <a href="#">To Details</a>
+          {/* <a href="#">To Details</a> */}
         </div>
         <div>
           <h3 className="text-center">{gitHubLink}</h3>
         </div>
       </div>
+      <p>
+        <Link href={`/${id}`}>details page</Link>
+      </p>
     </div>
   );
 }
