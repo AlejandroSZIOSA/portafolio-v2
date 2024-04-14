@@ -15,7 +15,7 @@ export const OTHERS_PROJECTS = [
     id: 2,
     date: "",
     imgUrl: "",
-    title: "Radio Player",
+    title: "",
     description: "d2",
     category: "backend-server",
     language: "",

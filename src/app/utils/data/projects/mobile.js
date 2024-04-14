@@ -11,6 +11,7 @@ export const MOBILE_PROJECTS = [
     language: "Javascript",
     framework: "React-Native",
     gitHubLink: "g1",
+    linkToBackend: "",
     isOld: true,
   },
   {
@@ -23,6 +24,7 @@ export const MOBILE_PROJECTS = [
     language: "Javascript",
     framework: "React-Native",
     gitHubLink: "g2",
+    linkToBackend: "",
     isOld: true,
   },
 ];

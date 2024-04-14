@@ -16,7 +16,7 @@ export default function CVMobileProject({ project }) {
         <strong>{title}</strong>
       </h2>
       <div className="w-[280px] h-16 bg-slate-400 mx-4">
-        <h3 className="text-center">{description}</h3>
+        <p className="text-center">{description}</p>
       </div>
       <div className="flex flex-col gap-1 w-[230px] h-11 text-left ml-16 mt-2">
         <h4>

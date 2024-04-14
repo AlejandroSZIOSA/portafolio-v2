@@ -11,26 +11,30 @@ export default function CVWebProject({ project }) {
     imgUrl,
     linkToApp,
     gitHubLink,
+    mainObjective,
   } = project;
 
   return (
-    <div className="flex flex-col w-[350px] h-[410px] border-4 border-indigo-500 rounded-lg bg-[#fff7aa] text-left">
+    <div className="flex flex-col w-[350px] h-[445px] border-4 border-indigo-500 rounded-lg bg-[#fff7aa] text-left">
       <div className="flex justify-center bg-black">
         <Image src={imgUrl} width={200} height="auto" alt="no image" />
       </div>
       <h2 className="text-center py-2">
         <strong>{title}</strong>
       </h2>
-      <div className="w-[280px] h-16 bg-slate-400 mx-4">
-        <h3 className="text-center">{description}</h3>
+      <div className="w-[310px] h-15 mx-4 mb-3">
+        <h4 className="text-center">{description}</h4>
       </div>
-      <div className="flex flex-col gap-1 w-[230px] h-11 text-left ml-16 mt-2">
-        <h4>
+      <div className="flex flex-col gap-1 w-[260px] h-22 text-left ml-16 mt-2">
+        <h5>
+          <strong>Main Objective:</strong> {mainObjective}
+        </h5>
+        <h5>
           <strong>Language:</strong> {language}
-        </h4>
-        <h4>
+        </h5>
+        <h5>
           <strong>Framework:</strong> {framework}
-        </h4>
+        </h5>
       </div>
       <div className="flex justify-around my-3">
         <div className="flex w-[68px] h-8 items-center justify-center bg-orange-400 border-2 border-black border-solid rounded-md">
