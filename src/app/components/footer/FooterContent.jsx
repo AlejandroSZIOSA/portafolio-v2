@@ -4,7 +4,7 @@ export default function FooterContent() {
   return (
     <>
       <DividerHeaderTitle sectionTitle="Contact" />
-      <div className="flex flex-row justify-around gap-10">
+      <div className="flex flex-col items-center gap-1">
         <h3>+08 XXXXXXX</h3>
         <button>
           <svg
