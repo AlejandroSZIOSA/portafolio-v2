@@ -9,7 +9,7 @@ export default function NavBar() {
       <ul className="flex justify-around text-2xl list-none">
         <li className={NAV_ITEM_BOXES}>
           <Link href="/" className="text-[#00D8FF]">
-            Start
+            Home
           </Link>
         </li>
 
