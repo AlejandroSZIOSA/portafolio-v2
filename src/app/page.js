@@ -22,10 +22,10 @@ export default function Home() {
         <DividerHeaderTitle sectionTitle="Projects" />
         <ProjectsSection />
       </main>
-      <DividerHeaderTitle sectionTitle="Contact" />
-      <footer className="flex flex-col py-4 gap-3 items-center">
+
+      {/* <footer className="flex flex-col w-full py-4 gap-3 items-center">
         <FooterContent />
-      </footer>
+      </footer> */}
     </div>
   );
 }

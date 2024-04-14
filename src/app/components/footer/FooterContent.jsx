@@ -1,10 +1,12 @@
 import Logo from "../logo/Logo";
+import DividerHeaderTitle from "../separators/DividerHeaderTitle";
 
 export default function FooterContent() {
   return (
     <>
+      <DividerHeaderTitle sectionTitle="Contact" />
       <Logo />
-      <h3>+08 990099898</h3>
+      <h3>+08 XXXXXXX</h3>
       <button>
         <svg
           className="w-6 h-6 text-gray-800 dark:text-white"

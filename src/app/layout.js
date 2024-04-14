@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/header/NavBar";
+import FooterContent from "./components/footer/FooterContent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,9 @@ export default function RootLayout({ children }) {
           <NavBar />
         </header>
         {children}
+        <footer className="flex flex-col w-full py-4 gap-3 items-center">
+          <FooterContent />
+        </footer>
       </body>
     </html>
   );
