@@ -15,7 +15,7 @@ export default function CVWebProject({ project }) {
   } = project;
 
   return (
-    <div className="flex flex-col w-[350px] h-[445px] border-4 border-indigo-500 rounded-lg bg-[#fff7aa] text-left">
+    <div className="flex flex-col w-[360px] h-[450px] border-4 border-indigo-500 rounded-lg bg-[#fff7aa] text-left">
       <div className="flex justify-center bg-black">
         <Image src={imgUrl} width={200} height="auto" alt="no image" />
       </div>
@@ -36,7 +36,7 @@ export default function CVWebProject({ project }) {
           <strong>Framework:</strong> {framework}
         </h5>
       </div>
-      <div className="flex justify-around my-3">
+      <div className="flex gap-44 ml-8 my-4">
         <div className="flex w-[68px] h-8 items-center justify-center bg-orange-400 border-2 border-black border-solid rounded-md">
           <a href={linkToApp}>To App</a>
         </div>

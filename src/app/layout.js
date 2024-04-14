@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           <NavBar />
         </header>
         {children}
-        <footer className="flex flex-col w-full py-4 gap-3 items-center">
+        <footer className="flex flex-col w-full py-4 gap-3">
           <FooterContent />
         </footer>
       </body>
