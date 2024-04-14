@@ -17,10 +17,14 @@ export default function ProjectsSection() {
       return WEB_DATA_PROJECTS.map((p) => {
         return <CVWebProject key={p.id} project={p} />;
       });
-    } else
+    } else {
+      return <h2>Nothing yet!</h2>;
+    }
+    //IMPORTANT: DO NOT DELETE! Comment out and use the content below, When There are some mobile Projects to show :)
+    /* else
       return MOBILE_PROJECTS.map((p) => {
         return <CVMobileProject key={p.id} project={p} />;
-      });
+      }); */
   }
 
   return (
