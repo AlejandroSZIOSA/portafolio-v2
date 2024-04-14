@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const NAV_ITEM_BOXES = "py-1 underline";
@@ -7,32 +8,32 @@ export default function NavBar() {
     <nav className="p-2">
       <ul className="flex justify-around text-2xl list-none">
         <li className={NAV_ITEM_BOXES}>
-          <a href="#" className="text-[#00D8FF]">
+          <Link href="/" className="text-[#00D8FF]">
             Start
-          </a>
+          </Link>
         </li>
 
         <li className={NAV_ITEM_BOXES}>
-          <a href="#" className="text-[#00D8FF]">
+          <Link href="#" className="text-[#00D8FF]">
             Tech Stack
-          </a>
+          </Link>
         </li>
         <li className={NAV_ITEM_BOXES}>
-          <a href="#" className="text-[#00D8FF]">
+          <Link href="#" className="text-[#00D8FF]">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <ul className="flex justify-around text-2xl mt-2 list-none">
         <li className={NAV_ITEM_BOXES}>
-          <a href="#" className="text-[#00D8FF] ml-3">
+          <Link href="#" className="text-[#00D8FF] ml-3">
             Latest
-          </a>
+          </Link>
         </li>
         <li className={NAV_ITEM_BOXES}>
-          <a href="#" className="text-[#00D8FF] ml-3">
+          <Link href="#" className="text-[#00D8FF] ml-3">
             Projects
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

@@ -9,10 +9,10 @@ import DividerHeaderTitle from "./components/separators/DividerHeaderTitle";
 export default function Home() {
   return (
     <div id="mainContainer" className="flex flex-col items-center">
-      <header className="flex flex-col sticky top-0 w-full bg-[#343434]">
+      {/* <header className="flex flex-col sticky top-0 w-full bg-[#343434]">
         <h1 className="text-[#F24E1E] text-center my-1">Portafolio V2</h1>
         <NavBar />
-      </header>
+      </header> */}
       <main className="flex flex-col w-full pb-9 items-center">
         <HeroSection />
         <DividerHeaderTitle sectionTitle="Tech Stack" />
