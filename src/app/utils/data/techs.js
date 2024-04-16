@@ -31,4 +31,9 @@ export const TECHS = [
     imgUrl: "/images/techs/gimp.png",
     level: "3/5",
   },
+  {
+    id: 7,
+    imgUrl: "/images/techs/swift.png",
+    level: "2/5",
+  },
 ];

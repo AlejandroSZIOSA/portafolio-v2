@@ -1,13 +1,5 @@
 import testImg2 from "/public/images/web-projects/cardImg.png";
 
-//LINK TO THE PROJECTS IN VERSEL SERVER
-const WEB_APP1 = "https://next-todolist-redux.vercel.app/";
-const WEB_APP2 = "https://radio-player-app-chi.vercel.app/";
-const WEB_APP3 = "https://clock-app-peach.vercel.app/";
-const WEB4 = "https://next-todolist-redux.vercel.app/";
-const WEB5 = "https://next-todolist-redux.vercel.app/";
-const WEB6 = "https://next-todolist-redux.vercel.app/";
-
 export const WEB_DATA_PROJECTS = [
   {
     id: 1,
@@ -19,7 +11,7 @@ export const WEB_DATA_PROJECTS = [
     mainObjective: "Redux Implementation",
     language: "Javascript",
     framework: "React-Next.js",
-    linkToApp: WEB_APP1,
+    linkToApp: "https://next-todolist-redux.vercel.app/",
     linkToBackend: "",
     gitHubLink: "g1",
     isOld: false,
@@ -34,7 +26,7 @@ export const WEB_DATA_PROJECTS = [
     mainObjective: "Fetch data from a public API",
     language: "Javascript",
     framework: "React-Vite",
-    linkToApp: WEB_APP2,
+    linkToApp: "https://radio-player-app-chi.vercel.app/",
     linkToBackend: "",
     gitHubLink: "g2",
     isOld: true,
@@ -49,7 +41,7 @@ export const WEB_DATA_PROJECTS = [
     mainObjective: "Fetch data from a public API",
     language: "Javascript, Html, Css",
     framework: "Vanilla",
-    linkToApp: WEB_APP3,
+    linkToApp: "https://clock-app-peach.vercel.app/",
     linkToBackend: "",
     gitHubLink: "g3",
     isOld: true,
