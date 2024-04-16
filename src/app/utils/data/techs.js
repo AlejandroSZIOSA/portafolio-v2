@@ -1,42 +1,34 @@
-import htmlImg from "/public/images/techs/html.png";
-import cssImg from "/public/images/techs/css3.png";
-import javascriptImg from "/public/images/techs/javascript.png";
-import reactImg from "/public/images/techs/react.png";
-import figmaImg from "/public/images/techs/figma.png";
-import gimpImg from "/public/images/techs/gimp.png";
-import swiftImg from "/public/images/techs/swift.png";
-
 //TODO: REMOVE IMPORTS
 
 export const TECHS = [
   {
     id: 1,
-    imgUrl: htmlImg,
+    imgUrl: "/images/techs/html.png",
     level: "3/5",
   },
   {
     id: 2,
-    imgUrl: cssImg,
+    imgUrl: "/images/techs/css3.png",
     level: "3/5",
   },
   {
     id: 3,
-    imgUrl: javascriptImg,
+    imgUrl: "/images/techs/javascript.png",
     level: "3/5",
   },
   {
     id: 4,
-    imgUrl: reactImg,
+    imgUrl: "/images/techs/react.png",
     level: "3/5",
   },
   {
     id: 5,
-    imgUrl: figmaImg,
+    imgUrl: "/images/techs/figma.png",
     level: "2/5",
   },
   {
     id: 6,
-    imgUrl: gimpImg,
+    imgUrl: "/images/techs/gimp.png",
     level: "3/5",
   },
 ];
