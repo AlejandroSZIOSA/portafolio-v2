@@ -6,6 +6,8 @@ import figmaImg from "/public/images/techs/figma.png";
 import gimpImg from "/public/images/techs/gimp.png";
 import swiftImg from "/public/images/techs/swift.png";
 
+//TODO: REMOVE IMPORTS
+
 export const TECHS = [
   {
     id: 1,
@@ -37,5 +39,4 @@ export const TECHS = [
     imgUrl: gimpImg,
     level: "3/5",
   },
-  { id: 7, imgUrl: swiftImg, level: "2/5" },
 ];
