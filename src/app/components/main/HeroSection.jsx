@@ -5,7 +5,7 @@ export default function HeroSection() {
       <div className="ml-4 py-6 text-center">
         <h2>
           Hi!😎 My name is <strong>Gabriel Sazo, </strong> <br />I am an
-          enthusiastic <strong>Frontend Developer</strong> aspirant.
+          enthusiastic <strong>Frontend Developer</strong> student.
         </h2>
       </div>
     </div>
