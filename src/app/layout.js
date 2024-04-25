@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <header className="flex flex-col sticky top-0 w-full bg-[#343434]">
-          <h1 className="text-[#F24E1E] text-center my-1">Portafolio V2</h1>
+          <h1 className="text-[#F24E1E] text-center mt-3">Portafolio v2</h1>
           <NavBar />
         </header>
         {children}
