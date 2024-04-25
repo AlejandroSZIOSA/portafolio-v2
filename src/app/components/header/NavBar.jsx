@@ -2,7 +2,8 @@ import Link from "next/link";
 import React from "react";
 
 const NAV_ITEM_BOXES = "py-1 underline";
-const NAV_BOXES = "text-xl underline";
+const NAV_BOXES =
+  "text-xl md:p-1 md:px-3 md:border-2 md:border-[#00D8FF] underline md:no-underline";
 
 export default function NavBar() {
   return (

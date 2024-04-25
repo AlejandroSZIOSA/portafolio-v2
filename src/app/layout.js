@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/header/NavBar";
 import FooterContent from "./components/footer/FooterContent";
+import LogoHeader from "./components/header/LogoHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="flex flex-col sticky top-0 w-full bg-[#343434]">
-          <h1 className="text-[#F24E1E] text-center mt-3">Portafolio v2</h1>
+        <header className="flex flex-col md:flex-row md:justify-between sticky top-0 w-full md:h-15 bg-[#343434]">
+          <LogoHeader />
           <NavBar />
         </header>
         {children}
