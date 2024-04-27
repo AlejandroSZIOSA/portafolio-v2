@@ -6,7 +6,7 @@ export default function TechSection() {
   return (
     <div className="grid grid-cols-5 w-80 gap-5 py-5">
       {TECHS.map((t) => {
-        return <TechItem tech={t} />;
+        return <TechItem key={t.id} tech={t} />;
       })}
     </div>
   );
