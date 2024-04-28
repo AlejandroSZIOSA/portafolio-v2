@@ -28,8 +28,8 @@ export default function ProjectsSection() {
   }
 
   return (
-    <div className="pt-4">
-      <div className="flex flex-col gap-8">
+    <div className="flex flex-col">
+      <div className="py-4">
         <nav>
           <ol className="flex flex-row justify-around">
             <li>
@@ -44,12 +44,15 @@ export default function ProjectsSection() {
               <button
                 className={NAV_BTN_STYLE}
                 onClick={() => setIsWebListShowing(false)}
+                disabled="true" /* Change this to make Btn funcional */
               >
                 Mobile
               </button>
             </li>
           </ol>
         </nav>
+      </div>
+      <div className="flex flex-col md:flex-row gap-4">
         {renderProjectLists()}
       </div>
     </div>

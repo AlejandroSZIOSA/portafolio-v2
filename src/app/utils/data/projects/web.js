@@ -14,7 +14,7 @@ export const WEB_DATA_PROJECTS = [
     linkToApp: "https://next-todolist-redux.vercel.app/",
     linkToBackend: "not",
     gitHubLink: "g1",
-    isOld: false,
+    isNew: true,
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ export const WEB_DATA_PROJECTS = [
     linkToApp: "https://radio-player-app-chi.vercel.app/",
     linkToBackend: "not",
     gitHubLink: "g2",
-    isOld: true,
+    isNew: true,
   },
   {
     id: 3,
@@ -44,6 +44,6 @@ export const WEB_DATA_PROJECTS = [
     linkToApp: "https://clock-app-peach.vercel.app/",
     linkToBackend: "not",
     gitHubLink: "g3",
-    isOld: true,
+    isNew: false,
   },
 ];
