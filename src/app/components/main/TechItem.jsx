@@ -7,7 +7,7 @@ export default function TechItem({ tech }) {
   return (
     <div className="flex flex-col items-center justify-items-center">
       <Image src={imgUrl} width={40} height={40} alt="Picture" />
-      <p className="py-2">{level}</p>
+      <p className="pt-2">{level}</p>
     </div>
   );
 }
