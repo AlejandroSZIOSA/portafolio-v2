@@ -3,4 +3,4 @@
 
 ----------------------------------------------------------------
 3-static navigation bar 
-4-Scroll View on project sections
+4-Use Image component

@@ -44,7 +44,7 @@ export default function ProjectsSection() {
               <button
                 className={NAV_BTN_STYLE}
                 onClick={() => setIsWebListShowing(false)}
-                disabled="true" /* Change this to make Btn funcional */
+                disabled={true} /* Change this to make Btn funcional */
               >
                 Mobile
               </button>

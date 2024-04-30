@@ -10,7 +10,7 @@ export default function CVMobileProject({ project }) {
   return (
     <div className="flex flex-col w-[350px] h-[410px] border-4 border-indigo-500 rounded-lg bg-[#cbf1ff] text-left">
       <div className="flex justify-center bg-black">
-        <Image src={imgUrl} width={200} height="auto" alt="no image" />
+        <Image src={imgUrl} width={200} height="auto" alt="no image" priority />
       </div>
       <h2 className="text-center py-2">
         <strong>{title}</strong>
