@@ -1,5 +1,5 @@
 import React from "react";
-import { WEB_DATA_PROJECTS } from "@/app/utils/data/projects/web";
+import { WEB_DATA_PROJECTS } from "/src/utils/data/web-projects";
 import CardViewProject from "../card-views/CVWebProject";
 
 export default function LatestProjectsSection() {

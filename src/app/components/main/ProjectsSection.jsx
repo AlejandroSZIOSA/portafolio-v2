@@ -1,8 +1,8 @@
 "use client";
-import { WEB_DATA_PROJECTS } from "@/app/utils/data/projects/web";
+import { WEB_DATA_PROJECTS } from "/src/utils/data/web-projects";
 import CVWebProject from "../card-views/CVWebProject";
 
-import { MOBILE_PROJECTS } from "@/app/utils/data/projects/mobile";
+import { MOBILE_PROJECTS } from "/src/utils/data/mobile-projects";
 
 import { useState } from "react";
 import CVMobileProject from "../card-views/CVMobileProject";
