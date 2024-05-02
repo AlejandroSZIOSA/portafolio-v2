@@ -1,11 +1,11 @@
 "use client";
 import { WEB_DATA_PROJECTS } from "/src/utils/data/web-projects";
-import CVWebProject from "../card-views/CVWebProject";
+import CVWebProject from "/src/components/card-views/CVWebProject";
 
 import { MOBILE_PROJECTS } from "/src/utils/data/mobile-projects";
 
 import { useState } from "react";
-import CVMobileProject from "../card-views/CVMobileProject";
+import CVMobileProject from "/src/components/card-views/CVMobileProject";
 
 const NAV_BTN_STYLE = "w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
 
