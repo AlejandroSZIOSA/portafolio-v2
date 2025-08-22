@@ -10,12 +10,16 @@ export default function CVWebProject({ project }) {
     framework,
     imgUrl,
     linkToApp,
+    category,
     gitHubLink,
     mainObjective,
   } = project;
 
   return (
     <div className="flex flex-col w-[360px] h-[450px] border-4 border-indigo-500 rounded-lg bg-[#fff7aa] text-left">
+      <div className="bg-[#7fffd4]">
+        <p className="text-center">{category}</p>
+      </div>
       <div className="flex justify-center bg-black">
         <Image src={imgUrl} width={200} height="auto" alt="no image" priority />
       </div>
