@@ -5,7 +5,7 @@ export default function FooterContent() {
     <>
       <DividerHeaderTitle sectionTitle="Contact" />
       <div className="flex flex-col items-center gap-1">
-        <h3>+08 XXXXXXX</h3>
+        <p>+08 XXXXXXX</p>
         <button>
           <svg
             className="w-6 h-6 text-gray-800 dark:text-white"

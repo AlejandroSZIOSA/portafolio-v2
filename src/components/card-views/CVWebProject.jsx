@@ -19,26 +19,28 @@ export default function CVWebProject({ project }) {
       <div className="flex justify-center bg-black">
         <Image src={imgUrl} width={200} height="auto" alt="no image" priority />
       </div>
-      <h2 className="text-center py-2">
+      <h3 className="text-center py-2">
         <strong>{title}</strong>
-      </h2>
+      </h3>
       <div className="w-[310px] h-15 mx-4 mb-3">
-        <h4 className="text-center">{description}</h4>
+        <p className=" text-[14px] text-center">{description}</p>
       </div>
       <div className="flex flex-col gap-1 w-[260px] h-22 text-left ml-16 mt-2">
-        <h5>
+        <p>
           <strong>Main Objective:</strong> {mainObjective}
-        </h5>
-        <h5>
+        </p>
+        <p>
           <strong>Language:</strong> {language}
-        </h5>
-        <h5>
+        </p>
+        <p>
           <strong>Framework:</strong> {framework}
-        </h5>
+        </p>
       </div>
       <div className="flex gap-44 ml-8 my-4">
         <div className="flex w-[68px] h-8 items-center justify-center bg-orange-400 border-2 border-black border-solid rounded-md">
-          <a href={linkToApp}>To App</a>
+          <a className="text-[14px]" href={linkToApp}>
+            To App
+          </a>
         </div>
         <GitBtn />
       </div>

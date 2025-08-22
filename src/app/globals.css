@@ -4,23 +4,20 @@
 
 @layer base {
   body {
-    @apply bg-[#d8d8d8];
+    @apply bg-gray-200;
   }
   h1 {
-    @apply text-5xl;
+    @apply text-[28px] font-sans font-bold;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-[20px] font-mono;
   }
   h3 {
-    @apply text-xl;
+    @apply text-[15px] font-mono;
   }
 
-  h4 {
-    @apply text-lg;
-  }
-  h5 {
-    @apply text-sm;
+  p {
+    @apply text-[13px];
   }
 }
 

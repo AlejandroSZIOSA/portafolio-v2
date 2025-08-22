@@ -7,7 +7,7 @@ import { MOBILE_PROJECTS } from "/src/utils/data/mobile-projects";
 import { useState } from "react";
 import CVMobileProject from "/src/components/card-views/CVMobileProject";
 
-const NAV_BTN_STYLE = "w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
+const NAV_BTN_STYLE = "text-lg w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
 
 export default function ProjectsSection() {
   const [isWebListShowing, setIsWebListShowing] = useState(true);
