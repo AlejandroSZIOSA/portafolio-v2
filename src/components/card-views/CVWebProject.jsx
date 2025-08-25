@@ -27,7 +27,7 @@ export default function CVWebProject({ project }) {
         <strong>{title}</strong>
       </h3>
       <div className="w-[310px] h-15 mx-4 mb-3">
-        <p className=" text-[14px] text-center">{description}</p>
+        <p className=" text-[14px] md:text-[20px] text-center">{description}</p>
       </div>
       <div className="flex flex-col gap-1 w-[260px] h-22 text-left ml-16 mt-2">
         <p>

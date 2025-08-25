@@ -2,22 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+/* mobile-specific styles */
 @layer base {
   body {
     @apply bg-gray-200;
   }
   h1 {
-    @apply text-[28px] font-sans font-bold;
+    @apply text-2xl font-sans font-bold;
   }
   h2 {
-    @apply text-[20px] font-mono;
+    @apply text-xl font-mono;
   }
   h3 {
-    @apply text-[15px] font-mono;
+    @apply text-base font-mono;
   }
-
   p {
-    @apply text-[13px];
+    @apply text-sm;
+  }
+  a {
+    @apply text-lg;
+  }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 1024px) {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl font-mono;
+  }
+  p {
+    @apply text-base;
+  }
+  a {
+    @apply text-2xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
 
