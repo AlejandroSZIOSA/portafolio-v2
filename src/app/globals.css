@@ -22,6 +22,10 @@
   a {
     @apply text-lg;
   }
+
+  span {
+    @apply text-xs;
+  }
 }
 
 /* Desktop-specific styles */
@@ -40,6 +44,10 @@
   }
   a {
     @apply text-2xl;
+  }
+
+  span {
+    @apply text-sm;
   }
 }
 

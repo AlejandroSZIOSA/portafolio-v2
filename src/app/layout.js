@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="flex flex-col md:flex-row md:justify-between sticky top-0 w-full md:h-16 bg-[#343434]">
+        <header className="flex flex-col sticky top-0 w-full bg-[#343434] md:h-19 md:flex-row md:justify-between">
           <LogoHeader />
           <NavBar />
         </header>

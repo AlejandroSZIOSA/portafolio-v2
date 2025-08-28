@@ -41,7 +41,7 @@ export default function NavBar() {
       <div className="flex w-full justify-between">
         <div className={NAV_BOXES}>
           <Link href="/" className="text-[#00D8FF]">
-            Home
+            Intro
           </Link>
         </div>
         <div className={NAV_BOXES}>
