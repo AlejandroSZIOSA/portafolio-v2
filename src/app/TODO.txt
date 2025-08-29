@@ -1,6 +1,9 @@
 1 -Create mobile project cardviews /done
 2-Dynamic routing pages for mobile projects /done
-
-----------------------------------------------------------------
-3-static navigation bar 
-4-Use Image component
+-------------------------------------
+3-Sticky navigation bar /done 
+4-Use Image component /done
+--------------------------------------
+5-Fix font sizes responsive /done
+6- WCAG Basics /done
+7- Implement Accordion in projects section /  

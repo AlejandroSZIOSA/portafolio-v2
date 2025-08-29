@@ -3,12 +3,12 @@ import Image from "next/image";
 import GitBtn from "../ui/buttons/GitBtn";
 
 const TECH_ITEM_BOXES =
-  "inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700";
+  "inline-block min-w-fit bg-gray-200 rounded-full content-center px-3 py-1 text-xs font-semibold text-gray-700 text-center";
 
-export default function CVWebProject2({ project }) {
+export default function CVWebProject3({ project }) {
   const {
     title,
-    created_at,
+    updated_at,
     version,
     description,
     language,
@@ -30,21 +30,13 @@ export default function CVWebProject2({ project }) {
   } = project;
 
   return (
-    <div className="max-w-sm min-w-90 border-4 border-indigo-500 rounded overflow-hidden shadow-lg bg-white">
-      <div className="relative h-48">
-        <Image
-          src={imgUrl}
-          layout="fill"
-          objectFit="cover"
-          alt={title}
-          priority
-        />
-        <span className="absolute top-0 left-0 bg-indigo-500 text-white font-bold rounded-bl-lg px-2 py-1">
-          {category}
-        </span>
-        <span className="absolute bottom-0 right-0 bg-lime-400 text-black font-bold rounded-bl-lg px-2 py-1">
-          {created_at}
-        </span>
+    <div className="flex flex-col w-[360px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left">
+      <div className="flex py-1 justify-between bg-indigo-500 text-xs md:text-sm text-white">
+        <div className="px-4">{category}</div>
+        <div className="px-4">{updated_at}</div>
+      </div>
+      <div className="flex justify-center bg-black">
+        <Image src={imgUrl} width={200} height="auto" alt="no image" priority />
       </div>
       <div className="px-6 py-4">
         <div className="flex justify-end items-baseline mb-2">
@@ -53,7 +45,6 @@ export default function CVWebProject2({ project }) {
         </div>
         <p className="text-gray-700">{description}</p>
       </div>
-
       <div className="bg-red-200 border px-6 pt-2 pb-2 flex space-x-2 overflow-x-auto scrollbar-hide">
         <span className={TECH_ITEM_BOXES}>{language}</span>
         <span className={TECH_ITEM_BOXES}>{framework}</span>
@@ -61,17 +52,11 @@ export default function CVWebProject2({ project }) {
         {css && <span className={TECH_ITEM_BOXES}>{css}</span>}
         {cssLibrary && <span className={TECH_ITEM_BOXES}>{cssLibrary}</span>}
         {tests && <span className={TECH_ITEM_BOXES}>{tests}</span>}
-        {wcag && <span className={TECH_ITEM_BOXES}>Wcag-{wcag}</span>}
-        {mobileUI && <span className={TECH_ITEM_BOXES}>MobileUI</span>}
-        {desktopUI && <span className={TECH_ITEM_BOXES}>DesktopUI</span>}
-        {responsiveUI && <span className={TECH_ITEM_BOXES}>ResponsiveUI</span>}
-        {express && <span className={TECH_ITEM_BOXES}>Express</span>}
       </div>
-
       <div className="px-6 py-4 flex justify-between items-center">
         <a
           href={linkToApp}
-          className="bg-orange-400 hover:bg-orange-600 text-sm md:text-base text-black py-2 px-4 border-2 border-indigo-950 rounded-md "
+          className="bg-orange-400 hover:bg-orange-600 text-sm md:text-base text-black py-2 px-2 border-2 border-indigo-950 rounded-md "
         >
           View App
         </a>

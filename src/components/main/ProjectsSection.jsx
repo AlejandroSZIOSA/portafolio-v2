@@ -6,8 +6,10 @@ import { MOBILE_PROJECTS } from "/src/utils/data/mobile-projects";
 
 import { useState } from "react";
 import CVMobileProject from "/src/components/card-views/CVMobileProject";
+import CVWebProject2 from "../card-views/CVWebProject2";
+import CVWebProject3 from "../card-views/CVWebProject3";
 
-const NAV_BTN_STYLE = "text-lg w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
+const NAV_BUTTONS_STYLE = "text-lg w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
 
 export default function ProjectsSection() {
   const [isWebListShowing, setIsWebListShowing] = useState(true);
@@ -15,7 +17,7 @@ export default function ProjectsSection() {
   function renderProjectLists() {
     if (isWebListShowing) {
       return WEB_DATA_PROJECTS.map((p) => {
-        return <CVWebProject key={p.id} project={p} />;
+        return <CVWebProject3 key={p.id} project={p} />;
       });
     } else {
       return <h2>Nothing yet!</h2>;
@@ -34,7 +36,7 @@ export default function ProjectsSection() {
           <ol className="flex flex-row justify-around">
             <li>
               <button
-                className={NAV_BTN_STYLE}
+                className={NAV_BUTTONS_STYLE}
                 onClick={() => setIsWebListShowing(true)}
               >
                 Web
@@ -42,9 +44,9 @@ export default function ProjectsSection() {
             </li>
             <li>
               <button
-                className={NAV_BTN_STYLE}
+                className={NAV_BUTTONS_STYLE}
                 onClick={() => setIsWebListShowing(false)}
-                disabled={true} /* Change this to make Btn funcional */
+                disabled={false} /* Change this to make Btn funcional */
               >
                 Mobile
               </button>
