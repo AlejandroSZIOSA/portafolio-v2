@@ -4,12 +4,14 @@ import React from "react";
 const NAV_BOXES =
   " text-lg md:p-1 md:px-3 md:border-2 md:border-[#00D8FF] underline md:no-underline";
 
+/* TODO:Fix the correct <main> "position" attribute , the href doesn't point to the correct direction */
+
 export default function NavBar() {
   return (
     <nav className="p-4">
       <div className="flex w-full justify-between">
         <div className={NAV_BOXES}>
-          <Link href="/" className="text-[#00D8FF]">
+          <Link href="#" className="text-[#00D8FF]">
             Intro
           </Link>
         </div>
@@ -19,17 +21,17 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#" className="text-[#00D8FF]">
+          <Link href="#Tech-Stack" className="text-[#00D8FF]">
             Latest
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#" className="text-[#00D8FF]">
+          <Link href="#Projects" className="text-[#00D8FF]">
             Projects
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#" className="text-[#00D8FF]">
+          <Link href="#Contact" className="text-[#00D8FF]">
             Contact
           </Link>
         </div>

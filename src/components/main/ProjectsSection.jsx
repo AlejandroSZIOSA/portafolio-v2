@@ -9,7 +9,7 @@ import CVMobileProject from "/src/components/card-views/CVMobileProject";
 import CVWebProject2 from "../card-views/CVWebProject2";
 import CVWebProject3 from "../card-views/CVWebProject3";
 
-const NAV_BUTTONS_STYLE = "text-lg w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
+const NAV_BUTTONS = "text-lg w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
 
 export default function ProjectsSection() {
   const [isWebListShowing, setIsWebListShowing] = useState(true);
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
           <ol className="flex flex-row justify-around">
             <li>
               <button
-                className={NAV_BUTTONS_STYLE}
+                className={NAV_BUTTONS}
                 onClick={() => setIsWebListShowing(true)}
               >
                 Web
@@ -44,7 +44,7 @@ export default function ProjectsSection() {
             </li>
             <li>
               <button
-                className={NAV_BUTTONS_STYLE}
+                className={NAV_BUTTONS}
                 onClick={() => setIsWebListShowing(false)}
                 disabled={false} /* Change this to make Btn funcional */
               >
