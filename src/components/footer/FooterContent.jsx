@@ -4,8 +4,6 @@ export default function FooterContent() {
   return (
     <>
       <DividerHeaderTitle sectionTitle="Contact" />
-      {/* testing this code :)  */}
-      <h2 id="f_test">Footer</h2>
       <div className="flex flex-col items-center gap-1">
         <p>+08 XXXXXXX</p>
         <button>
