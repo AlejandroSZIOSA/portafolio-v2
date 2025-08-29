@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import GitBtn from "../ui/buttons/GitBtn";
 
-const TECH_ITEM_BOXES =
+const TECH_BOXES =
   "inline-block min-w-fit bg-gray-200 rounded-full content-center px-3 py-1 text-xs font-semibold text-gray-700 text-center";
 
 export default function CVWebProject3({ project }) {
@@ -26,7 +26,6 @@ export default function CVWebProject3({ project }) {
     responsiveUI,
     express,
     gitHubLink,
-    mainObjective,
   } = project;
 
   return (
@@ -46,12 +45,12 @@ export default function CVWebProject3({ project }) {
         <p className="text-gray-700">{description}</p>
       </div>
       <div className="bg-red-200 border px-6 pt-2 pb-2 flex space-x-2 overflow-x-auto scrollbar-hide">
-        <span className={TECH_ITEM_BOXES}>{language}</span>
-        <span className={TECH_ITEM_BOXES}>{framework}</span>
-        {typeScript && <span className={TECH_ITEM_BOXES}>TypeScript</span>}
-        {css && <span className={TECH_ITEM_BOXES}>{css}</span>}
-        {cssLibrary && <span className={TECH_ITEM_BOXES}>{cssLibrary}</span>}
-        {tests && <span className={TECH_ITEM_BOXES}>{tests}</span>}
+        <span className={TECH_BOXES}>{language}</span>
+        <span className={TECH_BOXES}>{framework}</span>
+        {typeScript && <span className={TECH_BOXES}>TypeScript</span>}
+        {css && <span className={TECH_BOXES}>{css}</span>}
+        {cssLibrary && <span className={TECH_BOXES}>{cssLibrary}</span>}
+        {tests && <span className={TECH_BOXES}>{tests}</span>}
       </div>
       <div className="px-6 py-4 flex justify-between items-center">
         <a
