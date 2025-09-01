@@ -11,11 +11,9 @@ export default function ProjectsSection() {
 
   function renderProjectLists() {
     if (isWebListShowing) {
-      return WEB_DATA_PROJECTS.map((p) => {
-        return <CVWebProject3 key={p.id} project={p} />;
-      });
+      return <Accordion projects={WEB_DATA_PROJECTS} />;
     } else {
-      return <h2>Nothing yet!</h2>;
+      return <h2 className="text-center">Nothing yet.</h2>;
     }
     //IMPORTANT: DO NOT DELETE! Comment out and use the content below, When There are some mobile Projects to show :)
     /* else
@@ -25,31 +23,27 @@ export default function ProjectsSection() {
   }
 
   return (
-    <div className="flex flex-col">
-      <div className="py-4">
-        <nav>
-          <ol className="flex flex-row justify-around">
-            <li>
-              <button
-                className={NAV_BUTTONS}
-                onClick={() => setIsWebListShowing(true)}
-              >
-                Web
-              </button>
-            </li>
-            <li>
-              <button
-                className={NAV_BUTTONS}
-                onClick={() => setIsWebListShowing(false)}
-                disabled={false} /* Change this to make Btn funcional */
-              >
-                Mobile
-              </button>
-            </li>
-          </ol>
-        </nav>
+    <div className="contents">
+      <div className="flex justify-between w-72 py-4">
+        <div>
+          <button
+            className={NAV_BUTTONS}
+            onClick={() => setIsWebListShowing(true)}
+          >
+            Web
+          </button>
+        </div>
+        <div>
+          <button
+            className={NAV_BUTTONS}
+            onClick={() => setIsWebListShowing(false)}
+            disabled={false} /* Change this to make Btn funcional */
+          >
+            Mobile
+          </button>
+        </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col w-full md:flex-row gap-2">
         {renderProjectLists()}
       </div>
     </div>
