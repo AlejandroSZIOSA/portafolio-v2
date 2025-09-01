@@ -1,13 +1,8 @@
 "use client";
 import { WEB_DATA_PROJECTS } from "/src/utils/data/web-projects";
-import CVWebProject from "/src/components/card-views/CVWebProject";
-
-import { MOBILE_PROJECTS } from "/src/utils/data/mobile-projects";
-
 import { useState } from "react";
-import CVMobileProject from "/src/components/card-views/CVMobileProject";
-import CVWebProject2 from "../card-views/CVWebProject2";
-import CVWebProject3 from "../card-views/CVWebProject3";
+import Accordion from "../accordion/toggleAccordion";
+import CVWebProject3 from "../card-views/CVWebProject";
 
 const NAV_BUTTONS = "text-lg w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
 
