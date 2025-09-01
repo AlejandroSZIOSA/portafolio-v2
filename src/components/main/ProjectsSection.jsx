@@ -3,6 +3,7 @@ import { WEB_DATA_PROJECTS } from "/src/utils/data/web-projects";
 import { useState } from "react";
 import Accordion from "../accordion/toggleAccordion";
 import CVWebProject3 from "../card-views/CVWebProject3";
+import Tabs from "../ui/Tabs";
 
 const NAV_BUTTONS = "text-lg w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
 
@@ -24,28 +25,7 @@ export default function ProjectsSection() {
 
   return (
     <div className="contents">
-      <div className="flex justify-between w-72 py-4">
-        <div>
-          <button
-            className={NAV_BUTTONS}
-            onClick={() => setIsWebListShowing(true)}
-          >
-            Web
-          </button>
-        </div>
-        <div>
-          <button
-            className={NAV_BUTTONS}
-            onClick={() => setIsWebListShowing(false)}
-            disabled={false} /* Change this to make Btn funcional */
-          >
-            Mobile
-          </button>
-        </div>
-      </div>
-      <div className="flex flex-col w-full md:flex-row gap-2">
-        {renderProjectLists()}
-      </div>
+      <Tabs />
     </div>
   );
 }
