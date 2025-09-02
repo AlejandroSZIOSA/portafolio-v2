@@ -18,10 +18,11 @@ export default function Tabs() {
               : "text-gray-500"
           }`}
         >
-          Web-App
+          Web-Apps
         </button>
         <button
           onClick={() => setActiveTab("tab2")}
+          disabled={true} /* Enable this value to enable this tab */
           className={`px-4 py-2 ${
             activeTab === "tab2"
               ? "border-b-2 border-blue-500 font-semibold"
@@ -31,9 +32,8 @@ export default function Tabs() {
           Mobile-Apps
         </button>
       </div>
-
       {/* Tab Content */}
-      <div className="p-4 border">
+      <div className="px-2 py-2 border">
         {activeTab === "tab1" && <Accordion projects={WEB_DATA_PROJECTS} />}
         {activeTab === "tab2" && <p>Nothing yet.</p>}
       </div>

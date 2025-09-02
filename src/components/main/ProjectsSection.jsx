@@ -5,8 +5,6 @@ import Accordion from "../accordion/toggleAccordion";
 import CVWebProject3 from "../card-views/CVWebProject3";
 import Tabs from "../ui/Tabs";
 
-const NAV_BUTTONS = "text-lg w-24 h-9 border-2 bg-[#00D8FF] rounded-md";
-
 export default function ProjectsSection() {
   const [isWebListShowing, setIsWebListShowing] = useState(true);
 
