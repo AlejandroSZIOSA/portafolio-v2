@@ -43,4 +43,9 @@ export const TECHS = [
     imgUrl: "/icons/techs/tailwindcss.png",
     level: "2/5",
   },
+  {
+    id: 7,
+    imgUrl: "/icons/techs/cypress.svg",
+    level: "1/5",
+  },
 ];

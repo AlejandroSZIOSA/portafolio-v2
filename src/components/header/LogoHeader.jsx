@@ -6,8 +6,8 @@ import { useMedia } from "use-media";
 export default function LogoHeader() {
   const isMobile = useMedia("(max-width: 765px)"); //from useMedia library
   return (
-    <div className="inline-flex justify-center items-center ">
-      <h1 className="text-[#F24E1E]  text-center mt-3 md:ml-4 md:text-4xl">
+    <div className="flex justify-center items-center ">
+      <h1 className="text-[#F24E1E] text-center mt-3 md:ml-4 md:text-4xl">
         Portafolio
       </h1>
       <span className="ml-2">

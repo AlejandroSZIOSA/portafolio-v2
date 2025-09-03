@@ -60,7 +60,11 @@ export default function CVWebProject3({ project }) {
         {framework && <span className={TECH_BOXES}>{framework}</span>}
         {css && <span className={TECH_BOXES}>{css}</span>}
         {cssLibrary && <span className={TECH_BOXES}>{cssLibrary}</span>}
+        {mobileUI && <span className={TECH_BOXES}>Mobile UI</span>}
+        {desktopUI && <span className={TECH_BOXES}>Desktop UI</span>}
+        {responsiveUI && <span className={TECH_BOXES}>Responsive UI</span>}
         {context && <span className={TECH_BOXES}>Context</span>}
+        {tests && <span className={TECH_BOXES}>Cypress</span>}
       </div>
       <div className="px-6 py-4 flex justify-between items-center">
         <a
