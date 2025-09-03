@@ -35,7 +35,7 @@ export default function Accordion({ projects }) {
       );
     } else {
       return (
-        <li className="px-3" key={index}>
+        <li className="inline-flex px-3" key={index}>
           <CVWebProject3 project={item} />
         </li>
       );

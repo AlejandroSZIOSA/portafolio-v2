@@ -28,6 +28,8 @@ export default function CVWebProject3({ project }) {
     responsiveUI,
     express,
     gitHubLink,
+    context,
+    frontend,
   } = project;
 
   const isMobile = useMedia("(max-width: 765px)"); // Adjust to your desired breakpoint for the updated icon
@@ -44,20 +46,21 @@ export default function CVWebProject3({ project }) {
       <div className="flex justify-center bg-black">
         <Image src={imgUrl} width={200} height="auto" alt="no image" priority />
       </div>
-      <div className="px-6 py-4">
-        <div className="flex justify-end items-baseline mb-2">
-          <h3 className="font-bold text-center pr-24 ">{title}</h3>
-          <div className="text-xs"> Ver: {version} </div>
-        </div>
+      <div className=" flex justify-end pr-3 text-xs">Ver: {version}</div>
+      <h3 className=" flex justify-center items-baseline mb-2 font-bold">
+        {title}
+      </h3>
+      <div className="px-6 pb-2">
         <p className="text-gray-700">{description}</p>
       </div>
       <div className="bg-red-200 border px-6 pt-2 pb-2 flex space-x-2 overflow-x-auto scrollbar-hide">
-        <span className={TECH_BOXES}>{language}</span>
-        <span className={TECH_BOXES}>{framework}</span>
+        {frontend && <span className={TECH_BOXES}>Frontend</span>}
+        {language && <span className={TECH_BOXES}>{language}</span>}
         {typeScript && <span className={TECH_BOXES}>TypeScript</span>}
+        {framework && <span className={TECH_BOXES}>{framework}</span>}
         {css && <span className={TECH_BOXES}>{css}</span>}
         {cssLibrary && <span className={TECH_BOXES}>{cssLibrary}</span>}
-        {tests && <span className={TECH_BOXES}>{tests}</span>}
+        {context && <span className={TECH_BOXES}>Context</span>}
       </div>
       <div className="px-6 py-4 flex justify-between items-center">
         <a
