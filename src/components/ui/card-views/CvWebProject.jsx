@@ -36,7 +36,7 @@ export default function CvWebProject({ project }) {
       <div className="flex py-1 justify-between bg-indigo-500 text-xs md:text-sm text-white">
         <div className="px-4">{category}</div>
         <span className="inline-flex">
-          <Image
+          <img
             src="icons/clarity_update-white.svg"
             width="15"
             height="15"
@@ -46,7 +46,7 @@ export default function CvWebProject({ project }) {
         </span>
       </div>
       <div className="flex justify-center bg-black">
-        <Image src={imgUrl} width={200} height="auto" alt="no image" priority />
+        <Image src={imgUrl} width={250} height="auto" alt="no image" priority />
       </div>
       <div className=" flex justify-end pr-3 text-xs">Ver: {version}</div>
       <h3 className=" flex justify-center items-baseline mb-2 font-bold">

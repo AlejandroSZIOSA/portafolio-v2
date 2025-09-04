@@ -5,15 +5,15 @@ import CvWebProject from "./card-views/CvWebProject";
 import { useMedia } from "use-media";
 
 export default function Accordion({ projects }) {
-  const isMobile = useMedia("(max-width: 765px)");
-
   const [openIndex, setOpenIndex] = useState(null);
+
+  const isMobile = useMedia("(max-width: 765px)");
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  //Render accord to respective responsive mode
+  //Fn render Jsx code accord to the current responsive mode
   function render(item, index) {
     if (isMobile) {
       return (
@@ -22,7 +22,6 @@ export default function Accordion({ projects }) {
             onClick={() => toggleAccordion(index)}
             className="flex justify-between items-center w-full py-1 px-4 text-left"
           >
-            {/* <span className="font-medium">{item.title}</span> */}
             <div>
               <h3 className="ml-32">{item.title}</h3>
             </div>
@@ -42,9 +41,22 @@ export default function Accordion({ projects }) {
     }
   }
 
+  //Showing conditional projects based on the responsive available mode
   return (
-    <ol className=" block md:flex md:justify-center">
-      {projects.map((item, index) => render(item, index))}
-    </ol>
+    <>
+      {isMobile ? (
+        <ol className="block md:flex md:justify-center">
+          {projects
+            .filter((item) => item.mobileUI)
+            .map((item, index) => render(item, index))}
+        </ol>
+      ) : (
+        <ol className="block md:flex md:justify-center">
+          {projects
+            .filter((item) => item.desktopUI)
+            .map((item, index) => render(item, index))}
+        </ol>
+      )}
+    </>
   );
 }

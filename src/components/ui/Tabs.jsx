@@ -7,7 +7,7 @@ export default function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
 
   return (
-    <div className="w-full max-w-md mx-auto mt-10">
+    <div className="w-full max-w-md mx-auto">
       {/* Tab Buttons */}
       <div className="flex justify-center border-b">
         <button
@@ -34,7 +34,7 @@ export default function Tabs() {
         </button>
       </div>
       {/* Tab Content */}
-      <div className="px-2 py-2 border">
+      <div className="px-2 py-4 border">
         {activeTab === "tab1" && <Accordion projects={WEB_DATA_PROJECTS} />}
         {activeTab === "tab2" && <p>Nothing yet.</p>}
       </div>

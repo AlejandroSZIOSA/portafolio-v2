@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { useMedia } from "use-media";
 
 export default function LogoHeader() {
@@ -11,12 +10,7 @@ export default function LogoHeader() {
         Portafolio
       </h1>
       <span className="ml-2">
-        {/*   {isMobile ? (
-          <Image src="/nextjs-white.svg" width="35" height="35" />
-        ) : (
-          <Image src="/nextjs-white.svg" width="50" height="50" />
-        )} */}
-        <Image
+        <img
           src="/nextjs-white.svg"
           width={isMobile ? "35" : "50"}
           height={isMobile ? "35" : "50"}

@@ -7,7 +7,7 @@ import DividerHeaderTitle from "/src/components/ui/separators/DividerHeaderTitle
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full pb-9 items-center">
+    <main className="flex flex-col w-full items-center">
       <HeroSection />
       <DividerHeaderTitle sectionTitle="Tech-Stack" />
       <TechSection />
@@ -15,6 +15,7 @@ export default function Home() {
       <LatestProjectsSection />
       <DividerHeaderTitle sectionTitle="Projects" />
       <ProjectsSection />
+      <DividerHeaderTitle sectionTitle="Contact" />
     </main>
   );
 }
