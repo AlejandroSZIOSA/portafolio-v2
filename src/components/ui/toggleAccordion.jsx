@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import CVWebProject3 from "../card-views/CVWebProject3";
+import CvWebProject from "./card-views/CvWebProject";
 
 import { useMedia } from "use-media";
 
@@ -13,7 +13,7 @@ export default function Accordion({ projects }) {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  //Render accord to responsive
+  //Render accord to respective responsive mode
   function render(item, index) {
     if (isMobile) {
       return (
@@ -29,14 +29,14 @@ export default function Accordion({ projects }) {
             <span>{openIndex === index ? "−" : "+"}</span>
           </button>
           <div className="flex justify-center py-1">
-            {openIndex === index && <CVWebProject3 project={item} />}
+            {openIndex === index && <CvWebProject project={item} />}
           </div>
         </div>
       );
     } else {
       return (
         <li className="inline-flex px-3" key={index}>
-          <CVWebProject3 project={item} />
+          <CvWebProject project={item} />
         </li>
       );
     }

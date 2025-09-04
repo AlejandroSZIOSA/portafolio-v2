@@ -1,4 +1,4 @@
-import DividerHeaderTitle from "../separators/DividerHeaderTitle";
+import DividerHeaderTitle from "../ui/separators/DividerHeaderTitle";
 
 export default function FooterContent() {
   return (

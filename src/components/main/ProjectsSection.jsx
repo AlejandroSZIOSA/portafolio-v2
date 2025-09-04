@@ -1,8 +1,8 @@
 "use client";
 import { WEB_DATA_PROJECTS } from "/src/utils/data/web-projects";
 import { useState } from "react";
-import Accordion from "../accordion/toggleAccordion";
-import CVWebProject3 from "../card-views/CVWebProject3";
+import Accordion from "../ui/toggleAccordion";
+import CVWebProject3 from "../ui/card-views/CvWebProject";
 import Tabs from "../ui/Tabs";
 
 export default function ProjectsSection() {

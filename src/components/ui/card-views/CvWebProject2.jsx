@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import GitBtn from "../ui/buttons/GitBtn";
+import GitBtn from "../buttons/GitBtn";
 
 const TECH_ITEM_BOXES =
   "inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700";
 
+/* TODO: This Cardview is better than Just_Another_Hand, before fix It, learn more isAbsoluteUrl
+position and span HTML tag   */
 export default function CVWebProject2({ project }) {
   const {
     title,

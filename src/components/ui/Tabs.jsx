@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Accordion from "../accordion/toggleAccordion";
+import Accordion from "./toggleAccordion";
 import { WEB_DATA_PROJECTS } from "@/utils/data/web-projects";
 
 export default function Tabs() {
@@ -12,6 +12,7 @@ export default function Tabs() {
       <div className="flex justify-center border-b">
         <button
           onClick={() => setActiveTab("tab1")}
+          // Using Dynamic values inside tailwind clases :)
           className={`px-4 py-2 ${
             activeTab === "tab1"
               ? "border-b-2 border-blue-500 font-semibold"

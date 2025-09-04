@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import GitBtn from "../ui/buttons/GitBtn";
-import { useMedia } from "use-media";
+import GitBtn from "../buttons/GitBtn";
 
 const TECH_BOXES =
   "inline-block min-w-fit bg-gray-200 rounded-full content-center px-3 py-1 text-xs font-semibold text-gray-700 text-center";
 
-export default function CVWebProject3({ project }) {
+export default function CvWebProject({ project }) {
   const {
     title,
     updated_at,
@@ -32,14 +31,17 @@ export default function CVWebProject3({ project }) {
     frontend,
   } = project;
 
-  const isMobile = useMedia("(max-width: 765px)"); // Adjust to your desired breakpoint for the updated icon
-
   return (
     <div className="flex flex-col w-[360px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left">
       <div className="flex py-1 justify-between bg-indigo-500 text-xs md:text-sm text-white">
         <div className="px-4">{category}</div>
         <span className="inline-flex">
-          <Image src="icons/clarity_update-white.svg" width="15" height="15" />
+          <Image
+            src="icons/clarity_update-white.svg"
+            width="15"
+            height="15"
+            alt="clarity update white"
+          />
           <div className="pr-4 pl-2">{updated_at}</div>
         </span>
       </div>
