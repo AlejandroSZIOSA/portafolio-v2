@@ -1,9 +1,10 @@
 "use client";
+import { CONSTANTS } from "@/utils/constants";
 import React from "react";
 import { useMedia } from "use-media";
 
 export default function LogoHeader() {
-  const isMobile = useMedia("(max-width: 765px)"); //from useMedia library
+  const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
     <div className="flex justify-center items-center ">
       <h1 className="text-[#F24E1E] text-center mt-3 md:ml-4 md:text-4xl">

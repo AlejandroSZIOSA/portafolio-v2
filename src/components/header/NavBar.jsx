@@ -31,7 +31,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#Contact" className="text-[#00D8FF]">
+          <Link href="#contact-link-button" className="text-[#00D8FF]">
             Contact
           </Link>
         </div>

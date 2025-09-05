@@ -15,7 +15,7 @@ export default function Home() {
       <LatestProjectsSection />
       <DividerHeaderTitle sectionTitle="Projects" />
       <ProjectsSection />
-      <DividerHeaderTitle sectionTitle="Contact" />
+      {/* <DividerHeaderTitle sectionTitle="Contact" /> */}
     </main>
   );
 }

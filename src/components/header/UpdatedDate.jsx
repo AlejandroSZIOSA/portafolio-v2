@@ -1,4 +1,5 @@
 "use client";
+import { CONSTANTS } from "@/utils/constants";
 import React from "react";
 import { useMedia } from "use-media";
 
@@ -13,7 +14,7 @@ const getCurrentDate = () => {
 const UPDATED_DATE = getCurrentDate();
 
 export default function UpdatedDate() {
-  const isMobile = useMedia("(max-width: 765px)"); //from useMedia library
+  const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
     <div className="flex justify-end md:self-center md:items-end">
       <img

@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
           <NavBar />
         </header>
         {children}
-        <footer className="flex w-full justify-center bg-white">
+        <footer className="flex mt-4 h-24 justify-center bg-white">
+          {/* TODO: Fix the height attribute to 76 px in desktop view. */}
           <FooterContent />
         </footer>
       </body>
