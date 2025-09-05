@@ -45,16 +45,14 @@ export default function Accordion({ projects }) {
   return (
     <>
       {isMobile ? (
-        <ol className="block md:flex md:justify-center">
+        <ol className="block">
           {projects
             .filter((item) => item.mobileUI)
             .map((item, index) => render(item, index))}
         </ol>
       ) : (
-        <ol className="block md:flex md:justify-center">
-          {projects
-            .filter((item) => item.desktopUI)
-            .map((item, index) => render(item, index))}
+        <ol className="border px-6 py-6 flex space-x-2 overflow-x-auto scrollbar-hide">
+          {projects.map((item, index) => render(item, index))}
         </ol>
       )}
     </>
