@@ -5,8 +5,8 @@ export default function HeroSection() {
       <div className="md:w-96 md:h-48 ml-4 md:mr-16 py-6 text-center md:text-left">
         <p className="font-mono ml-5 text-left">
           Hi!😎 <br></br>My name is <strong>Gabriel Sazo, </strong> <br />I am
-          an curious <strong>Frontend Developer</strong> <br></br> recently
-          graduated.
+          positive, enthusiastic an curious recently graduated
+          <strong> Frontend Developer. </strong>
         </p>
       </div>
     </div>

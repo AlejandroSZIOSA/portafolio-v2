@@ -13,7 +13,7 @@ export default function Accordion({ projects }) {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  //Fn render Jsx code accord to the current responsive mode
+  //Fn renders Jsx code accords to the current responsive mode
   function render(item, index) {
     if (isMobile) {
       return (
@@ -41,7 +41,7 @@ export default function Accordion({ projects }) {
     }
   }
 
-  //Showing conditional projects based on the responsive available mode
+  //Component Shows conditionally, projects based on the type and the current responsive mode
   return (
     <>
       {isMobile ? (

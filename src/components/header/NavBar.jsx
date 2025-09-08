@@ -4,8 +4,6 @@ import React from "react";
 const NAV_BOXES =
   " text-lg md:p-1 md:px-3 md:border-2 md:border-[#00D8FF] underline md:no-underline";
 
-/* TODO:Fix the correct <main> "position" attribute , the href doesn't point to the correct direction */
-
 export default function NavBar() {
   return (
     <nav className="p-4">

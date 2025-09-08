@@ -12,7 +12,7 @@ export default function LogoHeader() {
       </h1>
       <span className="ml-2">
         <img
-          src="/nextjs-white.svg"
+          src="/logos-next-white.svg"
           width={isMobile ? "35" : "50"}
           height={isMobile ? "35" : "50"}
           alt="next-image"

@@ -1,4 +1,3 @@
-import UpdatedDate from "@/components/header/UpdatedDate";
 import HeroSection from "/src/components/main/HeroSection";
 import LatestProjectsSection from "/src/components/main/LatestProjectsSection";
 import ProjectsSection from "/src/components/main/ProjectsSection";
@@ -15,7 +14,6 @@ export default function Home() {
       <LatestProjectsSection />
       <DividerHeaderTitle sectionTitle="Projects" />
       <ProjectsSection />
-      {/* <DividerHeaderTitle sectionTitle="Contact" /> */}
     </main>
   );
 }

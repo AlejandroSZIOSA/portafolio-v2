@@ -3,6 +3,7 @@ import { CONSTANTS } from "@/utils/constants";
 import React from "react";
 import { useMedia } from "use-media";
 
+//Function get the current date
 const getCurrentDate = () => {
   const now = new Date();
   const day = String(now.getDate()).padStart(2, "0");

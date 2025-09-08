@@ -1,0 +1,17 @@
+TODO-Register :)
+
+Portafolio V2
+
+1 -Create mobile project Cardviews /done
+2 -Dynamic routing pages for mobile projects /done
+3-Sticky navigation bar /done 
+4-Use Image component /done
+
+Portafolio V3
+
+5-Fix "font sizes" to responsive /done
+6- Implement some WCAG Basics, only on text and responsive /done
+7- Implement "Accordion effect" in projects section, responsive /done
+8- Implement "Tabs", in project section /done
+9- Project presentation Image, use png format, do responsive/
+
