@@ -20,6 +20,7 @@ export default function CvWebProject({ project }) {
     typeScript,
     css,
     cssLibrary,
+    navigation,
     tests,
     wcag,
     mobileUI,
@@ -45,8 +46,9 @@ export default function CvWebProject({ project }) {
           <div className="pr-4 pl-2">{updated_at}</div>
         </span>
       </div>
+      {/* FIX:Problem whit the header cover sticky position when Image container uses relative position and the Image is using fill attribute. */}
       <div className="flex justify-center bg-black">
-        <Image src={imgUrl} width={250} height="auto" alt="no image" priority />
+        <Image src={imgUrl} width={356} height={100} alt="no image" priority />
       </div>
       <div className=" flex justify-end pr-3 text-xs">Ver: {version}</div>
       <h3 className=" flex justify-center items-baseline mb-2 font-bold">
@@ -62,6 +64,8 @@ export default function CvWebProject({ project }) {
         {framework && <span className={TECH_BOXES}>{framework}</span>}
         {css && <span className={TECH_BOXES}>{css}</span>}
         {cssLibrary && <span className={TECH_BOXES}>{cssLibrary}</span>}
+        {navigation && <span className={TECH_BOXES}>{navigation}</span>}
+
         {mobileUI && <span className={TECH_BOXES}>Mobile UI</span>}
         {desktopUI && <span className={TECH_BOXES}>Desktop UI</span>}
         {responsiveUI && <span className={TECH_BOXES}>Responsive UI</span>}

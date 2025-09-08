@@ -47,6 +47,8 @@ export default function Accordion({ projects }) {
       {isMobile ? (
         <ol className="block">
           {projects
+            .slice()
+            .reverse()
             .filter((item) => item.mobileUI)
             .map((item, index) => render(item, index))}
         </ol>
