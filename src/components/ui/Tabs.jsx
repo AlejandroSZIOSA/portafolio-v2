@@ -30,7 +30,7 @@ export default function Tabs() {
               : "text-gray-500"
           }`}
         >
-          Mobile-Apps
+          Web-Apps + APIs
         </button>
       </div>
       {/* Tab Content */}
