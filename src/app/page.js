@@ -12,7 +12,7 @@ export default function Home() {
       <TechSection />
       <DividerHeaderTitle sectionTitle="Latest Project" />
       <LatestProjectsSection />
-      <DividerHeaderTitle sectionTitle="All Projects" />
+      <DividerHeaderTitle sectionTitle="My Projects" />
       <ProjectsSection />
     </main>
   );

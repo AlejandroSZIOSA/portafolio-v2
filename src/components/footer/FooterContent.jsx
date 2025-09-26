@@ -11,7 +11,7 @@ export default function FooterContent() {
         className="transition-transform duration-200 hover:scale-110"
         src="logos-linkedin.svg"
         alt="LinkedIn"
-        width={isMobile ? "70" : "100"} // Adjust the width and height based on the design}
+        width={isMobile ? "70" : "80"} // Adjust the width and height based on the design}
         height="auto"
       />
     </button>

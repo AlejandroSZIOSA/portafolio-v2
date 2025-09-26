@@ -1,10 +1,9 @@
 import React from "react";
-import { WEB_DATA_PROJECTS } from "/src/utils/data/web-projects";
-
+import { WEB_APPS_DATA } from "/src/utils/data/web-projects";
 import CvWebProject from "../ui/card-views/CvWebProject";
 
 export default function LatestProjectsSection() {
-  const filteredItems = WEB_DATA_PROJECTS.filter((p) => p.isNew === true);
+  const filteredItems = WEB_APPS_DATA.filter((p) => p.isNew === true);
 
   return (
     <div className="py-6">

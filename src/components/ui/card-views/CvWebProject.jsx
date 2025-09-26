@@ -17,6 +17,8 @@ export default function CvWebProject({ project }) {
     imgUrl,
     linkToApp,
     category,
+    browser,
+    deviceBrowserSettings,
     typeScript,
     css,
     cssLibrary,
@@ -26,10 +28,10 @@ export default function CvWebProject({ project }) {
     mobileUI,
     desktopUI,
     responsiveUI,
-    express,
     gitHubLink,
     context,
-    frontend,
+    redux,
+    api,
   } = project;
 
   return (
@@ -58,19 +60,27 @@ export default function CvWebProject({ project }) {
         <p className="text-gray-700">{description}</p>
       </div>
       <div className="bg-red-200 border px-6 pt-2 pb-2 flex space-x-2 overflow-x-auto scrollbar-hide">
-        {frontend && <span className={TECH_BOXES}>Frontend</span>}
+        {browser && <span className={TECH_BOXES}>{browser}</span>}
+        {deviceBrowserSettings && (
+          <span className={TECH_BOXES}>Dev:{deviceBrowserSettings}</span>
+        )}
+
+        {framework && <span className={TECH_BOXES}>{framework}</span>}
         {language && <span className={TECH_BOXES}>{language}</span>}
         {typeScript && <span className={TECH_BOXES}>TypeScript</span>}
-        {framework && <span className={TECH_BOXES}>{framework}</span>}
+
+        {navigation && <span className={TECH_BOXES}>{navigation}</span>}
+        {context && <span className={TECH_BOXES}>Context</span>}
+        {redux && <span className={TECH_BOXES}>Redux</span>}
+        {api && <span className={TECH_BOXES}>API:{api}</span>}
+        {tests && <span className={TECH_BOXES}>{tests}</span>}
+
         {css && <span className={TECH_BOXES}>{css}</span>}
         {cssLibrary && <span className={TECH_BOXES}>{cssLibrary}</span>}
-        {navigation && <span className={TECH_BOXES}>{navigation}</span>}
-
+        {responsiveUI && <span className={TECH_BOXES}>Responsive UI</span>}
         {mobileUI && <span className={TECH_BOXES}>Mobile UI</span>}
         {desktopUI && <span className={TECH_BOXES}>Desktop UI</span>}
-        {responsiveUI && <span className={TECH_BOXES}>Responsive UI</span>}
-        {context && <span className={TECH_BOXES}>Context</span>}
-        {tests && <span className={TECH_BOXES}>Cypress</span>}
+        {wcag && <span className={TECH_BOXES}>Wcag:{wcag}</span>}
       </div>
       <div className="px-6 py-4 flex justify-between items-center">
         <a
@@ -79,7 +89,7 @@ export default function CvWebProject({ project }) {
         >
           View App
         </a>
-        <GitBtn />
+        <GitBtn gitHubLink={gitHubLink} />
       </div>
     </div>
   );

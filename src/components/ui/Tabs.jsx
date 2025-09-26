@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Accordion from "./toggleAccordion";
-import { WEB_DATA_PROJECTS } from "@/utils/data/web-projects";
+import { WEB_APPS_DATA } from "@/utils/data/web-projects";
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -30,12 +30,12 @@ export default function Tabs() {
               : "text-gray-500"
           }`}
         >
-          Web-Apps + APIs
+          Web+Async Apps
         </button>
       </div>
       {/* Tab Content */}
       <div className="md:flex md:justify-center px-2 py-4 border">
-        {activeTab === "tab1" && <Accordion projects={WEB_DATA_PROJECTS} />}
+        {activeTab === "tab1" && <Accordion projects={WEB_APPS_DATA} />}
         {activeTab === "tab2" && <p>Nothing yet.</p>}
       </div>
     </div>

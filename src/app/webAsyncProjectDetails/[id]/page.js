@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function MobileDetailsPage({ params }) {
+export default function WebAsyncProjectDetailsPage({ params }) {
   return <div>ID = {params.id}</div>;
 }

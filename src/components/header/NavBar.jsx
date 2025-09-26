@@ -6,7 +6,7 @@ const NAV_BOXES =
 
 export default function NavBar() {
   return (
-    <nav className="p-4">
+    <nav className="p-4 md:p-0 md:mr-4 md:content-center">
       <div className="flex w-full justify-between">
         <div className={NAV_BOXES}>
           <Link href="#" className="text-[#00D8FF]">

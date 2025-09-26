@@ -3,7 +3,7 @@ import "./globals.css";
 import NavBar from "/src/components/header/NavBar";
 import FooterContent from "/src/components/footer/FooterContent";
 import LogoHeader from "/src/components/header/LogoHeader";
-import UpdatedDate from "@/components/header/UpdatedDate";
+import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +17,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="flex flex-col sticky top-0 w-full bg-[#343434] md:h-19 md:flex-row md:justify-between">
+        <header className="flex flex-col sticky top-0 w-full bg-[#343434] md:h-16 md:flex-row md:justify-between">
           <LogoHeader />
-          <UpdatedDate />
+          <UpdatedDatePanel />
           <NavBar />
         </header>
         {children}
-        <footer className="flex mt-4 h-24 justify-center bg-white">
+        <footer>
           {/* TODO: Fix the height attribute to 76 px in desktop view. */}
           <FooterContent />
         </footer>

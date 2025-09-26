@@ -3,18 +3,7 @@ import { CONSTANTS } from "@/utils/constants";
 import React from "react";
 import { useMedia } from "use-media";
 
-//Function get the current date
-const getCurrentDate = () => {
-  const now = new Date();
-  const day = String(now.getDate()).padStart(2, "0");
-  const month = now.toLocaleString("default", { month: "short" });
-  const year = now.getFullYear();
-  return `${day}-${month}-${year}`;
-};
-
-const UPDATED_DATE = getCurrentDate();
-
-export default function UpdatedDate() {
+export default function UpdatedDatePanel() {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
     <div className="flex justify-end md:self-center md:items-end">
@@ -25,7 +14,7 @@ export default function UpdatedDate() {
         alt="Update icon"
       />
       <div className="pr-4 pl-1 md:pl-2 text-xs md:text-base text-white">
-        {UPDATED_DATE}
+        <span>27-sep-2025</span>
       </div>
     </div>
   );
