@@ -14,7 +14,7 @@ export default function LogoHeader() {
         <img
           src="/logos-next-white.svg"
           width={isMobile ? "35" : "50"}
-          height={isMobile ? "35" : "50"}
+          height={isMobile ? "auto" : "auto"}
           alt="next-image"
         />
       </span>

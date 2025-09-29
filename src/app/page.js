@@ -10,9 +10,9 @@ export default function Home() {
       <HeroSection />
       <DividerHeaderTitle sectionTitle="Tech-Stack" />
       <TechSection />
-      <DividerHeaderTitle sectionTitle="Latest Project" />
+      <DividerHeaderTitle sectionTitle="My Latest Project" />
       <LatestProjectsSection />
-      <DividerHeaderTitle sectionTitle="My Projects" />
+      <DividerHeaderTitle sectionTitle="Projects" />
       <ProjectsSection />
     </main>
   );

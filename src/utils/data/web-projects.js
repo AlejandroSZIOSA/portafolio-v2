@@ -3,7 +3,7 @@
 export const WEB_APPS_DATA = [
   {
     id: 1,
-    updated_at: "02-Aug-2022",
+    updated_at: "19-Mars-2024",
     imgUrl: "/images/web-projects/no-image-yet-400_300.png",
     title: "TO-DO",
     version: "beta",
@@ -31,7 +31,7 @@ export const WEB_APPS_DATA = [
   },
   {
     id: 2,
-    updated_at: "10-Aug-2022",
+    updated_at: "19-Mars-2024",
     imgUrl: "/images/web-projects/no-image-yet-400_300.png",
     title: "Radio Player",
     version: "beta",
@@ -60,7 +60,7 @@ export const WEB_APPS_DATA = [
   },
   {
     id: 3,
-    updated_at: "20-Aug-2022",
+    updated_at: "19-Mars-2024",
     imgUrl: "/images/web-projects/no-image-yet-400_300.png",
     title: "Clock-App",
     version: "beta",
@@ -96,7 +96,7 @@ export const WEB_APPS_DATA = [
     description:
       "A commercial functional prototype that manages vinyl products.",
     category: "Web-App",
-    language: "JavaScript",
+    language: "",
     framework: "React+Vite",
     linkToApp:
       "https://vinilo-volador-2takb5zvw-gabriels-projects-3ad7215b.vercel.app/",

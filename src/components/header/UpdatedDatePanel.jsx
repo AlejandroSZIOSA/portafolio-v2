@@ -9,9 +9,9 @@ export default function UpdatedDatePanel() {
     <div className="flex justify-end md:self-center md:items-end">
       <img
         src="icons/clarity_update-white.svg"
-        width={isMobile ? "15" : "24"}
+        width={isMobile ? "16" : "24"}
         height={isMobile ? "auto" : "auto"}
-        alt="Update icon"
+        alt="Updated date icon"
       />
       <div className="pr-4 pl-1 md:pl-2 text-xs md:text-base text-white">
         <span>27-sep-2025</span>
