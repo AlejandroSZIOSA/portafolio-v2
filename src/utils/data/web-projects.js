@@ -4,7 +4,7 @@ export const WEB_APPS_DATA = [
   {
     id: 1,
     updated_at: "19-Mars-2024",
-    imgUrl: "/images/web-projects/no-image-yet-400_300.png",
+    cardImgUrl: "/images/web-projects/no-image-yet-400_300.png",
     title: "TO-DO",
     version: "beta",
     description: "This Application manages activities",
@@ -32,7 +32,7 @@ export const WEB_APPS_DATA = [
   {
     id: 2,
     updated_at: "19-Mars-2024",
-    imgUrl: "/images/web-projects/no-image-yet-400_300.png",
+    cardImgUrl: "/images/web-projects/no-image-yet-400_300.png",
     title: "Radio Player",
     version: "beta",
     description: "Connect and shows different Swedish radio streaming",
@@ -61,7 +61,7 @@ export const WEB_APPS_DATA = [
   {
     id: 3,
     updated_at: "19-Mars-2024",
-    imgUrl: "/images/web-projects/no-image-yet-400_300.png",
+    cardImgUrl: "/images/web-projects/no-image-yet-400_300.png",
     title: "Clock-App",
     version: "beta",
     description: "Shows some clocks from different locations+Timers",
@@ -90,7 +90,7 @@ export const WEB_APPS_DATA = [
   {
     id: 4,
     updated_at: "25-Aug-2025",
-    imgUrl: "/images/web-projects/vinilo-volador-400_300.png",
+    cardImgUrl: "/images/web-projects/vinilo-volador-400_300.png",
     title: "Vinilo-Volador",
     version: "beta",
     description:

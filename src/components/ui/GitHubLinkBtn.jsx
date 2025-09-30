@@ -3,7 +3,7 @@ import { CONSTANTS } from "@/utils/constants";
 import React from "react";
 import { useMedia } from "use-media";
 
-export default function GitBtn({ gitHubLink = "#" }) {
+export default function GitHubLinkBtn({ gitHubLink = "#" }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
     <a href={gitHubLink}>

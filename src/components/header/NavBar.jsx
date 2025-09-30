@@ -14,22 +14,22 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#" className="text-[#00D8FF]">
+          <Link href="#techStackSectionId" className="text-[#00D8FF]">
             Tech
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#Tech-Stack" className="text-[#00D8FF]">
+          <Link href="#latestProjectSectionId" className="text-[#00D8FF]">
             Latest
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#Projects" className="text-[#00D8FF]">
+          <Link href="#projectsSectionId" className="text-[#00D8FF]">
             Projects
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#contact-link-button" className="text-[#00D8FF]">
+          <Link href="#contactLinkButtonId" className="text-[#00D8FF]">
             Contact
           </Link>
         </div>

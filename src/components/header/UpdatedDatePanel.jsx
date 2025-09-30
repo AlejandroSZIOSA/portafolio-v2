@@ -14,7 +14,7 @@ export default function UpdatedDatePanel() {
         alt="Updated date icon"
       />
       <div className="pr-4 pl-1 md:pl-2 text-xs md:text-base text-white">
-        <span>27-sep-2025</span>
+        <span>30-sep-2025</span>
       </div>
     </div>
   );

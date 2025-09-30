@@ -7,7 +7,7 @@ export default function FooterContent() {
   return (
     <button>
       <img
-        id="contact-link-button"
+        id="contactLinkButtonId"
         className="transition-transform duration-200 hover:scale-110"
         src="logos-linkedin.svg"
         alt="LinkedIn"

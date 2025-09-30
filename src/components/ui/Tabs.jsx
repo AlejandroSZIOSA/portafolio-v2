@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Accordion from "./toggleAccordion";
+import Accordion from "./Accordion";
 import { WEB_APPS_DATA } from "@/utils/data/web-projects";
 
 export default function Tabs() {

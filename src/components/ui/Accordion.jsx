@@ -54,7 +54,9 @@ export default function Accordion({ projects }) {
         </ol>
       ) : (
         <ol className="border px-6 pb-6 md:pb-5 flex space-x-2 overflow-x-auto scrollbar-hide">
-          {projects.map((item, index) => render(item, index))}
+          {projects
+            /* .filter((item) => !item.isNew) Exclude the new project from the projects list */
+            .map((item, index) => render(item, index))}
         </ol>
       )}
     </>

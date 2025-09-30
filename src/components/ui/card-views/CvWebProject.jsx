@@ -2,7 +2,7 @@
 import React from "react";
 import { useMedia } from "use-media";
 import Image from "next/image";
-import GitBtn from "../buttons/GitBtn";
+import GitHubLinkBtn from "../GitHubLinkBtn";
 import { CONSTANTS } from "@/utils/constants";
 
 const TECH_BOXES =
@@ -18,7 +18,7 @@ export default function CvWebProject({ project }) {
     description,
     language,
     framework,
-    imgUrl,
+    cardImgUrl,
     linkToApp,
     category,
     browser,
@@ -54,7 +54,13 @@ export default function CvWebProject({ project }) {
       </div>
       {/* FIX:Problem whit the header cover sticky position when Image container uses relative position and the Image is using fill attribute. */}
       <div className="flex justify-center bg-black">
-        <Image src={imgUrl} width={356} height={100} alt="no image" priority />
+        <Image
+          src={cardImgUrl}
+          width={356}
+          height={100}
+          alt="no card image"
+          priority
+        />
       </div>
       <div className=" flex justify-end pr-3 text-xs">Ver: {version}</div>
       <h3 className=" flex justify-center items-baseline mb-2 font-bold">
@@ -93,7 +99,7 @@ export default function CvWebProject({ project }) {
         >
           View App
         </a>
-        <GitBtn gitHubLink={gitHubLink} />
+        <GitHubLinkBtn gitHubLink={gitHubLink} />
       </div>
     </div>
   );
