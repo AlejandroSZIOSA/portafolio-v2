@@ -99,7 +99,7 @@ export const WEB_APPS_DATA = [
     language: "",
     framework: "React+Vite",
     linkToApp:
-      "https://vinilo-volador-2takb5zvw-gabriels-projects-3ad7215b.vercel.app/",
+      "https://vinilo-volador-fw7j0ou41-gabriels-projects-3ad7215b.vercel.app/",
     gitHubLink: "https://github.com/AlejandroSZIOSA/vinilo-volador-web.git",
     isNew: true,
     browser: "Chrome",
