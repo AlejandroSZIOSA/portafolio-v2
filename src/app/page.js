@@ -8,15 +8,15 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full items-center">
       <HeroSection />
-      <DividerHeaderTitle sectionTitle="My Tech-Stack" sectionId="#" />
+      <DividerHeaderTitle sectionTitle="My Tech Stack" sectionId="#" />
       <TechSection />
       <DividerHeaderTitle
-        sectionTitle="My Latest-Project"
+        sectionTitle="My Latest Project"
         sectionId="latestProjectSectionId"
       />
       <LatestProjectsSection />
       <DividerHeaderTitle
-        sectionTitle="Projects"
+        sectionTitle="Some Previous Projects"
         sectionId="projectsSectionId"
       />
       <ProjectsSection />

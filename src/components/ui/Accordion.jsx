@@ -22,7 +22,7 @@ export default function Accordion({ projects }) {
             onClick={() => toggleAccordion(index)}
             className="flex justify-between items-center w-full py-1 px-4 text-left"
           >
-            <div className="ml-28">
+            <div className="ml-36">
               <h3>{item.title}</h3>
             </div>
             <div>{openIndex === index ? "−" : "+"}</div>
@@ -49,13 +49,13 @@ export default function Accordion({ projects }) {
           {projects
             .slice()
             .reverse()
-            .filter((item) => item.mobileUI)
+            .filter((item) => item.mobileUI && !item.isNew)
             .map((item, index) => render(item, index))}
         </ol>
       ) : (
         <ol className="border px-6 pb-6 md:pb-5 flex space-x-2 overflow-x-auto scrollbar-hide">
           {projects
-            /* .filter((item) => !item.isNew) Exclude the new project from the projects list */
+            .filter((item) => !item.isNew)
             .map((item, index) => render(item, index))}
         </ol>
       )}

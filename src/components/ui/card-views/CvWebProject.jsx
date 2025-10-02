@@ -39,7 +39,7 @@ export default function CvWebProject({ project }) {
   } = project;
 
   return (
-    <div className="flex flex-col w-[360px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left">
+    <div className="flex flex-col w-[360px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left md:h-min">
       <div className="flex py-1 justify-between bg-indigo-500 text-xs md:text-sm text-white">
         <div className="px-4">{category}</div>
         <span className="inline-flex">
@@ -92,7 +92,7 @@ export default function CvWebProject({ project }) {
         {desktopUI && <span className={TECH_BOXES}>Desktop UI</span>}
         {wcag && <span className={TECH_BOXES}>Wcag:{wcag}</span>}
       </div>
-      <div className="px-6 py-4 flex justify-between items-center">
+      <div className="px-6 py-3 flex justify-between items-center md:py-4">
         <a
           href={linkToApp}
           className="bg-orange-400 hover:bg-orange-600 text-sm md:text-base text-black py-2 px-2 border-2 border-indigo-950 rounded-md "

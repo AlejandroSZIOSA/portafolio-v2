@@ -26,31 +26,37 @@ export const TECHS = [
   },
   {
     id: 5,
+    title: "React Native",
+    imgUrl: "/icons/techs/react-native.svg",
+    level: "2/5",
+  },
+  {
+    id: 6,
     title: "TypeScript",
     imgUrl: "/icons/techs/typescript.svg",
     level: "3/5",
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Tailwind",
     imgUrl: "/icons/techs/tailwind.svg",
     level: "2/5",
   },
   {
-    id: 7,
+    id: 8,
     title: "Cypress",
     imgUrl: "/icons/techs/cypress.svg",
     level: "1/5",
   },
   {
-    id: 8,
+    id: 9,
     title: "Gimp",
     imgUrl: "/icons/techs/gimp.svg",
     level: "3/5",
   },
   {
-    id: 9,
+    id: 10,
     title: "Figma",
     imgUrl: "/icons/techs/figma.svg",
     level: "2/5",

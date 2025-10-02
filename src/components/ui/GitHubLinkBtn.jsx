@@ -1,6 +1,6 @@
 "use client";
-import { CONSTANTS } from "@/utils/constants";
 import React from "react";
+import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 
 export default function GitHubLinkBtn({ gitHubLink = "#" }) {
