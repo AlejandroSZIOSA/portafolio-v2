@@ -63,7 +63,7 @@ export const WEB_APPS_DATA = [
   },
   {
     id: 3,
-    updated_at: "Mars 06, 2024",
+    updated_at: "March 06, 2024",
     cardImgUrl: "/images/no-image-yet-400_300.png",
     title: "TO-DO",
     version: "beta",

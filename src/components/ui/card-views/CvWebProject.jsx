@@ -5,7 +5,7 @@ import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 
 const TECH_BOXES_STYLES =
-  "inline-block min-w-fit bg-gray-200 rounded-full content-center px-3 py-1 text-xs font-semibold text-gray-700 text-center md:text-sm";
+  "inline-block min-w-fit bg-gray-200 rounded-full content-center px-3 py-1 text-xs font-semibold text-gray-700 text-center";
 
 export default function CvWebProject({ project }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
@@ -69,7 +69,7 @@ export default function CvWebProject({ project }) {
       <div className="px-4 pb-2 md:pb-3">
         <p className="text-gray-700">{description}</p>
       </div>
-      <div className="bg-red-200 border px-6 py-3 flex space-x-2 overflow-x-auto scrollbar-hide">
+      <div className="bg-red-200 border px-1 py-3 flex space-x-2 overflow-x-auto scrollbar-hide md:py-2 md:px-2">
         {browser && <span className={TECH_BOXES_STYLES}>{browser}</span>}
         {deviceBrowserSettings && (
           <span className={TECH_BOXES_STYLES}>Dev:{deviceBrowserSettings}</span>
