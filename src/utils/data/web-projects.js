@@ -92,7 +92,7 @@ export const WEB_APPS_DATA = [
   },
   {
     id: 4,
-    updated_at: "Aug 25, 2025",
+    updated_at: "October 03, 2025",
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
     title: "Vinilo-Volador",
