@@ -1,12 +1,11 @@
 "use client";
 import { useState } from "react";
 import CvWebProject from "./card-views/CvWebProject";
-import { useMedia } from "use-media";
 import { CONSTANTS } from "@/utils/constants";
+import { useMedia } from "use-media";
 
 export default function Accordion({ projects }) {
   const [openIndex, setOpenIndex] = useState(null);
-
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
 
   const toggleAccordion = (index) => {
@@ -17,7 +16,7 @@ export default function Accordion({ projects }) {
   function render(item, index) {
     if (isMobile) {
       return (
-        <div key={index} className="border-b border-black bg-amber-100">
+        <div key={index} className="border-b border-black bg-gray-300">
           <button
             onClick={() => toggleAccordion(index)}
             className="flex justify-between items-center w-full py-1 px-4 text-left"

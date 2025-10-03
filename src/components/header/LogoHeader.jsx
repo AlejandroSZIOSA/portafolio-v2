@@ -1,6 +1,5 @@
 "use client";
 import { CONSTANTS } from "@/utils/constants";
-import React from "react";
 import { useMedia } from "use-media";
 
 export default function LogoHeader() {

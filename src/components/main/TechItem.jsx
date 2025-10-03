@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { useMedia } from "use-media";
 import { CONSTANTS } from "@/utils/constants";
 

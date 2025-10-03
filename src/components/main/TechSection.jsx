@@ -1,4 +1,3 @@
-import React from "react";
 import TechItem from "./TechItem";
 import { TECHS } from "/src/utils/data/techs";
 

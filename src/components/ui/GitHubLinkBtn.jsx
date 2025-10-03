@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 
 export default function GitHubLinkBtn({ gitHubLink = "#" }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
+
   return (
     <a href={gitHubLink}>
       <img

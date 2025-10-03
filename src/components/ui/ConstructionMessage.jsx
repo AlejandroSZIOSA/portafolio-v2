@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ConstructionMessage() {
   return (
     <div className="flex h-20 md:h-[505px] items-center justify-center">

@@ -1,6 +1,5 @@
 "use client";
 import { CONSTANTS } from "@/utils/constants";
-import React from "react";
 import { useMedia } from "use-media";
 
 export default function UpdatedDatePanel() {
@@ -14,7 +13,7 @@ export default function UpdatedDatePanel() {
         alt="Updated date icon"
       />
       <div className="pr-4 pl-1 md:pl-2 text-xs md:text-base text-white">
-        <span>October 02-2025</span>
+        <span>October 03, 2025</span>
       </div>
     </div>
   );

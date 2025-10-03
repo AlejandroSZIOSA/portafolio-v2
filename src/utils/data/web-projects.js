@@ -1,10 +1,8 @@
-/* import testImg2 from "/public/images/web-projects/cardImg.png";
- */
 export const WEB_APPS_DATA = [
   {
     id: 1,
-    updated_at: "Jan 18-2024",
-    cardImgUrl: "/images/web-projects/no-image-yet-400_300.png",
+    updated_at: "Jan 18, 2024",
+    cardImgUrl: "/images/no-image-yet-400_300.png",
     title: "Clock-App",
     version: "beta",
     description:
@@ -34,12 +32,12 @@ export const WEB_APPS_DATA = [
   },
   {
     id: 2,
-    updated_at: "Feb 03-2024",
-    cardImgUrl: "/images/web-projects/no-image-yet-400_300.png",
+    updated_at: "Feb 03, 2024",
+    cardImgUrl: "/images/no-image-yet-400_300.png",
     title: "Radio Player",
     version: "beta",
     description:
-      "Play and Filter different Swedish radios, by fetching information from an public API.",
+      "Play and filter different Swedish radios, by fetching information from an public API.",
     category: "Web-App",
     language: "JavaScript",
     framework: "React+Vite",
@@ -65,11 +63,11 @@ export const WEB_APPS_DATA = [
   },
   {
     id: 3,
-    updated_at: "Mars 06-2024",
-    cardImgUrl: "/images/web-projects/no-image-yet-400_300.png",
+    updated_at: "Mars 06, 2024",
+    cardImgUrl: "/images/no-image-yet-400_300.png",
     title: "TO-DO",
     version: "beta",
-    description: "Manages activities, using the Redux library.",
+    description: "Manages activities using the Redux library.",
     category: "Web-App",
     language: "JavaScript",
     framework: "React+Next.js",
@@ -94,13 +92,13 @@ export const WEB_APPS_DATA = [
   },
   {
     id: 4,
-    updated_at: "Aug 25-2025",
+    updated_at: "Aug 25, 2025",
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
     title: "Vinilo-Volador",
     version: "beta",
     description:
-      "A commercial Frontend prototype that manages a vinyl stack inventory. (Graduation Examen)",
+      "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
     category: "Web-App",
     language: "",
     framework: "React+Vite",
