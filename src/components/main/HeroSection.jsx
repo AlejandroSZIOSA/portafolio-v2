@@ -17,7 +17,8 @@ export default function HeroSection() {
       />
       <div className="py-2 text-center md:w-96 md:h-auto md:py-0 md:mt-auto md:text-left">
         <p className="font-mono ml-3 p-2 text-left text-lg md:ml-4 md:text-xl">
-          Hi!😎 <br></br>My name is <strong>Gabriel Alejandro Sazo. </strong>
+          Hi!😎 <br></br>My name is{" "}
+          <strong id="intro_text_strong">Gabriel Alejandro Sazo. </strong>
           <br></br>I am a positive, high focused and very curious recently
           graduated
           <strong> Frontend Developer. </strong>

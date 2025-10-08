@@ -8,27 +8,27 @@ export default function NavBar() {
     <nav className="p-4 md:p-0 md:mr-4 md:content-center">
       <div className="flex w-full justify-between">
         <div className={NAV_BOXES}>
-          <Link href="#" className="text-[#00D8FF]">
+          <Link href="#body_" className="text-[#00D8FF]">
             Intro
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#techStackSectionId" className="text-[#00D8FF]">
+          <Link href="#intro_text_strong" className="text-[#00D8FF]">
             Tech
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#latestProjectSectionId" className="text-[#00D8FF]">
+          <Link href="#techs_container" className="text-[#00D8FF]">
             Latest
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#projectsSectionId" className="text-[#00D8FF]">
+          <Link href="#previous_projects_divider" className="text-[#00D8FF]">
             Projects
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#contactLinkButtonId" className="text-[#00D8FF]">
+          <Link href="#contact_linkedin_img" className="text-[#00D8FF]">
             Contact
           </Link>
         </div>

@@ -9,7 +9,7 @@ export default function FooterContent() {
     <button>
       <a href="https://www.linkedin.com/in/gabriel-sazo-a02302223/">
         <img
-          id="contactLinkButtonId"
+          id="contact_linkedin_img"
           className="transition-transform duration-200 hover:scale-110"
           src="logos-linkedin.svg"
           alt="LinkedIn"
