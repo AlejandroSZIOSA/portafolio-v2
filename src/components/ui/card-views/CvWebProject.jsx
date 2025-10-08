@@ -34,6 +34,7 @@ export default function CvWebProject({ project }) {
     gitHubLink,
     context,
     redux,
+    localStorage,
     api,
   } = project;
 
@@ -82,6 +83,10 @@ export default function CvWebProject({ project }) {
         {navigation && <span className={TECH_BOXES_STYLES}>{navigation}</span>}
         {context && <span className={TECH_BOXES_STYLES}>Context</span>}
         {redux && <span className={TECH_BOXES_STYLES}>Redux</span>}
+        {localStorage && (
+          <span className={TECH_BOXES_STYLES}>Local Storage</span>
+        )}
+
         {api && <span className={TECH_BOXES_STYLES}>API:{api}</span>}
         {tests && <span className={TECH_BOXES_STYLES}>{tests}</span>}
 

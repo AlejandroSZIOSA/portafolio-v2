@@ -4,9 +4,11 @@ import Accordion from "./Accordion";
 import { WEB_APPS_DATA } from "@/utils/data/web-projects";
 import ConstructionMessage from "./ConstructionMessage";
 
-const ACTIVE_TAB_STYLE =
+//Reusable Tailwind CSS classes
+const BASE_TAB = "px-2 py-2 hover:cursor-pointer md:px-5 md:py-3";
+const ACTIVE_TAB =
   "border-b-2 border-[rgb(242,78,30)] font-semibold md:border-b-4";
-const INACTIVE_TAB_STYLE = "text-gray-500";
+const INACTIVE_TAB = "text-gray-500";
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -14,37 +16,37 @@ export default function Tabs() {
   return (
     <div className="w-full max-w-md md:min-w-[90%] mx-auto">
       {/* Tab Buttons */}
-      <div className="flex justify-center border-b">
+      <div className="flex justify-center gap-2 border-b md:gap-8">
         <button
           onClick={() => setActiveTab("tab1")}
           // Using Dynamic values inside tailwind clases :)
-          className={`px-4 py-2 ${
-            activeTab === "tab1" ? ACTIVE_TAB_STYLE : INACTIVE_TAB_STYLE
+          className={`${BASE_TAB} ${
+            activeTab === "tab1" ? ACTIVE_TAB : INACTIVE_TAB
           }`}
         >
-          Web-Apps
+          <h3>Web-Apps</h3>
         </button>
         <button
           onClick={() => setActiveTab("tab2")}
           disabled={false} /* Enable this value to enable this tab */
-          className={`px-4 py-2 ${
-            activeTab === "tab2" ? ACTIVE_TAB_STYLE : INACTIVE_TAB_STYLE
+          className={`${BASE_TAB} ${
+            activeTab === "tab2" ? ACTIVE_TAB : INACTIVE_TAB
           }`}
         >
-          Web+Async Apps
+          <h3>Web+Async Apps</h3>
         </button>
         <button
           onClick={() => setActiveTab("tab3")}
           disabled={false} /* Enable this value to enable this tab */
-          className={`px-4 py-2 ${
-            activeTab === "tab3" ? ACTIVE_TAB_STYLE : INACTIVE_TAB_STYLE
+          className={`${BASE_TAB} ${
+            activeTab === "tab3" ? ACTIVE_TAB : INACTIVE_TAB
           }`}
         >
-          Mobile-Apps
+          <h3>Mobile-Apps</h3>
         </button>
       </div>
       {/* Tab Content */}
-      <div className=" px-2 pt-4 pb-6 border md:py-3 md:flex md:justify-center ">
+      <div className="px-1 pt-4 pb-6 border md:py-3 md:flex md:justify-center ">
         {activeTab === "tab1" && <Accordion projects={WEB_APPS_DATA} />}
         {activeTab === "tab2" && <ConstructionMessage />}
         {activeTab === "tab3" && <ConstructionMessage />}

@@ -19,12 +19,10 @@ export default function Accordion({ projects }) {
         <div key={index} className="border-b border-black bg-gray-300">
           <button
             onClick={() => toggleAccordion(index)}
-            className="flex justify-between items-center w-full py-1 px-4 text-left"
+            className="flex justify-center items-center w-full py-1 px-4 text-left"
           >
-            <div className="ml-36">
-              <h3>{item.title}</h3>
-            </div>
-            <div>{openIndex === index ? "−" : "+"}</div>
+            <h3>{item.title}</h3>
+            <span className="ml-2">{openIndex === index ? "−" : "+"}</span>
           </button>
           <div className="flex justify-center py-1">
             {openIndex === index && <CvWebProject project={item} />}
