@@ -63,7 +63,9 @@ export default function CvWebProject({ project }) {
           priority
         />
       </div>
-      <div className=" flex justify-end pr-3 text-xs">Ver: {version}</div>
+      <div className=" flex justify-end pr-3 pt-1 text-xs md:text-sm md:pr-4 md:pt-2">
+        Ver: {version}
+      </div>
       <h3 className=" flex justify-center items-baseline mb-2 font-bold">
         {title}
       </h3>
