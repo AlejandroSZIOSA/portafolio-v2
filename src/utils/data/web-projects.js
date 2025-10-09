@@ -37,7 +37,7 @@ export const WEB_DATA = [
     title: "Swedish Radios",
     version: "beta",
     description:
-      "Play and filter different Swedish radios from an Api. Using the skeleton effect.",
+      "Play and filter different Swedish radios from an API. Using the skeleton effect.",
     category: "Web-App",
     language: "JavaScript",
     framework: "React+Vite",
