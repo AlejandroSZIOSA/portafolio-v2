@@ -24,7 +24,7 @@ export default function NavBar() {
         </div>
         <div className={NAV_BOXES}>
           <Link href="#previous_projects_divider" className="text-[#00D8FF]">
-            Projects
+            Previous
           </Link>
         </div>
         <div className={NAV_BOXES}>
