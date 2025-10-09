@@ -24,7 +24,7 @@ export default function Tabs() {
             activeTab === "tab1" ? ACTIVE_TAB : INACTIVE_TAB
           }`}
         >
-          <h3>Web-Apps</h3>
+          <h3>Web apps</h3>
         </button>
         <button
           onClick={() => setActiveTab("tab2")}
@@ -33,7 +33,7 @@ export default function Tabs() {
             activeTab === "tab2" ? ACTIVE_TAB : INACTIVE_TAB
           }`}
         >
-          <h3>Web+Async Apps</h3>
+          <h3>Web+APIs</h3>
         </button>
         <button
           onClick={() => setActiveTab("tab3")}
@@ -42,7 +42,7 @@ export default function Tabs() {
             activeTab === "tab3" ? ACTIVE_TAB : INACTIVE_TAB
           }`}
         >
-          <h3>Mobile-Apps</h3>
+          <h3>Web+Backend</h3>
         </button>
       </div>
       {/* Tab Content */}

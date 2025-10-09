@@ -22,7 +22,7 @@ export default function Accordion({ projects }) {
             className="flex justify-center items-center w-full py-1 px-4 text-left"
           >
             <h3>{item.title}</h3>
-            <span className="ml-4">{openIndex === index ? "−" : "+"}</span>
+            <span className="ml-2">{openIndex === index ? "−" : "+"}</span>
           </button>
           <div className="flex justify-center py-1">
             {openIndex === index && <CvWebProject project={item} />}
