@@ -6,7 +6,7 @@ import { useMedia } from "use-media";
 export default function HeroSection() {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
-    <div className="flex flex-col pt-2 items-center justify-center md:flex-row md:pt-8 md:pb-12 md:mr-auto md:pl-16">
+    <div className="flex flex-col pt-4 items-center justify-center md:flex-row md:pt-8 md:pb-12 md:mr-auto md:pl-16">
       <Image
         src={"/images/me/me-light_b.png"}
         width={isMobile ? 300 : 400}

@@ -75,7 +75,7 @@ export const WEB_APPS_DATA = [
     gitHubLink: "https://github.com/AlejandroSZIOSA/next-todolist-redux.git",
     isNew: false,
     browser: "Chrome",
-    deviceBrowserSettings: "Samsung Galaxy S8",
+    deviceBrowserSettings: "Samsung Galaxy S8+",
     typeScript: "",
     css: "Tailwind Css",
     cssLibrary: "",
