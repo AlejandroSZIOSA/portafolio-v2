@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import Accordion from "./Accordion";
-import { WEB_APPS_DATA } from "@/utils/data/web-projects";
+import { WEB_DATA } from "@/utils/data/web-projects";
+/* import { WEB_APIS_DATA } from "@/utils/data/web-apis-projects"; */
 import ConstructionMessage from "./ConstructionMessage";
 
 //Reusable Tailwind CSS classes
@@ -47,7 +48,7 @@ export default function Tabs() {
       </div>
       {/* Tab Content */}
       <div className="px-1 pt-4 pb-6 border md:py-3 md:flex md:justify-center ">
-        {activeTab === "tab1" && <Accordion projects={WEB_APPS_DATA} />}
+        {activeTab === "tab1" && <Accordion projects={WEB_DATA} />}
         {activeTab === "tab2" && <ConstructionMessage />}
         {activeTab === "tab3" && <ConstructionMessage />}
       </div>

@@ -1,9 +1,9 @@
-export const WEB_APPS_DATA = [
+export const WEB_DATA = [
   {
     id: 1,
     updated_at: "Jan 18, 2024",
     cardImgUrl: "/images/no-image-yet-400_300.png",
-    title: "Clock-App",
+    title: "Clocks && Timers",
     version: "beta",
     description:
       "Shows some clocks from different locations also Timers and Countdowns.",
@@ -34,10 +34,10 @@ export const WEB_APPS_DATA = [
     id: 2,
     updated_at: "Feb 03, 2024",
     cardImgUrl: "/images/no-image-yet-400_300.png",
-    title: "Radio Player",
+    title: "Swedish Radios",
     version: "beta",
     description:
-      "Play and filter different Swedish radios, by fetching information from an public API.",
+      "Play and filter different Swedish radios from an Api. Using the skeleton effect.",
     category: "Web-App",
     language: "JavaScript",
     framework: "React+Vite",
@@ -61,6 +61,7 @@ export const WEB_APPS_DATA = [
     api: "Get",
     localStorage: "",
   },
+
   {
     id: 3,
     updated_at: "October 07, 2025",
