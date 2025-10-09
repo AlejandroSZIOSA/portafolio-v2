@@ -16,7 +16,7 @@ export default function Tabs() {
   return (
     <div className="w-full max-w-md md:min-w-[90%] mx-auto">
       {/* Tab Buttons */}
-      <div className="flex justify-center gap-2 border-b md:gap-8">
+      <div className="flex justify-around border-b md:justify-center md:gap-8">
         <button
           onClick={() => setActiveTab("tab1")}
           // Using Dynamic values inside tailwind clases :)
