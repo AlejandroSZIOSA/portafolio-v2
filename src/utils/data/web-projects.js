@@ -6,7 +6,7 @@ export const WEB_DATA = [
     title: "Clocks && Timers",
     version: "beta",
     description:
-      "Shows some clocks from different locations as well Timers.(workshop)",
+      "Shows some clocks from different locations as well Timers. (workshop)",
     category: "Web-App",
     language: "JavaScript",
     framework: "React+Vite",
@@ -35,7 +35,7 @@ export const WEB_DATA = [
     title: "TODO",
     version: "beta",
     description:
-      "Manages daily activities using Redux and Local Storage.(workshop)",
+      "Manages daily activities using Redux and Local Storage. (workshop)",
     category: "Web-App",
     language: "JavaScript",
     framework: "React+Next.js",
