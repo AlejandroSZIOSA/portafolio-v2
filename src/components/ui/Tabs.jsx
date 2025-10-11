@@ -19,17 +19,17 @@ export default function Tabs() {
 
   //Filter and getting the total items based on the current responsive mode
   const getMobileUIwebApps = WEB_DATA.filter(
-    (item) => item.mobileUI && !item.isNew
+    (item) => item.responsiveUI[0] && !item.isNew
   );
   const getDesktopUIwebApps = WEB_DATA.filter(
-    (item) => item.desktopUI && !item.isNew
+    (item) => item.responsiveUI[1] && !item.isNew
   );
 
   const getMobileUIwebApis = WEB_APIS_DATA.filter(
-    (item) => item.mobileUI && !item.isNew
+    (item) => item.responsiveUI[0] && !item.isNew
   );
   const getDesktopUIwebApis = WEB_APIS_DATA.filter(
-    (item) => item.desktopUI && !item.isNew
+    (item) => item.responsiveUI[1] && !item.isNew
   );
 
   return (

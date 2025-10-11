@@ -46,7 +46,7 @@ export default function Accordion({ projects }) {
           {projects
             .slice()
             .reverse()
-            .filter((item) => item.mobileUI && !item.isNew)
+            .filter((item) => item.responsiveUI[0] && !item.isNew)
             .map((item, index) => render(item, index))}
         </ol>
       ) : (

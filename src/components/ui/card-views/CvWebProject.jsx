@@ -45,8 +45,8 @@ export default function CvWebProject({ project }) {
         <p className="text-gray-700">{project.description}</p>
       </div>
       <div className="bg-red-200 border px-1 py-3 flex space-x-2 overflow-x-auto scrollbar-hide md:py-2 md:px-2">
-        {project.browser && (
-          <span className={TECH_BOXES_STYLES}>{project.browser}</span>
+        {project.browser[0] && (
+          <span className={TECH_BOXES_STYLES}>{project.browser[0]}</span>
         )}
         {project.deviceBrowserSettings && (
           <span className={TECH_BOXES_STYLES}>
@@ -86,15 +86,14 @@ export default function CvWebProject({ project }) {
         {project.cssLibrary && (
           <span className={TECH_BOXES_STYLES}>{project.cssLibrary}</span>
         )}
-        {project.responsiveUI && (
-          <span className={TECH_BOXES_STYLES}>Responsive UI</span>
-        )}
-        {project.mobileUI && (
+
+        {project.responsiveUI[0] && (
           <span className={TECH_BOXES_STYLES}>Mobile UI</span>
         )}
-        {project.desktopUI && (
+        {project.responsiveUI[1] && (
           <span className={TECH_BOXES_STYLES}>Desktop UI</span>
         )}
+
         {project.wcag && (
           <span className={TECH_BOXES_STYLES}>Wcag:{project.wcag}</span>
         )}
