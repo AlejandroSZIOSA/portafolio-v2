@@ -10,6 +10,9 @@ const TECH_BOXES_STYLES =
 export default function CvWebProject({ project }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
 
+  const [mobileUI, desktopUI] = project.responsiveUI; //destructuring assignment
+  const [chrome] = project.browser;
+
   return (
     // TODO:Fix border Children element in mobile view
     <div className="flex flex-col w-[360px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left md:border-4 md:h-min">
@@ -45,9 +48,7 @@ export default function CvWebProject({ project }) {
         <p className="text-gray-700">{project.description}</p>
       </div>
       <div className="bg-red-200 border px-1 py-3 flex space-x-2 overflow-x-auto scrollbar-hide md:py-2 md:px-2">
-        {project.browser[0] && (
-          <span className={TECH_BOXES_STYLES}>{project.browser[0]}</span>
-        )}
+        {chrome && <span className={TECH_BOXES_STYLES}>{chrome}</span>}
         {project.deviceBrowserSettings && (
           <span className={TECH_BOXES_STYLES}>
             Dev:{project.deviceBrowserSettings}
@@ -87,12 +88,8 @@ export default function CvWebProject({ project }) {
           <span className={TECH_BOXES_STYLES}>{project.cssLibrary}</span>
         )}
 
-        {project.responsiveUI[0] && (
-          <span className={TECH_BOXES_STYLES}>Mobile UI</span>
-        )}
-        {project.responsiveUI[1] && (
-          <span className={TECH_BOXES_STYLES}>Desktop UI</span>
-        )}
+        {mobileUI && <span className={TECH_BOXES_STYLES}>Mobile UI</span>}
+        {desktopUI && <span className={TECH_BOXES_STYLES}>Desktop UI</span>}
 
         {project.wcag && (
           <span className={TECH_BOXES_STYLES}>Wcag:{project.wcag}</span>

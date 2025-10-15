@@ -58,7 +58,7 @@ export const WEB_DATA = [
   },
   {
     id: 3,
-    updated_at: "October 03, 2025",
+    updated_at: "October 15, 2025",
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
     title: "Vinilo-Volador",
@@ -72,7 +72,7 @@ export const WEB_DATA = [
     gitHubLink: "https://github.com/AlejandroSZIOSA/vinilo-volador-web.git",
     isNew: true,
     browser: ["Chrome v141"],
-    deviceBrowserSettings: "iPhone 14 Pro max",
+    deviceBrowserSettings: "Samsung Galaxy S8+",
     typeScript: "yes",
     css: "Modules Css",
     cssLibrary: "",
