@@ -7,7 +7,7 @@ export const WEB_APIS_DATA = [
     title: "Swedish Radio Player",
     version: "beta",
     description:
-      "Play and filter different Swedish radios. Using the Skeleton theme. (workshop)",
+      "Play and filter open Swedish radios. Using the Skeleton UI theme. (workshop)",
     category: "Web + Api",
     language: "JavaScript",
     framework: "React+Vite",

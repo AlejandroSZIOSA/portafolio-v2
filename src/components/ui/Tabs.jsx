@@ -46,11 +46,13 @@ export default function Tabs() {
           <h3>
             Web apps
             <span>
-              (
-              {isMobile
-                ? getMobileUIwebApps.length
-                : getDesktopUIwebApps.length}
-              )
+              <strong>
+                (
+                {isMobile
+                  ? getMobileUIwebApps.length
+                  : getDesktopUIwebApps.length}
+                )
+              </strong>
             </span>
           </h3>
         </button>
@@ -64,11 +66,13 @@ export default function Tabs() {
           <h3>
             Web+APIs
             <span>
-              (
-              {isMobile
-                ? getMobileUIwebApis.length
-                : getDesktopUIwebApis.length}
-              )
+              <strong>
+                (
+                {isMobile
+                  ? getMobileUIwebApis.length
+                  : getDesktopUIwebApis.length}
+                )
+              </strong>
             </span>
           </h3>
         </button>

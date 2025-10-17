@@ -44,7 +44,7 @@ export default function CvWebProject({ project }) {
       <h3 className=" flex justify-center items-baseline mb-2 font-bold">
         {project.title}
       </h3>
-      <div className="px-4 pb-2 md:pb-3">
+      <div className="px-2 pb-2 md:px-4 md:pb-4">
         <p className="text-gray-700">{project.description}</p>
       </div>
       <div className="bg-red-200 border px-1 py-3 flex space-x-2 overflow-x-auto scrollbar-hide md:py-2 md:px-2">
