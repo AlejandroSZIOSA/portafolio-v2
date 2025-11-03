@@ -15,7 +15,7 @@ export const TECHS = [
     id: 3,
     title: "JavaScript",
     imgUrl: "/icons/techs/javascript.svg",
-    level: "4/5",
+    level: "3/5",
   },
 
   {
