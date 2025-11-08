@@ -39,7 +39,7 @@ export default function CvWebProject({ project }) {
         />
       </div>
       <div className=" flex justify-end pr-3 pt-1 text-xs md:text-sm md:pr-4 md:pt-2">
-        Ver: {project.version}
+        Version: {project.version}
       </div>
       <h3 className=" flex justify-center items-baseline mb-2 font-bold">
         {project.title}
@@ -70,6 +70,11 @@ export default function CvWebProject({ project }) {
         )}
         {project.context && <span className={TECH_BOXES_STYLES}>Context</span>}
         {project.redux && <span className={TECH_BOXES_STYLES}>Redux</span>}
+
+        {project.crud && (
+          <span className={TECH_BOXES_STYLES}>C.R.U.D: {project.crud}</span>
+        )}
+
         {project.localStorage && (
           <span className={TECH_BOXES_STYLES}>Local Storage</span>
         )}

@@ -26,6 +26,7 @@ export const WEB_APIS_DATA = [
     express: "",
     context: "",
     redux: "",
+    crud: "",
     api: "Get",
     localStorage: "",
   },

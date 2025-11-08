@@ -83,7 +83,7 @@ export default function Tabs() {
             activeTab === "tab3" ? ACTIVE_TAB : INACTIVE_TAB
           }`}
         >
-          <h3>Web+Backend</h3>
+          <h3>Web+Deployment</h3>
         </button>
       </div>
       {/* Tab Content */}

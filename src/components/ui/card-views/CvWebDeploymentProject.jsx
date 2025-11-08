@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function CvWebBackendProject() {
+export default function CvWebDeploymentProject() {
   return <div></div>;
 }
