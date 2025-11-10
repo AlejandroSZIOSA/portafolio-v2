@@ -64,7 +64,7 @@ export const WEB_DATA = [
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
     title: "Vinilo-Volador",
-    version: "beta",
+    version: "Beta",
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
     category: "Web - App",
@@ -81,7 +81,7 @@ export const WEB_DATA = [
     navigation: "React-router",
     tests: "Cypress",
     wcag: "Basic",
-    responsiveUI: ["mobile", "desktop"],
+    responsiveUI: ["Mobile", "Desktop"],
     context: "yes",
     redux: "",
     crud: "All",
