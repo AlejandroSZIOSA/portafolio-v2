@@ -35,7 +35,7 @@ export const WEB_DATA = [
     updated_at: "November 16, 2025",
     cardImgUrl: "/images/web-projects/todo/todo-400_300.png",
     title: "TODO",
-    version: "v1.0",
+    version: "1.0",
     description: "Manages some activities using Redux and Local Storage.",
     category: "Web - App",
     language: "JavaScript",
