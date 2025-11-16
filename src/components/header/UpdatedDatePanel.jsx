@@ -3,7 +3,9 @@ import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 
 export default function UpdatedDatePanel() {
-  const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
+  const { USE_MEDIA_MAX_WIDTH, CURRENT_UPDATED_DATE } = CONSTANTS;
+
+  const isMobile = useMedia(USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
     <div className="flex justify-end md:self-center md:items-end">
       <img
@@ -13,7 +15,7 @@ export default function UpdatedDatePanel() {
         alt="Updated date icon"
       />
       <div className="pr-4 pl-1 md:pl-2 text-xs md:text-base text-white">
-        <span>November 08, 2025</span>
+        <span>{CURRENT_UPDATED_DATE}</span>
       </div>
     </div>
   );
