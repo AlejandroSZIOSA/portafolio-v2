@@ -13,7 +13,7 @@ export const WEB_APIS_DATA = [
     framework: "React+Vite",
     linkToApp: "https://radio-player-app-chi.vercel.app/",
     gitHubLink: "https://github.com/AlejandroSZIOSA/radio-player-app.git",
-    browser: ["Chrome"],
+    browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+ / iPhone 14 Pro max",
     isNew: false,
     typeScrypt: "",
