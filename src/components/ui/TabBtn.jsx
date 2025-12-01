@@ -11,10 +11,8 @@ export default function TabBtn({
   activeTab,
   setActiveTab,
   isMobile,
-  getMobileUIwebApps,
-  getDesktopUIwebApps,
-  getMobileUIwebApis,
-  getDesktopUIwebApis,
+  mobileUIApps,
+  desktopUIApps,
 }) {
   return (
     <button
@@ -24,12 +22,14 @@ export default function TabBtn({
     >
       <h3>
         {label}
-        <span>
-          <strong>
-            ({isMobile ? getMobileUIwebApps.length : getDesktopUIwebApps.length}
-            )
-          </strong>
-        </span>
+
+        {tabId != "tab3" && (
+          <span>
+            <strong>
+              ({isMobile ? mobileUIApps.length : desktopUIApps.length})
+            </strong>
+          </span>
+        )}
       </h3>
     </button>
   );

@@ -9,10 +9,10 @@ import { useMedia } from "use-media";
 import TabBtn from "./TabBtn";
 
 //Reusable Tailwind CSS classes
-const BASE_TAB = "px-2 py-2 hover:cursor-pointer md:px-5 md:py-3";
+/* const BASE_TAB = "px-2 py-2 hover:cursor-pointer md:px-5 md:py-3";
 const ACTIVE_TAB =
   "border-b-2 border-[rgb(242,78,30)] font-semibold md:border-b-4";
-const INACTIVE_TAB = "text-gray-500";
+const INACTIVE_TAB = "text-gray-500"; */
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -63,53 +63,26 @@ export default function Tabs() {
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           isMobile={isMobile}
-          getMobileUIwebApps={getMobileUIwebApps}
-          getDesktopUIwebApps={getDesktopUIwebApps}
+          mobileUIApps={getMobileUIwebApps}
+          desktopUIApps={getDesktopUIwebApps}
         />
 
-        <button
-          onClick={() => setActiveTab("tab2")}
-          disabled={false} /* Enable this value to enable this tab */
-          className={`${BASE_TAB} ${
-            activeTab === "tab2" ? ACTIVE_TAB : INACTIVE_TAB
-          }`}
-        >
-          <h3>
-            Web+APIs
-            <span>
-              <strong>
-                (
-                {isMobile
-                  ? getMobileUIwebApis.length
-                  : getDesktopUIwebApis.length}
-                )
-              </strong>
-            </span>
-          </h3>
-        </button>
-
-        {/* <TabBtn
+        <TabBtn
           tabId="tab2"
           label="Web + API"
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           isMobile={isMobile}
-        getMobileUIwebApis={getMobileUIwebApis}
-
-
-
-
+          mobileUIApps={getMobileUIwebApis}
+          desktopUIApps={getDesktopUIwebApis}
         />
- */}
-        <button
-          onClick={() => setActiveTab("tab3")}
-          disabled={false} /* Enable this value to enable this tab */
-          className={`${BASE_TAB} ${
-            activeTab === "tab3" ? ACTIVE_TAB : INACTIVE_TAB
-          }`}
-        >
-          <h3>Deployments</h3>
-        </button>
+
+        <TabBtn
+          tabId="tab3"
+          label="Deployments"
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+        />
       </div>
       {/* Tab Content */}
       <div className="px-1 pt-4 pb-6 border md:py-3 md:flex md:justify-center ">
