@@ -6,6 +6,7 @@ import { WEB_APIS_DATA } from "@/utils/data/web-apis-projects";
 import ConstructionMessage from "./ConstructionMessage";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
+import TabBtn from "./TabBtn";
 
 //Reusable Tailwind CSS classes
 const BASE_TAB = "px-2 py-2 hover:cursor-pointer md:px-5 md:py-3";
@@ -36,7 +37,7 @@ export default function Tabs() {
     <div className="w-full max-w-md md:min-w-[90%] mx-auto">
       {/* Tab Buttons */}
       <div className="flex justify-around border-b md:justify-center md:gap-8">
-        <button
+        {/* <button
           onClick={() => setActiveTab("tab1")}
           // Using Dynamic values inside tailwind clases :)
           className={`${BASE_TAB} ${
@@ -55,7 +56,17 @@ export default function Tabs() {
               </strong>
             </span>
           </h3>
-        </button>
+        </button> */}
+        <TabBtn
+          tabId="tab1"
+          label="Web apps"
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          isMobile={isMobile}
+          getMobileUIwebApps={getMobileUIwebApps}
+          getDesktopUIwebApps={getDesktopUIwebApps}
+        />
+
         <button
           onClick={() => setActiveTab("tab2")}
           disabled={false} /* Enable this value to enable this tab */
@@ -76,6 +87,20 @@ export default function Tabs() {
             </span>
           </h3>
         </button>
+
+        {/* <TabBtn
+          tabId="tab2"
+          label="Web + API"
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          isMobile={isMobile}
+        getMobileUIwebApis={getMobileUIwebApis}
+
+
+
+
+        />
+ */}
         <button
           onClick={() => setActiveTab("tab3")}
           disabled={false} /* Enable this value to enable this tab */
