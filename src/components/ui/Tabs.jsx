@@ -34,8 +34,8 @@ export default function Tabs() {
         <TabBtn
           tabId="tab1"
           label="Web apps"
-          activeTab={activeTab}
           setActiveTab={setActiveTab}
+          activeTab={activeTab}
           isMobile={isMobile}
           mobileUIApps={getMobileUIwebApps}
           desktopUIApps={getDesktopUIwebApps}
@@ -44,8 +44,8 @@ export default function Tabs() {
         <TabBtn
           tabId="tab2"
           label="Web + API"
-          activeTab={activeTab}
           setActiveTab={setActiveTab}
+          activeTab={activeTab}
           isMobile={isMobile}
           mobileUIApps={getMobileUIwebApis}
           desktopUIApps={getDesktopUIwebApis}
@@ -54,8 +54,8 @@ export default function Tabs() {
         <TabBtn
           tabId="tab3"
           label="Deployments"
-          activeTab={activeTab}
           setActiveTab={setActiveTab}
+          activeTab={activeTab}
         />
       </div>
       {/* Tab Content */}

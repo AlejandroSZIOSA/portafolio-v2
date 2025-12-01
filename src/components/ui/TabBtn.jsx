@@ -6,10 +6,10 @@ const ACTIVE_TAB =
 const INACTIVE_TAB = "text-gray-500";
 
 export default function TabBtn({
-  label,
   tabId,
-  activeTab,
+  label,
   setActiveTab,
+  activeTab,
   isMobile,
   mobileUIApps,
   desktopUIApps,
@@ -23,7 +23,6 @@ export default function TabBtn({
     >
       <h3>
         {label}
-
         {tabId != "tab3" && (
           <span>
             <strong>
