@@ -17,7 +17,8 @@ export default function TabBtn({
   return (
     <button
       onClick={() => setActiveTab(tabId)}
-      className={`${BASE_TAB} ${activeTab === tabId} ? ACTIVE_TAB : INACTIVE_TAB
+      className={`${BASE_TAB} ${
+        activeTab === tabId ? ACTIVE_TAB : INACTIVE_TAB
       }`}
     >
       <h3>

@@ -8,12 +8,6 @@ import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import TabBtn from "./TabBtn";
 
-//Reusable Tailwind CSS classes
-/* const BASE_TAB = "px-2 py-2 hover:cursor-pointer md:px-5 md:py-3";
-const ACTIVE_TAB =
-  "border-b-2 border-[rgb(242,78,30)] font-semibold md:border-b-4";
-const INACTIVE_TAB = "text-gray-500"; */
-
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
@@ -37,26 +31,6 @@ export default function Tabs() {
     <div className="w-full max-w-md md:min-w-[90%] mx-auto">
       {/* Tab Buttons */}
       <div className="flex justify-around border-b md:justify-center md:gap-8">
-        {/* <button
-          onClick={() => setActiveTab("tab1")}
-          // Using Dynamic values inside tailwind clases :)
-          className={`${BASE_TAB} ${
-            activeTab === "tab1" ? ACTIVE_TAB : INACTIVE_TAB
-          }`}
-        >
-          <h3>
-            Web apps
-            <span>
-              <strong>
-                (
-                {isMobile
-                  ? getMobileUIwebApps.length
-                  : getDesktopUIwebApps.length}
-                )
-              </strong>
-            </span>
-          </h3>
-        </button> */}
         <TabBtn
           tabId="tab1"
           label="Web apps"
