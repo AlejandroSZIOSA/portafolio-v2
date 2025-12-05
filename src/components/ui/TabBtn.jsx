@@ -23,7 +23,7 @@ export default function TabBtn({
     >
       <h3>
         {label}
-        {tabId != "tab3" && (
+        {tabId != "tab3" && tabId != "tab4" && (
           <span>
             <strong>
               ({isMobile ? mobileUIApps.length : desktopUIApps.length})

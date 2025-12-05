@@ -10,7 +10,7 @@ import TabBtn from "./TabBtn";
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
-  const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
+  const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //Hook from useMedia library
 
   //Filter and getting the total items based on the current responsive mode
   const getMobileUIwebApps = WEB_DATA.filter(
@@ -30,10 +30,10 @@ export default function Tabs() {
   return (
     <div className="w-full max-w-md md:min-w-[90%] mx-auto">
       {/* Tab Buttons */}
-      <div className="flex justify-around border-b md:justify-center md:gap-8">
+      <div className="flex flex-wrap gap-1 bg-amber-50 justify-around border-b md:bg-transparent  md:w-[60vw] md:justify-center md:gap-8 md:py-1 md:mx-auto">
         <TabBtn
           tabId="tab1"
-          label="Web apps"
+          label="Web Apps"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
           isMobile={isMobile}
@@ -43,7 +43,7 @@ export default function Tabs() {
 
         <TabBtn
           tabId="tab2"
-          label="Web + API"
+          label="Web+API"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
           isMobile={isMobile}
@@ -53,7 +53,13 @@ export default function Tabs() {
 
         <TabBtn
           tabId="tab3"
-          label="Deployments"
+          label="Web+Backend+DB"
+          setActiveTab={setActiveTab}
+          activeTab={activeTab}
+        />
+        <TabBtn
+          tabId="tab4"
+          label="Deployments-noDB"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
         />
@@ -63,6 +69,7 @@ export default function Tabs() {
         {activeTab === "tab1" && <Accordion projects={WEB_DATA} />}
         {activeTab === "tab2" && <Accordion projects={WEB_APIS_DATA} />}
         {activeTab === "tab3" && <ConstructionMessage />}
+        {activeTab === "tab4" && <ConstructionMessage />}
       </div>
     </div>
   );
