@@ -8,7 +8,7 @@ export const WEB_APIS_DATA = [
     version: "Beta",
     description:
       "Play and filter open Swedish radios. Using the Skeleton UI theme. (Workshop)",
-    category: "Web + Api",
+    category: "Web+Api",
     language: "JavaScript",
     framework: "React+Vite",
     linkToApp: "https://radio-player-app-chi.vercel.app/",
@@ -16,7 +16,7 @@ export const WEB_APIS_DATA = [
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+ / iPhone 14 Pro max",
     isNew: false,
-    typeScrypt: "",
+    typeScript: "",
     css: "Module Css",
     cssLibrary: "",
     navigation: "",

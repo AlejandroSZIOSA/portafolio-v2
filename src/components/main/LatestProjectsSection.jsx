@@ -7,7 +7,14 @@ export default function LatestProjectsSection() {
   return (
     <div className="flex flex-col py-6 gap-8 md:flex-row ">
       {filteredItems.map((p) => {
-        return <CvWebProject key={p.id} project={p} label={p.category} />;
+        return (
+          <CvWebProject
+            key={p.id}
+            project={p}
+            label={p.category}
+            variationLayout="web-app"
+          />
+        );
       })}
     </div>
   );

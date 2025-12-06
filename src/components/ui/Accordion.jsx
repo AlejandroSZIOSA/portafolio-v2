@@ -28,7 +28,11 @@ export default function Accordion({ projects }) {
           </button>
           <div className="flex justify-center py-1">
             {openIndex === index && (
-              <CvWebProject project={item} label={item.category} />
+              <CvWebProject
+                project={item}
+                label={item.category}
+                variationLayout="web-app"
+              />
             )}
           </div>
         </div>
@@ -36,7 +40,11 @@ export default function Accordion({ projects }) {
     } else {
       return (
         <li className="inline-flex px-3" key={index}>
-          <CvWebProject project={item} label={item.category} />
+          <CvWebProject
+            project={item}
+            label={item.category}
+            variationLayout="web-app"
+          />
         </li>
       );
     }

@@ -5,7 +5,7 @@ import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import ProjectInfoArea from "./ProjectInfoArea";
 
-export default function CvWebProject({ project, label }) {
+export default function CvWebProject({ project, label, variationLayout }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
     // TODO:Fix border Children element in mobile view

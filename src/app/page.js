@@ -13,7 +13,7 @@ export default function Home() {
       <DividerHeaderTitle sectionTitle="My Latest Project" />
       <LatestProjectsSection />
       <DividerHeaderTitle
-        sectionTitle="Some Previous Mini-Apps"
+        sectionTitle="Previous Mini-Apps"
         putSectionId="previous_projects_divider"
       />
       <ProjectsSection />
