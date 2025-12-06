@@ -1,14 +1,14 @@
 "use client";
 import { useState } from "react";
-import Accordion from "./Accordion";
+import Accordion from "../Accordion";
 import { WEB_DATA } from "@/utils/data/web-projects";
 import { WEB_APIS_DATA } from "@/utils/data/web-apis-projects";
-import ConstructionMessage from "./ConstructionMessage";
+import ConstructionMessage from "../ConstructionMessage";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import TabBtn from "./TabBtn";
 
-export default function Tabs() {
+export default function TabsRoot() {
   const [activeTab, setActiveTab] = useState("tab1");
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //Hook from useMedia library
 

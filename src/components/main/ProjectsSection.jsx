@@ -1,9 +1,9 @@
-import Tabs from "../ui/Tabs";
+import TabsRoot from "../ui/tabs/TabsRoot";
 
 export default function ProjectsSection() {
   return (
     <div className="contents">
-      <Tabs />
+      <TabsRoot />
     </div>
   );
 }
