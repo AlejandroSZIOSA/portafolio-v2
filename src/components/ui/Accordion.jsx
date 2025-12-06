@@ -27,14 +27,16 @@ export default function Accordion({ projects }) {
             </span>
           </button>
           <div className="flex justify-center py-1">
-            {openIndex === index && <CvWebProject project={item} />}
+            {openIndex === index && (
+              <CvWebProject project={item} label={item.category} />
+            )}
           </div>
         </div>
       );
     } else {
       return (
         <li className="inline-flex px-3" key={index}>
-          <CvWebProject project={item} />
+          <CvWebProject project={item} label={item.category} />
         </li>
       );
     }

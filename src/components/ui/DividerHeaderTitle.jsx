@@ -6,7 +6,7 @@ export default function DividerHeaderTitle({ sectionTitle, putSectionId }) {
         id={putSectionId}
         className="w-full py-2 text-center font-semibold border-black border-t-2 border-b-2 border-dashed"
       >
-        {sectionTitle}
+        <strong>{sectionTitle}</strong>
       </h2>
     </>
   );

@@ -5,14 +5,13 @@ import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import ProjectInfoArea from "./ProjectInfoArea";
 
-export default function CvWebProject({ project }) {
+export default function CvWebProject({ project, label }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
-
   return (
     // TODO:Fix border Children element in mobile view
     <div className="flex flex-col w-[360px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left md:border-4 md:h-min">
       <div className="flex py-1 justify-between bg-indigo-500 text-xs text-white rounded-t-lg md:text-sm md:rounded-none">
-        <div className="ml-3">{project.category}</div>
+        <div className="ml-3">{label}</div>
         <span className="inline-flex">
           <img
             src="icons/clarity_update-white.svg"
