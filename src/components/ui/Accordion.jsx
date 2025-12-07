@@ -31,7 +31,7 @@ export default function Accordion({ projects }) {
               <CvWebProject
                 project={item}
                 label={item.category}
-                variationLayout="web-app"
+                variationLayout="web"
               />
             )}
           </div>
@@ -43,7 +43,7 @@ export default function Accordion({ projects }) {
           <CvWebProject
             project={item}
             label={item.category}
-            variationLayout="web-app"
+            variationLayout="web"
           />
         </li>
       );
