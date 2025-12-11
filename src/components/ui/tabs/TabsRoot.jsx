@@ -1,14 +1,15 @@
 "use client";
 import { useState } from "react";
-import Accordion from "./Accordion";
+import Accordion from "../Accordion";
 import { WEB_DATA } from "@/utils/data/web-projects";
 import { WEB_APIS_DATA } from "@/utils/data/web-apis-projects";
-import ConstructionMessage from "./ConstructionMessage";
+import { WEB_BACKEND_DB_DATA } from "@/utils/data/web-backend-db";
+import ConstructionMessage from "../ConstructionMessage";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import TabBtn from "./TabBtn";
 
-export default function Tabs() {
+export default function TabsRoot() {
   const [activeTab, setActiveTab] = useState("tab1");
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //Hook from useMedia library
 
@@ -26,6 +27,10 @@ export default function Tabs() {
   const getDesktopUIwebApis = WEB_APIS_DATA.filter(
     (item) => item.responsiveUI[1] && !item.isNew
   );
+
+  {
+    /* CONTINUE FROM HERE */
+  }
 
   return (
     <div className="w-full max-w-md md:min-w-[90%] mx-auto">
@@ -51,6 +56,7 @@ export default function Tabs() {
           desktopUIApps={getDesktopUIwebApis}
         />
 
+        {/* CONTINUE FROM HERE */}
         <TabBtn
           tabId="tab3"
           label="Web+Backend+DB"
@@ -65,7 +71,7 @@ export default function Tabs() {
         />
       </div>
       {/* Tab Content */}
-      <div className="px-1 pt-4 pb-6 border md:py-3 md:flex md:justify-center ">
+      <div className="px-1 py-6 border md:py-3 md:flex md:justify-center ">
         {activeTab === "tab1" && <Accordion projects={WEB_DATA} />}
         {activeTab === "tab2" && <Accordion projects={WEB_APIS_DATA} />}
         {activeTab === "tab3" && <ConstructionMessage />}

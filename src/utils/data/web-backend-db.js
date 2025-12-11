@@ -1,4 +1,4 @@
-export const WEB_APIS_DATA = [
+export const WEB_BACKEND_DB_DATA = [
   {
     id: 1,
     updated_at: "October 14, 2025",
@@ -8,7 +8,7 @@ export const WEB_APIS_DATA = [
     version: "Beta",
     description:
       "Play and filter open Swedish radios. Using the Skeleton UI theme. (Workshop)",
-    category: "Web+Api",
+    category: "Web+Backend+DB",
     language: "JavaScript",
     framework: "React+Vite",
     linkToApp: "https://radio-player-app-chi.vercel.app/",

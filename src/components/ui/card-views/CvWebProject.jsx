@@ -3,21 +3,38 @@ import Image from "next/image";
 import GitHubLinkBtn from "../GitHubLinkBtn";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
+import InfoScrollArea from "./InfoScrollArea";
 
-const TECH_BOXES_STYLES =
-  "inline-block min-w-fit bg-gray-200 rounded-full content-center px-3 py-1 text-xs font-semibold text-gray-700 text-center";
-
-export default function CvWebProject({ project }) {
+export default function CvWebProject({ project, label, variationLayout }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
 
-  const [mobileUI, desktopUI] = project.responsiveUI; //destructuring assignment
-  const [chrome] = project.browsers;
+  let content;
+  switch (variationLayout) {
+    case "web":
+      content = (
+        <div className="px-6 py-3 flex justify-between items-center md:py-4">
+          <a
+            href={project.linkToApp}
+            className="bg-orange-400 hover:bg-orange-600 text-sm md:text-base text-black py-2 px-2 border-2 border-indigo-950 rounded-md "
+          >
+            View App
+          </a>
+          <GitHubLinkBtn gitHubLink={project.gitHubLink} />
+        </div>
+      );
+      break;
+    case "web+backend+db":
+      content = <p>web+backend+db</p>;
+      break;
+    default:
+      content = null;
+  }
 
   return (
     // TODO:Fix border Children element in mobile view
     <div className="flex flex-col w-[360px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left md:border-4 md:h-min">
       <div className="flex py-1 justify-between bg-indigo-500 text-xs text-white rounded-t-lg md:text-sm md:rounded-none">
-        <div className="ml-3">{project.category}</div>
+        <div className="ml-3">{label}</div>
         <span className="inline-flex">
           <img
             src="icons/clarity_update-white.svg"
@@ -47,68 +64,8 @@ export default function CvWebProject({ project }) {
       <div className="px-2 pb-2 md:px-4 md:pb-4">
         <p className="text-gray-700">{project.description}</p>
       </div>
-      <div className="bg-red-200 border px-1 py-3 flex space-x-2 overflow-x-auto scrollbar-hide md:py-2 md:px-2">
-        {chrome && <span className={TECH_BOXES_STYLES}>{chrome}</span>}
-        {project.deviceBrowserSettings && (
-          <span className={TECH_BOXES_STYLES}>
-            Dev:{project.deviceBrowserSettings}
-          </span>
-        )}
-
-        {project.framework && (
-          <span className={TECH_BOXES_STYLES}>{project.framework}</span>
-        )}
-        {project.language && (
-          <span className={TECH_BOXES_STYLES}>{project.language}</span>
-        )}
-        {project.typeScript && (
-          <span className={TECH_BOXES_STYLES}>TypeScript</span>
-        )}
-
-        {project.navigation && (
-          <span className={TECH_BOXES_STYLES}>{project.navigation}</span>
-        )}
-        {project.context && <span className={TECH_BOXES_STYLES}>Context</span>}
-        {project.redux && <span className={TECH_BOXES_STYLES}>Redux</span>}
-
-        {project.crud && (
-          <span className={TECH_BOXES_STYLES}>C.R.U.D: {project.crud}</span>
-        )}
-
-        {project.localStorage && (
-          <span className={TECH_BOXES_STYLES}>Local Storage</span>
-        )}
-
-        {project.api && (
-          <span className={TECH_BOXES_STYLES}>API:{project.api}</span>
-        )}
-        {project.tests && (
-          <span className={TECH_BOXES_STYLES}>{project.tests}</span>
-        )}
-
-        {project.css && (
-          <span className={TECH_BOXES_STYLES}>{project.css}</span>
-        )}
-        {project.cssLibrary && (
-          <span className={TECH_BOXES_STYLES}>{project.cssLibrary}</span>
-        )}
-
-        {mobileUI && <span className={TECH_BOXES_STYLES}>Mobile UI</span>}
-        {desktopUI && <span className={TECH_BOXES_STYLES}>Desktop UI</span>}
-
-        {project.wcag && (
-          <span className={TECH_BOXES_STYLES}>Wcag:{project.wcag}</span>
-        )}
-      </div>
-      <div className="px-6 py-3 flex justify-between items-center md:py-4">
-        <a
-          href={project.linkToApp}
-          className="bg-orange-400 hover:bg-orange-600 text-sm md:text-base text-black py-2 px-2 border-2 border-indigo-950 rounded-md "
-        >
-          View App
-        </a>
-        <GitHubLinkBtn gitHubLink={project.gitHubLink} />
-      </div>
+      <InfoScrollArea project={project} />
+      {content}
     </div>
   );
 }
