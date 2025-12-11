@@ -4,6 +4,7 @@ import GitHubLinkBtn from "../GitHubLinkBtn";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import InfoScrollArea from "./InfoScrollArea";
+import Link from "next/link";
 
 export default function CvWebProject({ project, label, variationLayout }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
@@ -24,7 +25,11 @@ export default function CvWebProject({ project, label, variationLayout }) {
       );
       break;
     case "web+backend+db":
-      content = <p>web+backend+db</p>;
+      content = (
+        <div className="px-6 py-3 flex justify-between items-center md:py-4">
+          <Link href="/webBackendDbDetails/1"> To Details</Link>
+        </div>
+      );
       break;
     default:
       content = null;

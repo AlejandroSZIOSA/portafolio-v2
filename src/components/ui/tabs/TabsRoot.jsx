@@ -28,6 +28,13 @@ export default function TabsRoot() {
     (item) => item.responsiveUI[1] && !item.isNew
   );
 
+  const getMobileUIwebBackendDb = WEB_BACKEND_DB_DATA.filter(
+    (item) => item.responsiveUI[0] && !item.isNew
+  );
+  const getDesktopUIwebBackendDb = WEB_BACKEND_DB_DATA.filter(
+    (item) => item.responsiveUI[1] && !item.isNew
+  );
+
   {
     /* CONTINUE FROM HERE */
   }
@@ -62,6 +69,9 @@ export default function TabsRoot() {
           label="Web+Backend+DB"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
+          isMobile={isMobile}
+          mobileUIApps={getMobileUIwebBackendDb}
+          desktopUIApps={getDesktopUIwebBackendDb}
         />
         <TabBtn
           tabId="tab4"
@@ -72,9 +82,18 @@ export default function TabsRoot() {
       </div>
       {/* Tab Content */}
       <div className="px-1 py-6 border md:py-3 md:flex md:justify-center ">
-        {activeTab === "tab1" && <Accordion projects={WEB_DATA} />}
-        {activeTab === "tab2" && <Accordion projects={WEB_APIS_DATA} />}
-        {activeTab === "tab3" && <ConstructionMessage />}
+        {activeTab === "tab1" && (
+          <Accordion projects={WEB_DATA} variationLayout="web" />
+        )}
+        {activeTab === "tab2" && (
+          <Accordion projects={WEB_APIS_DATA} variationLayout="web" />
+        )}
+        {activeTab === "tab3" && (
+          <Accordion
+            projects={WEB_BACKEND_DB_DATA}
+            variationLayout="web+backend+db"
+          />
+        )}
         {activeTab === "tab4" && <ConstructionMessage />}
       </div>
     </div>
