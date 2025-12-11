@@ -71,7 +71,7 @@ export default function TabsRoot() {
         />
       </div>
       {/* Tab Content */}
-      <div className="px-1 pt-4 pb-6 border md:py-3 md:flex md:justify-center ">
+      <div className="px-1 py-6 border md:py-3 md:flex md:justify-center ">
         {activeTab === "tab1" && <Accordion projects={WEB_DATA} />}
         {activeTab === "tab2" && <Accordion projects={WEB_APIS_DATA} />}
         {activeTab === "tab3" && <ConstructionMessage />}

@@ -16,7 +16,7 @@ export default function HeroSection() {
         priority
       />
       <div className="py-2 text-center md:w-96 md:h-auto md:py-0 md:mt-auto md:text-left">
-        <p className="font-mono ml-3 p-2 text-left text-lg md:ml-4 md:text-xl">
+        <p className="font-mono ml-3 p-2 text-left text-lg md:ml-4 md:text-xl md:border-2 md:border-black md:rounded-lg">
           Hi!😎 <br></br>My name is{" "}
           <strong id="intro_text_strong">Gabriel Alejandro Sazo.</strong>
           <br></br>I am an action oriented, highly focused and very curious
