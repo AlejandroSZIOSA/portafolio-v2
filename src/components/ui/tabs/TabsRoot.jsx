@@ -83,15 +83,18 @@ export default function TabsRoot() {
       {/* Tab Content */}
       <div className="px-1 py-6 border md:py-3 md:flex md:justify-center ">
         {activeTab === "tab1" && (
-          <Accordion projects={WEB_DATA} variationLayout="web" />
+          <Accordion projects={WEB_DATA} variationLayout="no-link-to-details" />
         )}
         {activeTab === "tab2" && (
-          <Accordion projects={WEB_APIS_DATA} variationLayout="web" />
+          <Accordion
+            projects={WEB_APIS_DATA}
+            variationLayout="no-link-to-details"
+          />
         )}
         {activeTab === "tab3" && (
           <Accordion
             projects={WEB_BACKEND_DB_DATA}
-            variationLayout="web+backend+db"
+            variationLayout="link-to-details"
           />
         )}
         {activeTab === "tab4" && <ConstructionMessage />}

@@ -11,7 +11,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
 
   let content;
   switch (variationLayout) {
-    case "web":
+    case "no-link-to-details":
       content = (
         <div className="px-6 py-3 flex justify-between items-center md:py-4">
           <a
@@ -24,10 +24,10 @@ export default function CvWebProject({ project, label, variationLayout }) {
         </div>
       );
       break;
-    case "web+backend+db":
+    case "link-to-details":
       content = (
         <div className="px-6 py-3 flex justify-between items-center md:py-4">
-          <Link href="/webBackendDbDetails/1"> To Details</Link>
+          <Link href={`/webBackendDbDetails/${project.id}`}> To Details</Link>
         </div>
       );
       break;

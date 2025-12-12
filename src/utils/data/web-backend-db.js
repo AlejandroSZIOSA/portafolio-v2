@@ -4,15 +4,15 @@ export const WEB_BACKEND_DB_DATA = [
     updated_at: "October 14, 2025",
     cardImgUrl:
       "/images/web-apis-projects/swedish-radio-player/radios_400_300.png",
-    title: "Swedish Radio Player",
+    title: "Driver Theory wa",
     version: "Beta",
-    description:
-      "Play and filter open Swedish radios. Using the Skeleton UI theme. (Workshop)",
+    description: "User learning drive card",
     category: "Web+Backend+DB",
     language: "JavaScript",
     framework: "React+Vite",
-    linkToApp: "https://radio-player-app-chi.vercel.app/",
-    gitHubLink: "https://github.com/AlejandroSZIOSA/radio-player-app.git",
+    gitHubFrontendLink: "https://radio-player-app-chi.vercel.app/",
+    gitHubBackendLink:
+      "https://github.com/AlejandroSZIOSA/radio-player-app.git",
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+ / iPhone 14 Pro max",
     isNew: false,
@@ -23,11 +23,19 @@ export const WEB_BACKEND_DB_DATA = [
     tests: "",
     wcag: "Basic",
     responsiveUI: ["Mobile", "Desktop"],
-    express: "",
     context: "",
     redux: "",
+    localStorage: "",
     crud: "",
     api: "Get",
-    localStorage: "",
+
+    authenticationScreenShots: [
+      "/images/web-backend-db/t1.png",
+      "/images/web-backend-db/t2.png",
+    ],
+    loadingScreenShots: [],
+    userScreenShots: [],
+    backend: "",
+    db: "Sanity",
   },
 ];
