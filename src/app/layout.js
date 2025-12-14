@@ -16,15 +16,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body id="body_" className={inter.className}>
-        <header>
+        {/* <header>
           <LogoHeader />
           <UpdatedDatePanel />
           <NavBar />
-        </header>
+        </header> */}
         {children}
-        <footer>
+        {/* <footer>
           <FooterContent />
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
