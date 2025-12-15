@@ -36,7 +36,7 @@ export default function NavBar({ variation }) {
         </div>
       </div>
     );
-  } else {
+  } else if (variation === "details-page") {
     content = (
       <div className="flex w-full justify-center">
         <div className={NAV_BOXES}>
@@ -48,5 +48,13 @@ export default function NavBar({ variation }) {
     );
   }
 
-  return <nav className="p-4 md:p-0 md:mr-4 md:content-center">{content}</nav>;
+  return (
+    <nav
+      className={`p-${
+        variation === "home-page" ? "3" : "2"
+      } md:p-0 md:mr-4 md:content-center`}
+    >
+      {content}
+    </nav>
+  );
 }

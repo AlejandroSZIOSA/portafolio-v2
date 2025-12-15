@@ -11,46 +11,39 @@ export default function WebBackendDbDetailsPage({ params }) {
     (item) => item.id.toString() === params.id
   );
 
-  const {
-    responsiveUI,
-    gitHubFrontendLink,
-    gitHubBackendLink,
-    authenticationScreenShots,
-  } = project;
+  const { gitHubFrontendLink, authenticationScreenShots } = project;
 
   return (
     <>
       <header>
         <LogoHeader />
         <UpdatedDatePanel />
-        <NavBar variation="detail-page" />
+        <NavBar variation="details-page" />
       </header>
 
-      <main>
-        <h1>Details for {project.title}</h1>
+      <main className="flex flex-col justify-center items-center mx-auto">
+        <h1>{project.title}</h1>
         <h2>Screenshots</h2>
         <section>
-          <h3> Login Screen</h3>
-
-          <ol>
-            {authenticationScreenShots.map((url, index) => (
-              <li key={index}>
-                <ScreenshotShow url={url} />
-              </li>
-            ))}
-          </ol>
-
-          {/*
-           */}
+          <h3 className="text-left"> Login Screen</h3>
+          <div className="bg-red-200 border px-1 py-3 overflow-x-auto h-[500px] w-[300px] scrollbar-hide">
+            <ol className="flex">
+              {authenticationScreenShots.map((url, index) => (
+                <li key={index} className="flex-shrink-0 w-64">
+                  <ScreenshotShow url={url} />
+                </li>
+              ))}
+            </ol>
+          </div>
         </section>
-        <section>
+        <section className="text-left">
           <h3> Loading Screen</h3>
         </section>
         <section>
-          <h3> User Screen</h3>
+          <h3 className="text-left"> User Screen</h3>
         </section>
         <section>
-          <h3> Code</h3>
+          <h3 className="text-left"> Code</h3>
           <GitHubLinkBtn url={gitHubFrontendLink} />
         </section>
       </main>

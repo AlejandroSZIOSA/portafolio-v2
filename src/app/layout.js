@@ -1,9 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "/src/components/header/NavBar";
-import FooterContent from "/src/components/footer/FooterContent";
-import LogoHeader from "/src/components/header/LogoHeader";
-import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +18,6 @@ export default function RootLayout({ children }) {
           <NavBar />
         </header> */}
         {children}
-        {/* <footer>
-          <FooterContent />
-        </footer> */}
       </body>
     </html>
   );

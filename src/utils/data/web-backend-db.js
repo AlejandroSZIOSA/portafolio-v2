@@ -2,11 +2,10 @@ export const WEB_BACKEND_DB_DATA = [
   {
     id: 1,
     updated_at: "October 14, 2025",
-    cardImgUrl:
-      "/images/web-apis-projects/swedish-radio-player/radios_400_300.png",
-    title: "Driver Theory wa",
+    cardImgUrl: "/images/no-image-yet-400_300.png",
+    title: "Driver Theory Trivia",
     version: "Beta",
-    description: "User learning drive card",
+    description: "Learning drive theory app",
     category: "Web+Backend+DB",
     language: "JavaScript",
     framework: "React+Vite",
@@ -28,14 +27,20 @@ export const WEB_BACKEND_DB_DATA = [
     localStorage: "",
     crud: "",
     api: "Get",
+    backend: "",
+    db: "Sanity",
 
     authenticationScreenShots: [
+      "/images/web-backend-db/t1.png",
+      "/images/web-backend-db/t2.png",
+      "/images/web-backend-db/t1.png",
+      "/images/web-backend-db/t2.png",
+      "/images/web-backend-db/t1.png",
+      "/images/web-backend-db/t2.png",
       "/images/web-backend-db/t1.png",
       "/images/web-backend-db/t2.png",
     ],
     loadingScreenShots: [],
     userScreenShots: [],
-    backend: "",
-    db: "Sanity",
   },
 ];

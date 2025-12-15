@@ -26,8 +26,13 @@ export default function CvWebProject({ project, label, variationLayout }) {
       break;
     case "link-to-details":
       content = (
-        <div className="px-6 py-3 flex justify-between items-center md:py-4">
-          <Link href={`/webBackendDbDetails/${project.id}`}> To Details</Link>
+        <div className="px-6 py-3 flex justify-center items-center md:py-4">
+          <Link
+            className="px-2 py-2 bg-blue-600 hover:bg-blue-800 text-sm md:text-base text-white border-2 border-indigo-950 rounded-md"
+            href={`/webBackendDbDetails/${project.id}`}
+          >
+            To Details
+          </Link>
         </div>
       );
       break;
