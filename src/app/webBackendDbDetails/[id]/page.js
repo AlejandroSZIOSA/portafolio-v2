@@ -4,6 +4,7 @@ import { WEB_BACKEND_DB_DATA } from "@/utils/data/web-backend-db";
 
 import LogoHeader from "@/components/header/LogoHeader";
 import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
+import NavBar from "@/components/header/NavBar";
 
 export default function WebBackendDbDetailsPage({ params }) {
   const project = WEB_BACKEND_DB_DATA.find(
@@ -22,6 +23,7 @@ export default function WebBackendDbDetailsPage({ params }) {
       <header>
         <LogoHeader />
         <UpdatedDatePanel />
+        <NavBar variation="detail-page" />
       </header>
 
       <main>

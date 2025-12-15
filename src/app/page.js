@@ -16,7 +16,7 @@ export default function Home() {
       <header>
         <LogoHeader />
         <UpdatedDatePanel />
-        <NavBar />
+        <NavBar variation="home-page" />
       </header>
 
       <main className="flex flex-col w-full items-center">

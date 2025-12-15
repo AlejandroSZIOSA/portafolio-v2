@@ -3,9 +3,11 @@ import Link from "next/link";
 const NAV_BOXES =
   " text-lg md:p-1 md:px-3 md:border-2 md:border-[#00D8FF] underline md:no-underline";
 
-export default function NavBar() {
-  return (
-    <nav className="p-4 md:p-0 md:mr-4 md:content-center">
+export default function NavBar({ variation }) {
+  let content = null;
+
+  if (variation === "home-page") {
+    content = (
       <div className="flex w-full justify-between">
         <div className={NAV_BOXES}>
           <Link href="#body_" className="text-[#00D8FF]">
@@ -33,6 +35,18 @@ export default function NavBar() {
           </Link>
         </div>
       </div>
-    </nav>
-  );
+    );
+  } else {
+    content = (
+      <div className="flex w-full justify-center">
+        <div className={NAV_BOXES}>
+          <Link href="/" className="text-[#00D8FF]">
+            Back Home
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return <nav className="p-4 md:p-0 md:mr-4 md:content-center">{content}</nav>;
 }
