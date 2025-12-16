@@ -31,16 +31,20 @@ export const WEB_BACKEND_DB_DATA = [
     db: "Sanity",
 
     authenticationScreenShots: [
-      "/images/web-backend-db/t1.png",
-      "/images/web-backend-db/t2.png",
-      "/images/web-backend-db/t1.png",
-      "/images/web-backend-db/t2.png",
-      "/images/web-backend-db/t1.png",
-      "/images/web-backend-db/t2.png",
-      "/images/web-backend-db/t1.png",
-      "/images/web-backend-db/t2.png",
+      "/images/web-backend-db/screenshots/driver-wa/sign-up/1.png",
+      "/images/web-backend-db/screenshots/driver-wa/sign-up/2.png",
+      "/images/web-backend-db/screenshots/driver-wa/sign-up/3.png",
     ],
     loadingScreenShots: [],
     userScreenShots: [],
+
+    detailsProjectInfo: {
+      signUp:
+        "The sign-up process allows new users to create an account by providing necessary information such as username, email, and password. The system validates the input data to ensure it meets the required criteria before creating the account in the database.",
+      logIn:
+        "The log-in functionality enables existing users to access their accounts by entering their registered credentials, typically a username or email and password. The system verifies the provided information against stored data to authenticate the user and grant access to their personalized content and features.",
+      user: "The user dashboard provides a personalized interface where users can manage their profiles, view their activity history, and access various features of the application. It serves as a central hub for users to interact with the app's functionalities and customize their experience.",
+      code: "The application's codebase is structured using React for the frontend, ensuring a responsive and dynamic user interface. The backend is built with Node.js, handling server-side logic and API requests. Data is managed using Sanity as the database solution, facilitating efficient storage and retrieval of user information and application data.",
+    },
   },
 ];

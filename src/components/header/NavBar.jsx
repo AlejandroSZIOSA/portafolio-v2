@@ -50,9 +50,10 @@ export default function NavBar({ variation }) {
 
   return (
     <nav
-      className={`p-${
+      /*   className={`p-${
         variation === "home-page" ? "3" : "2"
-      } md:p-0 md:mr-4 md:content-center`}
+      } md:p-0 md:mr-4 md:content-center`} */
+      className="p-2 md:p-0 md:mr-4 md:content-center"
     >
       {content}
     </nav>
