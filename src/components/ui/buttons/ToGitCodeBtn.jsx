@@ -3,7 +3,7 @@ import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import Image from "next/image";
 
-export default function GitHubLinkBtn({ gitHubLink = "#" }) {
+export default function ToGitCodeBtn({ gitHubLink = "#" }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
 
   return (

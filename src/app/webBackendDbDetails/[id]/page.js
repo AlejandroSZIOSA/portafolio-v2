@@ -1,4 +1,4 @@
-import GitHubLinkBtn from "@/components/ui/GitHubLinkBtn";
+import GitHubLinkBtn from "@/components/ui/buttons/ToGitCodeBtn";
 import { WEB_BACKEND_DB_DATA } from "@/utils/data/web-backend-db";
 
 import LogoHeader from "@/components/header/LogoHeader";
@@ -14,7 +14,7 @@ export default function WebBackendDbDetailsPage({ params }) {
 
   const { gitHubFrontendLink, authenticationScreenShots, detailsProjectInfo } =
     project;
-  const { signUp } = detailsProjectInfo;
+  const { signUp, logIn, user, backend } = detailsProjectInfo;
 
   return (
     <>
@@ -23,24 +23,31 @@ export default function WebBackendDbDetailsPage({ params }) {
         <UpdatedDatePanel />
         <NavBar variation="details-page" />
       </header>
-
       <main className="flex flex-col justify-center items-center mx-auto">
         <h1>{project.title}</h1>
         <h2>Screenshots</h2>
-        <section>
+
+        <section className="my-2">
           <InfoBox title="Sign-Up" description={signUp} />
           <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
-        <section className="text-left">
-          <h3> Log-In</h3>
+
+        <section className="my-2">
+          <InfoBox title="Log-In" description={logIn} />
+          <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
-        <section>
-          <h3 className="text-left"> User</h3>
+
+        <section className="my-2">
+          <InfoBox title="User" description={user} />
+          <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
-        <section>
-          <h3 className="text-left"> Code</h3>
-          <GitHubLinkBtn url={gitHubFrontendLink} />
+
+        <section className="my-2">
+          <InfoBox title="Backend" description={backend} />
+          <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
+
+        <section className="my-2"></section>
       </main>
     </>
   );

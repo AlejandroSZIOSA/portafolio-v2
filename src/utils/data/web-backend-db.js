@@ -44,7 +44,8 @@ export const WEB_BACKEND_DB_DATA = [
       logIn:
         "The log-in functionality enables existing users to access their accounts by entering their registered credentials, typically a username or email and password. The system verifies the provided information against stored data to authenticate the user and grant access to their personalized content and features.",
       user: "The user dashboard provides a personalized interface where users can manage their profiles, view their activity history, and access various features of the application. It serves as a central hub for users to interact with the app's functionalities and customize their experience.",
-      code: "The application's codebase is structured using React for the frontend, ensuring a responsive and dynamic user interface. The backend is built with Node.js, handling server-side logic and API requests. Data is managed using Sanity as the database solution, facilitating efficient storage and retrieval of user information and application data.",
+      backend:
+        "The backend is developed using Node.js, which handles server-side logic, API requests, and interactions with the database. It ensures secure and efficient processing of data, user authentication, and overall application functionality.",
     },
   },
 ];
