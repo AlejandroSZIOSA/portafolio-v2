@@ -63,7 +63,6 @@ export default function TabsRoot() {
           desktopUIApps={getDesktopUIwebApis}
         />
 
-        {/* CONTINUE FROM HERE */}
         <TabBtn
           tabId="tab3"
           label="Web+Backend+DB"
