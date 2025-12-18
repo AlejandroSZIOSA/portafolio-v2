@@ -42,19 +42,19 @@ export default function WebBackendDbDetailsPage({ params }) {
           <InfoBox title="Backend" description={backend} />
           <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
-        {/* w-screen fix problem
+        {/* w-screen fix problem using view port width
          */}{" "}
         <section className="flex flex-col h-auto w-screen bg-white">
           <h2 className="text-center py-3">
             <strong>Code</strong>
           </h2>
-          <div className="flex flex-row justify-around w-full mx-auto">
+          <div className="flex flex-row justify-around w-full mx-auto pb-5">
             <div className="flex flex-col items-center">
-              <p>Frontend</p>
+              <p className="mb-2">Frontend</p>
               <GitHubLinkBtn gitHubLink={gitHubFrontendLink}></GitHubLinkBtn>
             </div>
             <div className="flex flex-col items-center">
-              <p>Backend</p>
+              <p className="mb-2">Backend</p>
               <GitHubLinkBtn gitHubLink={gitHubFrontendLink}></GitHubLinkBtn>
             </div>
           </div>
