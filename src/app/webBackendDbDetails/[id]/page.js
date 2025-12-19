@@ -24,37 +24,37 @@ export default function WebBackendDbDetailsPage({ params }) {
         <NavBar variation="details-page" />
       </header>
       <main className="flex flex-col justify-center items-center mx-auto">
-        <h1>{project.title}</h1>
+        <h1 className="my-4">{project.title}</h1>
         <h2>Screenshots</h2>
-        <section className="my-2">
+        <section className="my-1 lg:flex lg:justify-center lg:my-5">
           <InfoBox title="Sign-Up" description={signUp} />
           <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
-        <section className="my-2">
+        <section className="my-1 lg:flex lg:justify-center lg:my-5">
           <InfoBox title="Log-In" description={logIn} />
           <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
-        <section className="my-2">
+        <section className="my-1 lg:flex lg:justify-center lg:my-5">
           <InfoBox title="User" description={user} />
           <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
-        <section className="my-2">
+        <section className="my-1 lg:flex lg:justify-center lg:my-5">
           <InfoBox title="Backend" description={backend} />
           <ScreenShotScrollView screenshots={authenticationScreenShots} />
         </section>
         {/* w-screen fix problem using view port width
          */}{" "}
-        <section className="flex flex-col h-auto w-screen bg-white">
-          <h2 className="text-center py-3">
+        <section className="flex flex-col h-auto w-screen bg-white lg:mt-5">
+          <h2 className="text-center pt-2 pb-1 lg:py-4">
             <strong>Code</strong>
           </h2>
-          <div className="flex flex-row justify-around w-full mx-auto pb-5">
+          <div className="flex flex-row justify-around w-full mx-auto pb-3 lg:pb-10">
             <div className="flex flex-col items-center">
-              <p className="mb-2">Frontend</p>
+              <h3 className="mb-1">Frontend</h3>
               <GitHubLinkBtn gitHubLink={gitHubFrontendLink}></GitHubLinkBtn>
             </div>
             <div className="flex flex-col items-center">
-              <p className="mb-2">Backend</p>
+              <h3 className="mb-1">Backend</h3>
               <GitHubLinkBtn gitHubLink={gitHubFrontendLink}></GitHubLinkBtn>
             </div>
           </div>
