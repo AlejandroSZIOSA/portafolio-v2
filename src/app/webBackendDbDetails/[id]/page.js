@@ -12,8 +12,15 @@ export default function WebBackendDbDetailsPage({ params }) {
     (item) => item.id.toString() === params.id
   );
 
-  const { gitHubFrontendLink, authenticationScreenShots, detailsProjectInfo } =
-    project;
+  const {
+    gitHubFrontendLink,
+    signUpScreenShots,
+    logInScreenShots,
+    logInNoUserScreenShots,
+    userScreenShots,
+    backendScreenShots,
+    detailsProjectInfo,
+  } = project;
   const { signUp, logIn, user, backend } = detailsProjectInfo;
 
   return (
@@ -28,23 +35,30 @@ export default function WebBackendDbDetailsPage({ params }) {
         <h2>Screenshots</h2>
         <section className="my-1 lg:flex lg:justify-center lg:my-5">
           <InfoBox title="Sign-Up" description={signUp} />
-          <ScreenShotScrollView screenshots={authenticationScreenShots} />
+          <ScreenShotScrollView screenshots={signUpScreenShots} />
         </section>
         <section className="my-1 lg:flex lg:justify-center lg:my-5">
-          <InfoBox title="Log-In" description={logIn} />
-          <ScreenShotScrollView screenshots={authenticationScreenShots} />
+          <InfoBox title="Log-In (with an existing user)" description={logIn} />
+          <ScreenShotScrollView screenshots={logInScreenShots} />
+        </section>
+        <section className="my-1 lg:flex lg:justify-center lg:my-5">
+          <InfoBox
+            title="Log-In (without an existing user)"
+            description={logIn}
+          />
+          <ScreenShotScrollView screenshots={logInNoUserScreenShots} />
         </section>
         <section className="my-1 lg:flex lg:justify-center lg:my-5">
           <InfoBox title="User" description={user} />
-          <ScreenShotScrollView screenshots={authenticationScreenShots} />
+          <ScreenShotScrollView screenshots={userScreenShots} />
         </section>
         <section className="my-1 lg:flex lg:justify-center lg:my-5">
           <InfoBox title="Backend" description={backend} />
-          <ScreenShotScrollView screenshots={authenticationScreenShots} />
+          <ScreenShotScrollView screenshots={backendScreenShots} />
         </section>
-        {/* w-screen fix problem using view port width
+        {/* w-[-webkit-fill-available] fix problem when scrolling appers and take more horizontal space
          */}{" "}
-        <section className="flex flex-col h-auto w-screen bg-white lg:mt-5">
+        <section className="flex flex-col h-auto w-[-webkit-fill-available] bg-white lg:mt-5">
           <h2 className="text-center pt-2 pb-1 lg:py-4">
             <strong>Code</strong>
           </h2>

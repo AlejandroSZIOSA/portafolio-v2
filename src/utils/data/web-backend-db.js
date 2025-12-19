@@ -30,16 +30,51 @@ export const WEB_BACKEND_DB_DATA = [
     backend: "",
     db: "Sanity",
 
-    authenticationScreenShots: [
+    signUpScreenShots: [
       "/images/web-backend-db/screenshots/driver-wa/sign-up/1.png",
       "/images/web-backend-db/screenshots/driver-wa/sign-up/2.png",
       "/images/web-backend-db/screenshots/driver-wa/sign-up/3.png",
-      "/images/web-backend-db/screenshots/driver-wa/sign-up/1.png",
-      "/images/web-backend-db/screenshots/driver-wa/sign-up/2.png",
-      "/images/web-backend-db/screenshots/driver-wa/sign-up/3.png",
+      "/images/web-backend-db/screenshots/driver-wa/sign-up/4.png",
+      "/images/web-backend-db/screenshots/driver-wa/sign-up/5.png",
+      "/images/web-backend-db/screenshots/driver-wa/sign-up/6.png",
+      "/images/web-backend-db/screenshots/driver-wa/sign-up/7.png",
     ],
-    loadingScreenShots: [],
-    userScreenShots: [],
+    logInScreenShots: [
+      "/images/web-backend-db/screenshots/driver-wa/log-in/1.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in/2.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in/3.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in/4.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in/5.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in/6.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in/7.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in/8.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in/9.png",
+    ],
+
+    logInNoUserScreenShots: [
+      "/images/web-backend-db/screenshots/driver-wa/log-in-noUser/1.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in-noUser/2.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in-noUser/3.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in-noUser/4.png",
+      "/images/web-backend-db/screenshots/driver-wa/log-in-noUser/5.png",
+    ],
+
+    userScreenShots: [
+      "/images/web-backend-db/screenshots/driver-wa/user/1.png",
+      "/images/web-backend-db/screenshots/driver-wa/user/2.png",
+      "/images/web-backend-db/screenshots/driver-wa/user/3.png",
+      "/images/web-backend-db/screenshots/driver-wa/user/4.png",
+      "/images/web-backend-db/screenshots/driver-wa/user/5.png",
+    ],
+
+    backendScreenShots: [
+      "/images/web-backend-db/screenshots/driver-wa/backend/1.png",
+      "/images/web-backend-db/screenshots/driver-wa/backend/2.png",
+      "/images/web-backend-db/screenshots/driver-wa/backend/3.png",
+      "/images/web-backend-db/screenshots/driver-wa/backend/4.png",
+      "/images/web-backend-db/screenshots/driver-wa/backend/5.png",
+      "/images/web-backend-db/screenshots/driver-wa/backend/6.png",
+    ],
 
     detailsProjectInfo: {
       signUp:
