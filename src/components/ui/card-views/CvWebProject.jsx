@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import ToGitCodeBtn from "../buttons/ToGitCodeBtn";
+import GitHubCodeBtn from "../buttons/GitHubCodeBtn";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import InfoScrollArea from "./InfoScrollArea";
@@ -26,7 +26,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
       content = (
         <div className="px-6 py-3 flex justify-between items-center md:py-4">
           <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
-          <ToGitCodeBtn gitHubLink={gitHubLink} />
+          <GitHubCodeBtn gitHubLink={gitHubLink} />
         </div>
       );
       break;

@@ -1,4 +1,4 @@
-import GitHubLinkBtn from "@/components/ui/buttons/ToGitCodeBtn";
+import GitHubCodeBtn from "@/components/ui/buttons/GitHubCodeBtn";
 import { WEB_BACKEND_DB_DATA } from "@/utils/data/web-backend-db";
 
 import LogoHeader from "@/components/header/LogoHeader";
@@ -65,11 +65,17 @@ export default function WebBackendDbDetailsPage({ params }) {
           <div className="flex flex-row justify-around w-full mx-auto pb-3 lg:pb-10">
             <div className="flex flex-col items-center">
               <h3 className="mb-1">Frontend</h3>
-              <GitHubLinkBtn gitHubLink={gitHubFrontendLink}></GitHubLinkBtn>
+              <GitHubCodeBtn
+                gitHubLink={gitHubFrontendLink}
+                variant="blue"
+              ></GitHubCodeBtn>
             </div>
             <div className="flex flex-col items-center">
               <h3 className="mb-1">Backend</h3>
-              <GitHubLinkBtn gitHubLink={gitHubFrontendLink}></GitHubLinkBtn>
+              <GitHubCodeBtn
+                gitHubLink={gitHubFrontendLink}
+                variant="blue"
+              ></GitHubCodeBtn>
             </div>
           </div>
         </section>

@@ -28,7 +28,7 @@ export const WEB_BACKEND_DB_DATA = [
     crud: "",
     api: "Get, Post",
     backend: "",
-    db: "Sanity",
+    cms: "Sanity",
 
     signUpScreenShots: [
       "/images/web-backend-db/screenshots/driver-wa/sign-up/1.png",
