@@ -5,7 +5,7 @@ export const WEB_DATA = [
     cardImgUrl:
       "/images/web-projects/clocks-timmers/clocks-timmers_400_300.png",
     title: "Clocks && Timers",
-    version: "Beta",
+    version: "Stable",
     description:
       "Shows some clocks from different locations as well Timers. (Workshop)",
     category: "Web-App",
@@ -35,7 +35,7 @@ export const WEB_DATA = [
     updated_at: "December 03, 2025",
     cardImgUrl: "/images/web-projects/todo/todo-400_300.png",
     title: "TODO",
-    version: "1.0",
+    version: "Stable",
     description: "Manages some activities using Redux and Local Storage.",
     category: "Web-App",
     language: "JavaScript",
@@ -64,7 +64,7 @@ export const WEB_DATA = [
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
     title: "Vinilo-Volador",
-    version: "Beta",
+    version: "Stable",
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
     category: "Web-App",

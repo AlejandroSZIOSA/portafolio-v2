@@ -28,6 +28,7 @@ export const WEB_BACKEND_DB_DATA = [
     crud: "",
     api: "Get, Post",
     backend: "",
+    db: "",
     cms: "Sanity",
 
     signUpScreenShots: [
