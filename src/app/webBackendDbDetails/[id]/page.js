@@ -14,6 +14,7 @@ export default function WebBackendDbDetailsPage({ params }) {
 
   const {
     gitHubFrontendLink,
+    gitHubBackendLink,
     signUpScreenShots,
     logInScreenShots,
     logInNoUserScreenShots,
@@ -73,7 +74,7 @@ export default function WebBackendDbDetailsPage({ params }) {
             <div className="flex flex-col items-center">
               <h3 className="mb-1">Backend</h3>
               <GitHubCodeBtn
-                gitHubLink={gitHubFrontendLink}
+                gitHubLink={gitHubBackendLink}
                 variant="blue"
               ></GitHubCodeBtn>
             </div>

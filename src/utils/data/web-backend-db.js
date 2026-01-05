@@ -9,9 +9,10 @@ export const WEB_BACKEND_DB_DATA = [
     category: "Web+Backend+DB",
     language: "JavaScript",
     framework: "React+Vite",
-    gitHubFrontendLink: "https://radio-player-app-chi.vercel.app/",
+    gitHubFrontendLink:
+      "https://github.com/AlejandroSZIOSA/driver-course-wa.git",
     gitHubBackendLink:
-      "https://github.com/AlejandroSZIOSA/radio-player-app.git",
+      "https://github.com/AlejandroSZIOSA/driver-course-wa-sanity.git",
     browsers: ["Chrome"],
     deviceBrowserSettings: "iPhone 14 Pro max",
     isNew: false,
@@ -81,10 +82,10 @@ export const WEB_BACKEND_DB_DATA = [
       signUp:
         "The sign-up process allows new users to create an account by providing necessary information such as username, email, and password. The system validates the input data to ensure it meets the required criteria before creating the account in the database.",
       logIn:
-        "The log-in functionality enables existing users to access their accounts by entering their registered credentials, typically a username or email and password. The system verifies the provided information against stored data to authenticate the user and grant access to their personalized content and features.",
-      user: "The user dashboard provides a personalized interface where users can manage their profiles, view their activity history, and access various features of the application. It serves as a central hub for users to interact with the app's functionalities and customize their experience.",
+        "The log-in functionality enables existing users to access their accounts by entering their registered credentials, typically a username or email and password. The system verifies the provided information against stored data to authenticate the user and grant access to the app content and features.",
+      user: "The user dashboard provides a interface where users get access to the main content of the application. It serves as a central hub for users to interact with the app's functionalities and customize their experience.",
       backend:
-        "The backend is developed using Node.js, which handles server-side logic, API requests, and interactions with the database. It ensures secure and efficient processing of data, user authentication, and overall application functionality.",
+        "The backend is developed with SANITY (CMS), which handles server-side logic, API requests, and interactions with the database. It ensures secure and efficient processing of data, user authentication, and overall application functionality.",
     },
   },
 ];
