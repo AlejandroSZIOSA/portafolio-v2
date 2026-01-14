@@ -5,8 +5,8 @@ export const WEB_BACKEND_DB_DATA = [
     cardImgUrl: "/images/no-image-yet-400_300.png",
     title: "Driver Theory Trivia",
     version: "Development",
-    description: "Learning drive theory app",
-    category: "Web+Backend+DB",
+    description: "An learning drive theory app (Internship project).",
+    category: "Web+Backend+DB", //key to identify the project type
     language: "JavaScript",
     framework: "React+Vite",
     gitHubFrontendLink:

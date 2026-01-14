@@ -35,7 +35,9 @@ export default function CvWebProject({ project, label, variationLayout }) {
         <div className="px-6 py-3 flex justify-center items-center md:py-4">
           <Link
             className="px-2 py-2 bg-blue-600 hover:bg-blue-800 text-sm md:text-base text-white border-2 border-indigo-950 rounded-md"
-            href={`/webBackendDbDetails/${id}`}
+            href={`/detailsPage/${id}?extraParam=${encodeURIComponent(
+              "frontend+backend+db"
+            )}`}
           >
             To Details
           </Link>

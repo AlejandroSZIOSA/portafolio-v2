@@ -13,7 +13,7 @@ export default function TabsRoot() {
   const [activeTab, setActiveTab] = useState("tab1");
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //Hook from useMedia library
 
-  //Filter and getting the total items based on the current responsive mode
+  //Filter and getting the total items based on the current responsive production result
   const getMobileUIwebApps = WEB_DATA.filter(
     (item) => item.responsiveUI[0] && !item.isNew
   );
