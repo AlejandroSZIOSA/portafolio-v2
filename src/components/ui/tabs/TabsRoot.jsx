@@ -74,7 +74,7 @@ export default function TabsRoot() {
         />
         <TabBtn
           tabId="tab4"
-          label="Deployments-noDB"
+          label="Web+API Private"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
         />
