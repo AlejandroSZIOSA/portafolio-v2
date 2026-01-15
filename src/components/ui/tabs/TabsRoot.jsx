@@ -28,11 +28,9 @@ export default function TabsRoot() {
     (item) => item.responsiveUI[1] && !item.isNew
   );
 
-  const getMobileUIwebBackendDb = WEB_BACKEND_DB_DATA.filter(
-    (item) => item.responsiveUI[0] && !item.isNew
-  );
-  const getDesktopUIwebBackendDb = WEB_BACKEND_DB_DATA.filter(
-    (item) => item.responsiveUI[1] && !item.isNew
+  //exception for responsive UI
+  const getWebBackendDbProjects = WEB_BACKEND_DB_DATA.filter(
+    (item) => !item.isNew
   );
 
   {
@@ -69,8 +67,8 @@ export default function TabsRoot() {
           setActiveTab={setActiveTab}
           activeTab={activeTab}
           isMobile={isMobile}
-          mobileUIApps={getMobileUIwebBackendDb}
-          desktopUIApps={getDesktopUIwebBackendDb}
+          mobileUIApps={getWebBackendDbProjects}
+          desktopUIApps={getWebBackendDbProjects}
         />
         <TabBtn
           tabId="tab4"

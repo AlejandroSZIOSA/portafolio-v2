@@ -4,7 +4,7 @@ export const WEB_BACKEND_DB_DATA = [
     updated_at: "October 14, 2025",
     cardImgUrl: "/images/no-image-yet-400_300.png",
     title: "Driver Theory Trivia",
-    version: "Development",
+    version: "Beta",
     description: "An learning drive theory app (Internship).",
     category: "Web+Backend+DB", //key to identify the project type
     language: "JavaScript",
@@ -22,7 +22,7 @@ export const WEB_BACKEND_DB_DATA = [
     navigation: "yes",
     tests: "",
     wcag: "",
-    responsiveUI: ["Mobile", "Desktop"],
+    responsiveUI: ["Mobile"],
     context: "yes",
     redux: "",
     localStorage: "yes",
@@ -83,7 +83,7 @@ export const WEB_BACKEND_DB_DATA = [
         "The sign-up process allows new users to create an account by providing necessary information such as username, email, and password. The system validates the input data to ensure it meets the required criteria before creating the account in the database.",
       logIn:
         "The log-in functionality enables existing users to access their accounts by entering their registered credentials, typically a username or email and password. The system verifies the provided information against stored data to authenticate the user and grant access to the app content and features.",
-      user: "The user dashboard provides a interface where users get access to the main content of the application. It serves as a central hub for users to interact with the app's functionalities and customize their experience.",
+      user: "The user dashboard provides a interface where users get access to the main content of the application. The users answer the questions. At the end it gets a summary and then can choose to do it again. If started again, the order of the answers will change randomly.",
       backend:
         "The backend is developed with SANITY (CMS), which handles server-side logic, API requests, and interactions with the database. It ensures secure and efficient processing of data, user authentication, and overall application functionality.",
     },

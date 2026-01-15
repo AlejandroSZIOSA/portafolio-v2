@@ -5,7 +5,7 @@ export const WEB_APIS_DATA = [
     cardImgUrl:
       "/images/web-apis-projects/swedish-radio-player/radios_400_300.png",
     title: "Swedish Radio Player",
-    version: "Beta",
+    version: "Stable",
     description:
       "Play and filter open Swedish radios. Using the Skeleton UI theme. (Workshop)",
     category: "Web+Api",
