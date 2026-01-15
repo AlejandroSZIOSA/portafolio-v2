@@ -12,7 +12,7 @@ export default function LatestProjectsSection() {
             key={p.id}
             project={p}
             label={p.category}
-            variationLayout="web"
+            variationLayout="no-link-to-details"
           />
         );
       })}

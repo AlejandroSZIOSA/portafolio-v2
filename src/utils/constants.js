@@ -1,5 +1,5 @@
 //Constants
 export const CONSTANTS = {
   USE_MEDIA_MAX_WIDTH: "(max-width: 765px)", //global mobile breakpoint for useMedia library
-  CURRENT_UPDATED_DATE: "December 11, 2025",
+  CURRENT_UPDATED_DATE: "January 15, 2026",
 };

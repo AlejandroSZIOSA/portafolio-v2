@@ -4,7 +4,7 @@ import CvWebProject from "./card-views/CvWebProject";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 
-export default function Accordion({ projects }) {
+export default function Accordion({ projects, variationLayout }) {
   const [openIndex, setOpenIndex] = useState(null);
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
 
@@ -31,7 +31,7 @@ export default function Accordion({ projects }) {
               <CvWebProject
                 project={item}
                 label={item.category}
-                variationLayout="web"
+                variationLayout={variationLayout}
               />
             )}
           </div>
@@ -43,7 +43,7 @@ export default function Accordion({ projects }) {
           <CvWebProject
             project={item}
             label={item.category}
-            variationLayout="web"
+            variationLayout={variationLayout}
           />
         </li>
       );

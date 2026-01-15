@@ -13,7 +13,7 @@ export default function TabsRoot() {
   const [activeTab, setActiveTab] = useState("tab1");
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //Hook from useMedia library
 
-  //Filter and getting the total items based on the current responsive mode
+  //Filter and getting the total items based on the current responsive production result
   const getMobileUIwebApps = WEB_DATA.filter(
     (item) => item.responsiveUI[0] && !item.isNew
   );
@@ -26,6 +26,11 @@ export default function TabsRoot() {
   );
   const getDesktopUIwebApis = WEB_APIS_DATA.filter(
     (item) => item.responsiveUI[1] && !item.isNew
+  );
+
+  //exception for responsive UI
+  const getWebBackendDbProjects = WEB_BACKEND_DB_DATA.filter(
+    (item) => !item.isNew
   );
 
   {
@@ -56,25 +61,39 @@ export default function TabsRoot() {
           desktopUIApps={getDesktopUIwebApis}
         />
 
-        {/* CONTINUE FROM HERE */}
         <TabBtn
           tabId="tab3"
           label="Web+Backend+DB"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
+          isMobile={isMobile}
+          mobileUIApps={getWebBackendDbProjects}
+          desktopUIApps={getWebBackendDbProjects}
         />
         <TabBtn
           tabId="tab4"
-          label="Deployments-noDB"
+          label="Web+API Private"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
         />
       </div>
       {/* Tab Content */}
       <div className="px-1 py-6 border md:py-3 md:flex md:justify-center ">
-        {activeTab === "tab1" && <Accordion projects={WEB_DATA} />}
-        {activeTab === "tab2" && <Accordion projects={WEB_APIS_DATA} />}
-        {activeTab === "tab3" && <ConstructionMessage />}
+        {activeTab === "tab1" && (
+          <Accordion projects={WEB_DATA} variationLayout="no-link-to-details" />
+        )}
+        {activeTab === "tab2" && (
+          <Accordion
+            projects={WEB_APIS_DATA}
+            variationLayout="no-link-to-details"
+          />
+        )}
+        {activeTab === "tab3" && (
+          <Accordion
+            projects={WEB_BACKEND_DB_DATA}
+            variationLayout="link-to-details"
+          />
+        )}
         {activeTab === "tab4" && <ConstructionMessage />}
       </div>
     </div>
