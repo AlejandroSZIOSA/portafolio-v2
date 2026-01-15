@@ -12,11 +12,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body id="body_" className={inter.className}>
-        {/* <header>
-          <LogoHeader />
-          <UpdatedDatePanel />
-          <NavBar />
-        </header> */}
         {children}
       </body>
     </html>
