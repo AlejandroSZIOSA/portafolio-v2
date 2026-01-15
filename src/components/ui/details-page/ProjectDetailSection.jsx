@@ -1,4 +1,4 @@
-import InfoBox from "@/components/ui/details-page/infoBox";
+import InfoBox from "@/components/ui/details-page/InfoBox";
 import ScreenShotScrollView from "@/components/ui/details-page/ScreenShotScrollView";
 
 export default function ProjectDetailSection({
