@@ -8,7 +8,7 @@ import CodeSectionPanel from "@/components/ui/details-page/CodeSectionPanel";
 
 export default function WebBackendDbDetailsPage({ params, searchParams }) {
   const { id: projectId } = params; //change the name of an variable after destructuring :)
-  const extraParamValue = searchParams.extraParam; //extracting extra params :)
+  const variant = searchParams.extraParam; //extracting extra params :)
 
   const project = WEB_BACKEND_DB_DATA.find(
     (item) => item.id.toString() === projectId
@@ -39,23 +39,27 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
         <h1 className="my-4">{project.title}</h1>
         <h2>Screenshots</h2>
 
-        <ProjectDetailSection
-          title="Sign-Up"
-          descriptionData={signUp}
-          screenshotsData={signUpScreenShots}
-        />
+        {variant === "frontend+backend+db" && (
+          <>
+            <ProjectDetailSection
+              title="Sign-Up"
+              descriptionData={signUp}
+              screenshotsData={signUpScreenShots}
+            />
 
-        <ProjectDetailSection
-          title="Log-In (with an existing user)"
-          descriptionData={logIn}
-          screenshotsData={logInScreenShots}
-        />
+            <ProjectDetailSection
+              title="Log-In (with an existing user)"
+              descriptionData={logIn}
+              screenshotsData={logInScreenShots}
+            />
 
-        <ProjectDetailSection
-          title="Log-In (without an existing user)"
-          descriptionData={logIn}
-          screenshotsData={logInNoUserScreenShots}
-        />
+            <ProjectDetailSection
+              title="Log-In (without an existing user)"
+              descriptionData={logIn}
+              screenshotsData={logInNoUserScreenShots}
+            />
+          </>
+        )}
 
         <ProjectDetailSection
           title="User"
@@ -63,13 +67,16 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
           screenshotsData={userScreenShots}
         />
 
-        <ProjectDetailSection
-          title="Backend"
-          descriptionData={backend}
-          screenshotsData={backendScreenShots}
-        />
+        {variant === "frontend+backend+db" && (
+          <ProjectDetailSection
+            title="Backend"
+            descriptionData={backend}
+            screenshotsData={backendScreenShots}
+          />
+        )}
 
         <CodeSectionPanel
+          variant={variant}
           gitHubFrontendLinkData={gitHubFrontendLink}
           gitHubBackendLinkData={gitHubBackendLink}
         />
