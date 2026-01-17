@@ -23,13 +23,20 @@ export default function Home() {
         <HeroSection />
         <DividerHeaderTitle sectionTitle="My Tech Stack" />
         <TechSection />
-        <DividerHeaderTitle sectionTitle="My Latest Project" />
-        <LatestProjectsSection />
-        <DividerHeaderTitle
-          sectionTitle="Previous Mini-Apps"
-          putSectionId="previous_projects_divider"
-        />
-        <ProjectsSection />
+
+        <div>
+          <div>
+            <DividerHeaderTitle sectionTitle="My Latest Project" />
+            <LatestProjectsSection />
+          </div>
+          <div>
+            <DividerHeaderTitle
+              sectionTitle="Previous Mini-Apps"
+              putSectionId="previous_projects_divider"
+            />
+            <ProjectsSection />
+          </div>
+        </div>
       </main>
       <footer>
         <FooterContent />
