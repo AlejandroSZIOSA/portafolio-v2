@@ -72,7 +72,7 @@ export const WEB_DATA = [
     framework: "React+Vite",
     linkToApp: "https://vinilo-volador-web.vercel.app/",
     gitHubLink: "https://github.com/AlejandroSZIOSA/vinilo-volador-web.git",
-    isNew: true,
+    isNew: false,
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
     typeScript: "yes",
