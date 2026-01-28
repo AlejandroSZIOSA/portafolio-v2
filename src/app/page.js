@@ -19,17 +19,17 @@ export default function Home() {
         <NavBar variation="home-page" />
       </header>
 
-      <main className="flex flex-col w-full items-center">
+      <main className="flex flex-col w-full items-center lg:items-start mx-auto">
         <HeroSection />
         <DividerHeaderTitle sectionTitle="My Tech Stack" />
         <TechSection />
 
-        <div>
+        <div className="block lg:flex lg:w-full">
           <div>
-            <DividerHeaderTitle sectionTitle="My Latest Project" />
+            <DividerHeaderTitle sectionTitle="My Last Project" />
             <LatestProjectsSection />
           </div>
-          <div>
+          <div className="lg:w-full">
             <DividerHeaderTitle
               sectionTitle="Previous Mini-Apps"
               putSectionId="previous_projects_divider"

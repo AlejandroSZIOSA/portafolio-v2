@@ -17,7 +17,7 @@ export default function LatestProjectsSection() {
     ...filteredWebBackendDbItems,
   ];
   return (
-    <div className="flex flex-col py-6 gap-8 md:flex-row ">
+    <div className="flex flex-col py-6 gap-8 md:flex-row lg:items-center lg:h-full lg:px-14 lg:border-r-2 lg:border-black">
       {filteredItems.map((p) => {
         return (
           <CvWebProject
