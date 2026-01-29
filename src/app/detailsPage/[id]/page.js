@@ -1,21 +1,27 @@
+import React from "react";
 import { WEB_BACKEND_DB_DATA } from "@/utils/data/web-backend-db";
-
 import LogoHeader from "@/components/header/LogoHeader";
 import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 import NavBar from "@/components/header/NavBar";
 import ProjectDetailSection from "@/components/ui/details-page/ProjectDetailSection";
 import CodeSectionPanel from "@/components/ui/details-page/CodeSectionPanel";
 
+let variant = ""; //variable to hold the variant value
 export default function WebBackendDbDetailsPage({ params, searchParams }) {
-  const { id: projectId } = params; //change the name of an variable after destructuring :)
-  const variant = searchParams.extraParam; //extracting extra params :)
+  const { id: projectId } = React.use(params); //change the name of an variable after destructuring :)
+  const extraParamValue = React.use(searchParams); //extracting extra params :)
+  //extracting async extra params
+  variant = extraParamValue.extraParam;
 
-  console.log(params);
   const project = WEB_BACKEND_DB_DATA.find(
     (item) => item.id.toString() === projectId,
   );
 
-  /*   console.log("Extra Param Value:", extraParamValue); */
+  if (!project) {
+    if (!project) {
+      return <h1 className="text-center mt-10">Project not found</h1>;
+    }
+  }
 
   const {
     gitHubFrontendLink,
@@ -36,6 +42,7 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
         <UpdatedDatePanel />
         <NavBar variation="details-page" />
       </header>
+
       <main className="flex flex-col justify-center items-center mx-auto">
         <h1 className="my-4">{project.title}</h1>
         <h2>Screenshots</h2>
