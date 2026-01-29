@@ -29,10 +29,7 @@ export default function Home() {
         <TechSection />
 
         <section className="block lg:flex lg:w-full">
-          <div
-            className="lg:border-r-2 lg:border-t-2 lg:border-black"
-            style={{ background: "bisque" }}
-          >
+          <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[bisque]">
             {isMobile ? (
               <DividerHeaderTitle sectionTitle="My Last Project" />
             ) : (
