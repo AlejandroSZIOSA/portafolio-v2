@@ -4,7 +4,7 @@ import CvWebProject from "./card-views/CvWebProject";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 
-export default function Accordion({ projects }) {
+export default function Accordion({ projects, variationLayout }) {
   const [openIndex, setOpenIndex] = useState(null);
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
 
@@ -27,14 +27,24 @@ export default function Accordion({ projects }) {
             </span>
           </button>
           <div className="flex justify-center py-1">
-            {openIndex === index && <CvWebProject project={item} />}
+            {openIndex === index && (
+              <CvWebProject
+                project={item}
+                label={item.category}
+                variationLayout={variationLayout}
+              />
+            )}
           </div>
         </div>
       );
     } else {
       return (
         <li className="inline-flex px-3" key={index}>
-          <CvWebProject project={item} />
+          <CvWebProject
+            project={item}
+            label={item.category}
+            variationLayout={variationLayout}
+          />
         </li>
       );
     }

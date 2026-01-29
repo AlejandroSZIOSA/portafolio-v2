@@ -10,6 +10,7 @@
   header {
     @apply flex flex-col sticky top-0 w-full bg-[#343434] md:h-16 md:flex-row md:justify-between;
   }
+
   h1 {
     @apply text-2xl font-sans font-bold md:text-4xl;
   }
