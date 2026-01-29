@@ -8,6 +8,8 @@ export default function InfoScrollArea({ project }) {
     language,
     typeScript,
     navigation,
+    pagination,
+    customHooks,
     context,
     redux,
     crud,
@@ -36,6 +38,11 @@ export default function InfoScrollArea({ project }) {
         <span className={TECH_BOXES_STYLES}>{navigation && "Navigation"}</span>
       )}
 
+      {pagination && (
+        <span className={TECH_BOXES_STYLES}>{pagination && "Pagination"}</span>
+      )}
+
+      {customHooks && <span className={TECH_BOXES_STYLES}>Custom Hooks</span>}
       {context && <span className={TECH_BOXES_STYLES}>Context</span>}
       {redux && <span className={TECH_BOXES_STYLES}>Redux</span>}
 
