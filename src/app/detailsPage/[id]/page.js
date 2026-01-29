@@ -10,8 +10,9 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
   const { id: projectId } = params; //change the name of an variable after destructuring :)
   const variant = searchParams.extraParam; //extracting extra params :)
 
+  console.log(params);
   const project = WEB_BACKEND_DB_DATA.find(
-    (item) => item.id.toString() === projectId
+    (item) => item.id.toString() === projectId,
   );
 
   /*   console.log("Extra Param Value:", extraParamValue); */

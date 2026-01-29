@@ -36,7 +36,7 @@ export const WEB_APIS_DATA = [
     cardImgUrl: "/images/no-image-yet-400_300.png",
     title: "StarWars Enciclopedia",
     version: "Stable",
-    description: "Search for star wars movies related information. (Workshop)",
+    description: "Search and explore the star wars world. (Workshop)",
     category: "Web+Api",
     language: "TypeScript",
     framework: "React+Vite",

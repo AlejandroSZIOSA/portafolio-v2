@@ -1,5 +1,5 @@
-import { WEB_DATA } from "/src/utils/data/web-projects";
-import { WEB_APIS_DATA } from "/src/utils/data/web-apis-projects";
+import { WEB_DATA } from "@/utils/data/web-projects";
+import { WEB_APIS_DATA } from "@/utils/data/web-apis-projects";
 import { WEB_BACKEND_DB_DATA } from "@/utils/data/web-backend-db";
 
 import CvWebProject from "../ui/card-views/CvWebProject";
@@ -17,7 +17,7 @@ export default function LatestProjectsSection() {
     ...filteredWebBackendDbItems,
   ];
   return (
-    <div className="flex flex-col py-6 gap-8 md:flex-row lg:items-center lg:h-full lg:px-14 lg:border-r-2 lg:border-black">
+    <div className="flex flex-col py-6 gap-8 md:flex-row lg:items-baseline lg:px-14 lg:mt-4 ">
       {filteredItems.map((p) => {
         return (
           <CvWebProject

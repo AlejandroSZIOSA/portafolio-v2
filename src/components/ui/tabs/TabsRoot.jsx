@@ -15,22 +15,22 @@ export default function TabsRoot() {
 
   //Filter and getting the total items based on the current responsive production result
   const getMobileUIwebApps = WEB_DATA.filter(
-    (item) => item.responsiveUI[0] && !item.isNew
+    (item) => item.responsiveUI[0] && !item.isNew,
   );
   const getDesktopUIwebApps = WEB_DATA.filter(
-    (item) => item.responsiveUI[1] && !item.isNew
+    (item) => item.responsiveUI[1] && !item.isNew,
   );
 
   const getMobileUIwebApis = WEB_APIS_DATA.filter(
-    (item) => item.responsiveUI[0] && !item.isNew
+    (item) => item.responsiveUI[0] && !item.isNew,
   );
   const getDesktopUIwebApis = WEB_APIS_DATA.filter(
-    (item) => item.responsiveUI[1] && !item.isNew
+    (item) => item.responsiveUI[1] && !item.isNew,
   );
 
   //exception for responsive UI
   const getWebBackendDbProjects = WEB_BACKEND_DB_DATA.filter(
-    (item) => !item.isNew
+    (item) => !item.isNew,
   );
 
   {
@@ -53,7 +53,7 @@ export default function TabsRoot() {
 
         <TabBtn
           tabId="tab2"
-          label="Web+API"
+          label="Web+[open-API]"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
           isMobile={isMobile}
@@ -72,7 +72,7 @@ export default function TabsRoot() {
         />
         <TabBtn
           tabId="tab4"
-          label="Web+API Private"
+          label="Web+[private-API]"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
         />

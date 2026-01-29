@@ -1,16 +1,20 @@
-import HeroSection from "/src/components/main/HeroSection";
-import LatestProjectsSection from "/src/components/main/LatestProjectsSection";
-import ProjectsSection from "/src/components/main/ProjectsSection";
-import TechSection from "/src/components/main/TechSection";
-import DividerHeaderTitle from "/src/components/ui/DividerHeaderTitle";
+"use client";
+import HeroSection from "@/components/main/HeroSection";
+import LatestProjectsSection from "@/components/main/LatestProjectsSection";
+import ProjectsSection from "@/components/main/ProjectsSection";
+import TechSection from "@/components/main/TechSection";
+import DividerHeaderTitle from "@/components/ui/DividerHeaderTitle";
 
 import LogoHeader from "@/components/header/LogoHeader";
 import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 import NavBar from "@/components/header/NavBar";
 
 import FooterContent from "@/components/footer/FooterContent";
+import { useMedia } from "use-media";
+import { CONSTANTS } from "@/utils/constants";
 
 export default function Home() {
+  const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
   return (
     <>
       <header>
@@ -24,9 +28,18 @@ export default function Home() {
         <DividerHeaderTitle sectionTitle="My Tech Stack" />
         <TechSection />
 
-        <div className="block lg:flex lg:w-full">
-          <div>
-            <DividerHeaderTitle sectionTitle="My Last Project" />
+        <section className="block lg:flex lg:w-full">
+          <div
+            className="lg:border-r-2 lg:border-t-2 lg:border-black"
+            style={{ background: "bisque" }}
+          >
+            {isMobile ? (
+              <DividerHeaderTitle sectionTitle="My Last Project" />
+            ) : (
+              <div className="lg:h-14 lg:content-center lg:text-center text-[rgb(127,255,0)] bg-black">
+                <h2>My last Project</h2>
+              </div>
+            )}
             <LatestProjectsSection />
           </div>
           <div className="lg:w-full">
@@ -36,7 +49,7 @@ export default function Home() {
             />
             <ProjectsSection />
           </div>
-        </div>
+        </section>
       </main>
       <footer>
         <FooterContent />

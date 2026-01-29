@@ -1,5 +1,5 @@
 import TechItem from "./TechItem";
-import { TECHS } from "/src/utils/data/techs";
+import { TECHS } from "@/utils/data/techs";
 
 export default function TechSection() {
   return (
