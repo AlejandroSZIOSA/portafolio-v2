@@ -16,7 +16,10 @@ export default function Accordion({ projects, variationLayout }) {
   function render(item, index) {
     if (isMobile) {
       return (
-        <div key={index} className="border-b border-black bg-gray-300">
+        <div
+          key={index}
+          className="flow-root border-b border-black bg-gray-300"
+        >
           <button
             onClick={() => toggleAccordion(index)}
             className="flex justify-center items-center w-full py-1 px-4 text-left"
