@@ -24,7 +24,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
   switch (variationLayout) {
     case "no-link-to-details":
       content = (
-        <div className="px-6 py-3 flex justify-between items-center md:py-4">
+        <div className="px-6 py-2 flex justify-between items-center md:py-3">
           <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
           <GitHubCodeBtn gitHubLink={gitHubLink} />
         </div>
@@ -50,7 +50,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
 
   return (
     // TODO:Fix border Children element in mobile view
-    <div className="flex flex-col w-[360px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left md:border-4 md:h-min">
+    <div className="flex flex-col w-[330px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left md:border-4 md:h-min">
       <div className="flex py-1 justify-between bg-indigo-500 text-xs text-white rounded-t-lg md:text-sm md:rounded-none">
         <div className="ml-3">{label}</div>
         <span className="inline-flex">
@@ -79,7 +79,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
       <h3 className=" flex justify-center items-baseline mb-2 font-bold">
         {title}
       </h3>
-      <div className="px-2 pb-2 md:px-4 md:pb-4">
+      <div className="px-2 pb-2 md:px-4 md:pb-2">
         <p className="text-gray-700">{description}</p>
       </div>
       <InfoScrollArea project={project} />
