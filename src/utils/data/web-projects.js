@@ -63,7 +63,7 @@ export const WEB_DATA = [
     updated_at: "October 15, 2025",
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
-    title: "Vinilo-Volador",
+    title: "Vinilo Volador",
     version: "Stable",
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
