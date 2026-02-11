@@ -24,11 +24,14 @@ export default function TabBtn({
       <h3>
         {/*   TODO: CONTINUE FROM HERE */}
         {label}
-        {""}
         {tabId != "tab4" && (
           <span>
             <strong>
-              ({isMobile ? mobileUIApps.length : desktopUIApps.length})
+              (
+              {isMobile
+                ? "+" + mobileUIApps.length
+                : "+" + desktopUIApps.length}
+              )
             </strong>
           </span>
         )}

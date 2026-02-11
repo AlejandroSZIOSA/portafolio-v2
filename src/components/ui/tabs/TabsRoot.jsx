@@ -78,7 +78,7 @@ export default function TabsRoot() {
         />
       </div>
       {/* Tab Content */}
-      <div className="px-1 py-6 border md:py-3 md:flex md:justify-center ">
+      <div className="py-1 border md:py-3 md:flex md:justify-center ">
         {activeTab === "tab1" && (
           <Accordion projects={WEB_DATA} variationLayout="no-link-to-details" />
         )}
