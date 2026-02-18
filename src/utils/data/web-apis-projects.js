@@ -34,7 +34,7 @@ export const WEB_APIS_DATA = [
   },
   {
     id: 2,
-    updated_at: "February 11, 2026",
+    updated_at: "February 16, 2026",
     cardImgUrl: "/images/web-apis-projects/starwars-encyclopedia/emperator.png",
     title: "StarWars Enciclopedia",
     version: "Stable",
