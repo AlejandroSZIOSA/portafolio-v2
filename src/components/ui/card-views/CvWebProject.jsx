@@ -1,11 +1,12 @@
 "use client";
-import Image from "next/image";
-import GitHubCodeBtn from "../buttons/GitHubCodeBtn";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
-import InfoScrollArea from "./InfoScrollArea";
+import Image from "next/image";
 import Link from "next/link";
+import GitHubCodeBtn from "../buttons/GitHubCodeBtn";
+import InfoScrollArea from "./InfoScrollArea";
 import ToViewAppBtn from "../buttons/ToViewAppBtn";
+import UPDATED_ICON from "../../../../public/icons/clarity_update-white.svg";
 
 export default function CvWebProject({ project, label, variationLayout }) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
@@ -54,8 +55,8 @@ export default function CvWebProject({ project, label, variationLayout }) {
       <div className="flex py-1 justify-between bg-indigo-500 text-xs text-white rounded-t-lg md:text-sm md:rounded-none">
         <div className="ml-3">{label}</div>
         <span className="inline-flex">
-          <img
-            src="icons/clarity_update-white.svg"
+          <Image
+            src={UPDATED_ICON}
             width={isMobile ? "16" : "20"}
             height="auto"
             alt="clarity update white"

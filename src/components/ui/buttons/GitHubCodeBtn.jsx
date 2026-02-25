@@ -2,11 +2,15 @@
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 import Image from "next/image";
+import ramOrangeIcon from "../../../../public/icons/git-ram/git-ram-orange.svg";
+import ramBlueIcon from "../../../../public/icons/git-ram/git-ram-blue.svg";
+import catBlueIcon from "../../../../public/icons/git-cat/git-cat-blue.svg";
+import catOrangeIcon from "../../../../public/icons/git-cat/git-cat-orange.svg";
 
 /* import GitIcon from "../../../../public/icons/git-cat-blue.svg"; */
 
-const orange = ["/icons/git-ram-orange.svg", "/icons/git-cat-orange.svg"];
-const blue = ["/icons/git-ram-blue.svg", "/icons/git-cat-blue.svg"];
+const orange = [ramOrangeIcon, catOrangeIcon];
+const blue = [ramBlueIcon, catBlueIcon];
 
 export default function GitHubCodeBtn({
   gitHubLink = "#",
