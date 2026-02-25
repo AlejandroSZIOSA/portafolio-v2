@@ -14,8 +14,8 @@ export default function IntroSection() {
         <Image
           src={me}
           className="rounded-[15%]"
-          width={isMobile ? 300 : 400}
-          height={150}
+          width={isMobile ? 310 : 400}
+          height="auto"
           alt="no picture"
           priority
         />

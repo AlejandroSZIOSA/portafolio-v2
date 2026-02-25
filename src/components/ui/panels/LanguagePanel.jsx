@@ -14,19 +14,19 @@ const LanguagePanel = () => {
     <div className="flex space-x-2 mt-1 justify-center">
       <Image
         src={sweFlag}
-        width={isMobile ? 35 : 65}
+        width={isMobile ? 30 : 45}
         height="auto"
         alt="Swedish flag"
       />
       <Image
         src={engFlag}
-        width={isMobile ? 35 : 65}
+        width={isMobile ? 30 : 45}
         height="auto"
         alt="English flag"
       />
       <Image
         src={espFlag}
-        width={isMobile ? 35 : 65}
+        width={isMobile ? 30 : 45}
         height="auto"
         alt="Spanish flag"
       />

@@ -27,7 +27,7 @@ export default function Home() {
         <DividerHeaderTitle sectionTitle="My Tech Stack" />
         <TechSection />
 
-        <section className="block lg:flex lg:w-full">
+        <section className="block lg:flex w-full">
           <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[bisque]">
             {isMobile ? (
               <DividerHeaderTitle sectionTitle="My Last Project" />
