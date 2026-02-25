@@ -1,10 +1,9 @@
 "use client";
-import HeroSection from "@/components/main/HeroSection";
+import IntroSection from "@/components/main/IntroSection";
 import LatestProjectsSection from "@/components/main/LatestProjectsSection";
 import ProjectsSection from "@/components/main/ProjectsSection";
 import TechSection from "@/components/main/TechSection";
 import DividerHeaderTitle from "@/components/ui/DividerHeaderTitle";
-
 import LogoHeader from "@/components/header/LogoHeader";
 import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 import NavBar from "@/components/header/NavBar";
@@ -24,7 +23,7 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col w-full items-center lg:items-start mx-auto">
-        <HeroSection />
+        <IntroSection />
         <DividerHeaderTitle sectionTitle="My Tech Stack" />
         <TechSection />
 

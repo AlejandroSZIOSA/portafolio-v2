@@ -53,7 +53,7 @@ export default function TabsRoot() {
 
         <TabBtn
           tabId="tab2"
-          label="Web+open-API"
+          label="Web+open_API"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
           isMobile={isMobile}
@@ -72,7 +72,7 @@ export default function TabsRoot() {
         />
         <TabBtn
           tabId="tab4"
-          label="Web+private-API"
+          label="Fullstack"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
         />

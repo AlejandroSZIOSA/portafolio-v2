@@ -23,16 +23,7 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
     }
   }
 
-  const {
-    gitHubFrontendLink,
-    gitHubBackendLink,
-    signUpScreenShots,
-    logInScreenShots,
-    logInNoUserScreenShots,
-    userScreenShots,
-    backendScreenShots,
-    detailsProjectInfo,
-  } = project;
+  const { detailsProjectInfo } = project;
   const { signUp, logIn, user, backend } = detailsProjectInfo;
 
   return (
@@ -52,19 +43,19 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
             <ProjectDetailSection
               title="Sign-Up"
               descriptionData={signUp}
-              screenshotsData={signUpScreenShots}
+              screenshotsData={project.signUpScreenShots}
             />
 
             <ProjectDetailSection
               title="Log-In (with an existing user)"
               descriptionData={logIn}
-              screenshotsData={logInScreenShots}
+              screenshotsData={project.logInScreenShots}
             />
 
             <ProjectDetailSection
               title="Log-In (without an existing user)"
               descriptionData={logIn}
-              screenshotsData={logInNoUserScreenShots}
+              screenshotsData={project.logInNoUserScreenShots}
             />
           </>
         )}
@@ -72,21 +63,21 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
         <ProjectDetailSection
           title="User"
           descriptionData={user}
-          screenshotsData={userScreenShots}
+          screenshotsData={project.userScreenShots}
         />
 
         {variant === "frontend+backend+db" && (
           <ProjectDetailSection
             title="Backend"
             descriptionData={backend}
-            screenshotsData={backendScreenShots}
+            screenshotsData={project.backendScreenShots}
           />
         )}
 
         <CodeSectionPanel
           variant={variant}
-          gitHubFrontendLinkData={gitHubFrontendLink}
-          gitHubBackendLinkData={gitHubBackendLink}
+          gitHubFrontendLinkData={project.gitHubFrontendLink}
+          gitHubBackendLinkData={project.gitHubBackendLink}
         />
       </main>
     </>

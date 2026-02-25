@@ -1,5 +1,5 @@
 //FIX THIS
-export const WEB_PRIVATE_APIS_DATA = [
+export const FULLSTACK_PROJECTS_DATA = [
   {
     id: 1,
     updated_at: "October 14, 2025",
@@ -9,7 +9,7 @@ export const WEB_PRIVATE_APIS_DATA = [
     version: "Beta",
     description:
       "Play and filter open Swedish radios. Using the Skeleton UI theme. (Workshop)",
-    category: "Web+Private-Api",
+    category: "Fullstack",
     language: "JavaScript",
     framework: "React+Vite",
     linkToApp: "https://radio-player-app-chi.vercel.app/",

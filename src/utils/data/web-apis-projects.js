@@ -8,7 +8,7 @@ export const WEB_APIS_DATA = [
     version: "Stable",
     description:
       "Play and filter Swedish radios. Using the Skeleton UI theme. (Workshop)",
-    category: "Web + open-API",
+    category: "Web+open_API",
     language: "JavaScript",
     framework: "React+Vite",
     linkToApp: "https://radio-player-app-chi.vercel.app/",
@@ -39,7 +39,7 @@ export const WEB_APIS_DATA = [
     title: "StarWars Enciclopedia",
     version: "Stable",
     description: "Search and explore the star wars world. (Workshop)",
-    category: "Web + open-API",
+    category: "Web+open_API",
     language: "TypeScript",
     framework: "React+Vite",
     linkToApp: "https://starwars-encyclopedia-wine.vercel.app/",
