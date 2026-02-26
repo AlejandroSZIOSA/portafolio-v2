@@ -17,26 +17,25 @@ export const TECHS = [
     imgUrl: "/icons/techs/javascript.svg",
     level: "3/5",
   },
-
   {
     id: 4,
-    title: "React.js",
-    imgUrl: "/icons/techs/react.svg",
-    level: "3/5",
-  },
-  {
-    id: 5,
-    title: "React Native",
-    imgUrl: "/icons/techs/react-native.svg",
-    level: "2/5",
-  },
-  {
-    id: 6,
     title: "TypeScript",
     imgUrl: "/icons/techs/typescript.svg",
     level: "3/5",
   },
 
+  {
+    id: 5,
+    title: "React.js",
+    imgUrl: "/icons/techs/react.svg",
+    level: "3/5",
+  },
+  {
+    id: 6,
+    title: "React Native",
+    imgUrl: "/icons/techs/react-native.svg",
+    level: "2/5",
+  },
   {
     id: 7,
     title: "Tailwind",

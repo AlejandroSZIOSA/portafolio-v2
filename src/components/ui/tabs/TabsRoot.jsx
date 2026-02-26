@@ -72,7 +72,7 @@ export default function TabsRoot() {
         />
         <TabBtn
           tabId="tab4"
-          label="Fullstack"
+          label="Full-Stacks_JS"
           setActiveTab={setActiveTab}
           activeTab={activeTab}
         />
