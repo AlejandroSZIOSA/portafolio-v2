@@ -1,6 +1,7 @@
 "use client";
-import React, { createContext, useContext, useState } from "react";
+//NOTE:This hooks triggers when the accordion is open or closed
 
+import { createContext, useContext } from "react";
 // Create context for tabs
 export const TabsContext = createContext(null);
 

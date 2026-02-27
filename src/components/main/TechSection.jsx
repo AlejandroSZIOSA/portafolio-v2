@@ -1,6 +1,6 @@
 import TechItem from "./TechItem";
-import { TECHS } from "@/utils/data/techs";
 
+import { TECHS } from "@/utils/data/index";
 export default function TechSection() {
   return (
     <div
