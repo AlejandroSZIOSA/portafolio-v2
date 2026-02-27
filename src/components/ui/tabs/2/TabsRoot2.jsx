@@ -41,7 +41,7 @@ export default function TabsRoot2() {
         >
           Web+Backend+DB
         </TabsTrigger>
-        <TabsTrigger value="tab4">Full-Stacks_JS</TabsTrigger>
+        <TabsTrigger value="tab4">Full-Stack_TS</TabsTrigger>
       </TabsList>
       <TabsContent value="tab1">
         <Accordion
