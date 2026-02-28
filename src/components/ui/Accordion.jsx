@@ -61,13 +61,13 @@ export default function Accordion({ projects, variationLayout }) {
           {projects
             .slice()
             .reverse()
-            .filter((item) => item.responsiveUI[0] && !item.isNew)
             .map((item, index) => render(item, index))}
         </ol>
       ) : (
         <ol className="border px-6 pb-6 md:pb-5 flex space-x-2 overflow-x-auto scrollbar-hide">
           {projects
-            .filter((item) => !item.isNew)
+            .slice()
+            .reverse()
             .map((item, index) => render(item, index))}
         </ol>
       )}

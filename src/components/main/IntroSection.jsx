@@ -17,7 +17,7 @@ export default function IntroSection() {
           width={isMobile ? 310 : 400}
           height="auto"
           alt="no picture"
-          priority
+          loading="eager" //is like priority in next/image, it forces the image to load as soon as possible, which is good for above-the-fold images like profile pictures.
         />
         <LanguagePanel />
       </div>

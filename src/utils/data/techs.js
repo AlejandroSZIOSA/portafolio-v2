@@ -50,12 +50,25 @@ export const TECHS = [
   },
   {
     id: 9,
+    title: "Node.js",
+    imgUrl: "/icons/techs/nodejs.svg",
+    level: "1/5",
+  },
+
+  {
+    id: 10,
+    title: "MongoDB",
+    imgUrl: "/icons/techs/mongodb.svg",
+    level: "1/5",
+  },
+  {
+    id: 11,
     title: "Gimp",
     imgUrl: "/icons/techs/gimp.svg",
     level: "3/5",
   },
   {
-    id: 10,
+    id: 12,
     title: "Figma",
     imgUrl: "/icons/techs/figma.svg",
     level: "2/5",
