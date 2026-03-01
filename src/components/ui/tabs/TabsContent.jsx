@@ -6,7 +6,7 @@ export function TabsContent({ value, children }) {
   if (activeTab !== value) return null;
 
   return (
-    <div className="py-1 border md:py-3 md:flex md:justify-center">
+    <div className="py-1 border lg:pt-3 lg:pb-0 lg:flex lg:justify-center">
       {children}
     </div>
   );
