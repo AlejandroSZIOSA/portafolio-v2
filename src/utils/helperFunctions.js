@@ -1,5 +1,5 @@
 //importing multiple constants from index.js in data folder and exports
-import * as DATA_PROJECTS from "@/utils/data/index";
+import * as DATA_PROJECTS from "@/utils/data";
 
 export function getDataProjects(dataIdentifier) {
   switch (dataIdentifier) {
