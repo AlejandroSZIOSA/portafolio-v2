@@ -15,7 +15,7 @@ export default function TechItem({ tech }) {
         <img src={imgUrl} width={40} height="auto" alt="Tech Picture" />
         <p className="pt-2">{level}</p>
       </div>
-      {!isMobile && <p className="p-2">{title}</p>}
+      {!isMobile && <p className="p-2 w-20">{title}</p>}
     </div>
   );
 }
