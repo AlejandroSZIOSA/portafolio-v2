@@ -5,6 +5,7 @@ export const WEB_APIS_DATA = [
     cardImgUrl:
       "/images/web-apis-projects/swedish-radio-player/radios_400_300.png",
     title: "Swedish Radio Player",
+    isFavorite: true,
     version: "Stable",
     description:
       "Play and filter Swedish radios. Using the Skeleton UI theme. (Workshop)",
@@ -37,6 +38,7 @@ export const WEB_APIS_DATA = [
     updated_at: "February 27, 2026",
     cardImgUrl: "/images/web-apis-projects/starwars-encyclopedia/emperator.png",
     title: "StarWars Enciclopedia",
+    isFavorite: true,
     version: "Stable",
     description: "Search and explore the star wars world. (Workshop)",
     category: "Web+open_API",

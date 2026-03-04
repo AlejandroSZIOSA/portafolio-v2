@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <div className="lg:w-full lg:h-[730px]">
             <DividerHeaderTitle
-              sectionTitle="Previous Mini-Apps"
+              sectionTitle="Projects"
               putSectionId="previous_projects_divider"
             />
             <ProjectsSection />
