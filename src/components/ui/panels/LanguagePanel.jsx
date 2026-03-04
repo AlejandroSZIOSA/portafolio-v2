@@ -3,9 +3,7 @@ import Image from "next/image";
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 
-import sweFlag from "../../../../public/icons/flags/swe.png";
-import engFlag from "../../../../public/icons/flags/en.png";
-import espFlag from "../../../../public/icons/flags/es.png";
+import { FLAGS } from "../../../../public/icons";
 
 const LanguagePanel = () => {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
@@ -13,19 +11,19 @@ const LanguagePanel = () => {
   return (
     <div className="flex space-x-2 mt-1 justify-center">
       <Image
-        src={sweFlag}
+        src={FLAGS.sweFlag}
         width={isMobile ? 30 : 45}
         height="auto"
         alt="Swedish flag"
       />
       <Image
-        src={engFlag}
+        src={FLAGS.engFlag}
         width={isMobile ? 30 : 45}
         height="auto"
         alt="English flag"
       />
       <Image
-        src={espFlag}
+        src={FLAGS.espFlag}
         width={isMobile ? 30 : 45}
         height="auto"
         alt="Spanish flag"
