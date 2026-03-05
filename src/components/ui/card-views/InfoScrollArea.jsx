@@ -25,7 +25,7 @@ export default function InfoScrollArea({ project }) {
   const [chrome] = project.browsers;
 
   return (
-    <div className="bg-red-200 border px-1 py-3 flex space-x-2 overflow-x-auto scrollbar-hide lg:px-2">
+    <div className="bg-red-200 border px-1 py-2 flex space-x-2 overflow-x-auto scrollbar-hide lg:py-3 lg:px-2">
       {chrome && <span className={TECH_BOXES_STYLES}>{chrome}</span>}
       {deviceBrowserSettings && (
         <span className={TECH_BOXES_STYLES}>Dev:{deviceBrowserSettings}</span>

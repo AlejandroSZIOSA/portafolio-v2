@@ -4,11 +4,11 @@ import { useMedia } from "use-media";
 import Image from "next/image";
 
 //importing multiple constants from index.js in icons folder and exports
-import { gitIcons } from "../../../../public/icons";
+import { GIT_ICONS } from "../../../../public/icons";
 
 //delivering
-const orange = gitIcons.orange;
-const blue = gitIcons.blue;
+const oranges = [GIT_ICONS.ramOrangeIcon, GIT_ICONS.catOrangeIcon];
+const blues = [GIT_ICONS.ramBlueIcon, GIT_ICONS.catBlueIcon];
 
 export default function GitHubCodeBtn({
   gitHubLink = "#",
@@ -19,9 +19,9 @@ export default function GitHubCodeBtn({
   //delivering
   let gitIcons;
   if (variant === "blue") {
-    gitIcons = blue;
+    gitIcons = blues;
   } else {
-    gitIcons = orange;
+    gitIcons = oranges;
   }
 
   return (
