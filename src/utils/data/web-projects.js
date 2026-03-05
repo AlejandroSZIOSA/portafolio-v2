@@ -35,7 +35,7 @@ export const WEB_DATA = [
     id: 2,
     updated_at: "December 03, 2025",
     cardImgUrl: "/images/web-projects/todo/todo-400_300.png",
-    title: "TODO",
+    title: "Todo",
     isFavorite: false,
     version: "Stable",
     description: "Manages some activities using Redux and Local Storage.",
