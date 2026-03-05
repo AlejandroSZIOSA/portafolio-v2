@@ -28,24 +28,24 @@ export default function CvWebProject({ project, label, variationLayout }) {
   switch (variationLayout) {
     case "no-link-to-details":
       content = (
-        <div className="px-6 py-2 flex justify-between items-center md:py-3">
+        <>
           <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
           <GitHubCodeBtn gitHubLink={gitHubLink} />
-        </div>
+        </>
       );
       break;
     case "link-to-details":
       content = (
-        <div className="px-6 py-3 flex justify-center items-center md:py-4">
+        <>
           <Link
-            className="px-2 py-2 bg-blue-600 hover:bg-blue-800 text-sm md:text-base text-white border-2 border-indigo-950 rounded-md"
+            className="p-1 bg-blue-600 hover:bg-blue-800 text-sm md:text-base text-white border-2 border-indigo-950 rounded-md"
             href={`/detailsPage/${id}?extraParam=${encodeURIComponent(
               "frontend+backend+db",
             )}`}
           >
             To Details
           </Link>
-        </div>
+        </>
       );
       break;
     default:
@@ -85,7 +85,6 @@ export default function CvWebProject({ project, label, variationLayout }) {
         <h3 className="w-2/3 font-bold text-center">{title}</h3>
         {isFavorite && (
           <Image
-            className="ml-1"
             src={favoriteIcon}
             width={isMobile ? "24" : "28"}
             height="auto"
@@ -98,7 +97,15 @@ export default function CvWebProject({ project, label, variationLayout }) {
         <p className="text-gray-700 text-left">{description}</p>
       </div>
       <InfoScrollArea project={project} />
-      {content}
+      <div
+        className={
+          variationLayout === "no-link-to-details"
+            ? "px-6 py-3 flex justify-between items-center"
+            : "px-6 py-3 flex justify-center items-center"
+        }
+      >
+        {content}
+      </div>
     </div>
   );
 }
