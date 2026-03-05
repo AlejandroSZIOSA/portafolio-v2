@@ -7,8 +7,8 @@ import Image from "next/image";
 import { GIT_ICONS } from "../../../../public/icons";
 
 //delivering
-const oranges = [GIT_ICONS.ramOrangeIcon, GIT_ICONS.catOrangeIcon];
-const blues = [GIT_ICONS.ramBlueIcon, GIT_ICONS.catBlueIcon];
+const oranges = [GIT_ICONS.ramOrangeBlack, GIT_ICONS.catOrangeIcon];
+const blues = [GIT_ICONS.ramWhiteBlue, GIT_ICONS.catBlueIcon];
 
 export default function GitHubCodeBtn({
   gitHubLink = "#",
@@ -30,7 +30,7 @@ export default function GitHubCodeBtn({
         className="transition-transform duration-200 hover:scale-110 hover:opacity-80"
         src={isMobile ? gitIcons[0] : gitIcons[1]}
         alt="Github"
-        width={isMobile ? 45 : 42}
+        width={isMobile ? 32 : 36}
         height="auto"
       />
     </a>
