@@ -85,7 +85,6 @@ export default function CvWebProject({ project, label, variationLayout }) {
         <h3 className="w-2/3 font-bold text-center">{title}</h3>
         {isFavorite && (
           <Image
-            className="ml-1"
             src={favoriteIcon}
             width={isMobile ? "24" : "28"}
             height="auto"
