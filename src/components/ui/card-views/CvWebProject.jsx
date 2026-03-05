@@ -90,7 +90,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
         {isFavorite && (
           <Image
             src={FAVORITE_ICON}
-            width={isMobile ? "28" : "32"}
+            width={isMobile ? "25" : "29"}
             height="auto"
             alt="favorite icon"
           />
