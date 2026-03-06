@@ -90,14 +90,14 @@ export default function CvWebProject({ project, label, variationLayout }) {
         {isFavorite && (
           <Image
             src={FAVORITE_ICON}
-            width={isMobile ? "25" : "29"}
+            width={isMobile ? "27" : "30"}
             height="auto"
             alt="favorite icon"
           />
         )}
       </div>
-      <div className="px-2 pb-2 lg:px-4 lg:pb-2">
-        <p className="text-gray-700 text-left">{description}</p>
+      <div className="px-2 py-1 border-t-2 lg:pt-0 lg:px-4 lg:pb-2">
+        <p className="text-gray-700 text-left ml-1">{description}</p>
       </div>
       <InfoScrollArea project={project} />
       <div
