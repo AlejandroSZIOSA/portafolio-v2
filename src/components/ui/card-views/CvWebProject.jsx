@@ -101,12 +101,13 @@ export default function CvWebProject({ project, label, variationLayout }) {
       </div>
       <InfoScrollArea project={project} />
       <div
-        className={
-          "px-6 py-3 flex items-center" +
-          (variationLayout === "no-link-to-details"
-            ? " justify-between"
-            : " justify-center")
-        }
+        className={`
+          px-6 py-3 flex items-center ${
+            variationLayout === "no-link-to-details"
+              ? "justify-between"
+              : "justify-center"
+          }
+        `}
       >
         {content}
       </div>
