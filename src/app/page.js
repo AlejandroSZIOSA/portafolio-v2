@@ -30,10 +30,10 @@ export default function Home() {
         <section className="block lg:flex w-full">
           <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[bisque]">
             {isMobile ? (
-              <DividerHeaderTitle sectionTitle="My Last Project" />
+              <DividerHeaderTitle sectionTitle="Latest" />
             ) : (
               <div className="lg:h-14 lg:content-center lg:text-center text-[rgb(127,255,0)] bg-black">
-                <h2>My last Project</h2>
+                <h2>Latest</h2>
               </div>
             )}
             <LatestProjectsSection />
@@ -42,6 +42,7 @@ export default function Home() {
             <DividerHeaderTitle
               sectionTitle="Projects"
               putSectionId="previous_projects_divider"
+              variant="top-line"
             />
             <ProjectsSection />
           </div>
