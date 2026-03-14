@@ -3,6 +3,8 @@ import * as DATA_PROJECTS from "@/utils/data";
 
 export function getDataProjects(dataIdentifier) {
   switch (dataIdentifier) {
+    case "allWebProjects":
+      return DATA_PROJECTS.WEB_DATA;
     case "mobileUIwebApps":
       return DATA_PROJECTS.WEB_DATA.filter((item) => item.responsiveUI[0]);
     case "mobileUIwebApis":

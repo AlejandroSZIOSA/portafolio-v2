@@ -12,6 +12,7 @@ export function TabsTrigger({
   children,
   showCount = false,
   isMobile,
+  lengthWebProjects,
   mobileUIApps = [],
   desktopUIApps = [],
 }) {
@@ -27,13 +28,14 @@ export function TabsTrigger({
         {children}
         {showCount && (
           <span>
-            <strong>
+            {/*   <strong>
               (
               {isMobile
                 ? "+" + mobileUIApps.length
                 : "+" + desktopUIApps.length}
               )
-            </strong>
+            </strong> */}
+            <strong>{`(+${lengthWebProjects})`}</strong>
           </span>
         )}
       </h3>

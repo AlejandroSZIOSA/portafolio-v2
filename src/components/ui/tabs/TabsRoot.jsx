@@ -13,6 +13,10 @@ export default function TabsRoot() {
   const [activeTab, setActiveTab] = useState("tab1");
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
 
+  console.log(getDataProjects("allWebProjects"));
+
+  const lengthWebProjects = getDataProjects("allWebProjects").length;
+
   return (
     <Tabs value={activeTab} onValueChange={setActiveTab} defaultValue="tab1">
       <TabsList>
@@ -20,8 +24,9 @@ export default function TabsRoot() {
           value="tab1"
           showCount={true}
           isMobile={isMobile}
-          mobileUIApps={getDataProjects("mobileUIwebApps")}
-          desktopUIApps={getDataProjects("desktopUIwebApps")}
+          lengthWebProjects={lengthWebProjects}
+          /*   mobileUIApps={getDataProjects("mobileUIwebApps")}
+          desktopUIApps={getDataProjects("desktopUIwebApps")} */
         >
           Web
         </TabsTrigger>
