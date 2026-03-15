@@ -21,6 +21,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
     version,
     title,
     isFavorite,
+    responsiveUI,
     description,
   } = project;
 
@@ -29,12 +30,16 @@ export default function CvWebProject({ project, label, variationLayout }) {
     case "no-link-to-details":
       content = (
         <>
-          <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
-          <span className="flex w-[67px] items-center justify-between">
-            <p className="font-bold">{"<"}</p>
+          <div className="inline-flex w-[56px] lg:w-[60px] items-center justify-between">
             <GitHubCodeBtn gitHubLink={gitHubLink} />
-            <p className="font-bold">{">"}</p>
-          </span>
+            <span className="font-bold">{"/>"}</span>
+          </div>
+
+          {responsiveUI[0] && isMobile ? (
+            <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
+          ) : responsiveUI[1] && !isMobile ? (
+            <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
+          ) : null}
         </>
       );
       break;
