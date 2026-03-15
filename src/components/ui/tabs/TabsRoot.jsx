@@ -18,53 +18,44 @@ export default function TabsRoot() {
       <TabsList>
         <TabsTrigger
           value="tab1"
-          showCount={true}
-          isMobile={isMobile}
-          mobileUIApps={getDataProjects("mobileUIwebApps")}
-          desktopUIApps={getDataProjects("desktopUIwebApps")}
+          lengthProjects={getDataProjects("allWebProjects").length}
         >
           Web
         </TabsTrigger>
 
         <TabsTrigger
           value="tab2"
-          showCount={true}
-          isMobile={isMobile}
-          mobileUIApps={getDataProjects("mobileUIwebApis")}
-          desktopUIApps={getDataProjects("desktopUIwebApis")}
+          lengthProjects={getDataProjects("allWebApis").length}
         >
           Web+open_API
         </TabsTrigger>
 
         <TabsTrigger
           value="tab3"
-          showCount={true}
-          isMobile={isMobile}
-          mobileUIApps={getDataProjects("webBackendDbProjects")}
-          desktopUIApps={getDataProjects("webBackendDbProjects")}
+          lengthProjects={getDataProjects("allWebBackendDbProjects").length}
         >
           Web+Backend+DB
         </TabsTrigger>
-        <TabsTrigger value="tab4">Full-Stack_JS</TabsTrigger>
+        <TabsTrigger value="tab4">Full-Stacks_JS</TabsTrigger>
       </TabsList>
 
       <TabsContent value="tab1">
         <Accordion
-          projects={getDataProjects("mobileUIwebApps")}
+          projects={getDataProjects("allWebProjects")}
           variationLayout="no-link-to-details"
         />
       </TabsContent>
 
       <TabsContent value="tab2">
         <Accordion
-          projects={getDataProjects("mobileUIwebApis")}
+          projects={getDataProjects("allWebApis")}
           variationLayout="no-link-to-details"
         />
       </TabsContent>
 
       <TabsContent value="tab3">
         <Accordion
-          projects={getDataProjects("webBackendDbProjects")}
+          projects={getDataProjects("allWebBackendDbProjects")}
           variationLayout="link-to-details"
         />
       </TabsContent>

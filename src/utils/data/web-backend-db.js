@@ -15,7 +15,7 @@ export const WEB_BACKEND_DB_DATA = [
     gitHubBackendLink:
       "https://github.com/AlejandroSZIOSA/driver-course-wa-sanity.git",
     browsers: ["Chrome"],
-    deviceBrowserSettings: "iPhone 14 Pro max",
+    deviceBrowserSettings: "",
     isNew: false,
     typeScript: "",
     css: "Module Css",
@@ -23,7 +23,7 @@ export const WEB_BACKEND_DB_DATA = [
     navigation: "yes",
     tests: "",
     wcag: "",
-    responsiveUI: ["Mobile"],
+    responsiveUI: ["", ""],
     context: "yes",
     redux: "",
     localStorage: "yes",

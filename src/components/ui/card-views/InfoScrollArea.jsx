@@ -1,6 +1,7 @@
 const TECH_BOXES_STYLES =
   "inline-block min-w-fit bg-gray-200 rounded-full content-center px-3 py-1 text-xs font-semibold text-gray-700 text-center";
 
+const MOBILE_UI = "bg-blue-600";
 export default function InfoScrollArea({ project }) {
   const {
     deviceBrowserSettings,
@@ -26,6 +27,20 @@ export default function InfoScrollArea({ project }) {
 
   return (
     <div className="bg-red-200 border px-1 py-2 flex space-x-2 overflow-x-auto scrollbar-hide lg:py-3 lg:px-2">
+      {mobileUI && (
+        <span style={{ backgroundColor: "aqua" }} className={TECH_BOXES_STYLES}>
+          Mobile UI
+        </span>
+      )}
+      {desktopUI && (
+        <span
+          style={{ backgroundColor: "aquamarine" }}
+          className={TECH_BOXES_STYLES}
+        >
+          Desktop UI
+        </span>
+      )}
+
       {chrome && <span className={TECH_BOXES_STYLES}>{chrome}</span>}
       {deviceBrowserSettings && (
         <span className={TECH_BOXES_STYLES}>Dev:{deviceBrowserSettings}</span>
@@ -57,9 +72,6 @@ export default function InfoScrollArea({ project }) {
 
       {css && <span className={TECH_BOXES_STYLES}>{css}</span>}
       {cssLibrary && <span className={TECH_BOXES_STYLES}>{cssLibrary}</span>}
-
-      {mobileUI && <span className={TECH_BOXES_STYLES}>Mobile UI</span>}
-      {desktopUI && <span className={TECH_BOXES_STYLES}>Desktop UI</span>}
 
       {wcag && <span className={TECH_BOXES_STYLES}>Wcag:{wcag}</span>}
     </div>
