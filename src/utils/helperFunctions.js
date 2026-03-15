@@ -5,15 +5,9 @@ export function getDataProjects(dataIdentifier) {
   switch (dataIdentifier) {
     case "allWebProjects":
       return DATA_PROJECTS.WEB_DATA;
-    case "mobileUIwebApps":
-      return DATA_PROJECTS.WEB_DATA.filter((item) => item.responsiveUI[0]);
-    case "mobileUIwebApis":
-      return DATA_PROJECTS.WEB_APIS_DATA.filter((item) => item.responsiveUI[0]);
-    case "desktopUIwebApps":
-      return DATA_PROJECTS.WEB_DATA.filter((item) => item.responsiveUI[1]);
-    case "desktopUIwebApis":
-      return DATA_PROJECTS.WEB_APIS_DATA.filter((item) => item.responsiveUI[1]);
-    case "webBackendDbProjects": // exception for responsive UI
+    case "allWebApis":
+      return DATA_PROJECTS.WEB_APIS_DATA;
+    case "allWebBackendDbProjects":
       return DATA_PROJECTS.WEB_BACKEND_DB_DATA;
     default:
       return [];

@@ -7,15 +7,7 @@ const ACTIVE_TAB =
 const INACTIVE_TAB = "text-gray-500";
 
 // TabsTrigger component
-export function TabsTrigger({
-  value,
-  children,
-  showCount = false,
-  isMobile,
-  lengthWebProjects,
-  mobileUIApps = [],
-  desktopUIApps = [],
-}) {
+export function TabsTrigger({ value, children, lengthProjects = [] }) {
   const { activeTab, setActiveTab } = useTabs(); //using Context to get activeTab and setActiveTab
   const isActive = activeTab === value;
 
@@ -26,18 +18,9 @@ export function TabsTrigger({
     >
       <h3>
         {children}
-        {showCount && (
-          <span>
-            {/*   <strong>
-              (
-              {isMobile
-                ? "+" + mobileUIApps.length
-                : "+" + desktopUIApps.length}
-              )
-            </strong> */}
-            <strong>{`(+${lengthWebProjects})`}</strong>
-          </span>
-        )}
+        <span>
+          <strong>{`(+${lengthProjects})`}</strong>
+        </span>
       </h3>
     </button>
   );

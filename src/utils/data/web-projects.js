@@ -23,7 +23,7 @@ export const WEB_DATA = [
     navigation: "",
     tests: "",
     wcag: "Basic",
-    responsiveUI: ["Mobile", "Desktop"],
+    responsiveUI: ["Mobile", "Desktop"], //IMPORTANT:must hall this order in the array, first position for mobile and second for desktop if one of those so responsiveUI: ["Mobile", ""]
     express: "",
     context: "",
     redux: "",

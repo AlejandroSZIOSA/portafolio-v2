@@ -13,40 +13,26 @@ export default function TabsRoot() {
   const [activeTab, setActiveTab] = useState("tab1");
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
 
-  console.log(getDataProjects("allWebProjects"));
-
-  const lengthWebProjects = getDataProjects("allWebProjects").length;
-
   return (
     <Tabs value={activeTab} onValueChange={setActiveTab} defaultValue="tab1">
       <TabsList>
         <TabsTrigger
           value="tab1"
-          showCount={true}
-          isMobile={isMobile}
-          lengthWebProjects={lengthWebProjects}
-          /*   mobileUIApps={getDataProjects("mobileUIwebApps")}
-          desktopUIApps={getDataProjects("desktopUIwebApps")} */
+          lengthProjects={getDataProjects("allWebProjects").length}
         >
           Web
         </TabsTrigger>
 
         <TabsTrigger
           value="tab2"
-          showCount={true}
-          isMobile={isMobile}
-          mobileUIApps={getDataProjects("mobileUIwebApis")}
-          desktopUIApps={getDataProjects("desktopUIwebApis")}
+          lengthProjects={getDataProjects("allWebApis").length}
         >
           Web+open_API
         </TabsTrigger>
 
         <TabsTrigger
           value="tab3"
-          showCount={true}
-          isMobile={isMobile}
-          mobileUIApps={getDataProjects("webBackendDbProjects")}
-          desktopUIApps={getDataProjects("webBackendDbProjects")}
+          lengthProjects={getDataProjects("allWebBackendDbProjects").length}
         >
           Web+Backend+DB
         </TabsTrigger>
@@ -55,21 +41,21 @@ export default function TabsRoot() {
 
       <TabsContent value="tab1">
         <Accordion
-          projects={getDataProjects("mobileUIwebApps")}
+          projects={getDataProjects("allWebProjects")}
           variationLayout="no-link-to-details"
         />
       </TabsContent>
 
       <TabsContent value="tab2">
         <Accordion
-          projects={getDataProjects("mobileUIwebApis")}
+          projects={getDataProjects("allWebApis")}
           variationLayout="no-link-to-details"
         />
       </TabsContent>
 
       <TabsContent value="tab3">
         <Accordion
-          projects={getDataProjects("webBackendDbProjects")}
+          projects={getDataProjects("allWebBackendDbProjects")}
           variationLayout="link-to-details"
         />
       </TabsContent>
