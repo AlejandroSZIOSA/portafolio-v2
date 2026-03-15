@@ -102,7 +102,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
         )}
       </div>
       <div className="px-2 py-1 border-t-2 lg:pt-0 lg:px-4 lg:pb-2">
-        <p className="text-gray-700 text-left ml-1">{description}</p>
+        <p className="text-gray-700 text-center ml-1">{description}</p>
       </div>
       <InfoScrollArea project={project} />
       <div
