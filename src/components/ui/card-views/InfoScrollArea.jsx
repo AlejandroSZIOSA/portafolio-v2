@@ -42,7 +42,10 @@ export default function InfoScrollArea({ project }) {
       )}
 
       {chrome && (
-        <span style={{ backgroundColor: "aqua" }} className={TECH_BOXES_STYLES}>
+        <span
+          style={{ backgroundColor: "aquamarine" }}
+          className={TECH_BOXES_STYLES}
+        >
           {chrome}
         </span>
       )}
