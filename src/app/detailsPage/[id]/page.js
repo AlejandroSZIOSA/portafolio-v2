@@ -1,10 +1,14 @@
 import React from "react";
 import { WEB_BACKEND_DB_DATA } from "@/utils/data/web-backend-db";
+
+import { getDataProjects } from "@/utils/helperFunctions";
+
 import LogoHeader from "@/components/header/LogoHeader";
 import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 import NavBar from "@/components/header/NavBar";
 import ProjectDetailSection from "@/components/ui/details-page/ProjectDetailSection";
 import CodeSectionPanel from "@/components/ui/details-page/CodeSectionPanel";
+import FigmaDetailSection from "@/components/ui/details-page/FigmaDetailSection";
 
 let variant = ""; //variable to hold the variant value
 export default function WebBackendDbDetailsPage({ params, searchParams }) {
@@ -13,9 +17,14 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
   //extracting async extra params
   variant = extraParamValue.extraParam;
 
-  const project = WEB_BACKEND_DB_DATA.find(
+  const project = getDataProjects("allProjects").find(
     (item) => item.id.toString() === projectId,
   );
+
+  const { detailsProjectInfo } = project;
+  const { signUp, logIn, user, backend, figma } = detailsProjectInfo;
+
+  let content = "";
 
   if (!project) {
     if (!project) {
@@ -23,8 +32,49 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
     }
   }
 
-  const { detailsProjectInfo } = project;
-  const { signUp, logIn, user, backend } = detailsProjectInfo;
+  if (variant === "frontend+backend+db") {
+    content = (
+      <>
+        <ProjectDetailSection
+          title="Sign-Up"
+          descriptionData={signUp}
+          screenshotsData={project.signUpScreenShots}
+        />
+        <ProjectDetailSection
+          title="Log-In (with an existing user)"
+          descriptionData={logIn}
+          screenshotsData={project.logInScreenShots}
+        />
+        <ProjectDetailSection
+          title="Log-In (without an existing user)"
+          descriptionData={logIn}
+          screenshotsData={project.logInNoUserScreenShots}
+        />
+        <ProjectDetailSection
+          title="User"
+          descriptionData={user}
+          screenshotsData={project.userScreenShots}
+        />
+        <ProjectDetailSection
+          title="Backend"
+          descriptionData={backend}
+          screenshotsData={project.backendScreenShots}
+        />
+      </>
+    );
+  }
+  if (variant === "frontend-only") {
+    content = (
+      <>
+        {/*   <FigmaDetailSection>Mobile Design</FigmaDetailSection> */}
+        <ProjectDetailSection
+          title="Figma Design"
+          descriptionData={figma}
+          screenshotsData={project.figmaScreenshots}
+        />
+      </>
+    );
+  }
 
   return (
     <>
@@ -38,47 +88,15 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
         <h1 className="my-4">{project.title}</h1>
         <h2>Screenshots</h2>
 
-        {variant === "frontend+backend+db" && (
-          <>
-            <ProjectDetailSection
-              title="Sign-Up"
-              descriptionData={signUp}
-              screenshotsData={project.signUpScreenShots}
-            />
-
-            <ProjectDetailSection
-              title="Log-In (with an existing user)"
-              descriptionData={logIn}
-              screenshotsData={project.logInScreenShots}
-            />
-
-            <ProjectDetailSection
-              title="Log-In (without an existing user)"
-              descriptionData={logIn}
-              screenshotsData={project.logInNoUserScreenShots}
-            />
-          </>
-        )}
-
-        <ProjectDetailSection
-          title="User"
-          descriptionData={user}
-          screenshotsData={project.userScreenShots}
-        />
+        {content}
 
         {variant === "frontend+backend+db" && (
-          <ProjectDetailSection
-            title="Backend"
-            descriptionData={backend}
-            screenshotsData={project.backendScreenShots}
+          <CodeSectionPanel
+            variant={variant}
+            gitHubFrontendLinkData={project.gitHubFrontendLink}
+            gitHubBackendLinkData={project.gitHubBackendLink}
           />
         )}
-
-        <CodeSectionPanel
-          variant={variant}
-          gitHubFrontendLinkData={project.gitHubFrontendLink}
-          gitHubBackendLinkData={project.gitHubBackendLink}
-        />
       </main>
     </>
   );

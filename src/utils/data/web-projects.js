@@ -90,5 +90,19 @@ export const WEB_DATA = [
     crud: "All",
     api: "",
     localStorage: "",
+
+    figmaScreenshots: [
+      "/images/figma-screenshots/vinilo-volador/1.png",
+      "/images/figma-screenshots/vinilo-volador/2.png",
+    ],
+
+    detailsProjectInfo: {
+      signUp: "",
+      logIn: "",
+      user: "",
+      backend: "",
+      figma:
+        "This project was developed following a Figma design. The design includes a mobile and desktop version, showcasing a vinyl stack inventory management system. The Figma design emphasizes a user-friendly interface with intuitive navigation, allowing users to easily manage their vinyl collection. The design incorporates responsive elements to ensure a seamless experience across different devices.",
+    },
   },
 ];

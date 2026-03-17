@@ -2,8 +2,6 @@
 import { useState } from "react";
 import Accordion from "../Accordion";
 import ConstructionMessage from "../ConstructionMessage";
-import { CONSTANTS } from "@/utils/constants";
-import { useMedia } from "use-media";
 import { getDataProjects } from "@/utils/helperFunctions";
 
 //importing multiple imports from index.js in components/ui/tabs folder and exports
@@ -11,7 +9,6 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "./index";
 
 export default function TabsRoot() {
   const [activeTab, setActiveTab] = useState("tab1");
-  const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
 
   return (
     <Tabs value={activeTab} onValueChange={setActiveTab} defaultValue="tab1">
