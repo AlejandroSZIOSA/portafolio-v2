@@ -1,7 +1,6 @@
 export const WEB_DATA = [
   {
-    id: 1,
-    updated_at: "October 17, 2025",
+    id: 1, //IMPORTANT: all project id's are different
     cardImgUrl:
       "/images/web-projects/clocks-timmers/clocks-timmers_400_300.png",
     title: "Clocks && Timers",
@@ -97,10 +96,6 @@ export const WEB_DATA = [
     ],
 
     detailsProjectInfo: {
-      signUp: "",
-      logIn: "",
-      user: "",
-      backend: "",
       figma:
         "This project was developed following a Figma design. The design includes a mobile and desktop version, showcasing a vinyl stack inventory management system. The Figma design emphasizes a user-friendly interface with intuitive navigation, allowing users to easily manage their vinyl collection. The design incorporates responsive elements to ensure a seamless experience across different devices.",
     },

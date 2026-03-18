@@ -63,7 +63,7 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
       </>
     );
   }
-  if (variant === "frontend-only") {
+  if (variant === "only-figma") {
     content = (
       <>
         {/*   <FigmaDetailSection>Mobile Design</FigmaDetailSection> */}
