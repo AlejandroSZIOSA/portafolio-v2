@@ -39,11 +39,13 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
           title="Sign-Up"
           descriptionData={signUp}
           screenshotsData={project.signUpScreenShots}
+          variant={variant}
         />
         <ProjectDetailSection
           title="Log-In (with an existing user)"
           descriptionData={logIn}
           screenshotsData={project.logInScreenShots}
+          variant={variant}
         />
         <ProjectDetailSection
           title="Log-In (without an existing user)"
@@ -54,11 +56,13 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
           title="User"
           descriptionData={user}
           screenshotsData={project.userScreenShots}
+          variant={variant}
         />
         <ProjectDetailSection
           title="Backend"
           descriptionData={backend}
           screenshotsData={project.backendScreenShots}
+          variant={variant}
         />
       </>
     );
@@ -71,6 +75,7 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
           title="Figma Design"
           descriptionData={figma}
           screenshotsData={project.figmaScreenshots}
+          variant="figma"
         />
       </>
     );

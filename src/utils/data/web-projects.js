@@ -1,3 +1,6 @@
+import { CONSTANTS } from "../constants";
+const { BASE_CONTENT_URL } = CONSTANTS;
+
 export const WEB_DATA = [
   {
     id: 1, //IMPORTANT: all project id's are different
@@ -60,7 +63,7 @@ export const WEB_DATA = [
     localStorage: "yes",
   },
   {
-    id: 3,
+    id: 3, //different ids in all projects
     updated_at: "October 15, 2025",
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
@@ -70,7 +73,7 @@ export const WEB_DATA = [
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
     category: "Web",
-    language: "",
+    language: "TypeScript",
     framework: "React+Vite",
     linkToApp: "https://vinilo-volador-web.vercel.app/",
     gitHubLink: "https://github.com/AlejandroSZIOSA/vinilo-volador-web.git",
@@ -91,8 +94,10 @@ export const WEB_DATA = [
     localStorage: "",
 
     figmaScreenshots: [
-      "/images/figma-screenshots/vinilo-volador/1.png",
-      "/images/figma-screenshots/vinilo-volador/2.png",
+      BASE_CONTENT_URL + "/v1773768179/4_katyry.png",
+      BASE_CONTENT_URL + "/v1773768178/3_xiau0l.png",
+      BASE_CONTENT_URL + "/v1773768176/2_nhuv5w.png",
+      BASE_CONTENT_URL + "/v1773768175/1_ijppkm.png",
     ],
 
     detailsProjectInfo: {

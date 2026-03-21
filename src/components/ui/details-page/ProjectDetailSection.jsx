@@ -5,6 +5,7 @@ export default function ProjectDetailSection({
   title,
   descriptionData,
   screenshotsData,
+  variant,
 }) {
   return (
     <section className="my-1 lg:flex lg:justify-center lg:my-5">
@@ -12,7 +13,7 @@ export default function ProjectDetailSection({
       <p className="text-center font-semibold pb-1 bold lg:hidden">
         {"<-"} horizontal-scrolling {"->"}
       </p>
-      <ScreenShotScrollView screenshots={screenshotsData} />
+      <ScreenShotScrollView screenshots={screenshotsData} variant={variant} />
     </section>
   );
 }
