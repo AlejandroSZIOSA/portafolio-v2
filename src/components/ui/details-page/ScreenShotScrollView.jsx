@@ -9,7 +9,7 @@ export default function ScreenShotScrollView({ screenshots, variant }) {
 
   if (variant === "figma") {
     if (isMobile) {
-      content = 240;
+      content = "80%";
     } else {
       content = "auto";
     }
@@ -24,7 +24,7 @@ export default function ScreenShotScrollView({ screenshots, variant }) {
       <ol className="flex items-center ml-1">
         {screenshots.map((url, index) => (
           <li key={index} className="flex-shrink-0 mx-2">
-            <img src={url} width={content} height={100} alt="no card image" />
+            <img src={url} width={content} height={200} alt="no card image" />
           </li>
         ))}
       </ol>

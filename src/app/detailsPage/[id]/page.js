@@ -1,5 +1,4 @@
 import React from "react";
-import { WEB_BACKEND_DB_DATA } from "@/utils/data/web-backend-db";
 
 import { getDataProjects } from "@/utils/helperFunctions";
 
@@ -8,7 +7,6 @@ import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 import NavBar from "@/components/header/NavBar";
 import ProjectDetailSection from "@/components/ui/details-page/ProjectDetailSection";
 import CodeSectionPanel from "@/components/ui/details-page/CodeSectionPanel";
-import FigmaDetailSection from "@/components/ui/details-page/FigmaDetailSection";
 
 let variant = ""; //variable to hold the variant value
 export default function WebBackendDbDetailsPage({ params, searchParams }) {
@@ -39,30 +37,31 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
           title="Sign-Up"
           descriptionData={signUp}
           screenshotsData={project.signUpScreenShots}
-          variant={variant}
+          variantScreenshotsLayout={variant}
         />
         <ProjectDetailSection
           title="Log-In (with an existing user)"
           descriptionData={logIn}
           screenshotsData={project.logInScreenShots}
-          variant={variant}
+          variantScreenshotsLayout={variant}
         />
         <ProjectDetailSection
           title="Log-In (without an existing user)"
           descriptionData={logIn}
           screenshotsData={project.logInNoUserScreenShots}
+          variantScreenshotsLayout={variant}
         />
         <ProjectDetailSection
           title="User"
           descriptionData={user}
           screenshotsData={project.userScreenShots}
-          variant={variant}
+          variantScreenshotsLayout={variant}
         />
         <ProjectDetailSection
           title="Backend"
           descriptionData={backend}
           screenshotsData={project.backendScreenShots}
-          variant={variant}
+          variantScreenshotsLayout={variant}
         />
       </>
     );
@@ -75,7 +74,22 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
           title="Figma Design"
           descriptionData={figma}
           screenshotsData={project.figmaScreenshots}
-          variant="figma"
+          variantScreenshotsLayout="figma"
+        />
+      </>
+    );
+  }
+
+  //TODO:continue from here
+  if (variant === "only-mockups") {
+    content = (
+      <>
+        {/*   <FigmaDetailSection>Mobile Design</FigmaDetailSection> */}
+        <ProjectDetailSection
+          title="Mockup Design"
+          descriptionData={figma}
+          screenshotsData={project.figmaScreenshots}
+          variantScreenshotsLayout="figma"
         />
       </>
     );

@@ -94,10 +94,14 @@ export const WEB_DATA = [
     localStorage: "",
 
     figmaScreenshots: [
-      BASE_CONTENT_URL + "/v1773768179/4_katyry.png",
-      BASE_CONTENT_URL + "/v1773768178/3_xiau0l.png",
-      BASE_CONTENT_URL + "/v1773768176/2_nhuv5w.png",
-      BASE_CONTENT_URL + "/v1773768175/1_ijppkm.png",
+      BASE_CONTENT_URL + "/v1774122888/1_ue6ngv.png",
+      BASE_CONTENT_URL + "/v1774122888/2_njr8tf.png",
+      BASE_CONTENT_URL + "/v1774122888/3_dplraq.png",
+      BASE_CONTENT_URL + "/v1774122887/4_eh6qc5.png",
+      BASE_CONTENT_URL + "/v1774122887/5_ysfcuq.png",
+      BASE_CONTENT_URL + "/v1774122887/6_z1uvvk.png",
+      BASE_CONTENT_URL + "/v1774122887/7_rffhrg.png",
+      BASE_CONTENT_URL + "/v1774122887/8_ahqh4h.png",
     ],
 
     detailsProjectInfo: {

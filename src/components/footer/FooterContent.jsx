@@ -2,6 +2,8 @@
 import { CONSTANTS } from "@/utils/constants";
 import { useMedia } from "use-media";
 
+//TODO: Cambiar img for Img component
+
 export default function FooterContent() {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH);
 
