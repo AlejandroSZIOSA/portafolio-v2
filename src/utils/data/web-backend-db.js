@@ -1,3 +1,6 @@
+import { CONSTANTS } from "../constants";
+const { BASE_CONTENT_URL } = CONSTANTS;
+
 export const WEB_BACKEND_DB_DATA = [
   {
     id: 6,
@@ -79,7 +82,11 @@ export const WEB_BACKEND_DB_DATA = [
       "/images/web-backend-db/screenshots/driver-wa/backend/6.png",
     ],
 
-    figmaScreenshots: [],
+    figmaScreenshots: [
+      BASE_CONTENT_URL + "/v1774166656/1_soc2ir.png",
+      BASE_CONTENT_URL + "/v1774166656/2_ad4k2y.png",
+      BASE_CONTENT_URL + "/v1774166656/3_ozbjsu.png",
+    ],
 
     detailsProjectInfo: {
       signUp:
@@ -89,7 +96,8 @@ export const WEB_BACKEND_DB_DATA = [
       user: "The user dashboard provides a interface where users get access to the main content of the application. The users answer the questions. At the end it gets a summary and then can choose to do it again. If started again, the order of the answers will change randomly.",
       backend:
         "The backend is developed with SANITY (CMS), which handles server-side logic, API requests, and interactions with the database. It ensures secure and efficient processing of data, user authentication, and overall application functionality.",
-      figma: "",
+      figma:
+        "The Figma design for the Driver Theory Trivia app focuses on creating an intuitive and user-friendly interface. The design includes a clean layout with clear navigation, making it easy for users to sign up, log in, and access the trivia content. The color scheme and typography are chosen to enhance readability and provide a visually appealing experience. The design also incorporates responsive elements to ensure a seamless experience across different devices, allowing users to enjoy the app on both mobile and desktop platforms.",
     },
   },
 ];

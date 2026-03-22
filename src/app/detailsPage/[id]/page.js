@@ -7,6 +7,7 @@ import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 import NavBar from "@/components/header/NavBar";
 import ProjectDetailSection from "@/components/ui/details-page/ProjectDetailSection";
 import CodeSectionPanel from "@/components/ui/details-page/CodeSectionPanel";
+import Footer from "@/components/footer/Footer";
 
 let variant = ""; //variable to hold the variant value
 export default function WebBackendDbDetailsPage({ params, searchParams }) {
@@ -33,6 +34,17 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
   if (variant === "frontend+backend+db") {
     content = (
       <>
+        {/* TODO:test here */}
+        {variant === "frontend+backend+db" && figma && (
+          <ProjectDetailSection
+            title="Figma Design"
+            descriptionData={figma}
+            screenshotsData={project.figmaScreenshots}
+            variantScreenshotsLayout="figma"
+          />
+        )}
+
+        <h2>App Running On Development</h2>
         <ProjectDetailSection
           title="Sign-Up"
           descriptionData={signUp}
@@ -69,7 +81,6 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
   if (variant === "only-figma") {
     content = (
       <>
-        {/*   <FigmaDetailSection>Mobile Design</FigmaDetailSection> */}
         <ProjectDetailSection
           title="Figma Design"
           descriptionData={figma}
@@ -84,7 +95,6 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
   if (variant === "only-mockups") {
     content = (
       <>
-        {/*   <FigmaDetailSection>Mobile Design</FigmaDetailSection> */}
         <ProjectDetailSection
           title="Mockup Design"
           descriptionData={figma}
@@ -117,6 +127,7 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
           />
         )}
       </main>
+      {variant === "only-figma" && <Footer />}
     </>
   );
 }

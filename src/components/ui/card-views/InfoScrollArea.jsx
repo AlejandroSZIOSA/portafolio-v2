@@ -28,13 +28,16 @@ export default function InfoScrollArea({ project }) {
   return (
     <div className="bg-red-200 border px-1 py-2 flex space-x-2 overflow-x-auto scrollbar-hide lg:py-3 lg:px-2">
       {mobileUI && (
-        <span style={{ backgroundColor: "aqua" }} className={TECH_BOXES_STYLES}>
+        <span
+          style={{ backgroundColor: "darkturquoise" }}
+          className={TECH_BOXES_STYLES}
+        >
           Mobile UI
         </span>
       )}
       {desktopUI && (
         <span
-          style={{ backgroundColor: "aquamarine" }}
+          style={{ backgroundColor: "darkturquoise" }}
           className={TECH_BOXES_STYLES}
         >
           Desktop UI

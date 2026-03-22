@@ -1,4 +1,5 @@
 "use client";
+
 import IntroSection from "@/components/main/IntroSection";
 import LatestProjectsSection from "@/components/main/LatestProjectsSection";
 import ProjectsSection from "@/components/main/ProjectsSection";
@@ -8,7 +9,7 @@ import LogoHeader from "@/components/header/LogoHeader";
 import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 import NavBar from "@/components/header/NavBar";
 
-import FooterContent from "@/components/footer/FooterContent";
+import Footer from "@/components/footer/Footer";
 import { useMedia } from "use-media";
 import { CONSTANTS } from "@/utils/constants";
 
@@ -48,9 +49,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer>
-        <FooterContent />
-      </footer>
+      <Footer />
     </>
   );
 }

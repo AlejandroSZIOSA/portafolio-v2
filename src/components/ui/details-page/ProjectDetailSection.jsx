@@ -1,4 +1,4 @@
-import FooterContent from "@/components/footer/FooterContent";
+import FooterContent from "@/components/footer/Footer";
 import InfoBox from "@/components/ui/details-page/InfoBox";
 import ScreenShotScrollView from "@/components/ui/details-page/ScreenShotScrollView";
 
