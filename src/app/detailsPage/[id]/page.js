@@ -44,7 +44,7 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
           />
         )}
 
-        <h2>App Running On Development</h2>
+        <h2>App Running</h2>
         <ProjectDetailSection
           title="Sign-Up"
           descriptionData={signUp}
@@ -113,7 +113,9 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
         <NavBar variation="details-page" />
       </header>
 
-      <main className="flex flex-col justify-center items-center mx-auto">
+      <main
+        className={`flex flex-col justify-center items-center mx-auto ${variant === "only-figma" && "lg:h-[88vh]"}`}
+      >
         <h1 className="my-4">{project.title}</h1>
         <h2>Screenshots</h2>
 
