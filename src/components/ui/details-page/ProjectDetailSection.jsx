@@ -20,9 +20,6 @@ export default function ProjectDetailSection({
           variant={variantScreenshotsLayout}
         />
       </section>
-      {/*   <footer>
-        {variantScreenshotsLayout === "figma" && <FooterContent />}
-      </footer> */}
     </>
   );
 }
