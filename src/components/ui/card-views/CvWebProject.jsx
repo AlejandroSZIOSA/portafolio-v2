@@ -7,6 +7,8 @@ import GitHubCodeBtn from "../buttons/GitHubCodeBtn";
 import InfoScrollArea from "./InfoScrollArea";
 import ToViewAppBtn from "../buttons/ToViewAppBtn";
 
+import FIGMA_ICON from "../../../../public/icons/techs/figma.svg";
+
 import UPDATED_ICON from "../../../../public/icons/clarity_update-white.svg";
 import FAVORITE_ICON from "../../../../public/icons/favorite-circle.svg";
 
@@ -21,7 +23,6 @@ export default function CvWebProject({ project, label, variationLayout }) {
     version,
     title,
     isFavorite,
-    responsiveUI,
     description,
   } = project;
 
@@ -35,11 +36,24 @@ export default function CvWebProject({ project, label, variationLayout }) {
             <span className="font-bold">{"/>"}</span>
           </div>
 
-          {responsiveUI[0] && isMobile ? (
-            <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
-          ) : responsiveUI[1] && !isMobile ? (
-            <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
-          ) : null}
+          {project.figmaScreenshots && (
+            <Link
+              /*   className="p-1 bg-blue-600 hover:bg-blue-800 text-sm lg:text-base text-white border-2 border-indigo-950 rounded-md" */
+              href={`/detailsPage/${id}?extraParam=${encodeURIComponent(
+                "only-figma",
+              )}`}
+            >
+              <Image
+                className="transition-transform duration-200 hover:scale-110 hover:opacity-80"
+                src={FIGMA_ICON}
+                alt="Figma"
+                width={isMobile ? 32 : 36}
+                height="auto"
+              />
+            </Link>
+          )}
+
+          <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
         </>
       );
       break;
@@ -57,6 +71,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
         </>
       );
       break;
+
     default:
       content = null;
   }
@@ -107,7 +122,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
       <InfoScrollArea project={project} />
       <div
         className={`
-          px-6 py-3 flex items-center ${
+          px-3 py-3 flex items-center ${
             variationLayout === "no-link-to-details"
               ? "justify-between"
               : "justify-center"

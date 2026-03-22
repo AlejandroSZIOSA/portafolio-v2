@@ -1,7 +1,9 @@
+import { CONSTANTS } from "../constants";
+const { BASE_CONTENT_URL } = CONSTANTS;
+
 export const WEB_DATA = [
   {
-    id: 1,
-    updated_at: "October 17, 2025",
+    id: 1, //IMPORTANT: all project id's are different
     cardImgUrl:
       "/images/web-projects/clocks-timmers/clocks-timmers_400_300.png",
     title: "Clocks && Timers",
@@ -61,7 +63,7 @@ export const WEB_DATA = [
     localStorage: "yes",
   },
   {
-    id: 3,
+    id: 3, //different ids in all projects
     updated_at: "October 15, 2025",
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
@@ -71,7 +73,7 @@ export const WEB_DATA = [
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
     category: "Web",
-    language: "",
+    language: "TypeScript",
     framework: "React+Vite",
     linkToApp: "https://vinilo-volador-web.vercel.app/",
     gitHubLink: "https://github.com/AlejandroSZIOSA/vinilo-volador-web.git",
@@ -90,5 +92,21 @@ export const WEB_DATA = [
     crud: "All",
     api: "",
     localStorage: "",
+
+    figmaScreenshots: [
+      BASE_CONTENT_URL + "/v1774122888/1_ue6ngv.png",
+      BASE_CONTENT_URL + "/v1774122888/2_njr8tf.png",
+      BASE_CONTENT_URL + "/v1774122888/3_dplraq.png",
+      BASE_CONTENT_URL + "/v1774122887/4_eh6qc5.png",
+      BASE_CONTENT_URL + "/v1774122887/5_ysfcuq.png",
+      BASE_CONTENT_URL + "/v1774122887/6_z1uvvk.png",
+      BASE_CONTENT_URL + "/v1774122887/7_rffhrg.png",
+      BASE_CONTENT_URL + "/v1774122887/8_ahqh4h.png",
+    ],
+
+    detailsProjectInfo: {
+      figma:
+        "This project was developed following a Figma design. The design includes a mobile and desktop version, showcasing a vinyl stack inventory management system. The Figma design emphasizes a user-friendly interface with intuitive navigation, allowing users to easily manage their vinyl collection. The design incorporates responsive elements to ensure a seamless experience across different devices.",
+    },
   },
 ];
