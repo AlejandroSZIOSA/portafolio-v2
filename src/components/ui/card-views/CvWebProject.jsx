@@ -93,13 +93,21 @@ export default function CvWebProject({ project, label, variationLayout }) {
       </div>
       {/* FIX:Problem whit the header cover sticky position when Image container uses relative position and the Image is using fill attribute. */}
       <div className="flex justify-center bg-black">
-        <Image
-          src={cardImgUrl}
-          width={370}
-          height={100}
-          alt="no card image"
-          priority
-        />
+        {cardImgUrl ? (
+          <Image
+            src={cardImgUrl}
+            width={370}
+            height={100}
+            alt="no card image"
+            priority
+          />
+        ) : (
+          <div className="w-[326px] h-[244px] text-white">
+            <h3 className="relative top-2/4 left-1/3 lg:left-1/4 w-fit">
+              No Image Yet
+            </h3>
+          </div>
+        )}
       </div>
       <div className=" flex justify-center py-1 text-xs bg-[#B4CDFF] lg:text-sm lg:pt-2">
         {version}

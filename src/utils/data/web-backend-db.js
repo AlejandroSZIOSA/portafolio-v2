@@ -5,7 +5,7 @@ export const WEB_BACKEND_DB_DATA = [
   {
     id: 6,
     updated_at: "October 14, 2025",
-    cardImgUrl: "/images/no-image-yet-400_300.png",
+    cardImgUrl: "",
     title: "Driver Theory Trivia",
     isFavorite: false,
     version: "Beta",
