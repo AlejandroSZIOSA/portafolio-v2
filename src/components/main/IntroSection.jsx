@@ -5,6 +5,7 @@ import { useMedia } from "use-media";
 
 import me from "../../../public/images/me/me-light_b.png";
 import LanguagePanel from "../ui/panels/LanguagePanel";
+import DividerHeaderTitle from "../ui/DividerHeaderTitle";
 
 export default function IntroSection() {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
@@ -28,6 +29,14 @@ export default function IntroSection() {
           <strong id="intro_text_strong">Gabriel Alejandro Sazo.</strong>
           <br></br>I am an action oriented, highly focused and very curious
           <strong> Frontend Developer Junior.</strong>
+        </p>
+      </div>
+
+      <div className="w-full mt-1 bg-black text-green-400 text-center font-mono p-2 lg:hidden">
+        {/*   <span className="absolute left-3">🎯</span> */}
+        <p className="py-2">
+          let currentFocus: [“mastery react”,“ functionality”, “good
+          practices”]{" "}
         </p>
       </div>
     </div>
