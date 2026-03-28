@@ -6,6 +6,7 @@ import { useMedia } from "use-media";
 import me from "../../../public/images/me/me-light_b.png";
 import LanguagePanel from "../ui/panels/LanguagePanel";
 import DividerHeaderTitle from "../ui/DividerHeaderTitle";
+import Messages from "../ui/Messages";
 
 export default function IntroSection() {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
@@ -32,13 +33,20 @@ export default function IntroSection() {
         </p>
       </div>
 
-      <div className="w-full mt-1 bg-black text-green-400 text-center font-mono p-2 lg:hidden">
-        {/*   <span className="absolute left-3">🎯</span> */}
-        <p className="py-2">
-          let currentFocus: [“mastery react”,“ functionality”, “good
-          practices”]{" "}
-        </p>
-      </div>
+      <Messages variant="my-wish">
+        const MY_WISH: ”Become an expert in creation of client-side apps for
+        web, mobile and desktops”
+      </Messages>
+
+      <Messages variant="my-hobbies">
+        {"const MY_FAVORITE_HOBBIES: [“it-support”,“training”,”ukelele”]"}
+      </Messages>
+      <Messages variant="my-current-focus">
+        <span className="relative bottom-1 right-3">🎯</span>
+        {
+          "let currentFocus: {masteryReact:[“ functionality”, “good practices”]}"
+        }
+      </Messages>
     </div>
   );
 }
