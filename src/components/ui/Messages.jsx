@@ -4,7 +4,7 @@ export default function Messages({ children, variant }) {
   let content;
   switch (variant) {
     case "my-wish":
-      content = "bg-black border-[#FF5A01] opacity-70 text-green-400";
+      content = "bg-black border-[#FF5A01] text-green-400";
       break;
     case "my-hobbies":
       content = " bg-[#70A069] border-black text-white";

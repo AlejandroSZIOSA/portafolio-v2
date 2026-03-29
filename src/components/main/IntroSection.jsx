@@ -24,8 +24,8 @@ export default function IntroSection() {
         <LanguagePanel />
       </div>
 
-      <div className="py-2 text-center md:w-96 md:h-auto md:py-0 md:mt-auto md:text-left">
-        <p className="font-mono ml-3 p-2 text-left text-lg md:ml-4 md:text-xl md:border-2 md:border-black md:rounded-lg">
+      <div className="py-2 my-3 text-center w-11/12 border-2 border-black rounded-xl bg-[#9CB3A5] lg:text-left lg:w-96 lg:h-auto lg:py-0 lg:mt-auto lg:ml-11">
+        <p className="font-mono ml-3 p-2 text-left text-lg lg:ml-4 lg:p-3 lg:text-xl">
           Hi!😎 <br></br>My name is{" "}
           <strong id="intro_text_strong">Gabriel Alejandro Sazo.</strong>
           <br></br>I am an action oriented, highly focused and very curious
@@ -34,12 +34,14 @@ export default function IntroSection() {
       </div>
 
       <Messages variant="my-wish">
-        const MY_WISH: ”Become an expert in creation of client-side apps for
-        web, mobile and desktops”
+        const MY_WISH: ”Become an expert in creation of multiplatform apps and
+        Backend”
       </Messages>
 
       <Messages variant="my-hobbies">
-        {"const MY_FAVORITE_HOBBIES: [“it-support”,“training”,”ukelele”]"}
+        {
+          "const MY_FAVORITE_HOBBIES: [“it-support”,“training”,”ukelele”,”checkers”]"
+        }
       </Messages>
       <Messages variant="my-current-focus">
         <span className="relative bottom-1 right-3">🎯</span>
