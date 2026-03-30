@@ -44,7 +44,14 @@ export default function InfoScrollArea({ project }) {
         </span>
       )}
 
-      {chrome && <span className={TECH_BOXES_STYLES}>{chrome}</span>}
+      {chrome && (
+        <span
+          style={{ backgroundColor: "deepskyblue" }}
+          className={TECH_BOXES_STYLES}
+        >
+          {chrome}
+        </span>
+      )}
       {deviceBrowserSettings && (
         <span className={TECH_BOXES_STYLES}>Dev:{deviceBrowserSettings}</span>
       )}

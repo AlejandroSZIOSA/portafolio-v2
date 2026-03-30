@@ -29,19 +29,19 @@ export default function Home() {
         <TechSection />
 
         <section className="block lg:flex w-full">
-          <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[bisque]">
+          <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[#FFE4C4]">
             {isMobile ? (
-              <DividerHeaderTitle sectionTitle="Latest" />
+              <DividerHeaderTitle sectionTitle="Latest App" />
             ) : (
               <div className="lg:h-14 lg:content-center lg:text-center text-[rgb(127,255,0)] bg-black">
-                <h2>Latest</h2>
+                <h2>Latest App</h2>
               </div>
             )}
             <LatestProjectsSection />
           </div>
-          <div className="lg:w-full lg:h-[735px]">
+          <div className="lg:w-full lg:h-[780px]">
             <DividerHeaderTitle
-              sectionTitle="Projects"
+              sectionTitle="Apps Gallery"
               putSectionId="previous_projects_divider"
               variant="top-line"
             />

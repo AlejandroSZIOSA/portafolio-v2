@@ -11,7 +11,7 @@ export const WEB_DATA = [
     version: "Stable",
     description:
       "Shows some clocks from different locations as well Timers. (Workshop)",
-    category: "Web",
+    category: "Web-client",
     language: "JavaScript",
     framework: "React+Vite",
     linkToApp: "https://clock-app-peach.vercel.app/",
@@ -41,7 +41,7 @@ export const WEB_DATA = [
     isFavorite: false,
     version: "Stable",
     description: "Manages some activities using Redux and Local Storage.",
-    category: "Web",
+    category: "Web-client",
     language: "JavaScript",
     framework: "React+Next.js",
     linkToApp: "https://next-todolist-redux.vercel.app/",
@@ -72,7 +72,7 @@ export const WEB_DATA = [
     version: "Stable",
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
-    category: "Web",
+    category: "Web-client",
     language: "TypeScript",
     framework: "React+Vite",
     linkToApp: "https://vinilo-volador-web.vercel.app/",

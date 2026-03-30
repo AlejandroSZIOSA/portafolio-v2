@@ -5,6 +5,7 @@ import { useMedia } from "use-media";
 
 import me from "../../../public/images/me/me-light_b.png";
 import LanguagePanel from "../ui/panels/LanguagePanel";
+import Message from "../ui/Message";
 
 export default function IntroSection() {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
@@ -21,15 +22,31 @@ export default function IntroSection() {
         />
         <LanguagePanel />
       </div>
-
-      <div className="py-2 text-center md:w-96 md:h-auto md:py-0 md:mt-auto md:text-left">
-        <p className="font-mono ml-3 p-2 text-left text-lg md:ml-4 md:text-xl md:border-2 md:border-black md:rounded-lg">
+      <div className="py-2 my-3 text-center w-11/12 border-2 border-black rounded-xl bg-[#9CB3A5] lg:text-left lg:w-96 lg:h-auto lg:py-0 lg:mt-auto lg:ml-11">
+        <p className="font-mono ml-3 p-2 text-left text-lg lg:ml-4 lg:p-3 lg:text-xl">
           Hi!😎 <br></br>My name is{" "}
-          <strong id="intro_text_strong">Gabriel Alejandro Sazo.</strong>
+          <strong id="intro_text_strong">Gabriel Alejandro</strong>
           <br></br>I am an action oriented, highly focused and very curious
           <strong> Frontend Developer Junior.</strong>
         </p>
       </div>
+      {/* TODO: fix to desktop ui
+       */}
+      <Message variant="my-wish">
+        const MY_WISH: ”Become an expert in creation of multiplatform javaScript
+        apps”
+      </Message>
+      <Message variant="my-hobbies">
+        {
+          "const MY_FAVORITE_HOBBIES: [“It-support”,“Training”,”Ukelele”,”heckers”]"
+        }
+      </Message>
+      <Message variant="my-current-focus">
+        <span className="mr-2">🎯</span>
+        {
+          "let currentFocus: {masteryReact:[“ functionality”, “good practices”]}"
+        }
+      </Message>
     </div>
   );
 }
