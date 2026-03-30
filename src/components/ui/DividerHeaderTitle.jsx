@@ -13,7 +13,7 @@ export default function DividerHeaderTitle({
       /* I am using the Id attribute to link the section to the anchor tag */
       id={putSectionId}
       className={`
-        w-full py-2 text-center font-semibold border-black border-dashed border-t-2 ${
+        w-full py-2 text-center font-semibold border-black bg-[#FFE4C4] lg:bg-transparent border-dashed border-t-2 ${
           variant === "top-line" ? TOP_LINE : BOTH_LINES
         }
       `}

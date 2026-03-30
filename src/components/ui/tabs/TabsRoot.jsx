@@ -17,23 +17,36 @@ export default function TabsRoot() {
           value="tab1"
           lengthProjects={getDataProjects("allWebProjects").length}
         >
-          Web
+          Web-client
         </TabsTrigger>
 
         <TabsTrigger
           value="tab2"
           lengthProjects={getDataProjects("allWebApis").length}
         >
-          Web+open_API
+          Web+openAPI
+        </TabsTrigger>
+
+        <TabsTrigger value="tab3" lengthProjects={0}>
+          Web+privateAPI
+        </TabsTrigger>
+
+        <TabsTrigger value="tab4" lengthProjects={0}>
+          Mobile(hybrid)
+        </TabsTrigger>
+
+        <TabsTrigger value="tab5" lengthProjects={0}>
+          Desktop
         </TabsTrigger>
 
         <TabsTrigger
-          value="tab3"
+          value="tab6"
           lengthProjects={getDataProjects("allWebBackendDbProjects").length}
         >
           Web+Backend+DB
         </TabsTrigger>
-        <TabsTrigger value="tab4" lengthProjects={0}>
+
+        <TabsTrigger value="tab7" lengthProjects={0}>
           FullStack_JS
         </TabsTrigger>
       </TabsList>
@@ -52,14 +65,24 @@ export default function TabsRoot() {
         />
       </TabsContent>
 
-      <TabsContent value="tab3">
+      <TabsContent value="tab6">
         <Accordion
           projects={getDataProjects("allWebBackendDbProjects")}
           variationLayout="link-to-details"
         />
       </TabsContent>
 
+      <TabsContent value="tab3">
+        <ConstructionMessage />
+      </TabsContent>
       <TabsContent value="tab4">
+        <ConstructionMessage />
+      </TabsContent>
+      <TabsContent value="tab5">
+        <ConstructionMessage />
+      </TabsContent>
+
+      <TabsContent value="tab7">
         <ConstructionMessage />
       </TabsContent>
     </Tabs>
