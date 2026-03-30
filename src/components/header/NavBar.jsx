@@ -16,7 +16,7 @@ export default function NavBar({ variation }) {
         </div>
         <div className={NAV_BOXES}>
           <Link href="#intro_text_strong" className="text-[#00D8FF]">
-            Tech
+            Techs
           </Link>
         </div>
         <div className={NAV_BOXES}>

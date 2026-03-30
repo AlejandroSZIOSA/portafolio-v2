@@ -6,7 +6,7 @@ import meditationIcon from "../../../public/icons/self-improvement.svg";
 export default function ConstructionMessage() {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
-    <div className="flex h-28 lg:h-[549px] items-center justify-center">
+    <div className="flex h-32 lg:h-[549px] items-center justify-center">
       <p className="text-center"> - _ _ </p>
       <Image
         src={meditationIcon}

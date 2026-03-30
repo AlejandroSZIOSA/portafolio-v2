@@ -33,18 +33,18 @@ export default function IntroSection() {
       {/* TODO: fix to desktop ui
        */}
       <Message variant="my-wish">
-        const MY_WISH: ”Become an expert in creation of multiplatform javaScript
-        apps”
+        const MY_WISH: ”Become an expert in creation of multi-platform
+        javaScript apps”
       </Message>
       <Message variant="my-hobbies">
         {
-          "const MY_FAVORITE_HOBBIES: [“It-support”,“Training”,”Ukelele”,”heckers”]"
+          "const MY_FAVORITE_HOBBIES: [“It-support”,“Training”,”Ukelele”,”Checkers”]"
         }
       </Message>
       <Message variant="my-current-focus">
         <span className="mr-2">🎯</span>
         {
-          "let currentFocus: {masteryReact:[“ functionality”, “good practices”]}"
+          "let currentFocus: {masteryReact:[“ Functionality”, “Good practices”]}"
         }
       </Message>
     </div>
