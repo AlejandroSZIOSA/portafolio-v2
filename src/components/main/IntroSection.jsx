@@ -33,8 +33,7 @@ export default function IntroSection() {
       {/* TODO: fix to desktop ui
        */}
       <Message variant="my-wish">
-        const MY_WISH: ”Become an expert in creation of multi-platform
-        javaScript apps”
+        const MY_WISH: ”Become a multi-platform fullstack Javascript developer”
       </Message>
       <Message variant="my-hobbies">
         {
