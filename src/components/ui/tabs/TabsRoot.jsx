@@ -47,7 +47,7 @@ export default function TabsRoot() {
         </TabsTrigger>
 
         <TabsTrigger value="tab7" lengthProjects={0}>
-          FullStack_JS
+          Fullstack_JS
         </TabsTrigger>
       </TabsList>
 
