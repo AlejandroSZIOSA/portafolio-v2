@@ -24,6 +24,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
     title,
     isFavorite,
     description,
+    responsiveUI,
   } = project;
 
   let content;
@@ -53,7 +54,13 @@ export default function CvWebProject({ project, label, variationLayout }) {
             </Link>
           )}
 
-          <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
+          {isMobile && responsiveUI.includes("Mobile") && (
+            <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
+          )}
+
+          {!isMobile && responsiveUI.includes("Desktop") && (
+            <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
+          )}
         </>
       );
       break;

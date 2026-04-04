@@ -47,7 +47,7 @@ export const WEB_APIS_DATA = [
     gitHubLink: "https://github.com/AlejandroSZIOSA/starwars-encyclopedia.git",
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
-    isNew: true,
+    isNew: false,
     typeScript: "",
     css: "Pure Css + Module Css",
     cssLibrary: "",
