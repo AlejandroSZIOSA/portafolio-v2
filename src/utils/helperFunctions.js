@@ -9,6 +9,7 @@ export function getDataProjects(dataIdentifier) {
         ...DATA_PROJECTS.WEB_DATA,
         ...DATA_PROJECTS.WEB_APIS_DATA,
         ...DATA_PROJECTS.WEB_BACKEND_DB_DATA,
+        ...DATA_PROJECTS.WEB_PRIVATE_APIS,
       ];
     case "allWebProjects":
       return DATA_PROJECTS.WEB_DATA;
@@ -16,6 +17,8 @@ export function getDataProjects(dataIdentifier) {
       return DATA_PROJECTS.WEB_APIS_DATA;
     case "allWebBackendDbProjects":
       return DATA_PROJECTS.WEB_BACKEND_DB_DATA;
+    case "allWebPrivateApis":
+      return DATA_PROJECTS.WEB_PRIVATE_APIS;
     default:
       return [];
   }

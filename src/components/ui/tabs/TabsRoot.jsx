@@ -27,7 +27,10 @@ export default function TabsRoot() {
           Web+openAPI
         </TabsTrigger>
 
-        <TabsTrigger value="tab3" lengthProjects={0}>
+        <TabsTrigger
+          value="tab3"
+          lengthProjects={getDataProjects("allWebPrivateApis").length}
+        >
           Web+privateAPI
         </TabsTrigger>
 
@@ -73,7 +76,10 @@ export default function TabsRoot() {
       </TabsContent>
 
       <TabsContent value="tab3">
-        <ConstructionMessage />
+        <Accordion
+          projects={getDataProjects("allWebPrivateApis")}
+          variationLayout={"no-link-to-details"}
+        />
       </TabsContent>
       <TabsContent value="tab4">
         <ConstructionMessage />
