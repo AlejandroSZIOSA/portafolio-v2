@@ -5,9 +5,9 @@ export const WEB_PRIVATE_APIS = [
     cardImgUrl: "",
     title: "Weather",
     isFavorite: true,
-    version: "Stable",
+    version: "v 1.0",
     description:
-      "Search and filter weather information base on a selected location.",
+      "Search and display weather information from different locations around the world.",
     category: "Web+privateAPI",
     language: "Typescript",
     framework: "React+Vite",
