@@ -5,7 +5,7 @@ export const WEB_PRIVATE_APIS = [
     cardImgUrl: "",
     title: "Weather",
     isFavorite: true,
-    version: "v 1.0",
+    version: "Stable",
     description:
       "Search and display weather information from different locations around the world.",
     category: "Web+privateAPI",
