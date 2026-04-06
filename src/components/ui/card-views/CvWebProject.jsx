@@ -116,7 +116,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
           </div>
         )}
       </div>
-      <div className=" flex justify-center py-1 text-xs bg-[#B4CDFF] lg:text-sm lg:pt-2">
+      <div className=" flex justify-center py-1 text-xs bg-indigo-500 text-white lg:text-sm lg:pt-1">
         {version}
       </div>
 
