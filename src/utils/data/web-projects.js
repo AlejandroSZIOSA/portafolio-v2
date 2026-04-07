@@ -4,6 +4,7 @@ const { BASE_CONTENT_URL } = CONSTANTS;
 export const WEB_DATA = [
   {
     id: 1, //IMPORTANT: all project id's are different
+    updated_at: "Jan 03, 2024",
     cardImgUrl:
       "/images/web-projects/clocks-timmers/clocks-timmers_400_300.png",
     title: "Clocks && Timers",
@@ -36,7 +37,7 @@ export const WEB_DATA = [
   {
     id: 2,
     updated_at: "December 03, 2025",
-    cardImgUrl: "/images/web-projects/todo/todo-400_300.png",
+    cardImgUrl: "",
     title: "Todo",
     isFavorite: false,
     version: "Stable",
