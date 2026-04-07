@@ -22,9 +22,9 @@ export default function Accordion({ projects, variationLayout }) {
         >
           <button
             onClick={() => toggleAccordion(index)}
-            className="flex justify-center items-center w-full py-1 px-4 text-left"
+            className="flex justify-center items-center w-full h-8 text-left"
           >
-            <h4>{item.title}</h4>
+            <h3>{item.title}</h3>
             <span className="ml-2 font-extrabold">
               {openIndex === index ? "−" : "+"}
             </span>

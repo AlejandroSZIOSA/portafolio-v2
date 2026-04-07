@@ -46,6 +46,7 @@ export default function Home() {
               variant="top-line"
             />
             <ProjectsSection />
+            <div className="h-8 bg-[#FFE4C4] border-black border-b-2 border-dashed lg:hidden"></div>
           </div>
         </section>
       </main>
