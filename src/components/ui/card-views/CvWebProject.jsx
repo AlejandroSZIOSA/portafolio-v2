@@ -85,8 +85,8 @@ export default function CvWebProject({ project, label, variationLayout }) {
 
   return (
     // TODO:Fix border Children element in mobile view
-    <div className="flex flex-col w-[330px] max-w-sm border-2 border-indigo-500 rounded-lg bg-white text-left lg:border-4 lg:h-min">
-      <div className="flex py-1 justify-between bg-indigo-500 text-xs text-white rounded-t-lg lg:text-sm lg:rounded-none">
+    <div className="flex flex-col w-[330px] max-w-sm border-2 border-[#2FA4D7] rounded-lg  bg-[#BBE0EF] text-left lg:border-4 lg:h-min">
+      <div className="flex py-1 justify-between bg-[#2FA4D7] text-xs text-white rounded-t-lg lg:text-sm lg:rounded-none">
         <div className=" flex ml-3">{label}</div>
         <span className="inline-flex">
           <Image
@@ -109,14 +109,12 @@ export default function CvWebProject({ project, label, variationLayout }) {
             priority
           />
         ) : (
-          <div className="w-[326px] h-[244px] text-white">
-            <h3 className="relative top-2/4 left-1/3 lg:left-1/4 w-fit">
-              No Image Yet
-            </h3>
+          <div className="flex justify-center items-center w-[326px] h-[244px] text-white">
+            <h3>No Image</h3>
           </div>
         )}
       </div>
-      <div className=" flex justify-center py-1 text-xs bg-indigo-500 text-white lg:text-sm lg:pt-1">
+      <div className=" flex justify-center py-1 text-xs bg-[#2FA4D7] text-white lg:text-sm lg:pt-1">
         {version}
       </div>
 
@@ -131,13 +129,13 @@ export default function CvWebProject({ project, label, variationLayout }) {
           />
         )}
       </div>
-      <div className="px-2 py-1 border-t-2 lg:pt-0 lg:px-4 lg:pb-2">
-        <p className="text-gray-700 text-center ml-1">{description}</p>
+      <div className="px-2 py-1 lg:pt-0 lg:px-4 lg:pb-2">
+        <p className="text-gray-700 ml-1">{description}</p>
       </div>
       <InfoScrollArea project={project} />
       <div
         className={`
-          px-3 py-3 flex items-center ${
+          px-3 py-3 flex items-center bg-[#2FA4D7] ${
             variationLayout === "no-link-to-details"
               ? "justify-between"
               : "justify-center"

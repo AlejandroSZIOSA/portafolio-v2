@@ -26,7 +26,7 @@ export default function InfoScrollArea({ project }) {
   const [chrome] = project.browsers;
 
   return (
-    <div className="bg-red-200 border px-1 py-2 flex space-x-2 overflow-x-auto scrollbar-hide lg:py-3 lg:px-2">
+    <div className="bg-[#FF986A] border px-1 py-3 flex space-x-2 overflow-x-auto scrollbar-hide lg:px-2">
       {mobileUI && (
         <span
           style={{ backgroundColor: "darkturquoise" }}
