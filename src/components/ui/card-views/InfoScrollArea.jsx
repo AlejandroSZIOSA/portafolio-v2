@@ -15,6 +15,7 @@ export default function InfoScrollArea({ project }) {
     redux,
     crud,
     localStorage,
+    indexedDB,
     api,
     tests,
     cms,
@@ -79,6 +80,8 @@ export default function InfoScrollArea({ project }) {
       {crud && <span className={TECH_BOXES_STYLES}>C.R.U.D: {crud}</span>}
 
       {localStorage && <span className={TECH_BOXES_STYLES}>Local Storage</span>}
+
+      {indexedDB && <span className={TECH_BOXES_STYLES}>IndexedDB</span>}
 
       {api && <span className={TECH_BOXES_STYLES}>API:{api}</span>}
       {tests && <span className={TECH_BOXES_STYLES}>{tests}</span>}

@@ -41,7 +41,7 @@ export default function IntroSection() {
       </Message>
       <Message variant="my-current-focus">
         <span className="mr-2">🎯</span>
-        {"let currentFocus:{masteryReact:[“ Functionality”, “Good practices”]}"}
+        {"let currentFocus:{backend:[“Architecture”,“Good practices”]}"}
       </Message>
     </div>
   );

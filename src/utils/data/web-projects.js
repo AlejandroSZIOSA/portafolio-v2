@@ -113,7 +113,7 @@ export const WEB_DATA = [
   {
     id: 11, //different ids in all projects
     updated_at: "April 08, 2026",
-    cardImgUrl: "/images/web-projects/task-remainder/preview2.png",
+    cardImgUrl: "/images/web-projects/task-remainder/preview3.png",
     title: "Task Remainder",
     isFavorite: true,
     version: "Stable",

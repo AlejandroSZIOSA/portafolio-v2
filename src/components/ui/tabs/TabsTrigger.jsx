@@ -16,12 +16,12 @@ export function TabsTrigger({ value, children, lengthProjects = [] }) {
       onClick={() => setActiveTab(value)}
       className={`${BASE_TAB} ${isActive ? ACTIVE_TAB : INACTIVE_TAB}`}
     >
-      <h4>
+      <h3>
         {children}
         <span>
           <strong>{`(+${lengthProjects})`}</strong>
         </span>
-      </h4>
+      </h3>
     </button>
   );
 }
