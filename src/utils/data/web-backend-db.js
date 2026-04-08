@@ -9,7 +9,7 @@ export const WEB_BACKEND_DB_DATA = [
     title: "Driver Theory Trivia",
     isFavorite: false,
     version: "Beta",
-    description: "Learning drive theory app (Internship).",
+    description: "Learning drive theory app(Internship)",
     category: "Web+Backend+DB", //key to identify the project type
     language: "JavaScript",
     framework: "React+Vite",

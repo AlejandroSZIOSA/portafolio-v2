@@ -2,7 +2,7 @@ export const WEB_PRIVATE_APIS = [
   {
     id: 7,
     updated_at: "April 04, 2026",
-    cardImgUrl: "",
+    cardImgUrl: "/images/web-private-apis-p/weather/we-app.png",
     title: "Weather",
     isFavorite: true,
     version: "Stable",
@@ -15,7 +15,7 @@ export const WEB_PRIVATE_APIS = [
     gitHubLink: "https://github.com/AlejandroSZIOSA/weather-ts.git",
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
-    isNew: true,
+    isNew: false,
     typeScript: "",
     css: "Pure Css+Module Css",
     cssLibrary: "",

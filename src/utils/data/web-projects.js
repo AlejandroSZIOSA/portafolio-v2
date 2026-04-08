@@ -4,6 +4,7 @@ const { BASE_CONTENT_URL } = CONSTANTS;
 export const WEB_DATA = [
   {
     id: 1, //IMPORTANT: all project id's are different
+    updated_at: "Jan 03, 2024",
     cardImgUrl:
       "/images/web-projects/clocks-timmers/clocks-timmers_400_300.png",
     title: "Clocks && Timers",
@@ -36,7 +37,7 @@ export const WEB_DATA = [
   {
     id: 2,
     updated_at: "December 03, 2025",
-    cardImgUrl: "/images/web-projects/todo/todo-400_300.png",
+    cardImgUrl: "",
     title: "Todo",
     isFavorite: false,
     version: "Stable",
@@ -73,7 +74,7 @@ export const WEB_DATA = [
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
     category: "Web-client",
-    language: "TypeScript",
+    language: "",
     framework: "React+Vite",
     linkToApp: "https://vinilo-volador-web.vercel.app/",
     gitHubLink: "https://github.com/AlejandroSZIOSA/vinilo-volador-web.git",
@@ -108,5 +109,51 @@ export const WEB_DATA = [
       figma:
         "This project was developed following a Figma design. The design includes a mobile and desktop version, showcasing a vinyl stack inventory management system. The Figma design emphasizes a user-friendly interface with intuitive navigation, allowing users to easily manage their vinyl collection. The design incorporates responsive elements to ensure a seamless experience across different devices.",
     },
+  },
+  {
+    id: 11, //different ids in all projects
+    updated_at: "April 08, 2026",
+    cardImgUrl: "/images/web-projects/task-remainder/preview3.png",
+    title: "Task Remainder",
+    isFavorite: true,
+    version: "Version 1.0",
+    description:
+      "App that allows users to create and manage task reminders, ensuring they never miss an very important deadline or events.",
+    category: "Web-client",
+    language: "",
+    framework: "React+Vite",
+    linkToApp: "https://task-remainder-navy.vercel.app/",
+    gitHubLink: "https://github.com/AlejandroSZIOSA/super-todo-app-ts.git",
+    isNew: true,
+    browsers: ["Chrome"],
+    deviceBrowserSettings: "Samsung Galaxy S8+",
+    typeScript: "yes",
+    css: "Modules Css",
+    cssLibrary: "",
+    navigation: "React-router",
+    tests: "Cypress",
+    wcag: "basic",
+    responsiveUI: ["Mobile", ""],
+    context: "",
+    redux: "yes",
+    crud: "All",
+    api: "",
+    localStorage: "yes",
+    indexedDB: "yes",
+    /*   figmaScreenshots: [
+      BASE_CONTENT_URL + "/v1774122888/1_ue6ngv.png",
+      BASE_CONTENT_URL + "/v1774122888/2_njr8tf.png",
+      BASE_CONTENT_URL + "/v1774122888/3_dplraq.png",
+      BASE_CONTENT_URL + "/v1774122887/4_eh6qc5.png",
+      BASE_CONTENT_URL + "/v1774122887/5_ysfcuq.png",
+      BASE_CONTENT_URL + "/v1774122887/6_z1uvvk.png",
+      BASE_CONTENT_URL + "/v1774122887/7_rffhrg.png",
+      BASE_CONTENT_URL + "/v1774122887/8_ahqh4h.png",
+    ],
+
+    detailsProjectInfo: {
+      figma:
+        "This project was developed following a Figma design. The design includes a mobile and desktop version, showcasing a vinyl stack inventory management system. The Figma design emphasizes a user-friendly interface with intuitive navigation, allowing users to easily manage their vinyl collection. The design incorporates responsive elements to ensure a seamless experience across different devices.",
+    }, */
   },
 ];
