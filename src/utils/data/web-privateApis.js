@@ -7,7 +7,7 @@ export const WEB_PRIVATE_APIS = [
     isFavorite: true,
     version: "Stable",
     description:
-      "Search and display weather information from different locations around the world.",
+      "Search and display weather information from different locations around the world even from your current location",
     category: "Web+privateAPI",
     language: "Typescript",
     framework: "React+Vite",
