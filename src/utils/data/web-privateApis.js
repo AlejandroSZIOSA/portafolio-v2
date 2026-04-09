@@ -2,12 +2,12 @@ export const WEB_PRIVATE_APIS = [
   {
     id: 7,
     updated_at: "April 04, 2026",
-    cardImgUrl: "/images/web-private-apis-p/weather/we-app.png",
+    cardImgUrl: "/images/web-private-apis-p/weather/we2-app.png",
     title: "Weather",
     isFavorite: true,
     version: "Stable",
     description:
-      "Search and display weather information from different locations around the world.",
+      "Search and display weather information from different locations around the world even from your current location.",
     category: "Web+privateAPI",
     language: "Typescript",
     framework: "React+Vite",
