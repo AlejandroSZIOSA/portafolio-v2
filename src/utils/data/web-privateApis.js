@@ -2,7 +2,7 @@ export const WEB_PRIVATE_APIS = [
   {
     id: 7,
     updated_at: "April 04, 2026",
-    cardImgUrl: "/images/web-private-apis-p/weather/we-app.png",
+    cardImgUrl: "/images/web-private-apis-p/weather/we2-app.png",
     title: "Weather",
     isFavorite: true,
     version: "Stable",
