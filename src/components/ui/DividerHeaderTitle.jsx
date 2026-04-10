@@ -1,7 +1,7 @@
-const TOP_LINE = "border-b-0 lg:border-b-2 lg:border-t-2"; //lg:border-b-2 applies only desktop
+const BOTH_LINES = "border-b-2 lg:border-b-2 lg:border-t-2"; //lg:border-b-2 applies only desktop
 
 //TODO add more variants to this component, like one with only the top line, or one with only the bottom line, or one with no lines at all, etc. I can use the variant prop to determine which lines to apply, and I can use the putSectionId prop to add an id to the h2 element for linking purposes.
-const BOTH_LINES = "border-b-2";
+const TOP_LINE = "border-b-0";
 
 export default function DividerHeaderTitle({
   sectionTitle,

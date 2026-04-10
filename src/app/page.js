@@ -25,13 +25,16 @@ export default function Home() {
 
       <main className="flex flex-col w-full items-center lg:items-start mx-auto">
         <IntroSection />
-        <DividerHeaderTitle sectionTitle="My Tech Stack" />
+        <DividerHeaderTitle sectionTitle="My Tech Stack" variant="both-lines" />
         <TechSection />
 
         <section className="block lg:flex w-full">
           <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[#FFE4C4]">
             {isMobile ? (
-              <DividerHeaderTitle sectionTitle="Latest App" />
+              <DividerHeaderTitle
+                sectionTitle="Latest App"
+                variant="both-lines"
+              />
             ) : (
               <div className="lg:h-14 lg:content-center lg:text-center text-[rgb(127,255,0)] bg-black">
                 <h2>Latest App</h2>

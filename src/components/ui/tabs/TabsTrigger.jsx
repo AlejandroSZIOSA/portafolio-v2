@@ -16,7 +16,7 @@ export function TabsTrigger({ value, children, lengthProjects = [] }) {
       onClick={() => setActiveTab(value)}
       className={`${BASE_TAB} ${isActive ? ACTIVE_TAB : INACTIVE_TAB}`}
     >
-      <h3>
+      <h3 /* className="lg:text-xl" */>
         {children}
         <span>
           <strong>{`(+${lengthProjects})`}</strong>
