@@ -116,7 +116,7 @@ export const WEB_DATA = [
     cardImgUrl: "/images/web-projects/task-remainder/preview3.png",
     title: "Task Remainder",
     isFavorite: true,
-    version: "Version 1.0",
+    version: "Version 1.1",
     description:
       "App that allows users to create and manage task reminders, ensuring they never miss an very important deadline or events.",
     category: "Web-client",
@@ -132,7 +132,8 @@ export const WEB_DATA = [
     cssLibrary: "",
     navigation: "yes",
     tests: "Cypress",
-    wcag: "",
+    wcag: "basic",
+    customHooks: "yes",
     responsiveUI: ["Mobile", ""],
     context: "",
     redux: "yes",
