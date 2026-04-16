@@ -112,11 +112,11 @@ export const WEB_DATA = [
   },
   {
     id: 11, //different ids in all projects
-    updated_at: "April 09, 2026",
+    updated_at: "April 16, 2026",
     cardImgUrl: "/images/web-projects/task-remainder/preview3.png",
     title: "Task Remainder",
     isFavorite: true,
-    version: "Version 1.0",
+    version: "Version 1.1",
     description:
       "App that allows users to create and manage task reminders, ensuring they never miss an very important deadline or events.",
     category: "Web-client",
@@ -130,10 +130,11 @@ export const WEB_DATA = [
     typeScript: "yes",
     css: "Modules Css",
     cssLibrary: "",
-    navigation: "React-router",
+    navigation: "yes",
     tests: "Cypress",
     wcag: "basic",
-    responsiveUI: ["Mobile", ""],
+    customHooks: "yes",
+    responsiveUI: ["Mobile", "Desktop"],
     context: "",
     redux: "yes",
     crud: "All",
