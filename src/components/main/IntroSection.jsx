@@ -32,7 +32,7 @@ export default function IntroSection() {
       </div>
       {/* TODO: fix to desktop ui
        */}
-      <div className="flex flex-col items-center lg:items-stretch lg:flex-row-reverse lg:relative lg:h-[stretch] lg:bg-slate-300">
+      {/*   <div className="flex flex-col items-center lg:items-stretch lg:flex-row-reverse lg:relative lg:h-[stretch] lg:bg-slate-300">
         <Message variant="my-wish">
           const MY_WISH:”Become a multi-platform fullstack Javascript developer”
         </Message>
@@ -44,7 +44,7 @@ export default function IntroSection() {
           <span className="mr-2">🎯</span>
           {"let currentFocus:{backend:[“Architecture”,“Good practices”]}"}
         </Message>
-      </div>
+      </div> */}
     </div>
   );
 }

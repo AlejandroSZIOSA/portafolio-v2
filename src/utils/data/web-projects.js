@@ -112,7 +112,7 @@ export const WEB_DATA = [
   },
   {
     id: 11, //different ids in all projects
-    updated_at: "April 09, 2026",
+    updated_at: "April 16, 2026",
     cardImgUrl: "/images/web-projects/task-remainder/preview3.png",
     title: "Task Remainder",
     isFavorite: true,
@@ -134,7 +134,7 @@ export const WEB_DATA = [
     tests: "Cypress",
     wcag: "basic",
     customHooks: "yes",
-    responsiveUI: ["Mobile", ""],
+    responsiveUI: ["Mobile", "Desktop"],
     context: "",
     redux: "yes",
     crud: "All",
