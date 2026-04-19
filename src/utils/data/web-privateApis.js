@@ -1,7 +1,7 @@
 export const WEB_PRIVATE_APIS = [
   {
     id: 7,
-    updated_at: "April 04, 2026",
+    updated_at: "April 19, 2026",
     cardImgUrl: "/images/web-private-apis-p/weather/we2-app.png",
     title: "Weather",
     isFavorite: true,
@@ -23,7 +23,7 @@ export const WEB_PRIVATE_APIS = [
     pagination: "",
     tests: "",
     wcag: "",
-    responsiveUI: ["Mobile"],
+    responsiveUI: ["Mobile", "Desktop"],
     express: "",
     customHooks: "",
     context: "",
