@@ -93,7 +93,6 @@ export const WEB_DATA = [
     crud: "All",
     api: "",
     localStorage: "",
-
     figmaScreenshots: [
       BASE_CONTENT_URL + "/v1774122888/1_ue6ngv.png",
       BASE_CONTENT_URL + "/v1774122888/2_njr8tf.png",
@@ -141,20 +140,16 @@ export const WEB_DATA = [
     api: "",
     localStorage: "yes",
     indexedDB: "yes",
-    /*   figmaScreenshots: [
-      BASE_CONTENT_URL + "/v1774122888/1_ue6ngv.png",
-      BASE_CONTENT_URL + "/v1774122888/2_njr8tf.png",
-      BASE_CONTENT_URL + "/v1774122888/3_dplraq.png",
-      BASE_CONTENT_URL + "/v1774122887/4_eh6qc5.png",
-      BASE_CONTENT_URL + "/v1774122887/5_ysfcuq.png",
-      BASE_CONTENT_URL + "/v1774122887/6_z1uvvk.png",
-      BASE_CONTENT_URL + "/v1774122887/7_rffhrg.png",
-      BASE_CONTENT_URL + "/v1774122887/8_ahqh4h.png",
+    figmaScreenshots: [
+      BASE_CONTENT_URL + "/v1776618802/1_odmpmw.png",
+      BASE_CONTENT_URL + "/v1776618801/3_rv6mpq.png",
+      BASE_CONTENT_URL + "/v1776618801/4_vaaaq7.png",
+      BASE_CONTENT_URL + "/v1776618800/2_yxs1wp.png",
+      BASE_CONTENT_URL + "/v1776618793/5_ridccs.png",
     ],
-
     detailsProjectInfo: {
       figma:
-        "This project was developed following a Figma design. The design includes a mobile and desktop version, showcasing a vinyl stack inventory management system. The Figma design emphasizes a user-friendly interface with intuitive navigation, allowing users to easily manage their vinyl collection. The design incorporates responsive elements to ensure a seamless experience across different devices.",
-    }, */
+        "This is a quick Figma design. The main objective was to have a complete preview that helps me identify reusable components and save time. I also made a few small improvements before the final release.",
+    },
   },
 ];
