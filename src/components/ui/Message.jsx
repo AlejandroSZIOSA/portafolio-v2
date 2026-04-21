@@ -9,7 +9,7 @@ export default function Message({ children, variant }) {
       break;
     case "my-hobbies":
       baseContent =
-        " bg-[#70A069] border-black text-white lg:w-fit lg:absolute lg:bottom-[50%] lg:left-[15%]";
+        " bg-[#70A069] border-black text-white lg:w-fit lg:absolute lg:bottom-[53%] lg:left-[15%]";
       break;
     case "my-wish":
       baseContent =
