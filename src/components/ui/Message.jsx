@@ -9,11 +9,11 @@ export default function Message({ children, variant }) {
       break;
     case "my-hobbies":
       baseContent =
-        " bg-[#70A069] border-black text-white lg:w-fit lg:absolute lg:bottom-[64%] lg:left-[15%]";
+        " bg-[#70A069] border-black text-white lg:w-fit lg:absolute lg:bottom-[50%] lg:left-[15%]";
       break;
     case "my-wish":
       baseContent =
-        " bg-black border-[#FF5A01] opacity-75 text-green-400 lg:w-fit lg:absolute lg:top-0 lg:right-[3%]";
+        " bg-black border-[#FF5A01] opacity-75 text-green-400 lg:w-fit lg:absolute lg:top-[5%] lg:right-[3%]";
       break;
     default:
       baseContent = "bg-gray-red-500 text-white";
@@ -22,9 +22,9 @@ export default function Message({ children, variant }) {
 
   return (
     <div
-      className={`inline-flex h-fit w-11/12 border-2 lg:border-4 mt-2 ${baseContent} text-center font-mono p-3`}
+      className={`inline-flex h-fit w-11/12 border-2 p-1 lg:border-4 mt-2 ${baseContent} text-center font-mono lg:p-5`}
     >
-      <p className="py-1">{children}</p>
+      <p>{children}</p>
     </div>
   );
 }
