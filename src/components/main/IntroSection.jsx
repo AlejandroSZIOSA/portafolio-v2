@@ -18,21 +18,11 @@ export default function IntroSection() {
         />
         <LanguagePanel />
       </div>
-      {/*  <div className="py-2 my-3 text-center w-11/12 border-2 border-black rounded-xl bg-[#9CB3A5] lg:text-left lg:w-96 lg:h-fit lg:py-0 lg:mt-auto lg:ml-11">
-        <p className="font-mono ml-3 p-2 text-left text-lg lg:ml-4 lg:p-3 lg:text-xl">
-          Hi!😎 <br></br>My name is{" "}
-          <strong id="intro_text_strong">Gabriel Alejandro</strong>
-          <br></br>I am an action oriented, highly focused and very curious
-          <strong> Frontend Developer Junior.</strong>
-        </p>
-      </div> */}
-      {/* TODO: fix to desktop ui
-       */}
       <div
         id="messages-container"
         className="flex flex-col items-center lg:flex-row-reverse lg:w-[stretch] lg:items-stretch lg:relative lg:h-[stretch] lg:mx-5"
       >
-        <div className="py-2 my-3 text-center w-11/12 border-2 lg:border-4 border-black rounded-xl bg-[#9CB3A5] lg:text-left lg:w-[350px] lg:h-[210px] lg:py-0 lg:mt-auto lg:mb-0 lg:absolute lg:left-0 bottom-[8%]">
+        <div className="py-2 my-3 text-center w-11/12 border-2 lg:border-4 border-black rounded-xl bg-[#9CB3A5] lg:text-left lg:w-[350px] lg:h-fit lg:py-0 lg:mt-auto lg:mb-0 lg:absolute lg:left-0 bottom-[8%]">
           <p className="font-mono p-2 text-left text-lg lg:p-4 lg:text-xl">
             Hi!😎 <br></br>My name is{" "}
             <strong id="intro_text_strong">Gabriel Alejandro</strong>
