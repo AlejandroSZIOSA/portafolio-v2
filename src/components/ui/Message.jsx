@@ -22,7 +22,7 @@ export default function Message({ children, variant }) {
 
   return (
     <div
-      className={`inline-flex h-fit w-11/12 border-2 p-1 lg:border-4 mt-2 ${baseContent} text-center font-mono lg:p-5`}
+      className={`inline-flex h-fit w-11/12 border-2 p-2 lg:border-4 mt-2 ${baseContent} text-center font-mono lg:p-5`}
     >
       <p>{children}</p>
     </div>
