@@ -12,7 +12,7 @@ export const WEB_BACKEND_DB_DATA = [
     description: "Learning drive theory app(Internship)",
     category: "Web+Backend+DB", //key to identify the project type
     language: "JavaScript",
-    framework: "React+Vite",
+    framework: "React+Next.js",
     gitHubFrontendLink:
       "https://github.com/AlejandroSZIOSA/driver-course-wa.git",
     gitHubBackendLink:
