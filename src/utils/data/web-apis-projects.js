@@ -7,7 +7,8 @@ export const WEB_APIS_DATA = [
     title: "Swedish Radio Player",
     isFavorite: true,
     version: "Stable",
-    description: "Play and filter Swedish radios. Using the Skeleton UI theme.",
+    description:
+      "Play and filter Swedish radios. Using the Skeleton UI theme.(workshop)",
     category: "Web+openAPI",
     language: "JavaScript",
     framework: "React+Vite",
@@ -39,7 +40,7 @@ export const WEB_APIS_DATA = [
     title: "StarWars Enciclopedia",
     isFavorite: true,
     version: "Stable",
-    description: "Search and explore the star wars world.",
+    description: "Search and explore the star wars world.(workshop)",
     category: "Web+openAPI",
     language: "TypeScript",
     framework: "React+Vite",

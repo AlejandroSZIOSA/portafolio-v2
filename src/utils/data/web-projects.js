@@ -41,7 +41,8 @@ export const WEB_DATA = [
     title: "Todo",
     isFavorite: false,
     version: "Stable",
-    description: "Manages some activities using Redux and Local Storage.",
+    description:
+      "Manages some activities using Redux and Local Storage.(workshop)",
     category: "Web-client",
     language: "JavaScript",
     framework: "React+Next.js",
