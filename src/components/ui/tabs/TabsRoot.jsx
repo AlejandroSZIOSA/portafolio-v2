@@ -34,14 +34,6 @@ export default function TabsRoot() {
           Web+privateAPI
         </TabsTrigger>
 
-        <TabsTrigger value="tab4" lengthProjects={0}>
-          Mobile(hybrid)
-        </TabsTrigger>
-
-        <TabsTrigger value="tab5" lengthProjects={0}>
-          Desktop
-        </TabsTrigger>
-
         <TabsTrigger
           value="tab6"
           lengthProjects={getDataProjects("allWebBackendDbProjects").length}
@@ -51,6 +43,14 @@ export default function TabsRoot() {
 
         <TabsTrigger value="tab7" lengthProjects={0}>
           Fullstack_JS
+        </TabsTrigger>
+
+        <TabsTrigger value="tab4" lengthProjects={0}>
+          Mobile(hybrid)
+        </TabsTrigger>
+
+        <TabsTrigger value="tab5" lengthProjects={0}>
+          Desktop
         </TabsTrigger>
       </TabsList>
 
