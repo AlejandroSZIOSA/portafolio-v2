@@ -38,7 +38,7 @@ export default function TabsRoot() {
           value="tab6"
           lengthProjects={getDataProjects("allWebBackendDbProjects").length}
         >
-          Web+Backend+DB
+          Frontend+CMS
         </TabsTrigger>
 
         <TabsTrigger value="tab7" lengthProjects={0}>

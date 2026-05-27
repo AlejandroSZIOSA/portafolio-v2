@@ -60,33 +60,40 @@ export const TECHS = [
     imgUrl: "/icons/techs/cypress.svg",
     level: "1/5",
   },
+
   {
     id: 11,
+    title: "Sanity",
+    imgUrl: "/icons/techs/sanity.svg",
+    level: "1/5",
+  },
+  {
+    id: 12,
     title: "Node",
     imgUrl: "/icons/techs/nodejs.svg",
     level: "1/5",
   },
   {
-    id: 12,
+    id: 13,
     title: "Express",
     imgUrl: "/icons/techs/express.svg",
     level: "1/5",
   },
 
   {
-    id: 13,
+    id: 14,
     title: "MongoDB",
     imgUrl: "/icons/techs/mongodb.svg",
     level: "1/5",
   },
   {
-    id: 14,
+    id: 15,
     title: "Gimp",
     imgUrl: "/icons/techs/gimp.svg",
     level: "3/5",
   },
   {
-    id: 15,
+    id: 16,
     title: "Figma",
     imgUrl: "/icons/techs/figma.svg",
     level: "2/5",
