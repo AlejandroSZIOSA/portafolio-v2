@@ -4,19 +4,21 @@ export default function Message({ children, variant }) {
   let baseContent;
   switch (variant) {
     case "my-current-focus":
-      baseContent =
-        "mb-3 bg-[#00CED1] border-black text-black lg:w-fit lg:absolute lg:left-[30%] lg:bottom-[15%]";
+      baseContent = "mb-3 bg-[#00CED1] border-black text-black lg:hidden";
       break;
     case "my-hobbies":
-      baseContent =
-        " bg-[#70A069] border-black text-white lg:w-fit lg:absolute lg:bottom-[53%] lg:left-[15%]";
+      baseContent = " bg-[#70A069] border-black text-white lg:hidden";
       break;
     case "my-wish":
       baseContent =
-        " bg-black border-[#FF5A01] opacity-75 text-green-400 lg:w-fit lg:absolute lg:top-[5%] lg:right-[3%]";
+        " bg-black border-[#FF5A01] opacity-75 text-green-400 lg:hidden";
+      break;
+    case "center-desktop":
+      baseContent =
+        "hidden lg:flex lg:w-[600px] lg:items-center lg:justify-center lg:absolute lg:top-1/2 lg:left-[38%] lg:-translate-x-1/2 lg:-translate-y-1/2 bg-[#9CB3A5] border-black";
       break;
     default:
-      baseContent = "bg-gray-red-500 text-white";
+      baseContent = "";
       break;
   }
 

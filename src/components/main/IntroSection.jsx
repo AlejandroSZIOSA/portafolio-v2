@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { INFO_ABOUT_ME } from "@/utils/constants";
 
 import me from "../../../public/images/me/me-light_b.png";
 import LanguagePanel from "../ui/panels/LanguagePanel";
@@ -22,7 +23,7 @@ export default function IntroSection() {
         id="messages-container"
         className="flex flex-col items-center lg:flex-row-reverse lg:w-[stretch] lg:items-stretch lg:relative lg:h-[stretch] lg:mx-5"
       >
-        <div className="py-2 my-3 text-center w-11/12 border-2 lg:border-4 border-black rounded-xl bg-[#9CB3A5] lg:text-left lg:w-[350px] lg:h-fit lg:py-0 lg:mt-auto lg:mb-0 lg:absolute lg:left-0 bottom-[8%]">
+        <div className="py-2 my-3 text-center w-11/12 border-2  border-black rounded-xl bg-[#9CB3A5] lg:hidden">
           <p className="font-mono p-2 text-left text-lg lg:p-4 lg:text-xl">
             Hi!😎 <br></br>My name is{" "}
             <strong id="intro_text_strong">Gabriel Alejandro</strong>
@@ -30,16 +31,38 @@ export default function IntroSection() {
             <strong> Frontend Developer Junior.</strong>
           </p>
         </div>
-
-        <Message variant="my-wish">
-          const MY_WISH:”Become a multi-platform fullstack Javascript developer”
-        </Message>
-        <Message variant="my-hobbies">
-          {`const MY_HOBBIES:[“It-support”,“Training”,”Ukelele”, ”International Checkers”]`}
-        </Message>
+        <Message variant="my-wish">{INFO_ABOUT_ME.myWish} </Message>
+        <Message variant="my-hobbies">{INFO_ABOUT_ME.myHobbies}</Message>
         <Message variant="my-current-focus">
           <span className="mr-2">🎯</span>
-          {`let currentFocus:{advancedReact:[“Functionality”,"Architecture",“Good practices”]}`}
+          {INFO_ABOUT_ME.myCurrentFocus}
+        </Message>
+        <Message variant="center-desktop">
+          <h3>
+            <strong>Short About me</strong>
+          </h3>
+          <p className="p-2 text-left lg:p-4">
+            Hi!😎 My name is{" "}
+            <strong id="intro_text_strong">Gabriel Alejandro</strong>I am an
+            action oriented, highly focused and very curious
+            <strong> Frontend Developer Junior.</strong>
+          </p>
+          <h3>
+            <strong>My Hobbies</strong>
+          </h3>
+          <p className="p-2 text-left lg:p-4">
+            {INFO_ABOUT_ME.myHobbies.replace("const", "")}
+          </p>
+          <h3>
+            <strong>My Current Focus</strong>
+          </h3>
+          <p className="p-2 text-left lg:p-4 ">
+            {INFO_ABOUT_ME.myCurrentFocus.replace("let", "")}
+          </p>
+          <h3>
+            <strong>My Wish</strong>
+          </h3>
+          <p>{INFO_ABOUT_ME.myWish.replace("const", "")}</p>
         </Message>
       </div>
     </div>
