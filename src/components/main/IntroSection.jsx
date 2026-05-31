@@ -21,7 +21,7 @@ export default function IntroSection() {
       </div>
       <div
         id="messages-container"
-        className="flex flex-col items-center lg:flex-row-reverse lg:w-[stretch] lg:items-stretch lg:relative lg:h-[stretch] lg:mx-5"
+        className="flex flex-col items-center lg:flex-row lg:w-[stretch] lg:items-stretch lg:h-[stretch] lg:mx-5"
       >
         <div className="py-2 my-3 text-center w-11/12 border-2 border-black rounded-xl bg-[#9CB3A5] lg:hidden">
           <p className="font-mono p-2 text-left text-lg lg:p-4 lg:text-xl">
@@ -43,12 +43,14 @@ export default function IntroSection() {
             {INFO_ABOUT_ME.myCurrentFocus}
           </p>
         </Message>
+        {/*         only desktop message
+         */}
         <Message variant="center-desktop">
           <article>
             <h3>
               <strong>Short About me</strong>
             </h3>
-            <p className="p-2 text-left lg:p-4">
+            <p className="text-left p-1">
               Hi!😎 My name is
               <strong id="intro_text_strong">Gabriel Alejandro</strong>I am an
               action oriented, highly focused and very curious
@@ -57,19 +59,21 @@ export default function IntroSection() {
             <h3>
               <strong>My Hobbies</strong>
             </h3>
-            <p className="p-2 text-left lg:p-4">
+            <p className="text-left p-1">
               “It-support”,“Training”,”Ukelele”, ”International Checkers”
             </p>
             <h3>
               <strong>My Current Focus</strong>
             </h3>
-            <p className="p-2 text-left lg:p-4 ">
+            <p className="text-left p-1">
               Advanced React:“Functionality”,"Architecture",“Good practices”
             </p>
             <h3>
               <strong>My Wish</strong>
             </h3>
-            <p>”Become a multi-platform fullstack Javascript developer”</p>
+            <p className="text-left p-1">
+              ”Become a multi-platform fullstack Javascript developer”
+            </p>
           </article>
         </Message>
       </div>
