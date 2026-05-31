@@ -15,7 +15,7 @@ export default function Message({ children, variant }) {
       break;
     case "center-desktop":
       baseContent =
-        "hidden lg:flex lg:w-[600px] lg:items-center lg:justify-center lg:absolute lg:top-1/2 lg:left-[38%] lg:-translate-x-1/2 lg:-translate-y-1/2 bg-[#9CB3A5] border-black";
+        "hidden lg:flex lg:w-[600px] lg:items-center lg:justify-center lg:absolute lg:top-1/2 lg:left-[20%] lg:-translate-x-1/2 lg:-translate-y-1/2 bg-[#9CB3A5] border-black rounded-xl";
       break;
     default:
       baseContent = "";
@@ -26,7 +26,7 @@ export default function Message({ children, variant }) {
     <div
       className={`inline-flex h-fit w-11/12 border-2 p-2 lg:border-4 mt-2 ${baseContent} text-center font-mono lg:p-5`}
     >
-      <p>{children}</p>
+      {children}
     </div>
   );
 }
