@@ -67,10 +67,9 @@ export const WEB_DATA = [
   {
     id: 3, //different ids in all projects
     updated_at: "October 15, 2025",
-    cardImgUrl:
-      "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
+    cardImgUrl: "",
     title: "Vinilo Volador",
-    isFavorite: false,
+    isFavorite: true,
     version: "Stable",
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
