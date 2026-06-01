@@ -18,7 +18,7 @@ export default function Footer() {
             className="transition-transform duration-200 hover:scale-110"
             src={LINKEDIN_ICON}
             alt="LinkedIn"
-            width={isMobile ? 70 : 85}
+            width={isMobile ? 80 : 90}
             height="auto"
           />
         </a>

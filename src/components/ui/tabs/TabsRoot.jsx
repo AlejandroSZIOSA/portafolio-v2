@@ -19,41 +19,34 @@ export default function TabsRoot() {
         >
           Web-client
         </TabsTrigger>
-
         <TabsTrigger
           value="tab2"
           lengthProjects={getDataProjects("allWebApis").length}
         >
           Web+openAPI
         </TabsTrigger>
-
         <TabsTrigger
           value="tab3"
           lengthProjects={getDataProjects("allWebPrivateApis").length}
         >
           Web+privateAPI
         </TabsTrigger>
-
         <TabsTrigger
           value="tab6"
           lengthProjects={getDataProjects("allWebBackendDbProjects").length}
         >
           Frontend+CMS
         </TabsTrigger>
-
         <TabsTrigger value="tab7" lengthProjects={0}>
           Fullstack_JS
         </TabsTrigger>
-
         <TabsTrigger value="tab4" lengthProjects={0}>
           Mobile(hybrid)
         </TabsTrigger>
-
         <TabsTrigger value="tab5" lengthProjects={0}>
           Desktop
         </TabsTrigger>
       </TabsList>
-
       <TabsContent value="tab1">
         <Accordion
           projects={getDataProjects("allWebProjects")}

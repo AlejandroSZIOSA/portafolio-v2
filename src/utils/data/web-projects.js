@@ -70,7 +70,7 @@ export const WEB_DATA = [
     cardImgUrl:
       "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
     title: "Vinilo Volador",
-    isFavorite: true,
+    isFavorite: false,
     version: "Stable",
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
@@ -124,7 +124,7 @@ export const WEB_DATA = [
     framework: "React+Vite",
     linkToApp: "https://task-remainder-navy.vercel.app/",
     gitHubLink: "https://github.com/AlejandroSZIOSA/super-todo-app-ts.git",
-    isNew: true,
+    isNew: false,
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
     typeScript: "yes",

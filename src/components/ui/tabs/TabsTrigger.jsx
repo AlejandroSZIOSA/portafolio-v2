@@ -1,8 +1,9 @@
 import { useTabs } from "@/hooks/useTabs";
 
 //dynamic classes for active and inactive tabs
-const BASE_TAB = "p-1 hover:cursor-pointer lg:px-3 lg:py-2";
-const ACTIVE_TAB = "border-4 border-black font-semibold";
+const BASE_TAB = "p-1 hover:cursor-pointer lg:px-3 lg:py-2 ";
+const ACTIVE_TAB =
+  "border-4 border-black font-semibold lg:border-t-0 lg:bg-[#FF9B51]";
 const INACTIVE_TAB = "text-gray-500";
 
 // TabsTrigger component

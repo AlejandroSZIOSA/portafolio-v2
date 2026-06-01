@@ -25,7 +25,7 @@ export default function IntroSection() {
       >
         <div className="py-2 my-3 text-center w-11/12 border-2 border-black rounded-xl bg-[#9CB3A5] lg:hidden">
           <p className="font-mono p-2 text-left text-lg lg:p-4 lg:text-xl">
-            Hi!😎 <br></br>My name is{" "}
+            Hi!😎 <br></br>My name is
             <strong id="intro_text_strong">Gabriel Alejandro</strong>
             <br></br>I am an action oriented, highly focused and very curious
             <strong> Frontend Developer Junior.</strong>

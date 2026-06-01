@@ -27,7 +27,6 @@ export default function Home() {
         <IntroSection />
         <DividerHeaderTitle sectionTitle="My Tech Stack" variant="both-lines" />
         <TechSection />
-
         <section className="block lg:flex w-full">
           <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[#FFE4C4]">
             {isMobile ? (
@@ -36,7 +35,7 @@ export default function Home() {
                 variant="both-lines"
               />
             ) : (
-              <div className="lg:h-14 lg:content-center lg:text-center text-[rgb(127,255,0)] bg-black">
+              <div className="lg:h-14 lg:content-center lg:text-center text-[#EAEFEF] bg-[#25343F]">
                 <h2>Latest App</h2>
               </div>
             )}
@@ -49,7 +48,7 @@ export default function Home() {
               variant="top-line"
             />
             <ProjectsSection />
-            <div className="h-8 bg-[#FFE4C4] border-black border-b lg:hidden"></div>
+            {/* <div className="h-8 border-black border-b lg:hidden"></div> */}
           </div>
         </section>
       </main>

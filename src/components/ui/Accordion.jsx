@@ -64,7 +64,7 @@ export default function Accordion({ projects, variationLayout }) {
             .map((item, index) => render(item, index))}
         </ol>
       ) : (
-        <ol className="border px-6 pb-6 md:pb-5 flex space-x-2 overflow-x-auto scrollbar-hide">
+        <ol className="px-6 pb-6 lg:flex lg:justify-center lg:pb-5 flex space-x-2 overflow-x-auto scrollbar-hide">
           {projects
             .slice()
             .reverse()
