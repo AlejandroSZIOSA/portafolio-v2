@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/mea-culpa": "^5.2.8",
     "next": "^16.1.6",
     "react": "^18",
     "react-dom": "^18",

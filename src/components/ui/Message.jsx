@@ -15,7 +15,7 @@ export default function Message({ children, variant }) {
       break;
     case "center-desktop":
       baseContent =
-        "hidden lg:flex lg:w-[500px] lg:items-center lg:justify-center lg:ml-12 bg-[#9CB3A5] border-black rounded-xl";
+        "hidden lg:flex lg:w-[500px] lg:items-center lg:justify-center lg:ml-20 bg-[#9CB3A5] border-black rounded-xl";
       break;
     default:
       baseContent = "";

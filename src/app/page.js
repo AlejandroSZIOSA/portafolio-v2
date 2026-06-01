@@ -41,7 +41,7 @@ export default function Home() {
             )}
             <LatestProjectsSection />
           </div>
-          <div className="lg:w-full lg:h-[780px]">
+          <div className="lg:w-full lg:h-content">
             <DividerHeaderTitle
               sectionTitle="Apps Gallery"
               putSectionId="previous_projects_divider"

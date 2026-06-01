@@ -25,7 +25,7 @@ export default function IntroSection() {
       >
         <div className="py-2 my-3 text-center w-11/12 border-2 border-black rounded-xl bg-[#9CB3A5] lg:hidden">
           <p className="font-mono p-2 text-left text-lg lg:p-4 lg:text-xl">
-            Hi!😎 <br></br>My name is
+            Hi!😎 <br></br>My name is{" "}
             <strong id="intro_text_strong">Gabriel Alejandro</strong>
             <br></br>I am an action oriented, highly focused and very curious
             <strong> Frontend Developer Junior.</strong>
@@ -46,13 +46,13 @@ export default function IntroSection() {
         {/*         only desktop message
          */}
         <Message variant="center-desktop">
-          <article>
+          <article className="w-max">
             <h3>
               <strong>Short About me</strong>
             </h3>
             <p className="text-left p-1">
-              Hi!😎 My name is
-              <strong id="intro_text_strong">Gabriel Alejandro</strong>I am an
+              Hi!😎 My name is{" "}
+              <strong id="intro_text_strong">Gabriel Alejandro </strong> I am an
               action oriented, highly focused and very curious
               <strong> Frontend Developer Junior.</strong>
             </p>
@@ -63,11 +63,17 @@ export default function IntroSection() {
               “It-support”,“Training”,”Ukelele”, ”International Checkers”
             </p>
             <h3>
+              <span className="mr-2 text-base">🎯</span>
               <strong>My Current Focus</strong>
             </h3>
-            <p className="text-left p-1">
-              Advanced React:“Functionality”,"Architecture",“Good practices”
-            </p>
+            <div className="p-1">
+              <p className="text-center">
+                <strong>Advanced React</strong>
+              </p>
+              <p className="text-left">
+                “Functionality”,"Architecture",“Good practices”
+              </p>
+            </div>
             <h3>
               <strong>My Wish</strong>
             </h3>
@@ -76,6 +82,9 @@ export default function IntroSection() {
             </p>
           </article>
         </Message>
+        <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-full">
+          <h1 className="font-mea text-7xl"> Always in Action</h1>
+        </div>
       </div>
     </div>
   );
