@@ -47,17 +47,17 @@ export default function IntroSection() {
             <h3>
               <strong>Short About me</strong>
             </h3>
-            <p className="text-left p-1">
-              Hi!😎 My name is{" "}
+            <p className="text-justify p-1">
+              Hi!😎, My name is{" "}
               <strong id="intro_text_strong">Gabriel Alejandro </strong> I am an
-              action oriented, highly focused and very curious
-              <strong> Frontend Developer Junior.</strong>
+              action oriented, highly focused and very curious Frontend
+              Developer Junior.
             </p>
             <h3>
               <strong>My Hobbies</strong>
             </h3>
-            <p className="text-left p-1">
-              “It-support”,“Training”,”Ukelele”, ”International Checkers”
+            <p className="text-center p-1">
+              “It-support”,“Training”,”International Checkers”,”Ukelele”
             </p>
             <h3>
               <span className="mr-2 text-base">🎯</span>
@@ -74,7 +74,7 @@ export default function IntroSection() {
             <h3>
               <strong>My Wish</strong>
             </h3>
-            <p className="text-left p-1">
+            <p className="text-center p-1">
               ”Become a multi-platform fullstack Javascript developer”
             </p>
           </article>
