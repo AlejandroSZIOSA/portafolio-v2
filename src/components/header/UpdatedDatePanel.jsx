@@ -8,14 +8,14 @@ export default function UpdatedDatePanel() {
 
   const isMobile = useMedia(USE_MEDIA_MAX_WIDTH); //from useMedia library
   return (
-    <div className="inline-flex justify-end md:self-center md:items-end">
+    <div className="inline-flex justify-end md:self-center md:items-center">
       <Image
         src="/icons/clarity_update-white.svg"
         width={isMobile ? 16 : 24}
         height={isMobile ? 16 : 24}
         alt="Updated date icon"
       />
-      <span className="pr-4 pl-1 md:pl-2 text-xs md:text-base text-white">
+      <span className="pr-4 pl-1 md:pl-2 text-xs md:text-lg text-white">
         {CURRENT_UPDATED_DATE}
       </span>
     </div>
