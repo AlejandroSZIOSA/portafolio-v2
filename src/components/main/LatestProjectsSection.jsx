@@ -22,7 +22,10 @@ export default function LatestProjectsSection() {
     ...filteredWebPrivateApis,
   ];
   return (
-    <div className="flex flex-col py-6 gap-8 items-center md:flex-row lg:items-baseline lg:px-14 lg:mt-4 ">
+    <div
+      id="latest_container"
+      className="flex flex-col py-6 gap-8 items-center md:flex-row lg:items-baseline lg:px-14 lg:mt-4 "
+    >
       {filteredItems.map((p) => {
         return (
           <CvWebProject

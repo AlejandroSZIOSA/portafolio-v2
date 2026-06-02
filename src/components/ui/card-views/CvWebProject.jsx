@@ -9,7 +9,6 @@ import ToViewAppBtn from "../buttons/ToViewAppBtn";
 
 import FIGMA_ICON from "../../../../public/icons/techs/figma.svg";
 
-import UPDATED_ICON from "../../../../public/icons/clarity_update-white.svg";
 import FAVORITE_ICON from "../../../../public/icons/favorite-circle.svg";
 
 export default function CvWebProject({ project, label, variationLayout }) {
@@ -85,18 +84,18 @@ export default function CvWebProject({ project, label, variationLayout }) {
 
   return (
     // TODO:Fix border Children element in mobile view
-    <div className="flex flex-col w-[330px] max-w-sm border-2 border-[#2FA4D7] rounded-lg  bg-[#BBE0EF] text-left lg:border-4 lg:h-min">
-      <div className="flex py-1 justify-between bg-[#2FA4D7] text-xs text-white rounded-t-lg lg:text-sm lg:rounded-none">
+    <div className="flex flex-col w-[330px] max-w-sm border-2 border-[#2FA4D7] rounded-lg  bg-[#2FA4D7] text-left lg:border-4 lg:h-min">
+      <div className="flex py-1 justify-between bg-[#2FA4D7] text-xs rounded-t-lg lg:text-sm lg:rounded-none">
         <div className=" flex ml-3">{label}</div>
-        <span className="inline-flex">
+        {/* <span className="inline-flex">
           <Image
-            src={UPDATED_ICON}
+            src={UPDATED_ICON_DARK}
             width={isMobile ? "16" : "20"}
             height="auto"
             alt="clarity update white"
-          />
-          <div className="mr-3 ml-1">{updated_at}</div>
-        </span>
+          /> */}
+        <div className="mr-3 ml-1">{updated_at}</div>
+        {/*  </span> */}
       </div>
       {/* FIX:Problem whit the header cover sticky position when Image container uses relative position and the Image is using fill attribute. */}
       <div className="flex justify-center bg-black">
@@ -114,7 +113,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
           </div>
         )}
       </div>
-      <div className=" flex justify-center py-1 text-xs bg-[#2FA4D7] text-white lg:text-sm lg:pt-1">
+      <div className=" flex justify-center py-1 text-xs bg-[#2FA4D7] lg:text-sm lg:pt-1">
         {version}
       </div>
 

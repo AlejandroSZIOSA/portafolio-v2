@@ -14,7 +14,7 @@ const LanguagePanel = () => {
       <Image
         className="mr-2"
         src={speakerIcon}
-        width={isMobile ? 20 : 22}
+        width={isMobile ? 18 : 26}
         height="auto"
         alt="Speaker icon"
       />

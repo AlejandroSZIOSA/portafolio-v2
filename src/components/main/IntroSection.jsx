@@ -19,10 +19,7 @@ export default function IntroSection() {
         />
         <LanguagePanel />
       </div>
-      <div
-        id="messages-container"
-        className="flex flex-col items-center lg:flex-row lg:w-[stretch] lg:items-stretch lg:h-[stretch] lg:mx-5"
-      >
+      <div className="flex flex-col items-center lg:flex-row lg:w-[stretch] lg:items-stretch lg:h-[stretch] lg:mx-5">
         <div className="py-2 my-3 text-center w-11/12 border-2 border-black rounded-xl bg-[#9CB3A5] lg:hidden">
           <p className="font-mono p-2 text-left text-lg lg:p-4 lg:text-xl">
             Hi!😎 <br></br>My name is{" "}
