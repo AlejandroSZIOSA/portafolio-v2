@@ -67,8 +67,7 @@ export const WEB_DATA = [
   {
     id: 3, //different ids in all projects
     updated_at: "October 15, 2025",
-    cardImgUrl:
-      "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
+    cardImgUrl: "",
     title: "Vinilo Volador",
     isFavorite: true,
     version: "Stable",
@@ -124,7 +123,7 @@ export const WEB_DATA = [
     framework: "React+Vite",
     linkToApp: "https://task-remainder-navy.vercel.app/",
     gitHubLink: "https://github.com/AlejandroSZIOSA/super-todo-app-ts.git",
-    isNew: true,
+    isNew: false,
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
     typeScript: "yes",

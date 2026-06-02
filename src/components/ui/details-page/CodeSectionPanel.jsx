@@ -6,7 +6,7 @@ export default function CodeSectionPanel({
   gitHubBackendLinkData,
 }) {
   return (
-    <section className="flex flex-col h-auto w-[-webkit-fill-available] bg-white lg:mt-5">
+    <section className="flex flex-col h-auto w-[-webkit-fill-available] bg-[#BBE0EF] lg:mt-5">
       <h2 className="text-center pt-2 pb-1 lg:py-4">
         <strong>Code</strong>
       </h2>

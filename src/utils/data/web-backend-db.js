@@ -7,7 +7,7 @@ export const WEB_BACKEND_DB_DATA = [
     updated_at: "October 14, 2025",
     cardImgUrl: "",
     title: "Driver Theory Trivia",
-    isFavorite: false,
+    isFavorite: true,
     version: "Beta",
     description: "Learning drive theory app(Internship)",
     category: "Web+Backend+DB", //key to identify the project type

@@ -4,27 +4,29 @@ export default function Message({ children, variant }) {
   let baseContent;
   switch (variant) {
     case "my-current-focus":
-      baseContent =
-        "mb-3 bg-[#00CED1] border-black text-black lg:w-fit lg:absolute lg:left-[30%] lg:bottom-[15%]";
+      baseContent = "mb-3 bg-[#00CED1] border-black text-black lg:hidden";
       break;
     case "my-hobbies":
-      baseContent =
-        " bg-[#70A069] border-black text-white lg:w-fit lg:absolute lg:bottom-[53%] lg:left-[15%]";
+      baseContent = " bg-[#70A069] border-black text-white lg:hidden";
       break;
     case "my-wish":
       baseContent =
-        " bg-black border-[#FF5A01] opacity-75 text-green-400 lg:w-fit lg:absolute lg:top-[5%] lg:right-[3%]";
+        " bg-black border-[#FF5A01] opacity-75 text-green-400 lg:hidden";
+      break;
+    case "center-desktop":
+      baseContent =
+        "hidden lg:flex lg:w-[500px] lg:items-center lg:justify-center lg:ml-16 bg-[#9CB3A5] border-black rounded-xl";
       break;
     default:
-      baseContent = "bg-gray-red-500 text-white";
+      baseContent = "";
       break;
   }
 
   return (
     <div
-      className={`inline-flex h-fit w-11/12 border-2 p-2 lg:border-4 mt-2 ${baseContent} text-center font-mono lg:p-5`}
+      className={`inline-flex h-fit w-11/12 border-2 p-2 lg:border-4 mt-2 lg:mt-20 ${baseContent} text-center font-mono lg:p-3`}
     >
-      <p>{children}</p>
+      {children}
     </div>
   );
 }

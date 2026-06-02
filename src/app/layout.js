@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import "@fontsource/mea-culpa";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
