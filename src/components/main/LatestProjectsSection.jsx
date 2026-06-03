@@ -24,7 +24,7 @@ export default function LatestProjectsSection() {
   return (
     <div
       id="latest_container"
-      className="flex flex-col py-6 gap-8 items-center md:flex-row lg:items-baseline lg:px-14 lg:mt-4 "
+      className="flex flex-col py-6 gap-8 items-center md:flex-row lg:items-baseline lg:px-14 lg:mt-4 scroll-mt-40"
     >
       {filteredItems.map((p) => {
         return (

@@ -16,12 +16,12 @@ export default function NavBar({ variation }) {
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#intro_text_strong" className={LINK_CONTENT}>
+          <Link href="#techs_container" className={LINK_CONTENT}>
             Techs
           </Link>
         </div>
         <div className={NAV_BOXES}>
-          <Link href="#techs_container" className={LINK_CONTENT}>
+          <Link href="#latest_container" className={LINK_CONTENT}>
             Latest
           </Link>
         </div>
