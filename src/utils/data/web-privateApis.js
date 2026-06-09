@@ -47,7 +47,7 @@ export const WEB_PRIVATE_APIS = [
     gitHubLink: "https://github.com/AlejandroSZIOSA/movies-app-v.git",
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
-    isNew: true,
+    isNew: false,
     typeScript: "",
     css: "Pure Css+Module Css",
     cssLibrary: "",

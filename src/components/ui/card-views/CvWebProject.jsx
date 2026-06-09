@@ -31,11 +31,16 @@ export default function CvWebProject({ project, label, variationLayout }) {
     case "no-link-to-details":
       content = (
         <>
-          <div className="inline-flex w-[56px] lg:w-[60px] items-center justify-between">
-            <GitHubCodeBtn gitHubLink={gitHubLink} />
-            <span className="font-bold">{"/>"}</span>
-          </div>
-
+          {gitHubLink ? (
+            <div className="inline-flex w-[56px] lg:w-[60px] items-center justify-between">
+              <GitHubCodeBtn gitHubLink={gitHubLink} />
+              <span className="font-bold">{"/>"}</span>
+            </div>
+          ) : (
+            <div className="inline-flex w-[56px] lg:w-[60px] items-center justify-between">
+              <span className="font-bold">{"/>"}</span>
+            </div>
+          )}
           {project.figmaScreenshots && (
             <Link
               /*   className="p-1 bg-blue-600 hover:bg-blue-800 text-sm lg:text-base text-white border-2 border-indigo-950 rounded-md" */

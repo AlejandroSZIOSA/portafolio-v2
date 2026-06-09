@@ -40,12 +40,12 @@ export default function TabsRoot() {
         <TabsTrigger value="tab7" lengthProjects={0}>
           Fullstack_JS
         </TabsTrigger>
-        <TabsTrigger value="tab4" lengthProjects={0}>
+        {/* <TabsTrigger value="tab4" lengthProjects={0}>
           Mobile(hybrid)
         </TabsTrigger>
         <TabsTrigger value="tab5" lengthProjects={0}>
           Desktop
-        </TabsTrigger>
+        </TabsTrigger> */}
       </TabsList>
       <TabsContent value="tab1">
         <Accordion
