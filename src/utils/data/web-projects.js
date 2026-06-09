@@ -156,7 +156,7 @@ export const WEB_DATA = [
     id: 12, //different ids in all projects
     updated_at: "June 09, 2026",
     cardImgUrl: "/images/web-projects/task-reminder-v1_2/preview45.png",
-    title: "Task Reminder(L)",
+    title: "Task Reminder",
     isFavorite: true,
     version: "Version 1.2",
     description:
