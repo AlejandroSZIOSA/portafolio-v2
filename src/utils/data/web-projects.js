@@ -190,7 +190,7 @@ export const WEB_DATA = [
     ],
     detailsProjectInfo: {
       figma:
-        "This is a quick flexible design. The main objective was improve user interface before I touch the code. It takes longer time if I improve directly in the code. I also made a few small improvements before the final release but the biggest improvement's work I made was in Figma. At last I think It is very good to improve as little as posible directly in the code, but the most on Figma so I don't waste my time and my nerve.",
+        "This is a quick flexible design. The main objective was improve user interface before I touch the code. It takes longer time if I improve directly in the code. I also made a few small improvements before the final release but the biggest improvement's work I made was in Figma. At last I think It is very good to improve as little as posible directly in the code, but the most on Figma so I don't wasted my time.",
     },
   },
 ];
