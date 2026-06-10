@@ -39,7 +39,7 @@ export const WEB_PRIVATE_APIS = [
     title: "Movies App",
     isFavorite: true,
     version: "Stable",
-    description: `Search and discover movies from a public DB. (Workshop)`,
+    description: `Search and discover movies from a public DB.(Workshop)`,
     category: "Web+privateAPI",
     language: "Typescript",
     framework: "React+Vite",

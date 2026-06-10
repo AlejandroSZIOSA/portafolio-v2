@@ -11,7 +11,7 @@ export const WEB_DATA = [
     isFavorite: false,
     version: "Stable",
     description:
-      "Shows some clocks from different locations as well Timers. (Workshop)",
+      "Shows some clocks from different locations as well Timers.(Workshop)",
     category: "Web-client",
     language: "JavaScript",
     framework: "React+Vite",
@@ -42,7 +42,7 @@ export const WEB_DATA = [
     isFavorite: false,
     version: "Stable",
     description:
-      "Manages some activities using Redux and Local Storage.(workshop)",
+      "Manages some activities using Redux and Local Storage.(Workshop)",
     category: "Web-client",
     language: "JavaScript",
     framework: "React+Next.js",
@@ -67,7 +67,8 @@ export const WEB_DATA = [
   {
     id: 3, //different ids in all projects
     updated_at: "October 15, 2025",
-    cardImgUrl: "",
+    cardImgUrl:
+      "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
     title: "Vinilo Volador",
     isFavorite: true,
     version: "Stable",
