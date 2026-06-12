@@ -43,7 +43,8 @@ export const WEB_PRIVATE_APIS = [
     category: "Web+privateAPI",
     language: "Typescript",
     framework: "React+Vite",
-    linkToApp: "https://symphonious-nougat-3c67ea.netlify.app/home",
+    linkToApp:
+      "https://movies-app-8nzadtfi0-gabriels-projects-3ad7215b.vercel.app/home",
     gitHubLink: "https://github.com/AlejandroSZIOSA/movies-app-v.git",
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
