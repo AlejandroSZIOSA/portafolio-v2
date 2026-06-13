@@ -34,7 +34,7 @@ export const WEB_PRIVATE_APIS = [
   },
   {
     id: 7,
-    updated_at: "may 15, 2026",
+    updated_at: "june 12, 2026",
     cardImgUrl: "",
     title: "Movies App",
     isFavorite: true,
@@ -43,8 +43,7 @@ export const WEB_PRIVATE_APIS = [
     category: "Web+privateAPI",
     language: "Typescript",
     framework: "React+Vite",
-    linkToApp:
-      "https://movies-app-8nzadtfi0-gabriels-projects-3ad7215b.vercel.app/home",
+    linkToApp: "https://movies-app-v.vercel.app/home",
     gitHubLink: "https://github.com/AlejandroSZIOSA/movies-app-v.git",
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
