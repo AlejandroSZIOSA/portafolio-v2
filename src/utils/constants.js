@@ -10,3 +10,5 @@ export const INFO_ABOUT_ME = {
   myHobbies: `const MY_HOBBIES:[“It-support”,“Training”,”Ukelele”, ”International Checkers”]`,
   myCurrentFocus: `let currentFocus:{advancedReact:[“Functionality”,"Architecture",“Good practices”]}`,
 };
+
+//todo crear objeto reusable para loss mensajes en mobile y en desktop

@@ -65,7 +65,7 @@ export default function IntroSection() {
             </h3>
             <div className="p-1">
               <p className="text-center">
-                <strong>Advanced React</strong>
+                <strong>React + Sanity CMS basics + A.I Assistance</strong>
               </p>
               <p className="text-left">
                 “Functionality”,"Architecture",“Good practices”
