@@ -118,7 +118,7 @@ export const WEB_DATA = [
     isFavorite: false,
     version: "Version 1.1",
     description:
-      "App that allows users to create and manage task reminders, ensuring they never miss an very important deadline or event.",
+      "App that allows users to create, manage and prioritize task, ensuring they never miss an important task.",
     category: "Web-client",
     language: "",
     framework: "React+Vite",
@@ -161,7 +161,7 @@ export const WEB_DATA = [
     isFavorite: true,
     version: "Version 1.3",
     description:
-      "App that allows users to create and manage task reminders, ensuring they never miss an very important deadline or event.",
+      "App that allows users to create, manage and prioritize task, ensuring they never miss an important task.",
     category: "Web-client",
     language: "",
     framework: "React+Vite",
