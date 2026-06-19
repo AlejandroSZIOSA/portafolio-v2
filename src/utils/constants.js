@@ -9,8 +9,8 @@ export const MESSAGES_DATA = {
   meOnMobile: {
     content: (
       <>
-        Hi! 😎 <br />
-        My name is <strong id="intro_text_strong">Gabriel Alejandro</strong>
+        Hi!😎 <br />
+        My name is <strong id="intro_text_strong">Gabriel Alejandro.</strong>
         <br />I am an action oriented, highly focused and very curious{" "}
         <strong>Frontend Developer Junior.</strong>
       </>
