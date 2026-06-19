@@ -4,14 +4,14 @@ export default function Message({ children, variant }) {
   let baseContent;
   switch (variant) {
     case "my-current-focus":
-      baseContent = "mb-3 bg-[#00CED1] border-black text-black lg:hidden";
+      baseContent = " bg-[#00CED1] border-black text-black lg:hidden";
       break;
     case "my-hobbies":
       baseContent = " bg-[#70A069] border-black text-white lg:hidden";
       break;
     case "my-wish":
       baseContent =
-        " bg-black border-[#FF5A01] opacity-75 text-green-400 lg:hidden";
+        " bg-black border-[#FF5A01] mb-3 justify-center opacity-75 text-green-400 lg:hidden";
       break;
     case "center-desktop":
       baseContent =
@@ -24,7 +24,7 @@ export default function Message({ children, variant }) {
 
   return (
     <div
-      className={`inline-flex h-fit w-11/12 border-2 p-2 lg:border-4 mt-2 lg:mt-20 ${baseContent} text-center font-mono lg:p-3`}
+      className={`inline-flex h-fit w-11/12 border-2 p-2 lg:border-4 mt-2 lg:mt-14 ${baseContent} text-center font-mono lg:p-3`}
     >
       {children}
     </div>
