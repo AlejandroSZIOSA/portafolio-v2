@@ -21,15 +21,15 @@ export const MESSAGES_DATA = {
       <>
         Hi!😎, <br></br>My name is
         <strong id="intro_text_strong"> Gabriel Alejandro.</strong> I am an
-        action oriented, highly focused and very curious Frontend Developer
-        Junior.
+        action oriented, highly focused and very curious{" "}
+        <strong>Frontend Developer Junior.</strong>
       </>
     ),
   },
   myCurrentFocus: {
     title: "My Current Focus",
-    subtitle: "React + CMS + A.I Assistance",
-    content: `“Functionality”,"Architecture",“Good practices”`,
+    subtitle: "React + CMS + Copilot Assistance",
+    content: `“Functionality”,"Architecture","Good practices" & “Good prompts”`,
   },
   myHobbies: {
     title: "My Hobbies",
