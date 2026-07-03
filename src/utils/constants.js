@@ -37,6 +37,6 @@ export const MESSAGES_DATA = {
   },
   myWish: {
     title: "My Wish",
-    content: `”Create, maintain and publish fullstack Typescript solutions”`,
+    content: `”Create, maintain and publish fullstack TypeScript solutions”`,
   },
 };
