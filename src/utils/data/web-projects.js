@@ -155,11 +155,11 @@ export const WEB_DATA = [
   },
   {
     id: 12, //different ids in all projects
-    updated_at: "June 16, 2026",
+    updated_at: "Jul 3, 2026",
     cardImgUrl: "/images/web-projects/task-reminder-v1_2/preview45.png",
     title: "Task Reminder",
     isFavorite: true,
-    version: "Version 1.3",
+    version: "Version 1.5",
     description:
       "App that allows users to create, manage and prioritize tasks, ensuring they never miss an important tasks.",
     category: "Web-client",
