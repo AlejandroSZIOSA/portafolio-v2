@@ -184,11 +184,11 @@ export const WEB_DATA = [
     api: "",
     localStorage: "yes",
     indexedDB: "yes",
-    figmaScreenshots: [
+    /* figmaScreenshots: [
       BASE_CONTENT_URL + "/v1781003616/1_k0eadd.png",
       BASE_CONTENT_URL + "/v1781003616/2_ybuyrv.png",
       BASE_CONTENT_URL + "/v1781003617/3_yu3kjr.png",
-    ],
+    ], */
     detailsProjectInfo: {
       figma:
         "This is a quick flexible design. The main objective was improve user interface before I touch the code. It takes longer time if I improve directly in the code. I also made a few small improvements before the final release but the biggest improvement's work I made was in Figma. At last I think It is very good to improve as little as posible directly in the code, but the most on Figma so I don't wasted my time.",
