@@ -163,7 +163,7 @@ export const WEB_DATA = [
     category: "Web-client",
     language: "",
     framework: "React+Vite",
-    linkToApp: "https://flourishing-melba-cc26d9.netlify.app/",
+    linkToApp: "https://jolly-mochi-2009b8.netlify.app/",
     gitHubLink: "",
     isNew: true,
     browsers: ["Chrome"],
