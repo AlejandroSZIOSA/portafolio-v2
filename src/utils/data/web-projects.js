@@ -67,10 +67,9 @@ export const WEB_DATA = [
   {
     id: 3, //different ids in all projects
     updated_at: "October 15, 2025",
-    cardImgUrl:
-      "/images/web-projects/vinilo-volador/vinilo-volador-400_300.png",
+    cardImgUrl: "",
     title: "Vinilo Volador",
-    isFavorite: true,
+    isFavorite: false,
     version: "Stable",
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
@@ -113,7 +112,7 @@ export const WEB_DATA = [
   {
     id: 12, //different ids in all projects
     updated_at: "Jul 3, 2026",
-    cardImgUrl: "",
+    cardImgUrl: "/images/web-projects/task-reminder/v1_5.png",
     title: "Task Reminder",
     isFavorite: true,
     version: "Version 1.5.0",
