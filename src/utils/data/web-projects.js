@@ -114,7 +114,7 @@ export const WEB_DATA = [
     updated_at: "Jul 3, 2026",
     cardImgUrl: "/images/web-projects/task-reminder/v1_5.png",
     title: "Tasks Reminder",
-    isFavorite: true,
+    isFavorite: false,
     version: "Version 1.5.0",
     description:
       "App that allows users to create, manage and prioritize tasks, ensuring they never miss an important tasks.",
@@ -152,13 +152,13 @@ export const WEB_DATA = [
   },
   {
     id: 20,
-    updated_at: "Augusti 7, 2026",
-    cardImgUrl: "/images/web-projects/task-reminder/preview.png",
+    updated_at: "Augusti 17, 2026",
+    cardImgUrl: "/images/web-projects/task-reminder/prev.png",
     title: "Tasks Reminder",
     isFavorite: true,
-    version: "Version 1.6.2",
+    version: "Version 1.6.4",
     description:
-      "App allows users to create, organize and prioritize private tasks, ensuring they never miss an important tasks.",
+      "My app helps people manage busy schedules by allowing them to create, organize, and prioritize tasks and notes, ensuring that important tasks never get missed.",
     category: "Web-client",
     language: "",
     framework: "React+Vite",
@@ -182,8 +182,10 @@ export const WEB_DATA = [
     localStorage: "yes",
     indexedDB: "yes",
     figmaScreenshots: [
-      BASE_CONTENT_URL + "/v1785341679/Screenshot_2026-07-29_181359_eit2rf.png",
-      BASE_CONTENT_URL + "/v1785342347/Screenshot_2026-07-29_182502_dli7wd.png",
+      BASE_CONTENT_URL + "/v1786969125/1_h9a9zn.png",
+      BASE_CONTENT_URL + "/v1786969127/2_mpl7cl.png",
+      BASE_CONTENT_URL + "/v1786969126/3_hmas3d.png",
+      BASE_CONTENT_URL + "/v1786969126/4_w1lufk.png",
     ],
     detailsProjectInfo: {
       figma:
