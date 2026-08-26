@@ -110,47 +110,6 @@ export const WEB_DATA = [
     },
   },
   {
-    id: 12, //different ids in all projects
-    updated_at: "Jul 3, 2026",
-    cardImgUrl: "/images/web-projects/task-reminder/v1_5.png",
-    title: "Tasks Reminder",
-    isFavorite: false,
-    version: "Version 1.5.0",
-    description:
-      "App that allows users to create, manage and prioritize tasks, ensuring they never miss an important tasks.",
-    category: "Web-client",
-    language: "",
-    framework: "React+Vite",
-    linkToApp: "https://flourishing-melba-cc26d9.netlify.app/",
-    gitHubLink: "",
-    isNew: false,
-    browsers: ["Chrome"],
-    deviceBrowserSettings: "Samsung Galaxy S8+",
-    typeScript: "yes",
-    css: "Modules Css",
-    cssLibrary: "",
-    navigation: "yes",
-    tests: "",
-    wcag: "basic",
-    customHooks: "yes",
-    responsiveUI: ["Mobile", "Desktop"],
-    context: "",
-    redux: "yes",
-    crud: "All",
-    api: "",
-    localStorage: "yes",
-    indexedDB: "yes",
-    /* figmaScreenshots: [
-      BASE_CONTENT_URL + "/v1781003616/1_k0eadd.png",
-      BASE_CONTENT_URL + "/v1781003616/2_ybuyrv.png",
-      BASE_CONTENT_URL + "/v1781003617/3_yu3kjr.png",
-    ], */
-    detailsProjectInfo: {
-      figma:
-        "This is a quick flexible design. The main objective was improve user interface before I touch the code. It takes longer time if I improve directly in the code. I also made a few small improvements before the final release but the biggest improvement's work I made was in Figma. At last I think It is very good to improve as little as posible directly in the code, but the most on Figma so I don't wasted my time.",
-    },
-  },
-  {
     id: 20,
     updated_at: "Augusti 23, 2026",
     cardImgUrl: "/images/web-projects/task-reminder/prev.png",
