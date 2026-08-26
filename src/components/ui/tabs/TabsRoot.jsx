@@ -38,7 +38,7 @@ export default function TabsRoot() {
           Frontend+CMS
         </TabsTrigger>
         <TabsTrigger value="tab7" lengthProjects={0}>
-          Fullstack_JS
+          Fullstack_TS
         </TabsTrigger>
         {/* <TabsTrigger value="tab4" lengthProjects={0}>
           Mobile(hybrid)
