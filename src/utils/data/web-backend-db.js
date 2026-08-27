@@ -106,7 +106,7 @@ export const WEB_BACKEND_DB_DATA = [
   {
     id: 90,
     updated_at: "August 27, 2026",
-    cardImgUrl: "",
+    cardImgUrl: "/images/web-backend-db/gato-volador/preview4.png",
     title: "GatoVolador",
     isFavorite: true,
     version: "1.0.0",
@@ -114,7 +114,7 @@ export const WEB_BACKEND_DB_DATA = [
       "This is a vinyl inventory with up to 1,000 items that connects the owner with customers.",
     category: "Web+Backend+DB", //key to identify the project type
     language: "JavaScript",
-    framework: "React.js",
+    framework: "React-Vite",
     gitHubFrontendLink: "",
     gitHubBackendLink: "",
     linkToApp: "https://gatovolador.vercel.app/",
@@ -139,8 +139,8 @@ export const WEB_BACKEND_DB_DATA = [
     cms: "Sanity",
     optimizationFeatures: "Tanstack Query",
     figmaScreenshots: [
-      BASE_CONTENT_URL + "/v1787831670/1_sr6oqd.png",
-      BASE_CONTENT_URL + "/v1787831670/2_cjzkoy.png",
+      BASE_CONTENT_URL + "//v1787856453/0_srw1br.png",
+      BASE_CONTENT_URL + "/v1787856541/Screenshot_2026-08-27_204141_bqiod9.png",
       BASE_CONTENT_URL + "/v1787831670/3_eoos3e.png",
       BASE_CONTENT_URL + "/v1787831670/4_nva9zk.png",
       BASE_CONTENT_URL + "/v1787831670/5_riropf.png",

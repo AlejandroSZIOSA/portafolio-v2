@@ -12,7 +12,7 @@ export const MESSAGES_DATA = {
         Hi!😎 <br />
         My name is <strong id="intro_text_strong">Gabriel Alejandro.</strong>
         <br />I am an action oriented, highly focused and very curious{" "}
-        <strong>Frontend Developer Junior.</strong>
+        <strong>Frontend Developer.</strong>
       </>
     ),
   },
@@ -22,13 +22,13 @@ export const MESSAGES_DATA = {
         Hi!😎, <br></br>My name is
         <strong id="intro_text_strong"> Gabriel Alejandro.</strong> I am an
         action oriented, highly focused and very curious{" "}
-        <strong>Frontend Developer Junior.</strong>
+        <strong>Frontend Developer.</strong>
       </>
     ),
   },
   myCurrentFocus: {
     title: "My Current Focus",
-    subtitle: "React + CMS + Copilot Assistance",
+    subtitle: "Node.js + PostgreSQL + Copilot Assistance",
     content: `“Functionality”,"Architecture","Good practices" & “Good prompts”`,
   },
   myHobbies: {

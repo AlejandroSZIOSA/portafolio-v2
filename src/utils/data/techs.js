@@ -65,7 +65,7 @@ export const TECHS = [
     id: 11,
     title: "Sanity",
     imgUrl: "/icons/techs/sanity.svg",
-    level: "1/5",
+    level: "2/5",
   },
   {
     id: 12,

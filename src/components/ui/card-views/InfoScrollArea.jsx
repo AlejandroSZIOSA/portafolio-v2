@@ -74,6 +74,12 @@ export default function InfoScrollArea({ project }) {
         <span className={TECH_BOXES_STYLES}>{pagination && "Pagination"}</span>
       )}
 
+      {optimizationFeatures && (
+        <span className={TECH_BOXES_STYLES}>
+          Optimization: {optimizationFeatures}
+        </span>
+      )}
+
       {customHooks && <span className={TECH_BOXES_STYLES}>Custom Hooks</span>}
       {context && <span className={TECH_BOXES_STYLES}>Context</span>}
       {redux && <span className={TECH_BOXES_STYLES}>Redux</span>}
@@ -89,11 +95,6 @@ export default function InfoScrollArea({ project }) {
 
       {cms && <span className={TECH_BOXES_STYLES}>CMS:{cms}</span>}
 
-      {optimizationFeatures && (
-        <span className={TECH_BOXES_STYLES}>
-          Optimization: {optimizationFeatures}
-        </span>
-      )}
       {css && <span className={TECH_BOXES_STYLES}>{css}</span>}
       {cssLibrary && <span className={TECH_BOXES_STYLES}>{cssLibrary}</span>}
 
