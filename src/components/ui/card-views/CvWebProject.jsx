@@ -21,6 +21,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
     cardImgUrl,
     version,
     title,
+    category,
     isFavorite,
     description,
     responsiveUI,

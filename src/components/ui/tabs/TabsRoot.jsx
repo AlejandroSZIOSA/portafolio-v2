@@ -10,7 +10,8 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "./index";
 export default function TabsRoot() {
   const [activeTab, setActiveTab] = useState("tab1");
 
-  return (
+  /*   TODO:remove variantLayout
+   */ return (
     <Tabs value={activeTab} onValueChange={setActiveTab} defaultValue="tab1">
       <TabsList>
         <TabsTrigger
@@ -64,7 +65,7 @@ export default function TabsRoot() {
       <TabsContent value="tab6">
         <Accordion
           projects={getDataProjects("allWebBackendDbProjects")}
-          variationLayout="link-to-details"
+          variationLayout="no-link-to-details"
         />
       </TabsContent>
 
