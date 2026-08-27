@@ -117,13 +117,13 @@ export const WEB_DATA = [
     isFavorite: true,
     version: "Version 1.6.4",
     description:
-      "My app helps people manage busy schedules by allowing them to create, organize, and prioritize tasks and notes, ensuring that important tasks never get missed.",
+      "This app manage busy schedules, ensuring that important tasks or notes never get missed.",
     category: "Web-client",
     language: "",
     framework: "React+Vite",
     linkToApp: "https://jolly-mochi-2009b8.netlify.app/",
     gitHubLink: "",
-    isNew: true,
+    isNew: false,
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
     typeScript: "yes",
@@ -140,6 +140,7 @@ export const WEB_DATA = [
     api: "",
     localStorage: "yes",
     indexedDB: "yes",
+
     figmaScreenshots: [
       BASE_CONTENT_URL + "/v1786969125/1_h9a9zn.png",
       BASE_CONTENT_URL + "/v1786969127/2_mpl7cl.png",

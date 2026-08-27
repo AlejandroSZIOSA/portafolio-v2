@@ -19,6 +19,7 @@ export default function InfoScrollArea({ project }) {
     api,
     tests,
     cms,
+    optimizationFeatures,
     css,
     cssLibrary,
     wcag,
@@ -88,6 +89,11 @@ export default function InfoScrollArea({ project }) {
 
       {cms && <span className={TECH_BOXES_STYLES}>CMS:{cms}</span>}
 
+      {optimizationFeatures && (
+        <span className={TECH_BOXES_STYLES}>
+          Optimization: {optimizationFeatures}
+        </span>
+      )}
       {css && <span className={TECH_BOXES_STYLES}>{css}</span>}
       {cssLibrary && <span className={TECH_BOXES_STYLES}>{cssLibrary}</span>}
 
