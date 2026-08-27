@@ -115,7 +115,7 @@ export const WEB_DATA = [
     cardImgUrl: "/images/web-projects/task-reminder/prev.png",
     title: "Tasks Reminder",
     isFavorite: true,
-    version: "Version 1.6.4",
+    version: "1.6.4",
     description:
       "This app manage busy schedules, ensuring that important tasks or notes never get missed.",
     category: "Web-client",

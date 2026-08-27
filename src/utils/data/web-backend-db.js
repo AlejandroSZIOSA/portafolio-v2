@@ -111,7 +111,7 @@ export const WEB_BACKEND_DB_DATA = [
     isFavorite: true,
     version: "1.0.0",
     description:
-      "This is a vinyl inventory with up to 1,000 items that connects the owner with customers. (Mini-fullstack TS)",
+      "This is a vinyl inventory with up to 1,000 items that connects the owner with customers.",
     category: "Web+Backend+DB", //key to identify the project type
     language: "JavaScript",
     framework: "React.js",
