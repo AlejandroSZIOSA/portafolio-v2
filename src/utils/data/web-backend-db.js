@@ -10,7 +10,7 @@ export const WEB_BACKEND_DB_DATA = [
     isFavorite: false,
     version: "Beta",
     description: "Learning drive theory app(Internship)",
-    category: "Web+Backend+DB", //key to identify the project type
+    category: "Frontend+CMS", //key to identify the project type
     language: "JavaScript",
     framework: "React+Next.js",
     gitHubFrontendLink:
@@ -112,7 +112,7 @@ export const WEB_BACKEND_DB_DATA = [
     version: "1.0.0",
     description:
       "This is a vinyl inventory with up to 1,000 items that connects the owner with customers.",
-    category: "Web+Backend+DB", //key to identify the project type
+    category: "Frontend+CMS", //key to identify the project type
     language: "JavaScript",
     framework: "React-Vite",
     gitHubFrontendLink: "",

@@ -23,13 +23,13 @@ export default function TabsRoot() {
           value="tab2"
           lengthProjects={getDataProjects("allWebApis").length}
         >
-          Web+openAPI
+          Web-openAPI
         </TabsTrigger>
         <TabsTrigger
           value="tab3"
           lengthProjects={getDataProjects("allWebPrivateApis").length}
         >
-          Web+privateAPI
+          Web-privateAPI
         </TabsTrigger>
         <TabsTrigger
           value="tab6"
