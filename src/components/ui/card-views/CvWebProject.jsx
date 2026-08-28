@@ -94,13 +94,11 @@ export default function CvWebProject({ project, label, variationLayout }) {
   return (
     <div className="flex flex-col w-[330px] max-w-sm border-2 border-[#2FA4D7] rounded-lg  bg-[#2FA4D7] text-left lg:border-4 lg:h-min">
       <div
-        className={`flex py-1 bg-[#2FA4D7] text-xs font-medium rounded-t-lg lg:text-sm lg:rounded-none ${!label ? "justify-center" : "justify-between"}`}
+        className={`flex py-1 bg-[#2FA4D7] text-xs font-medium rounded-t-lg lg:text-sm lg:rounded-none ${!label ? "justify-end" : "justify-between"}`}
       >
         {label && <div className=" flex ml-3">{label}</div>}
 
-        <div className={`${label ? "mr-3 ml-1" : "mr-0 ml-0"} `}>
-          {updated_at}
-        </div>
+        <div className={`${label ? "mr-3 ml-1" : "mr-3"} `}>{updated_at}</div>
       </div>
       {/* FIX:Problem whit the header cover sticky position when Image container uses relative position and the Image is using fill attribute. */}
       <div className="flex justify-center bg-black">

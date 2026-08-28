@@ -1,6 +1,6 @@
 export const CONSTANTS = {
   USE_MEDIA_MAX_WIDTH: "(max-width: 1024px)", //global mobile breakpoint for useMedia library
-  CURRENT_UPDATED_DATE: "Augusti 8, 2026",
+  CURRENT_UPDATED_DATE: "Augusti 28, 2026",
   BASE_CONTENT_URL: "https://res.cloudinary.com/dl8fppp0t/image/upload",
 };
 
@@ -28,7 +28,7 @@ export const MESSAGES_DATA = {
   },
   myCurrentFocus: {
     title: "My Current Focus",
-    subtitle: "Node.js + PostgreSQL + Copilot Assistance",
+    subtitle: "Node.js(Ts), PostgreSQL, Copilot Assistance",
     content: `“Functionality”,"Architecture","Good practices" & “Good prompts”`,
   },
   myHobbies: {

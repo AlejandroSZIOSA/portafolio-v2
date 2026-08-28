@@ -112,7 +112,7 @@ export const WEB_BACKEND_DB_DATA = [
     isFavorite: true,
     version: "1.0.0",
     description:
-      "This is a vinyl inventory with up to 1,000 items that connects the owner with customers.",
+      "A vinyl inventory system with up to 1,000 items, allowing the owner to manage their collection and update products without touching the frontend code.",
     category: "Frontend+CMS", //key to identify the project type
     language: "JavaScript",
     framework: "React-Vite",
@@ -151,7 +151,7 @@ export const WEB_BACKEND_DB_DATA = [
     ],
     detailsProjectInfo: {
       figma:
-        "The Figma design for the Driver Theory Trivia app focuses on creating an intuitive and user-friendly interface. The design includes a clean layout with clear navigation, making it easy for users to sign up, log in, and access the trivia content. The color scheme and typography are chosen to enhance readability and provide a visually appealing experience. The design also incorporates responsive elements to ensure a seamless experience across different devices, allowing users to enjoy the app on both mobile and desktop platforms.",
+        "This Figma design for the GatoVolador-MVP It is a quick prototype that focuses on developing a clean, functional, and accessible interface based on essential WCAG guidelines. The design combines readable typography, a balanced color scheme, and responsive layouts to provide a consistent user experience across different devices.",
     },
   },
 ];
