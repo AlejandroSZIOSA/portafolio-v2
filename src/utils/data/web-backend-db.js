@@ -12,7 +12,7 @@ export const WEB_BACKEND_DB_DATA = [
     description: "Learning drive theory app(Internship)",
     category: "Frontend+CMS", //key to identify the project type
     language: "JavaScript",
-    framework: "React+Next.js",
+    framework: "React-Next.js",
     /*   linkToApp: "", */
     gitHubFrontendLink:
       "https://github.com/AlejandroSZIOSA/driver-course-wa.git",
@@ -107,7 +107,7 @@ export const WEB_BACKEND_DB_DATA = [
   {
     id: 90,
     updated_at: "August 27, 2026",
-    cardImgUrl: "/images/web-backend-db/gato-volador/preview4.png",
+    cardImgUrl: "/images/web-backend-db/gato-volador/preview.png",
     title: "GatoVolador",
     isFavorite: true,
     version: "1.0.0",

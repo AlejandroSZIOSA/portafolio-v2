@@ -12,7 +12,7 @@ export const WEB_DATA = [
     version: "Stable",
     description:
       "Shows some clocks from different locations as well Timers.(Workshop)",
-    category: "Web-client",
+    category: "Web-Client",
     language: "JavaScript",
     framework: "React-Vite",
     linkToApp: "https://clock-app-peach.vercel.app/",
@@ -43,7 +43,7 @@ export const WEB_DATA = [
     version: "Stable",
     description:
       "Manages some activities using Redux and Local Storage.(Workshop)",
-    category: "Web-client",
+    category: "Web-Client",
     language: "JavaScript",
     framework: "React-Next.js",
     linkToApp: "https://next-todolist-redux.vercel.app/",
@@ -73,7 +73,7 @@ export const WEB_DATA = [
     version: "Stable",
     description:
       "A commercial frontend prototype that manages a vinyl stack inventory. (Exam)",
-    category: "Web-client",
+    category: "Web-Client",
     language: "",
     framework: "React-Vite",
     linkToApp: "https://vinilo-volador-web.vercel.app/",
@@ -118,7 +118,7 @@ export const WEB_DATA = [
     version: "1.6.4",
     description:
       "This app manage busy schedules, ensuring that important tasks or notes never get missed.",
-    category: "Web-client",
+    category: "Web-Client",
     language: "",
     framework: "React-Vite",
     linkToApp: "https://jolly-mochi-2009b8.netlify.app/",

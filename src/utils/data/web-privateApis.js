@@ -8,7 +8,7 @@ export const WEB_PRIVATE_APIS = [
     version: "Stable",
     description:
       "Search and display weather information from different locations even from your current location.",
-    category: "Web+privateAPI",
+    category: "Web-PrivateAPI",
     language: "Typescript",
     framework: "React-Vite",
     linkToApp: "https://weather-ts-five.vercel.app/",
@@ -40,7 +40,7 @@ export const WEB_PRIVATE_APIS = [
     isFavorite: true,
     version: "Stable",
     description: `Search and discover movies from a public DB.(Workshop)`,
-    category: "Web+privateAPI",
+    category: "Web-PrivateAPI",
     language: "Typescript",
     framework: "React-Vite",
     linkToApp: "https://movies-app-v.vercel.app/home",

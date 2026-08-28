@@ -92,19 +92,15 @@ export default function CvWebProject({ project, label, variationLayout }) {
   }
 
   return (
-    // TODO:Fix border Children element in mobile view
     <div className="flex flex-col w-[330px] max-w-sm border-2 border-[#2FA4D7] rounded-lg  bg-[#2FA4D7] text-left lg:border-4 lg:h-min">
-      <div className="flex py-1 justify-between bg-[#2FA4D7] text-xs rounded-t-lg lg:text-sm lg:rounded-none">
-        <div className=" flex ml-3">{label}</div>
-        {/* <span className="inline-flex">
-          <Image
-            src={UPDATED_ICON_DARK}
-            width={isMobile ? "16" : "20"}
-            height="auto"
-            alt="clarity update white"
-          /> */}
-        <div className="mr-3 ml-1">{updated_at}</div>
-        {/*  </span> */}
+      <div
+        className={`flex py-1 bg-[#2FA4D7] text-xs rounded-t-lg lg:text-sm lg:rounded-none ${!label ? "justify-center" : "justify-between"}`}
+      >
+        {label && <div className=" flex ml-3">{label}</div>}
+
+        <div className={`${label ? "mr-3 ml-1" : "mr-0 ml-0"} `}>
+          {updated_at}
+        </div>
       </div>
       {/* FIX:Problem whit the header cover sticky position when Image container uses relative position and the Image is using fill attribute. */}
       <div className="flex justify-center bg-black">
@@ -123,7 +119,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
         )}
       </div>
       <div className=" flex justify-center py-1 text-xs bg-[#2FA4D7] lg:text-sm lg:pt-1">
-        ver: {version}
+        Ver: {version}
       </div>
 
       <div className="flex justify-center items-center mt-2 mb-1">

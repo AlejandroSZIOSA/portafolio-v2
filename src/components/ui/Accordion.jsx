@@ -33,7 +33,7 @@ export default function Accordion({ projects, variationLayout }) {
             {openIndex === index && (
               <CvWebProject
                 project={item}
-                label={item.category}
+                label={null}
                 variationLayout={variationLayout}
               />
             )}
@@ -45,7 +45,7 @@ export default function Accordion({ projects, variationLayout }) {
         <li className="inline-flex px-3" key={index}>
           <CvWebProject
             project={item}
-            label={item.category}
+            label={null}
             variationLayout={variationLayout}
           />
         </li>
