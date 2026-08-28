@@ -94,7 +94,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
   return (
     <div className="flex flex-col w-[330px] max-w-sm border-2 border-[#2FA4D7] rounded-lg  bg-[#2FA4D7] text-left lg:border-4 lg:h-min">
       <div
-        className={`flex py-1 bg-[#2FA4D7] text-xs rounded-t-lg lg:text-sm lg:rounded-none ${!label ? "justify-center" : "justify-between"}`}
+        className={`flex py-1 bg-[#2FA4D7] text-xs font-medium rounded-t-lg lg:text-sm lg:rounded-none ${!label ? "justify-center" : "justify-between"}`}
       >
         {label && <div className=" flex ml-3">{label}</div>}
 
