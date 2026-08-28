@@ -13,6 +13,7 @@ export const WEB_BACKEND_DB_DATA = [
     category: "Frontend+CMS", //key to identify the project type
     language: "JavaScript",
     framework: "React+Next.js",
+    /*   linkToApp: "", */
     gitHubFrontendLink:
       "https://github.com/AlejandroSZIOSA/driver-course-wa.git",
     gitHubBackendLink:
