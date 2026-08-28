@@ -119,7 +119,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
         )}
       </div>
       <div className=" flex justify-center py-1 text-xs bg-[#2FA4D7] lg:text-sm lg:pt-1">
-        Ver: {version}
+        Version: {version}
       </div>
 
       <div className="flex justify-center items-center mt-2 mb-1">
