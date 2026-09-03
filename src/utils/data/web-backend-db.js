@@ -118,7 +118,7 @@ export const WEB_BACKEND_DB_DATA = [
     framework: "React-Vite",
     gitHubFrontendLink: "",
     gitHubBackendLink: "",
-    linkToApp: "https://gatovolador.vercel.app/",
+    linkToApp: "https://gatovoladorv1.vercel.app/",
     browsers: ["Chrome"],
     deviceBrowserSettings: "Samsung Galaxy S8+",
     isNew: true,
