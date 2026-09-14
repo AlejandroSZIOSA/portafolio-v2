@@ -1,6 +1,6 @@
 export const CONSTANTS = {
   USE_MEDIA_MAX_WIDTH: "(max-width: 1024px)", //global mobile breakpoint for useMedia library
-  CURRENT_UPDATED_DATE: "Augusti 28, 2026",
+  CURRENT_UPDATED_DATE: "September 14, 2026",
   BASE_CONTENT_URL: "https://res.cloudinary.com/dl8fppp0t/image/upload",
 };
 
@@ -11,7 +11,7 @@ export const MESSAGES_DATA = {
       <>
         Hi!😎 <br />
         My name is <strong id="intro_text_strong">Gabriel Alejandro.</strong>
-        <br />I am an action oriented, highly focused and very curious{" "}
+        <br />I am an action oriented, highly focused and curious{" "}
         <strong>Frontend Developer.</strong>
       </>
     ),
@@ -21,7 +21,7 @@ export const MESSAGES_DATA = {
       <>
         Hi!😎, <br></br>My name is
         <strong id="intro_text_strong"> Gabriel Alejandro.</strong> I am an
-        action oriented, highly focused and very curious{" "}
+        action oriented, highly focused and curious{" "}
         <strong>Frontend Developer.</strong>
       </>
     ),
@@ -37,6 +37,6 @@ export const MESSAGES_DATA = {
   },
   myWish: {
     title: "My Wish",
-    content: `”Create, maintain and publish fullstack TypeScript solutions”`,
+    content: `”Create, Maintain and Deploy fullstack TypeScript solutions”`,
   },
 };

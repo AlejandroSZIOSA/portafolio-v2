@@ -24,7 +24,7 @@ export default function IntroSection() {
             {MESSAGES_DATA.meOnMobile.content}
           </p>
         </div>
-        <Message variant="my-current-focus">
+        {/*   <Message variant="my-current-focus">
           <article>
             <h3>
               <span className="mr-2">🎯</span>
@@ -35,7 +35,7 @@ export default function IntroSection() {
             </p>
             <p>{MESSAGES_DATA.myCurrentFocus.content}</p>
           </article>
-        </Message>
+        </Message> */}
         <Message variant="my-hobbies">
           <article>
             <h3>{MESSAGES_DATA.myHobbies.title}</h3>
@@ -60,8 +60,8 @@ export default function IntroSection() {
             <h3>
               <strong>{MESSAGES_DATA.myHobbies.title}</strong>
             </h3>
-            <p className="text-center p-1">{MESSAGES_DATA.myHobbies.content}</p>
-            <h3>
+            <p className="text-left p-1">{MESSAGES_DATA.myHobbies.content}</p>
+            {/* <h3>
               <span className="mr-2 text-base">🎯</span>
               <strong>{MESSAGES_DATA.myCurrentFocus.title}</strong>
             </h3>
@@ -74,11 +74,11 @@ export default function IntroSection() {
               <p className="text-justify">
                 {MESSAGES_DATA.myCurrentFocus.content}
               </p>
-            </div>
+            </div> */}
             <h3>
               <strong>{MESSAGES_DATA.myWish.title}</strong>
             </h3>
-            <p className="text-center p-1">{MESSAGES_DATA.myWish.content}</p>
+            <p className="text-left p-1">{MESSAGES_DATA.myWish.content}</p>
           </article>
         </Message>
         <div className="hidden lg:flex lg:items-center lg:justify-center lg:w-full">

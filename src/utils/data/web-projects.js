@@ -111,11 +111,11 @@ export const WEB_DATA = [
   },
   {
     id: 20,
-    updated_at: "Augusti 23, 2026",
+    updated_at: "September 12, 2026",
     cardImgUrl: "/images/web-projects/task-reminder/prev.png",
     title: "Tasks Reminder",
     isFavorite: true,
-    version: "1.6.4",
+    version: "1.6.5 Final",
     description:
       "This app manage busy schedules, ensuring that important tasks or notes never get missed.",
     category: "Web-Client",

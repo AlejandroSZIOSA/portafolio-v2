@@ -132,7 +132,9 @@ export default function CvWebProject({ project, label, variationLayout }) {
         )}
       </div>
       <div className="px-2 py-1 lg:pt-0 lg:px-4 lg:pb-2">
-        <p className="text-gray-700 ml-1">{description}</p>
+        <p className="text-gray-700 ml-1 h-20 overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-transparent">
+          {description}
+        </p>
       </div>
       <InfoScrollArea project={project} />
       <div

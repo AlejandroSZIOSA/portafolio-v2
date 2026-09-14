@@ -15,16 +15,15 @@ export default function Message({ children, variant }) {
       break;
     case "center-desktop":
       baseContent =
-        "hidden lg:flex lg:w-[500px] lg:items-center lg:justify-center lg:ml-16 bg-[#9CB3A5] border-black rounded-xl";
+        "hidden lg:flex lg:w-[400px] lg:items-center lg:justify-center lg:ml-16 bg-[#9CB3A5] border-black rounded-xl";
       break;
     default:
       baseContent = "";
       break;
   }
-
   return (
     <div
-      className={`inline-flex h-fit w-11/12 border-2 p-2 lg:border-4 mt-2 lg:mt-14 ${baseContent} text-center font-mono lg:p-3`}
+      className={`inline-flex h-fit w-11/12 border-2 p-2 lg:border-[3px] mt-2 lg:mt-28 ${baseContent} text-center font-mono lg:p-3`}
     >
       {children}
     </div>

@@ -79,7 +79,6 @@ export const TECHS = [
     imgUrl: "/icons/techs/express.svg",
     level: "1/5",
   },
-
   {
     id: 14,
     title: "MongoDB",
@@ -88,12 +87,18 @@ export const TECHS = [
   },
   {
     id: 15,
+    title: "PostgreSQL",
+    imgUrl: "/icons/techs/postgresql-dark.svg",
+    level: "1/5",
+  },
+  {
+    id: 16,
     title: "Gimp",
     imgUrl: "/icons/techs/gimp.svg",
     level: "3/5",
   },
   {
-    id: 16,
+    id: 17,
     title: "Figma",
     imgUrl: "/icons/techs/figma.svg",
     level: "2/5",
