@@ -8,6 +8,9 @@ import DividerHeaderTitle from "@/components/ui/DividerHeaderTitle";
 import LogoHeader from "@/components/header/LogoHeader";
 import UpdatedDatePanel from "@/components/header/UpdatedDatePanel";
 import NavBar from "@/components/header/NavBar";
+import me from "../../public/images/me/me-light_b.png";
+import Image from "next/image";
+import LanguagePanel from "../../src/components/ui/panels/LanguagePanel";
 
 import Footer from "@/components/footer/Footer";
 import { useMedia } from "use-media";
@@ -23,35 +26,82 @@ export default function Home() {
         <NavBar variation="home-page" />
       </header>
 
-      <main className="flex flex-col w-full items-center lg:items-start mx-auto">
-        <IntroSection />
-        <DividerHeaderTitle sectionTitle="My Tech Stack" variant="both-lines" />
-        <TechSection />
-        <section className="block lg:flex w-full">
-          <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[#FFE4C4]">
-            {isMobile ? (
-              <DividerHeaderTitle
-                sectionTitle="Latest App"
-                variant="both-lines"
-              />
-            ) : (
-              <div className="lg:h-14 lg:content-center lg:text-center text-[#EAEFEF] bg-[#25343F]">
-                <h2>Latest App</h2>
-              </div>
-            )}
-            <LatestProjectsSection />
-          </div>
-          <div className="lg:w-full lg:h-content">
+      {isMobile ? (
+        <div id="mobileLayout">
+          <main className="flex flex-col w-full items-center lg:items-start mx-auto">
+            <IntroSection />
             <DividerHeaderTitle
-              sectionTitle="Apps Gallery"
-              putSectionId="previous_projects_divider"
-              variant="top-line"
+              sectionTitle="My Tech Stack"
+              variant="both-lines"
             />
-            <ProjectsSection />
-            {/* <div className="h-8 border-black border-b lg:hidden"></div> */}
-          </div>
-        </section>
-      </main>
+            <TechSection />
+            <section className="block lg:flex w-full">
+              <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[#FFE4C4]">
+                {isMobile ? (
+                  <DividerHeaderTitle
+                    sectionTitle="Latest App"
+                    variant="both-lines"
+                  />
+                ) : (
+                  <div className="lg:h-14 lg:content-center lg:text-center text-[#EAEFEF] bg-[#25343F]">
+                    <h2>Latest App</h2>
+                  </div>
+                )}
+                <LatestProjectsSection />
+              </div>
+              <div className="lg:w-full lg:h-content">
+                <DividerHeaderTitle
+                  sectionTitle="Apps Gallery"
+                  putSectionId="previous_projects_divider"
+                  variant="top-line"
+                />
+                <ProjectsSection />
+                {/* <div className="h-8 border-black border-b lg:hidden"></div> */}
+              </div>
+            </section>
+          </main>
+        </div>
+      ) : (
+        <div id="desktopLayout" className="flex">
+          <aside>
+            <div>
+              <Image
+                src={me}
+                className="rounded-[15%] w-[310px] lg:w-[500px]"
+                height="auto"
+                alt="no picture"
+                loading="eager" //is like priority in next/image, it forces the image to load as soon as possible, which is good for above-the-fold images like profile pictures.
+              />
+              <LanguagePanel />
+            </div>
+          </aside>
+          <main className="flex flex-col items-center lg:items-start mx-auto">
+            <DividerHeaderTitle
+              sectionTitle="My Tech Stack"
+              variant="both-lines"
+            />
+            <TechSection />
+            <section className="block lg:flex w-full">
+              <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[#FFE4C4]">
+                <div className="lg:h-14 lg:content-center lg:text-center text-[#EAEFEF] bg-[#25343F]">
+                  <h2>Latest App</h2>
+                </div>
+                <LatestProjectsSection />
+              </div>
+              <div className="lg:w-full lg:h-content">
+                <DividerHeaderTitle
+                  sectionTitle="Apps Gallery"
+                  putSectionId="previous_projects_divider"
+                  variant="top-line"
+                />
+                <ProjectsSection />
+                {/* <div className="h-8 border-black border-b lg:hidden"></div> */}
+              </div>
+            </section>
+          </main>
+        </div>
+      )}
+
       <Footer />
     </>
   );
