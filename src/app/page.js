@@ -65,27 +65,31 @@ export default function Home() {
         </div>
       ) : (
         <div id="desktopLayout" className="flex">
-          <aside className="lg:w-[25%] border-r-2 border-black">
+          <aside className="lg:w-[22%] border-r-2 border-black">
             <div className="flex flex-col items-center">
               <Image
                 src={me}
-                className="rounded-[15%] lg:w-[400px]"
+                className="rounded-[15%] w-[400px] pt-4"
                 height="auto"
                 alt="no picture"
                 loading="eager" //is like priority in next/image, it forces the image to load as soon as possible, which is good for above-the-fold images like profile pictures.
               />
               <LanguagePanel />
-              <div className="w-[90%]">
+              <div className="w-[90%] mb-4 bg-[#9CB3A5] border-black rounded-xl">
                 <p className="font-mono text-justify p-4 text-xl">
                   {MESSAGES_DATA.meOnMobile.content}
                 </p>
-                <article>
-                  <h3>{MESSAGES_DATA.myHobbies.title}</h3>
-                  <p>{MESSAGES_DATA.myHobbies.content}</p>
+                <article className="p-4">
+                  <h4>{MESSAGES_DATA.myHobbies.title}</h4>
+                  <p className="font-mono text-justify text-xl">
+                    {MESSAGES_DATA.myHobbies.content}
+                  </p>
                 </article>
-                <article>
-                  <h3>{MESSAGES_DATA.myWish.title}</h3>
-                  <p>{MESSAGES_DATA.myWish.content}</p>
+                <article className="p-4">
+                  <h4>{MESSAGES_DATA.myWish.title}</h4>
+                  <p className="font-mono text-justify text-xl">
+                    {MESSAGES_DATA.myWish.content}
+                  </p>
                 </article>
               </div>
             </div>

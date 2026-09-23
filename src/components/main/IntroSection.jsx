@@ -11,7 +11,7 @@ export default function IntroSection() {
       <div>
         <Image
           src={me}
-          className="rounded-[15%] w-[310px] lg:w-[500px]"
+          className="rounded-[15%] w-[320px]"
           height="auto"
           alt="no picture"
           loading="eager" //is like priority in next/image, it forces the image to load as soon as possible, which is good for above-the-fold images like profile pictures.
