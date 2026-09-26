@@ -33,7 +33,7 @@ export const MESSAGES_DATA = {
   },
   myHobbies: {
     title: "My Hobbies",
-    content: `“It-support”,“Training”,”International Checkers”,”Ukelele”`,
+    content: `“It-support”,“Training”,”International Checkers”`,
   },
   myWish: {
     title: "My Wish",

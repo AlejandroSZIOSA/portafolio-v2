@@ -105,8 +105,8 @@ export default function CvWebProject({ project, label, variationLayout }) {
         {cardImgUrl ? (
           <Image
             src={cardImgUrl}
-            width={370}
-            height={100}
+            width={326}
+            height={244}
             alt="no card image"
             priority
           />

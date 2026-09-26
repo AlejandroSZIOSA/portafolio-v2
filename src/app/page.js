@@ -30,28 +30,28 @@ export default function Home() {
 
       {isMobile ? (
         <div id="mobileLayout">
-          <main className="flex flex-col w-full items-center lg:items-start mx-auto">
+          <main className="flex flex-col w-full items-center mx-auto">
             <IntroSection />
             <DividerHeaderTitle
               sectionTitle="My Tech Stack"
               variant="both-lines"
             />
             <TechSection />
-            <section className="block lg:flex w-full">
-              <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[#FFE4C4]">
+            <section className="w-full">
+              <div>
                 {isMobile ? (
                   <DividerHeaderTitle
                     sectionTitle="Latest App"
                     variant="both-lines"
                   />
                 ) : (
-                  <div className="lg:h-14 lg:content-center lg:text-center text-[#EAEFEF] bg-[#25343F]">
+                  <div className=" text-[#EAEFEF] bg-[#25343F]">
                     <h2>Latest App</h2>
                   </div>
                 )}
                 <LatestProjectsSection />
               </div>
-              <div className="lg:w-full lg:h-content">
+              <div>
                 <DividerHeaderTitle
                   sectionTitle="Apps Gallery"
                   putSectionId="previous_projects_divider"
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       ) : (
         <div id="desktopLayout" className="flex">
-          <aside className="lg:w-[22%] border-r-2 border-black">
+          <aside className="w-[22%] border-r-2 border-black">
             <div className="flex flex-col items-center">
               <Image
                 src={me}
@@ -80,13 +80,13 @@ export default function Home() {
                   {MESSAGES_DATA.meOnMobile.content}
                 </p>
                 <article className="p-4">
-                  <h4>{MESSAGES_DATA.myHobbies.title}</h4>
-                  <p className="font-mono text-justify text-xl">
+                  <h4 className="font-bold">{MESSAGES_DATA.myHobbies.title}</h4>
+                  <p className="font-mono text-justify text-xl line-clamp-3">
                     {MESSAGES_DATA.myHobbies.content}
                   </p>
                 </article>
                 <article className="p-4">
-                  <h4>{MESSAGES_DATA.myWish.title}</h4>
+                  <h4 className="font-bold">{MESSAGES_DATA.myWish.title}</h4>
                   <p className="font-mono text-justify text-xl">
                     {MESSAGES_DATA.myWish.content}
                   </p>
@@ -94,17 +94,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:h-14 lg:content-center lg:text-center text-[#EAEFEF] bg-[#25343F]">
-              <h2>Latest App</h2>
+            <div className="h-14 content-center text-[#EAEFEF] bg-[#25343F]">
+              <h2 className="text-center">Latest App</h2>
             </div>
             <LatestProjectsSection />
           </aside>
-          <main className="flex flex-col items-center lg:items-start mx-auto lg:w-[100%]">
+          <main className="flex flex-col items-start mx-auto w-[100%]">
             <section
               id="intro_section"
-              className="lg:flex lg:justify-center lg:h-[30%] lg:w-[100%] lg:items-center"
+              className="flex justify-center h-[30%] w-[100%] items-center"
             >
-              <div className="lg:flex lg:items-center lg:justify-center lg:w-full">
+              <div className="flex items-center justify-center w-full">
                 <h1 className="font-mea text-7xl"> Always in Action</h1>
               </div>
             </section>
@@ -114,9 +114,9 @@ export default function Home() {
               variant="both-lines"
             />
             <TechSection />
-            <section className="lg:flex lg:w-[100%]">
-              <div className="lg:border-r-2 lg:border-t-2 lg:border-black lg:bg-[#FFE4C4]"></div>
-              <div className="lg:w-full lg:h-content">
+            <section className="flex w-[100%]">
+              <div className="border-r-2 border-t-2 border-black bg-[#FFE4C4]"></div>
+              <div className="w-full h-content">
                 <DividerHeaderTitle
                   sectionTitle="Apps Gallery"
                   putSectionId="previous_projects_divider"
