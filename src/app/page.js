@@ -102,7 +102,7 @@ export default function Home() {
           <main className="flex flex-col items-start mx-auto w-[100%]">
             <section
               id="intro_section"
-              className="flex justify-center h-[30%] w-[100%] items-center"
+              className="flex justify-center h-[35%] w-[100%] items-center"
             >
               <div className="flex items-center justify-center w-full">
                 <h1 className="font-mea text-7xl"> Always in Action</h1>
@@ -115,7 +115,7 @@ export default function Home() {
             />
             <TechSection />
             <section className="flex w-[100%]">
-              <div className="border-r-2 border-t-2 border-black bg-[#FFE4C4]"></div>
+              <div className="border-t-2 border-black bg-[#FFE4C4]"></div>
               <div className="w-full h-content">
                 <DividerHeaderTitle
                   sectionTitle="Apps Gallery"
