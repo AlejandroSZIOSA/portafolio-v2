@@ -75,18 +75,22 @@ export default function Home() {
                 loading="eager" //is like priority in next/image, it forces the image to load as soon as possible, which is good for above-the-fold images like profile pictures.
               />
               <LanguagePanel />
-              <div className="w-[90%] mb-4 bg-[#9CB3A5] border-black rounded-xl">
+              <div className="w-[90%] mb-4">
                 <p className="font-mono text-justify p-4 text-xl">
                   {MESSAGES_DATA.meOnMobile.content}
                 </p>
                 <article className="p-4">
-                  <h4 className="font-bold">{MESSAGES_DATA.myHobbies.title}</h4>
+                  <h4 className="font-bold text-center">
+                    {MESSAGES_DATA.myHobbies.title}
+                  </h4>
                   <p className="font-mono text-justify text-xl line-clamp-3">
                     {MESSAGES_DATA.myHobbies.content}
                   </p>
                 </article>
                 <article className="p-4">
-                  <h4 className="font-bold">{MESSAGES_DATA.myWish.title}</h4>
+                  <h4 className="font-bold text-center">
+                    {MESSAGES_DATA.myWish.title}
+                  </h4>
                   <p className="font-mono text-justify text-xl">
                     {MESSAGES_DATA.myWish.content}
                   </p>
