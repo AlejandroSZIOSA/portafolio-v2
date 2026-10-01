@@ -61,20 +61,7 @@ export default function IntroSection() {
               <strong>{MESSAGES_DATA.myHobbies.title}</strong>
             </h3>
             <p className="text-left p-1">{MESSAGES_DATA.myHobbies.content}</p>
-            {/* <h3>
-              <span className="mr-2 text-base">🎯</span>
-              <strong>{MESSAGES_DATA.myCurrentFocus.title}</strong>
-            </h3>
-            <div className="p-1">
-              {MESSAGES_DATA.myCurrentFocus.subtitle && (
-                <p className="text-center">
-                  <strong>{MESSAGES_DATA.myCurrentFocus.subtitle}</strong>
-                </p>
-              )}
-              <p className="text-justify">
-                {MESSAGES_DATA.myCurrentFocus.content}
-              </p>
-            </div> */}
+
             <h3>
               <strong>{MESSAGES_DATA.myWish.title}</strong>
             </h3>

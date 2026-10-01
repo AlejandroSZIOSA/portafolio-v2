@@ -1,6 +1,6 @@
 export const CONSTANTS = {
   USE_MEDIA_MAX_WIDTH: "(max-width: 1024px)", //global mobile breakpoint for useMedia library
-  CURRENT_UPDATED_DATE: "September 14, 2026",
+  CURRENT_UPDATED_DATE: "October 1, 2026",
   BASE_CONTENT_URL: "https://res.cloudinary.com/dl8fppp0t/image/upload",
 };
 
