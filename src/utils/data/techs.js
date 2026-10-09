@@ -87,16 +87,16 @@ export const TECHS = [
   },
   {
     id: 15,
-    title: "PostgreSQL",
-    imgUrl: "/icons/techs/postgresql-dark.svg",
-    level: "1/5",
-  },
-  {
-    id: 16,
     title: "mySQL",
     imgUrl: "/icons/techs/mysql-dark.svg",
     level: "1/5",
   },
+  /* {
+    id: 16,
+    title: "PostgreSQL",
+    imgUrl: "/icons/techs/postgresql-dark.svg",
+    level: "1/5",
+  }, */
   {
     id: 17,
     title: "Gimp",
