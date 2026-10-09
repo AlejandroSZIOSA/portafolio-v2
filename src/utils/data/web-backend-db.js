@@ -106,7 +106,7 @@ export const WEB_BACKEND_DB_DATA = [
   },
   {
     id: 90,
-    updated_at: "August 27, 2026",
+    updated_at: "October 4, 2026",
     cardImgUrl: "/images/web-backend-db/gato-volador/gvprev.png",
     title: "GatoVolador",
     isFavorite: true,
