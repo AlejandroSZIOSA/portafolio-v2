@@ -93,12 +93,18 @@ export const TECHS = [
   },
   {
     id: 16,
+    title: "mySQL",
+    imgUrl: "/icons/techs/mysql-dark.svg",
+    level: "1/5",
+  },
+  {
+    id: 17,
     title: "Gimp",
     imgUrl: "/icons/techs/gimp.svg",
     level: "3/5",
   },
   {
-    id: 17,
+    id: 18,
     title: "Figma",
     imgUrl: "/icons/techs/figma.svg",
     level: "2/5",
