@@ -104,7 +104,7 @@ export const WEB_DATA = [
       BASE_CONTENT_URL + "/v1774122887/8_ahqh4h.png",
     ],
 
-    detailsProjectInfo: {
+    detailsFigmaInfo: {
       figma:
         "This project was developed following a Figma design. The design includes a mobile and desktop version, showcasing a vinyl stack inventory management system. The Figma design emphasizes a user-friendly interface with intuitive navigation, allowing users to easily manage their vinyl collection. The design incorporates responsive elements to ensure a seamless experience across different devices.",
     },
@@ -147,7 +147,7 @@ export const WEB_DATA = [
       BASE_CONTENT_URL + "/v1786969126/3_hmas3d.png",
       BASE_CONTENT_URL + "/v1786969126/4_w1lufk.png",
     ],
-    detailsProjectInfo: {
+    detailsFigmaInfo: {
       figma:
         "This is my quick flexible Figma design. The main objective was improve user interface before I touch the code base. It takes longer time if I improve directly in the code. I also made a few small improvements before the final release but the biggest improvement's work I made was in Figma. At last I think It is very good to improve as little as posible directly in the code, but the most on Figma so I don't wast my time in general.",
     },

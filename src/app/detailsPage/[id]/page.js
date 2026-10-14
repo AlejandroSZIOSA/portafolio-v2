@@ -20,8 +20,8 @@ export default function WebBackendDbDetailsPage({ params, searchParams }) {
     (item) => item.id.toString() === projectId,
   );
 
-  const { detailsProjectInfo } = project;
-  const { signUp, logIn, user, backend, figma } = detailsProjectInfo;
+  const { detailsFigmaInfo } = project;
+  const { signUp, logIn, user, backend, figma } = detailsFigmaInfo;
 
   let content = "";
 

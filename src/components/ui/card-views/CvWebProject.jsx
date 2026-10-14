@@ -24,10 +24,15 @@ export default function CvWebProject({ project, label, variationLayout }) {
     isFavorite,
     description,
     responsiveUI,
+    backendInfo,
   } = project;
 
   if (!linkToApp) {
     variationLayout = "link-to-details";
+  }
+
+  if (backendInfo) {
+    variationLayout = "link-to-backend-info";
   }
 
   let content;
@@ -81,8 +86,31 @@ export default function CvWebProject({ project, label, variationLayout }) {
               "frontend+backend+db",
             )}`}
           >
-            To Details
+            Details
           </Link>
+        </>
+      );
+      break;
+
+    case "link-to-backend-info":
+      content = (
+        <>
+          <Link
+            className="p-1 bg-blue-600 hover:bg-blue-800 text-sm lg:text-base text-white border-2 border-indigo-950 rounded-md"
+            href={`/detailsPage/${id}?extraParam=${encodeURIComponent(
+              "frontend+backend+db",
+            )}`}
+          >
+            Details
+          </Link>
+
+          {isMobile && responsiveUI.includes("Mobile") && (
+            <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
+          )}
+
+          {!isMobile && responsiveUI.includes("Desktop") && (
+            <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
+          )}
         </>
       );
       break;

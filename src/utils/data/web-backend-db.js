@@ -92,7 +92,7 @@ export const WEB_BACKEND_DB_DATA = [
       BASE_CONTENT_URL + "/v1774166656/3_ozbjsu.png",
     ],
 
-    detailsProjectInfo: {
+    detailsFigmaInfo: {
       signUp:
         "The sign-up process allows new users to create an account by providing necessary information such as username, email, and password. The system validates the input data to ensure it meets the required criteria before creating the account in the database.",
       logIn:
@@ -149,9 +149,15 @@ export const WEB_BACKEND_DB_DATA = [
       BASE_CONTENT_URL + "/v1787831672/7_dhixdx.png",
       BASE_CONTENT_URL + "/v1787831672/8_ueddlz.png",
     ],
-    detailsProjectInfo: {
+    detailsFigmaInfo: {
       figma:
         "This Figma design for the GatoVolador-MVP It is a quick prototype that focuses on developing a clean, functional, and accessible interface based on essential WCAG guidelines. The design combines readable typography, a balanced color scheme, and responsive layouts to provide a consistent user experience across different devices.",
     },
+    //TODO
+    backendInfo: {
+      title: "Sanity CMS",
+      description: "algo",
+    },
+    backendInfoScreenShots: ["hola", "hola 2"],
   },
 ];
