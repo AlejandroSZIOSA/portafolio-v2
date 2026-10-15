@@ -11,7 +11,11 @@ import FIGMA_ICON from "../../../../public/icons/techs/figma.svg";
 
 import FAVORITE_ICON from "../../../../public/icons/favorite-circle.svg";
 
-export default function CvWebProject({ project, label, variationLayout }) {
+export default function CvWebProject({
+  project,
+  label,
+  variationLayout = "no-link-to-details",
+}) {
   const isMobile = useMedia(CONSTANTS.USE_MEDIA_MAX_WIDTH); //from useMedia library
   const {
     id,
@@ -99,7 +103,7 @@ export default function CvWebProject({ project, label, variationLayout }) {
             className="p-1 bg-blue-600 hover:bg-blue-800 text-sm lg:text-base text-white border-2 border-indigo-950 rounded-md"
             href={`/infoBackend/${id}`}
           >
-            Backend
+            CMS
           </Link>
 
           {project.figmaScreenshots && (
@@ -183,7 +187,8 @@ export default function CvWebProject({ project, label, variationLayout }) {
       <div
         className={`
           px-3 py-3 flex items-center bg-[#2FA4D7] ${
-            variationLayout === "no-link-to-details"
+            (variationLayout === "no-link-to-details") |
+            (variationLayout === "link-to-backend-info")
               ? "justify-between"
               : "justify-center"
           }

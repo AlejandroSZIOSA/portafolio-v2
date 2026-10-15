@@ -153,14 +153,16 @@ export const WEB_BACKEND_DB_DATA = [
       figma:
         "This Figma design for the GatoVolador-MVP It is a quick prototype that focuses on developing a clean, functional, and accessible interface based on essential WCAG guidelines. The design combines readable typography, a balanced color scheme, and responsive layouts to provide a consistent user experience across different devices.",
     },
-    //TODO
+
     backendInfo: {
-      title: "Sanity CMS",
-      description: "algo",
+      title: "Owner Sanity Dashboard",
+      description:
+        "this is the Manage system that the owner have full control to his data.",
       screenShots: ["hola", "hola 2"],
       extra: {
-        title: "Manual Backup to PDF",
-        description: "algo",
+        title: "A Manual Backup to PDF",
+        description:
+          "With this implementation the owner can get a backup of the full sanity dataset as pdf",
         screenShots: ["hola", "hola 2"],
       },
     },

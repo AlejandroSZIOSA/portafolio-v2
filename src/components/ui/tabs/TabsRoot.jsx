@@ -51,28 +51,28 @@ export default function TabsRoot() {
       <TabsContent value="tab1">
         <Accordion
           projects={getDataProjects("allWebProjects")}
-          variationLayout="no-link-to-details"
+          /* variationLayout="no-link-to-details" */
         />
       </TabsContent>
 
       <TabsContent value="tab2">
         <Accordion
           projects={getDataProjects("allWebApis")}
-          variationLayout="no-link-to-details"
+          /*   variationLayout="no-link-to-details" */
         />
       </TabsContent>
 
       <TabsContent value="tab6">
         <Accordion
           projects={getDataProjects("allWebBackendDbProjects")}
-          variationLayout="no-link-to-details"
+          /* variationLayout="no-link-to-details" */
         />
       </TabsContent>
 
       <TabsContent value="tab3">
         <Accordion
           projects={getDataProjects("allWebPrivateApis")}
-          variationLayout={"no-link-to-details"}
+          /* variationLayout={"no-link-to-details"} */
         />
       </TabsContent>
       <TabsContent value="tab4">
