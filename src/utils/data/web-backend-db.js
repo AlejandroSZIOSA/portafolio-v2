@@ -157,7 +157,12 @@ export const WEB_BACKEND_DB_DATA = [
     backendInfo: {
       title: "Sanity CMS",
       description: "algo",
+      screenShots: ["hola", "hola 2"],
+      extra: {
+        title: "Manual Backup to PDF",
+        description: "algo",
+        screenShots: ["hola", "hola 2"],
+      },
     },
-    backendInfoScreenShots: ["hola", "hola 2"],
   },
 ];

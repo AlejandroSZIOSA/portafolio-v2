@@ -97,12 +97,27 @@ export default function CvWebProject({ project, label, variationLayout }) {
         <>
           <Link
             className="p-1 bg-blue-600 hover:bg-blue-800 text-sm lg:text-base text-white border-2 border-indigo-950 rounded-md"
-            href={`/detailsPage/${id}?extraParam=${encodeURIComponent(
-              "frontend+backend+db",
-            )}`}
+            href={`/infoBackend/${id}`}
           >
-            Details
+            Backend
           </Link>
+
+          {project.figmaScreenshots && (
+            <Link
+              /*   className="p-1 bg-blue-600 hover:bg-blue-800 text-sm lg:text-base text-white border-2 border-indigo-950 rounded-md" */
+              href={`/detailsPage/${id}?extraParam=${encodeURIComponent(
+                "only-figma",
+              )}`}
+            >
+              <Image
+                className="transition-transform duration-200 hover:scale-110 hover:opacity-80"
+                src={FIGMA_ICON}
+                alt="Figma"
+                width={isMobile ? 32 : 36}
+                height="auto"
+              />
+            </Link>
+          )}
 
           {isMobile && responsiveUI.includes("Mobile") && (
             <ToViewAppBtn linkToApp={linkToApp}>View App</ToViewAppBtn>
