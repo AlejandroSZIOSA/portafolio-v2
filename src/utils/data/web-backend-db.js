@@ -157,13 +157,22 @@ export const WEB_BACKEND_DB_DATA = [
     backendInfo: {
       title: "Owner Sanity Dashboard",
       description:
-        "this is the Manage system that the owner have full control to his data.",
-      screenShots: ["hola", "hola 2"],
+        "This is the Manage system that the owner have full control to his data.",
+      screenShots: [
+        BASE_CONTENT_URL + "/v1792084409/1_p4sqj2.webp",
+        BASE_CONTENT_URL + "/v1792084409/2_benozm.webp",
+        BASE_CONTENT_URL + "/v1792084410/3_dhqu4j.webp",
+        BASE_CONTENT_URL + "/v1792084412/4_kqmqrk.webp",
+        BASE_CONTENT_URL + "/v1792084412/5_tdxejw.webp",
+      ],
       extra: {
-        title: "A Manual Backup to PDF",
+        title: "Dataset to PDF",
         description:
           "With this implementation the owner can get a backup of the full sanity dataset as pdf",
-        screenShots: ["hola", "hola 2"],
+        screenShots: [
+          BASE_CONTENT_URL + "/v1792084419/1_rilmph.webp",
+          BASE_CONTENT_URL + "/v1792084419/2_oykwub.webp",
+        ],
       },
     },
   },

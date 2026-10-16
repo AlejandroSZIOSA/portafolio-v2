@@ -13,8 +13,9 @@ const onlyBackendInfoPage = ({ params }) => {
     (item) => item.id.toString() === id,
   );
 
-  let content = "";
+  const { backendInfo } = project;
 
+  const { title, description, screenShots: screenShotsData } = backendInfo;
   return (
     <>
       <header>
@@ -27,12 +28,12 @@ const onlyBackendInfoPage = ({ params }) => {
         <h1 className="my-4">{project.title}</h1>
         <h2>CMS Screenshots</h2>
 
-        {/* <ProjectDetailSection
-          title="Mockup Design"
-          descriptionData={figma}
-          screenshotsData={project.figmaScreenshots}
+        <ProjectDetailSection
+          title={title}
+          descriptionData={description}
+          screenshotsData={screenShotsData}
           variantScreenshotsLayout="figma"
-        /> */}
+        />
       </main>
     </>
   );
