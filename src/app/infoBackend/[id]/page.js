@@ -13,9 +13,20 @@ const onlyBackendInfoPage = ({ params }) => {
     (item) => item.id.toString() === id,
   );
 
-  const { backendInfo } = project;
+  const { backendInfo, version } = project;
 
-  const { title, description, screenShots: screenShotsData } = backendInfo;
+  const {
+    title,
+    description,
+    screenShots: screenShotsData,
+    extra,
+  } = backendInfo;
+  const {
+    title: titleExtra,
+    description: descriptionExtra,
+    screenShots: screenShotsExtraData,
+  } = extra;
+
   return (
     <>
       <header>
@@ -25,13 +36,22 @@ const onlyBackendInfoPage = ({ params }) => {
       </header>
 
       <main className="flex flex-col justify-center items-center mx-auto">
-        <h1 className="my-4">{project.title}</h1>
+        <h1 className="my-4">
+          {project.title} v{version}
+        </h1>
         <h2>CMS Screenshots</h2>
 
         <ProjectDetailSection
           title={title}
           descriptionData={description}
           screenshotsData={screenShotsData}
+          variantScreenshotsLayout="figma"
+        />
+
+        <ProjectDetailSection
+          title={titleExtra}
+          descriptionData={descriptionExtra}
+          screenshotsData={screenShotsExtraData}
           variantScreenshotsLayout="figma"
         />
       </main>
