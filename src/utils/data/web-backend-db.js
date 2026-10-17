@@ -157,9 +157,7 @@ export const WEB_BACKEND_DB_DATA = [
     backendInfo: {
       title: "Owner Sanity Dashboard",
       description: `This is the owner's admin dashboard, where they can perform all CRUD operations on their vinyl record inventory.
-
 I've implemented input validation for all fields to prevent errors and inconsistencies on the frontend.
-
 I've also added extra features, including image uploads (up to three images per item) and an ID generator button. The owner is very satisfied with these improvements, as they previously had to generate the IDs manually, which was a time-consuming process."`,
       screenShots: [
         BASE_CONTENT_URL + "/v1792084409/1_p4sqj2.webp",
