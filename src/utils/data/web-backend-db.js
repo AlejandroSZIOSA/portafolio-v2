@@ -6,7 +6,7 @@ export const WEB_BACKEND_DB_DATA = [
     id: 6,
     updated_at: "October 14, 2025",
     cardImgUrl: "",
-    title: "Driver Theory Trivia",
+    title: "Theory Trivia",
     isFavorite: false,
     version: "Beta",
     description: "Learning drive theory app(Internship)",
@@ -155,7 +155,7 @@ export const WEB_BACKEND_DB_DATA = [
     },
 
     backendInfo: {
-      title: "Owner Sanity Dashboard",
+      title: "Owner Inventory",
       description: `This is the owner's admin dashboard, where they can perform all CRUD operations on their vinyl record inventory.
 I've implemented input validation for all fields to prevent errors and inconsistencies on the frontend.
 I've also added extra features, including image uploads (up to three images per item) and an ID generator button. The owner is very satisfied with these improvements, as they previously had to generate the IDs manually, which was a time-consuming process."`,
@@ -167,9 +167,11 @@ I've also added extra features, including image uploads (up to three images per 
         BASE_CONTENT_URL + "/v1792084412/5_tdxejw.webp",
       ],
       extra: {
-        title: "Dataset to PDF",
-        description:
-          "With this implementation the owner can get a backup of the full sanity dataset as pdf",
+        title: "Export Inventory to PDF",
+        description: `This implementation allows the owner to save all the information from the database and export it as a PDF file to any device.
+
+Although it does not allow the owner to back up the Sanity dataset itself, it provides a practical way to create and maintain their own inventory records and backups. Given the relatively small scope of the project, I believe this approach effectively meets the client's needs.
+The owner was also pleased with the addition of the exact date and time when the PDF was generated, as well as the structured presentation of the information in rows and columns.`,
         screenShots: [
           BASE_CONTENT_URL + "/v1792084419/1_rilmph.webp",
           BASE_CONTENT_URL + "/v1792084419/2_oykwub.webp",

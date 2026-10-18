@@ -13,7 +13,7 @@ const onlyBackendInfoPage = ({ params }) => {
     (item) => item.id.toString() === id,
   );
 
-  const { backendInfo, version } = project;
+  const { backendInfo, version, cms } = project;
 
   const {
     title,
@@ -39,7 +39,7 @@ const onlyBackendInfoPage = ({ params }) => {
         <h1 className="my-4">
           {project.title} v{version}
         </h1>
-        <h2>CMS Screenshots</h2>
+        <h2>{cms} Dashboard</h2>
 
         <ProjectDetailSection
           title={title}

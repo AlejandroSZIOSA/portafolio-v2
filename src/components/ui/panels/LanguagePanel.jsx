@@ -14,8 +14,11 @@ const LanguagePanel = () => {
       <Image
         className="mr-2"
         src={speakerIcon}
-        width={isMobile ? 18 : 26}
-        height="auto"
+        /* fix problem with heigth="auto" */
+        style={{
+          width: isMobile ? 18 : 26,
+          height: "auto",
+        }}
         alt="Speaker icon"
       />
       <Image
