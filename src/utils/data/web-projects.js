@@ -7,7 +7,7 @@ export const WEB_DATA = [
     updated_at: "Jan 03, 2024",
     cardImgUrl:
       "/images/web-projects/clocks-timmers/clocks-timmers_400_300.png",
-    title: "Clocks && Timers",
+    title: "Clocks&Timers",
     isFavorite: false,
     version: "Stable",
     description:
