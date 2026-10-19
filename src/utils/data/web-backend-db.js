@@ -106,11 +106,11 @@ export const WEB_BACKEND_DB_DATA = [
   },
   {
     id: 90,
-    updated_at: "October 4, 2026",
+    updated_at: "October 19, 2026",
     cardImgUrl: "/images/web-backend-db/gato-volador/gvprev.png",
     title: "GatoVolador",
     isFavorite: true,
-    version: "1.0.2",
+    version: "1.0.3",
     description:
       "A vinyl inventory system with up to 1,000 items, allowing the owner to manage their collection and update products without touching the frontend code.",
     category: "Frontend+CMS", //key to identify the project type

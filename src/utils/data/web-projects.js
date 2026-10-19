@@ -111,7 +111,7 @@ export const WEB_DATA = [
   },
   {
     id: 20,
-    updated_at: "September 12, 2026",
+    updated_at: "October 18, 2026",
     cardImgUrl: "/images/web-projects/task-reminder/prev.png",
     title: "Tasks Reminder",
     isFavorite: true,
